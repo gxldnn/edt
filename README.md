@@ -12,7 +12,7 @@
 - Y la demostracion de que me aburro mucho
 
 <details>
-<summary><b>Click to view image</b></summary>
+<summary><b>Open that shii up!!</b></summary>
 
 ![Crema de mani](https://i.imgur.com/0QKSNkp.jpeg)
 

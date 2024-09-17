@@ -18,7 +18,6 @@
 
 </details>
 
-## Table Section
 <table>
 <tr>
 <td>

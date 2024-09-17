@@ -7,26 +7,25 @@
 
 <h4 align="center">A high quality documentation by gxldnn</h4>
 
-- This GitHub will have:
 - Scripts
 - Docs
 - Y la demostracion de que me aburro mucho
 
-## Imagen
-
-<details><summary> <b>Open that shi up!</b></summary>
+<details>
+<summary><b>Click to view image</b></summary>
 
 ![Crema de mani](https://i.imgur.com/0QKSNkp.jpeg)
 
-##
+</details>
+
+## Table Section
 <table>
 <tr>
 <td>
-  
-**This github** offers a high quality **documentation and tools**, that aims to improve your marks on this grade.
 
-</p>
+**This github** offers a high quality **documentation and tools**, that aims to improve your marks on this grade.
 
 </td>
 </tr>
 </table>
+

@@ -1,14 +1,16 @@
-- Que es una BD?
+- ""Que es una BD?
 Es un magatzem de dades en fotmat digital, emmagatzemats en un suport secundari d'una manera no volatil, estructurada i relacionada (Relacional)
 
-- SGBD
+- ""SGBD
 La eina informatica amb la que desenvolupem la BD
 
-- DBMS
+- ""DBMS
 El programari que s'encarrega de la administració de la base de dades
 
-- Que es una taula?
+- ""Que es una taula?
 La taula es el magatzen de dades que es recullen d'una persona, ents, esdeveniment o conjunt items que s'use per descriurels.
 
-- Quina diferencia hia ha entre dades e informacio?
+- ""Quina diferencia hia ha entre dades e informacio?
 Les dades es la informacio que conte la bd i la informacio es el resultat de la consulta.
+
+- ""

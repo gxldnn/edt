@@ -2,7 +2,8 @@
 Es un magatzem de dades en fotmat digital, emmagatzemats en un suport secundari d'una manera no volatil, estructurada i relacionada (Relacional)
 
 - ""SGBD
-La eina informatica amb la que desenvolupem la BD
+La eina informatica amb la que desenvolupem la BD, per a crear una base de dades, emmagatzemar dades, recuperar-los, manipular-los, una
+base de dades necessita (en la majoria dels casos) un sistema gestor.
 
 - ""DBMS
 El programari que s'encarrega de la administració de la base de dades
@@ -13,4 +14,5 @@ La taula es el magatzen de dades que es recullen d'una persona, ents, esdevenime
 - ""Quina diferencia hia ha entre dades e informacio?
 Les dades es la informacio que conte la bd i la informacio es el resultat de la consulta.
 
-- ""
+- ""Que implica el tipus de model a la BD?
+El model implica en la gestio i la estructura de la BD

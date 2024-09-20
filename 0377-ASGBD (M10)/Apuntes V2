@@ -1,0 +1,36 @@
+redundancia: dades/files que es poder repetir. No interesa.
+
+In/Consistència: Dades no/fiables (dos registres que representen la mateixa informacio i no son iguals).
+
+Integritat: Fiable
+
+SQL (structured query language): llenguatge informatic que permet gestionar bases de dades
+
+ - BD
+ - Taula
+ - View "Finestres a BD"
+ - Users
+ - Index
+ - Role
+ - FUnctions
+ - Triggers
+ - Sinonym
+ - Sequence
+
+DDL (Data definition language): Gestiona estructures/objectes. (Tots canvis irreversibles)
+"CREATE" / "DROP" / "ALTER" / "RENAME" / "TRUNCATE"
+    EX: DROP TABLE client;
+    EX: TRUNCATE TABLE client;
+
+DML (Data Manipulation Language): Gestió de Dades (Posible recuperació)
+"DELETE" / "INSERT" / "UPDATE" / ""
+    EX: DELETE TABLE client;
+    EX: DELETE FROM client WHERE id=11111;
+    
+SELECT:
+
+DCL (Data Control Language): Permisos/Privilegis
+"GRANT" / "REVOKE"
+    EX: GRANT SELECT,DELETE ON cliente TO usuari1;
+    EX: REVOKE DELETE ON cliente FROM usuari1;
+

@@ -33,4 +33,3 @@ DCL (Data Control Language): Permisos/Privilegis
 "GRANT" / "REVOKE"
     EX: GRANT SELECT,DELETE ON cliente TO usuari1;
     EX: REVOKE DELETE ON cliente FROM usuari1;
-

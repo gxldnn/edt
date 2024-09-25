@@ -12,7 +12,7 @@ SQL (structured query language): llenguatge informatic que permet gestionar base
  - Users
  - Index
  - Role
- - FUnctions
+ - Functions
  - Triggers
  - Sinonym
  - Sequence
@@ -27,9 +27,94 @@ DML (Data Manipulation Language): Gestió de Dades (Posible recuperació)
     EX: DELETE TABLE client;
     EX: DELETE FROM client WHERE id=11111;
     
-SELECT:
+
 
 DCL (Data Control Language): Permisos/Privilegis
 "GRANT" / "REVOKE"
     EX: GRANT SELECT,DELETE ON cliente TO usuari1;
     EX: REVOKE DELETE ON cliente FROM usuari1;
+
+
+TCL (Control de Transaccions): Permet gestionar els canvis que es fan en les dades o recuperar dades cada cop que hi han canvis
+"BEGIN" / "ROLLBACK" / "SAVEPOINT" / "COMMIT"
+BEGIN      : Activa les derreres funcions
+ROLLBACK   : Desfer les coses (ctrl+z)
+SAVE POINT : Marca un punt on es pot tornar, com una copia de seguretat 
+COMMIT     : Buida el portapapeles, deixa definitiu un canvi
+
+
+SELECT: Serveix per a fer consultes a la BD (Important no fa cap canvi!!)
+
+
+
+---------------------------------
+Exemples SELECT
+---------------------------------
+
+SELECT Count(*) "Num de matricula"
+FROM alumne a OUTER JOIN matricula
+m ON a.idalu = m.idalu WHERE grupo='1HISX'
+GROUP BY idalu HAVING count(*)>1;  --> aquesta linea fa que es mostrin els repetidors
+
+Aixo faria una consulta que ens diu cuantes matriculas hi han en el grup de 1HISX
+
+
+---------------------------------
+Exemples de DML amb TCL
+---------------------------------
+BEGIN TRANSACTION;
+
+INSERT INTO alumne
+VALUES (1, 'Jordi', 'M02', '1HISX'.....);
+
+DELETE FROM matricula WHERE idalu ='a241477jr';
+
+SAVE POINT SP1;
+
+UPDATE matricula
+SET curs_Acad ='24/25'
+WHERE curs_Acad ='23/24';
+
+ROLLBACK TO SP1; --> No tanca la transaccio
+
+COMMIT; --> un cop hem fet el COMMIT tot el que hem definit es definitiu i no es pot tornar enrere (hem de estar segurs)
+
+---------------------------------
+---------------------------------
+
+
+Tipus de dades: (Formats)
+
+Text             --> Text
+Numeric o Int    --> Numero
+Boolean o Booleà --> True \ False
+Data o date      --> fecha
+
+
+
+---------------------------------
+---------------------------------
+
+
+Nivells conceptuals de una BD
+
+            -------------  
+            |   Users   |
+            -------------
+                  |
+                  |
+          ------------------
+          |   User Views   |        ---> El que volem que el usuari pugui veure
+          ------------------
+                  |
+                  |
+       --------------------------
+       |   Esquema conceptual   |   ---> Com volem estructurar la BD/Taulas/etc...
+       --------------------------
+                  |
+                  |
+       --------------------------
+       |  Representacio fisica  |   ---> Nivell intern / INDEX
+       --------------------------        
+
+

@@ -116,5 +116,20 @@ Nivells conceptuals de una BD
        --------------------------
        |  Representacio fisica  |   ---> Nivell intern / INDEX
        --------------------------        
+--------------------------------------------
+--------------------------------------------
+
+Tipus de Usuaris (En una BD)
+
+Usuaris informatics
+    Dissenyador Lògic --> Crea el que se li demana
+    Dissenyador Físic --> Optimitza el programari
+    Administradors    --> Normalment es el DBA i usa DCL
+    Analista i programador --> Es dediquen a plantejar possibles situacions i programar-les
+Usuaris Finals
+    Habituals
+    EsporàdicsalienTHC
+
+
 
 

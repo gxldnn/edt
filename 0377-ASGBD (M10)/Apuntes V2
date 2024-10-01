@@ -103,15 +103,15 @@ Nivells conceptuals de una BD
             -------------
                   |
                   |
-          ------------------
-          |   User Views   |        ---> El que volem que el usuari pugui veure
+          ------------------        ---> El que volem que el usuari pugui veure
+          |   User Views   |        ---> Conceptes, regles
           ------------------
                   |
-                  |
+                  |---------------------> Esquema ER
        --------------------------
        |   Esquema conceptual   |   ---> Com volem estructurar la BD/Taulas/etc...
-       --------------------------
-                  |
+       --------------------------   ---> Regles, Traduccions
+                  |---------------------> Hasta aqui Peiper
                   |
        --------------------------
        |  Representacio fisica  |   ---> Nivell intern / INDEX
@@ -128,8 +128,17 @@ Usuaris informatics
     Analista i programador --> Es dediquen a plantejar possibles situacions i programar-les
 Usuaris Finals
     Habituals
-    EsporàdicsalienTHC
+    Esporàdics
 
+ - Esquema:
+Descripció de l'estructura de les dades, resultat d'aplicar un model de
+dades sobre la informació del món real.
+La representació es realitza mitjançant un model conceptual de dades.
 
+ - Model conceptual de dades:
+Conjunt de conceptes, regles i convencions que permeten descriure les
+dades del món real amb un alt nivell d'abstracció.
 
+Tant l'esquema com el model conceptuals s'engloben en la primera fase de
+disseny d'una base de dades.
 

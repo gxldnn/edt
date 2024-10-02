@@ -142,3 +142,20 @@ dades del món real amb un alt nivell d'abstracció.
 Tant l'esquema com el model conceptuals s'engloben en la primera fase de
 disseny d'una base de dades.
 
+Entitat (Taula) --> atributs (Camps)
+ex: 
+Entitat Alumne, te com a atributs: DNI Nom, Cognom, Data naix, Usuari
+Entitat Modul, te com a atributs: Id Modul, Nom del Modul, Hores, Cicle
+
+
+Tipus de Entitats 
+ - Regular: Tenen una existencia propia, tenen un motiu inicial per a existir. (Llibre)/(Socis)
+ - Febles: La seva existencia depen de altres Entitats(Prestec dels Socis)
+
+
+Caracteristiques de una Interrelació:
+Nombre: Com nombrem a aquesta Interrelació
+Grau: Numero de tipus de etnitat que participen en la relació
+
+
+ Cardinalitat: Es el numero maxim d'ocurrencies de un tipus de entitat ex: 1:n, n:m 

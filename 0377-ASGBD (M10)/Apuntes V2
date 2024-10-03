@@ -142,7 +142,9 @@ dades del món real amb un alt nivell d'abstracció.
 Tant l'esquema com el model conceptuals s'engloben en la primera fase de
 disseny d'una base de dades.
 
-Entitat (Taula) --> atributs (Camps)
+Model: es la eina que ens permet convertir informacio que ens dona el client i ho convertim a ina BD
+
+Entitat  ES UNA ESTRUCTURA QUE ENS PERMET DESCRIURE LA REALITAT (Taula) --> atributs (Camps)
 ex: 
 Entitat Alumne, te com a atributs: DNI Nom, Cognom, Data naix, Usuari
 Entitat Modul, te com a atributs: Id Modul, Nom del Modul, Hores, Cicle
@@ -152,10 +154,25 @@ Tipus de Entitats
  - Regular: Tenen una existencia propia, tenen un motiu inicial per a existir. (Llibre)/(Socis)
  - Febles: La seva existencia depen de altres Entitats(Prestec dels Socis)
 
+Ocurrencia de la entidad: Posar valors a una taula, com per exemple omplir la taula de Alumne (dni, nom, cognom, etc.) Cada futura linea
+
+Domini: Conjunt de valors vàlids que agafa un atribut (UN formulari que només deixa triar uns valors ja especificats) "Desplegable"
+
+Relació: Asociació/Vincula entre dues enitats (verbs)/(esdeveniments)
+    EX:   ALUMNE --- (Es matricula) ---> MODUL
+    EX:   MODUL  --- (Verb) ---> Alumne
+    
 
 Caracteristiques de una Interrelació:
 Nombre: Com nombrem a aquesta Interrelació
-Grau: Numero de tipus de etnitat que participen en la relació
+Grau: Numero de tipus de entitats que participen en la relació (Binaria, Ternaria, n-aria)
 
 
- Cardinalitat: Es el numero maxim d'ocurrencies de un tipus de entitat ex: 1:n, n:m 
+
+CARDINALIDAD: Cuantes vegades un element d'una entitat es pot relacionar amb elements d'una altra entitat
+   	 1:m = de una a varios   ex: 1 client moltes commandes / una commanda només pot tenir un client
+   	 1:1 = un llibre, una editorial
+   	 m:n = (1,n) ---> /(0,n)  	(CARDINALITAT DE LA RELACIO)
+   	 
+   	 PRODUCTO --- 0,N ---> FACTURA
+   	 FACTURA ---- 1,N ---> PRODUCTO 	(CARDINALITATS DE LES ENTITATS)

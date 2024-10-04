@@ -112,6 +112,9 @@ Nivells conceptuals de una BD
        |   Esquema conceptual   |   ---> Com volem estructurar la BD/Taulas/etc...
        --------------------------   ---> Regles, Traduccions
                   |---------------------> Hasta aqui Peiper
+       --------------------------
+       |     Esquema Lògic      |
+       --------------------------
                   |
        --------------------------
        |  Representacio fisica  |   ---> Nivell intern / INDEX

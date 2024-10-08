@@ -1,5 +1,6 @@
 #!/bin/bash
 clear
+rm -rf /usr/sbin/chat.sh
 RED="\e[31m"
 YELLOW="\e[33m"
 GREEN="\e[32m"
@@ -68,7 +69,9 @@ for packet in "${packets[@]}"; do
   wait $pid
 done
 
-scriptcontent='''#!/bin/bash
+scriptcontent=$(
+  cat <<'EOF'
+#!/bin/bash
 clear
 RED="\e[31m"
 YELLOW="\e[33m"
@@ -127,12 +130,13 @@ function direct_check {
     printf "\r%-35s%s [ $GREEN$TICK$RESET ] done.\n" "$2" ""
     ;;
   *)
-    printf "\r%-35s%s [ $RED$CROSS$RESET ]̉̉\n Check the error at: $ERRFILE " "$2" ""
+    printf "\r%-35s%s [ $RED$CROSS$RESET ]\n Check the error at: $ERRFILE " "$2" ""
     echo -e "\n"
     exit
     ;;
   esac
 }
+
 function search() {
   for ip in {100..254}; do
     nc 10.200.244.$ip $port &
@@ -178,11 +182,11 @@ function tchat() {
     ncat $ip_connection $port
   fi
 }
-tchat $1'''
+tchat $1
+EOF
+)
 
-echo -n "tchat() {
-  /usr/sbin/chat.sh "$@"
-}" >>/etc/bash.bashrc
-echo $scriptcontent >>/usr/sbin/chat.sh
+echo "alias tchat='/usr/sbin/chat.sh \$1'" >>/etc/bash.bashrc
+echo "$scriptcontent" >/usr/sbin/chat.sh
 chmod +x /usr/sbin/chat.sh
 $SHELL

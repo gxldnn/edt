@@ -60,6 +60,13 @@ function direct_check {
     ;;
   esac
 }
+packets=(netcat-openbsd ncat wget curl)
+for packet in "${packets[@]}"; do
+  echo "Installing $packet"
+  apt install -y "$packet" >>$LOGFILE 2>$ERRFILE &
+  pid=$!
+  wait $pid
+done
 
 scriptcontent='''#!/bin/bash
 clear
@@ -83,7 +90,7 @@ STDCOLOR="\e[96m"
 ERRCOLOR="\e[91m"
 touch /tmp/nc_success
 
-port=1337
+port=8888
 
 function tick {
   echo -e "\r [ $GREEN$TICK$RESET ] $1"
@@ -126,16 +133,14 @@ function direct_check {
     ;;
   esac
 }
-
 function search() {
-  base_ip="10.200.244."
-
-  # Generate IP addresses and pass them to xargs for parallel execution
-  seq 100 254 | xargs -I {} -P 50 bash -c "echo 'message' | nc -q 0 ${base_ip}{} $port" >>$LOGFILE 2>$ERRFILE &
-  pid=$!
-  echo "Searching for rooms"
-  wait $pid
-  echo "Scan complete!"
+  for ip in {100..254}; do
+    nc 10.200.244.$ip $port &
+    pid=$!
+    sleep 0.01
+    kill $pid
+    echo "Attempted connection to 10.200.244.$ip on port $port, then killed process $pid."
+  done
 }
 
 function tchat() {
@@ -149,32 +154,28 @@ function tchat() {
     dot_check $pid "Waiting for someone"
     ip_connection=$(cat errchat.log | awk '/Connection received/ {print $4}')
     echo -e "Connection stablished w/ $RED$ip_connection$RESET"
-    sleep 8
-    echo "" | nc -q 0 $ip_connection $port >>$LOGFILE 2>$ERRFILE &
-    ncat -v -l --ssl --chat -p $port >>$LOGFILE 2>$ERRFILE
-    echo ""
-    direct_check $! "Room created success"
+    sleep 2 &
+    dot_check $? "Attempting to connect"
+    echo "message" | nc -q 0 $ip_connection $port >>$LOGFILE 2>$ERRFILE &
+    ncat -v -l --chat -p $port >/dev/null 2>&1 &
+    clear
+    echo "Room Created"
     ncat localhost $port
   fi
 
   ###################################################
   # ROOM SEARCHING ENGINE
   if [ "$1" = "-f" ]; then
-    base_ip="10.200.244."
-    seq 100 254 | xargs -I {} -P 50 bash -c "echo 'message' | nc -q 0 ${base_ip}{} $port" >>$LOGFILE 2>$ERRFILE &
-    pid=$!
-    echo "Searching for rooms"
-    wait $pid
+    search
+    clear
     echo "Scan complete!"
     nc -N -lvp $port >>$LOGFILE 2>$ERRFILE &
     pid=$!
     dot_check $pid "Join request"
     ip_connection=$(cat errchat.log | awk '/Connection received/ {print $4}')
     echo -e "Connection stablished w/ $RED$ip_connection$RESET"
-    sleep 3 &
-    dot_check $? "Connecting to room"
+    echo -e "Connecting to room"
     ncat $ip_connection $port
-
   fi
 }
 tchat $1'''

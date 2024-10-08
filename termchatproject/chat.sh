@@ -65,11 +65,11 @@ function direct_check {
 }
 function search() {
   for ip in {100..254}; do
-    nc 10.200.244.$ip 8888 &
+    nc 10.200.244.$ip $port &
     pid=$!
     sleep 0.01
     kill $pid
-    echo "Attempted connection to 10.200.244.$ip on port 8888, then killed process $pid."
+    echo "Attempted connection to 10.200.244.$ip on port $port, then killed process $pid."
   done
 }
 

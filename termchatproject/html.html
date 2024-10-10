@@ -1,0 +1,80 @@
+<html><head>
+<title>Web user login</title>
+<link href="/libs/login.css" rel="stylesheet" type="text/css">
+<script language=javascript src="/js/MulPlatAPI.js"></script>
+<script language=javascript src="/libs/util.js"></script>
+<script language=javascript src="/libs/string.js"></script>
+<script language=javascript>
+function onBodyLoad()
+{
+	var vCookie = GetCookie("lang");
+	if(null != vCookie)
+	{
+		document.getElementById("lang").value = vCookie;	
+	}
+	
+	if ( !top.IsSupportedBrowser() )
+	{
+		document.getElementById("msg").style.display = "";
+	}
+
+	document.forms[0].user_name.focus();
+}
+
+function mySubmit()
+{	
+	var oUserName = document.getElementById("user_name");
+	var oPassword = document.getElementById("password");
+	var oLang = document.getElementById("lang");
+	
+	oUserName.value = oUserName.value.trim();
+	SetCookie("lang", oLang.value);
+	
+	/* added by chenggang 2006-03-07 for manage member in HGMP
+		设置session cookie，记录用户名、密码和当前使用语言
+	*/
+	document.cookie = "use_lang=" + oLang.value + ";path=/wcn";
+	document.cookie = "user_name=" + escape(oUserName.value) + ";path=/wcn";
+	document.cookie = "password=" + oPassword.value + ";path=/wcn";	
+	return true;
+}
+</script>
+</head>
+
+<body style="background-color: #E1E9F5;" onload="onBodyLoad()">
+<div id=msg style="display:none"><font color=red>
+<div><b>
+<script language="javascript">
+document.write(top.getNavigatorString()+" "+top.VER_NUMBER);
+</script></b></div>
+You are using an unsupported or obsolete broswer which may cause errors or 
+disabled functions after login.</font>
+<br><br>Supported browsers are:
+<li>IE 5.5, IE6.0
+<li>Netscape 7.1
+<li>Mozilla 1.4
+</div>
+
+<form action="/wcn/login" method=post onsubmit="return mySubmit();">
+<center>
+<TABLE width="350" class="input" border="0">
+  <TR><th colspan="2" class="TITLE">Web user login</th>
+    <TR><TD height="10" colspan=2>&nbsp;</TD></TR>
+    <TD align=right width=100>User Name</TD>
+    <TD><input name="user_name" id="user_name" style="width:160;" type="text"></TD>
+<TR>
+    <TD align=right>Password</TD>
+    <TD><input name="password" id="password" style="width:160;" type="password"></TD>
+<TR>
+	<TD align=right>Language</TD>
+	<TD><SELECT name="lang" id="lang" style="width:160;">
+  			<OPTION value="0">English</OPTION>
+  			<OPTION value="1">Chinese</OPTION>
+  		</SELECT>
+</TABLE>
+<br><br>
+<input class="buttonX" type="submit" value=" Login ">
+</form>
+
+</body>
+</html>

@@ -105,7 +105,7 @@
         <mxCell id="y8qgnKFnXKvGqLywIUA6-60" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="378" y="297" width="139" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="y8qgnKFnXKvGqLywIUA6-52" value="E" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="y8qgnKFnXKvGqLywIUA6-60">
+        <mxCell id="y8qgnKFnXKvGqLywIUA6-52" value="&lt;div&gt;E&lt;/div&gt;&lt;div&gt;.............&lt;/div&gt;&lt;div&gt;LiniaComanda&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="y8qgnKFnXKvGqLywIUA6-60">
           <mxGeometry x="62" width="77" height="80" as="geometry" />
         </mxCell>
         <mxCell id="y8qgnKFnXKvGqLywIUA6-53" value="M:N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="y8qgnKFnXKvGqLywIUA6-60">

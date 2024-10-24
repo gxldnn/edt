@@ -234,6 +234,12 @@
         <mxCell id="qHEtm6X7OWey2wJ_C-4x-24" value="pot tenir" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="657" y="578" width="61" height="26" as="geometry" />
         </mxCell>
+        <mxCell id="qHEtm6X7OWey2wJ_C-4x-26" value="pot tenir" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="814" y="200" width="61" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="qHEtm6X7OWey2wJ_C-4x-27" value="dona a" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="638" y="194" width="55" height="26" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

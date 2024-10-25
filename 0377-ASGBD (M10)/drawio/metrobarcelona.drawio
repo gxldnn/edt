@@ -199,7 +199,7 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qHEtm6X7OWey2wJ_C-4x-11" value="(0,1)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;esta en&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="qHEtm6X7OWey2wJ_C-4x-10" vertex="1" connectable="0">
+        <mxCell id="qHEtm6X7OWey2wJ_C-4x-11" value="(1,1)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;esta en&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="qHEtm6X7OWey2wJ_C-4x-10" vertex="1" connectable="0">
           <mxGeometry x="-0.2427" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>

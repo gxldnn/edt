@@ -1,4 +1,4 @@
-# Database Structure
+# Gabinet d'Adbocats
 
 Client (<ins>DNIClient</ins>, Nom, Adreça, Telf)  
 Asumptes (<ins>IdAssumpte</ins>, DataInici, DataArxiu, Estat, *DNIClient*)  

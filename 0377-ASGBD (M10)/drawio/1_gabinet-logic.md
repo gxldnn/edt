@@ -1,6 +1,6 @@
 # Database Structure
 
-Client (*DNIClient*, Nom, Adreça, Telf)  
-Asumptes (*IdAssumpte*, DataInici, DataArxiu, Estat, DNIClient)  
-Procurador (*DNIProcurador*, Nom, Adreça, Telf)  
-AssumptesProcurador (*IdAssumpte*, *DNIProcurador*)  
+Client (<ins>DNIClient</ins>, Nom, Adreça, Telf)  
+Asumptes (<ins>IdAssumpte</ins>, DataInici, DataArxiu, Estat, DNIClient)  
+Procurador (<ins>DNIProcurador</ins>, Nom, Adreça, Telf)  
+AssumptesProcurador (<ins>IdAssumpte</ins>, <ins>DNIProcurador</ins>)  

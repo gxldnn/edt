@@ -145,7 +145,7 @@ screen
 echo -e "$RED Installing nextcloud requirements$RESET"
 
 # For que instala todos los php y apache
-packets=(apache2 php php-ctype php-curl php-xml php-dom php-fileinfo php-gd php-json php-mbstring php-posix php-simplexml php-xmlreader php-xmlwriter php-zip php-pgsql php-mysql php-intl php-ldap php-ftp php-imap php-bcmath php-gmp php-exif php-apcu php-memcached php-redis)
+packets=(apache2 mariadb-server php php-ctype php-curl php-xml php-dom php-fileinfo php-gd php-json php-mbstring php-posix php-simplexml php-xmlreader php-xmlwriter php-zip php-pgsql php-mysql php-intl php-ldap php-ftp php-imap php-bcmath php-gmp php-exif php-apcu php-memcached php-redis)
 
 for packet in "${packets[@]}"; do
   echo -e "Installing $GREEN$packet$RESET"

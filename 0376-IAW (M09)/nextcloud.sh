@@ -22,6 +22,75 @@ RESET="\e[0m"
 
 TICK="\xE2\x9C\x93"
 CROSS="\xE2\x9C\x98"
+
+
+inppasswd() {
+    while true; do
+        unset passwd
+        unset passwd2
+
+        echo -n "Password: "
+        stty -echo
+        PROMPT=""
+        CHARCOUNT=0
+
+        while IFS= read -p "$PROMPT" -r -s -n 1 CHAR; do
+            if [[ $CHAR == $'\0' ]]; then
+                break
+            fi
+            if [[ $CHAR == $'\177' ]]; then
+                if [ $CHARCOUNT -gt 0 ]; then
+                    CHARCOUNT=$((CHARCOUNT-1))
+                    PROMPT=$'\b \b'
+                    passwd="${passwd%?}"
+                else
+                    PROMPT=''
+                fi
+            elif [[ $CHAR == $'\n' ]]; then
+                break
+            else
+                CHARCOUNT=$((CHARCOUNT+1))
+                PROMPT='*'
+                passwd+="$CHAR"
+            fi
+        done
+        echo
+
+        echo -n "Type it again: "
+        PROMPT=""
+        CHARCOUNT=0
+
+        while IFS= read -p "$PROMPT" -r -s -n 1 CHAR; do
+            if [[ $CHAR == $'\0' ]]; then
+                break
+            fi
+            if [[ $CHAR == $'\177' ]]; then
+                if [ $CHARCOUNT -gt 0 ]; then
+                    CHARCOUNT=$((CHARCOUNT-1))
+                    PROMPT=$'\b \b'
+                    passwd2="${passwd2%?}"
+                else
+                    PROMPT=''
+                fi
+            else
+                CHARCOUNT=$((CHARCOUNT+1))
+                PROMPT='*'
+                passwd2+="$CHAR"
+            fi
+        done
+        echo
+        stty echo
+
+        if [[ "$passwd" == "$passwd2" ]]; then
+            echo "Password match."
+            break
+        else
+            echo "Password didn't match. Try again."
+        fi
+    done
+}
+
+
 function tick {
   echo -e "\r [ $GREEN$TICK$RESET ] $1"
 }
@@ -124,6 +193,21 @@ dot_check $! "Restarting apache2"
 
 clear
 screen
+echo -e "Please provide the following:\n"
+echo -e "Username"
+read -p "> " user
+clear
+screen
+echo -e "Please provide the following:\n"
+inppasswd
+clear
+screen
+echo -e "Please provide the following:\n"
+echo -e "Database Name"
+read -p "> " dbname
+clear
+screen
+
 echo -e "$RED Configuing SQL-BBDD"
 mysql -u root -e "CREATE USER '$user'@'localhost' IDENTIFIED BY '$passwd';"
 direct_check $? "Creating user $user"

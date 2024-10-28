@@ -68,6 +68,10 @@ function screen {
 
 clear
 screen
+apt update
+dot_check $! "Updating repos"
+apt upgrade
+dot_check $! "Upgrading repos"
 
 # For que instala todos los php y apache
 packets=(apache2 php php-ctype php-curl php-xml php-gd php-mbstring php-json php-posix php-zip php-pgsql php-mysql)

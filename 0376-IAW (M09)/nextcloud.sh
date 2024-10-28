@@ -94,6 +94,8 @@ tar -xf latest.tar.bz2 >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Exporting files"
 mv nextcloud/ /var/www/
 direct_check $? "Moving nextcloud folder to /var/www"
+chown www-data:www-data -R /var/www/
+dot_check $! "Giving privileges to www-data"
 echo "<VirtualHost *:80>
   DocumentRoot /var/www/nextcloud/
   ServerName  $domain

@@ -6,9 +6,8 @@
 ##      COLORS && MoRE
 ##
 cd
-LOGFILE=$(pwd)/nextcloud/logfile.log
-ERRFILE=$(pwd)/nextcloud/errfile.err
-mkdir -p $(pwd)/nextcloud
+LOGFILE=logfile.log
+ERRFILE=errfile.err
 touch $LOGFILE
 touch $ERRFILE
 

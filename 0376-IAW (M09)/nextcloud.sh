@@ -75,9 +75,9 @@ dot_check $! "Upgrading repos"
 
 # For que instala todos los php y apache
 packets=(apache2 php php-ctype php-curl php-xml php-gd php-mbstring php-json php-posix php-zip php-pgsql php-mysql)
+  echo -e "$RED Installing nextcloud requirements$RESET"
 for packet in "${packets[@]}"; do
-  echo -e "$RED Installing nextcloud requirements"
-  echo "Installing $packet"
+  echo "Installing $GREEN$packet$RESET"
   apt install -y "$packet" >>$LOGFILE 2>$ERRFILE &
   pid=$!
   wait $pid
@@ -105,18 +105,18 @@ echo "<VirtualHost *:443>
     </IfModule>
   </Directory>
 </VirtualHost>
-" >>/etc/apache2/sites-available/nextcloud.conf
+" >>/etc/apache2/sites-available/nextcloud.conf >>$LOGFILE 2>$ERRFILE &
 direct_check $? "Applying nextcloud conf"
-ln -s /etc/apache2/sites-available/nextcloud.conf /etc/apache2/sites-enabled/
+ln -s /etc/apache2/sites-available/nextcloud.conf /etc/apache2/sites-enabled/ >>$LOGFILE 2>$ERRFILE &
 direct_check $? "Creating SymLink"
 
-a2ensite nextcloud.conf
+a2ensite nextcloud.conf >>$LOGFILE 2>$ERRFILE &
 direct_check $? "Enabling site"
-a2enmod ssl
+a2enmod ssl >>$LOGFILE 2>$ERRFILE &
 direct_check $? "Enabling ssl"
-a2ensite default-ssl
+a2ensite default-ssl >>$LOGFILE 2>$ERRFILE &
 direct_check $? "Enabling default-ssl"
-systemctl restart apache2
+systemctl restart apache2 >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Restarting apache2"
 clear
 screen

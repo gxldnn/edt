@@ -102,7 +102,7 @@ echo -e "<VirtualHost *:80>
 	DocumentRoot /var/www/nextcloud
 	ErrorLog \${APACHE_LOG_DIR}/error.log
 	CustomLog \${APACHE_LOG_DIR}/access.log combined
-</VirtualHost" > /etc/apache2/sites-available/000-default.conf
+</VirtualHost>" > /etc/apache2/sites-available/000-default.conf
 rm -rf /etc/apache2/sites-enabled/000-default.conf
 ln -s /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-enabled/000-default.conf
 a2enmod ssl >>$LOGFILE 2>$ERRFILE &

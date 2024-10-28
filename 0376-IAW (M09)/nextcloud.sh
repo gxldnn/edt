@@ -67,18 +67,18 @@ function screen {
 
 clear
 screen
-echo -e "Enter your domain name"
-read -p ">" domain 
 echo -e "Removing old nextcloud"
-rm -r /var/www/nextcloud
+rm -r /var/www/nextcloud >>$LOGFILE 2>$ERRFILE
 rm -r /etc/apache2/sites-enabled/nextcloud.conf >>$LOGFILE 2>$ERRFILE
 rm -r /etc/apache2/sites-available/nextcloud.conf >>$LOGFILE 2>$ERRFILE
 clear
 screen
+echo -e "$RED Installing nextcloud requirements$RESET"
+
 # For que instala todos los php y apache
-packets=(apache2 php php-ctype php-curl php-xml php-gd php-mbstring php-json php-posix php-zip php-pgsql php-mysql)
-  echo -e "$RED Installing nextcloud requirements$RESET"
-for packet in "${packets[@]}"; do
+packets=(apache2 php php-ctype php-curl php-xml php-dom php-fileinfo php-gd php-json php-mbstring php-posix php-simplexml php-xmlreader php-xmlwriter php-zip php-pgsql php-mysql php-intl php-ldap php-ftp php-imap php-bcmath php-gmp php-exif php-apcu php-memcached php-redis)
+
+for packets in "${packets[@]}"; do
   echo -e "Installing $GREEN$packet$RESET"
   apt install -y "$packet" >>$LOGFILE 2>$ERRFILE &
   pid=$!
@@ -103,7 +103,7 @@ echo "<VirtualHost *:80>
 	ErrorLog \${APACHE_LOG_DIR}/error.log
 	CustomLog \${APACHE_LOG_DIR}/access.log combined
 </VirtualHost
-" >>/etc/apache2/sites-available/000-default.conf >>$LOGFILE 2>$ERRFILE &
+" > /etc/apache2/sites-available/000-default.conf >>$LOGFILE 2>$ERRFILE &
 direct_check $? "Applying nextcloud conf"
 
 a2enmod ssl >>$LOGFILE 2>$ERRFILE &

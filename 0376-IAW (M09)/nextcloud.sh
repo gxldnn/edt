@@ -208,7 +208,7 @@ read -p "> " dbname
 clear
 screen
 
-echo -e "$RED Configuing SQL-BBDD"
+echo -e "$RED Configuing SQL-BBDD$RESET"
 mysql -u root -e "CREATE USER '$user'@'localhost' IDENTIFIED BY '$passwd';"
 direct_check $? "Creating user $user"
 mysql -u root -e "CREATE DATABASE IF NOT EXISTS $dbname CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;"
@@ -217,7 +217,6 @@ mysql -u root -e "GRANT ALL PRIVILEGES ON $dbname.* TO '$user'@'localhost';"
 direct_check $? "Granting privileges to $user"
 mysql -u root -e "FLUSH PRIVILEGES;"
 direct_check $? "Quiting"
-sleep 20
 clear
 screen
 echo -e "\n$GREEN done.$RESET"

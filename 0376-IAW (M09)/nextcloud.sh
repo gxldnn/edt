@@ -88,7 +88,10 @@ pid=""
 clear
 screen
 
-# Descarga de nextcloud oficial
+##################################
+#
+#      NEXTCLOUD WEB CONF
+#
 wget https://download.nextcloud.com/server/releases/latest.tar.bz2 >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Downloading nextcloud tar file"
 tar -xf latest.tar.bz2 >>$LOGFILE 2>$ERRFILE &
@@ -111,6 +114,26 @@ a2ensite default-ssl >>$LOGFILE 2>$ERRFILE &
 direct_check $? "Enabling default-ssl"
 systemctl restart apache2 >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Restarting apache2"
+
+
+##################################
+#
+#	SQL CONFIGURATION
+#
+
+
+clear
+screen
+echo -e "$RED Configuing SQL-BBDD"
+mysql -u root -e "CREATE USER '$user'@'localhost' IDENTIFIED BY '$passwd';"
+direct_check $? "Creating user $user"
+mysql -u root -e "CREATE DATABASE IF NOT EXISTS $dbname CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;"
+direct_check $? "Creating database $dbname"
+mysql -u root -e "GRANT ALL PRIVILEGES ON $dbname.* TO '$user'@'localhost';"
+direct_check $? "Granting privileges to $user"
+mysql -u root -e "FLUSH PRIVILEGES;"
+direct_check $? "Quiting"
+sleep 20
 clear
 screen
 echo -e "\n$GREEN done.$RESET"

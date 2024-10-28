@@ -59,7 +59,7 @@ function direct_check {
   esac
 }
 function screen {
-  echo -ne "  _  _ _____  _______ ___ _    ___  _   _ ___ \n"
+  echo -ne "   _  _ _____  _______ ___ _    ___  _   _ ___ \n"
   echo -ne "  | \\| | __\\ \\/ /_   _/ __| |  / _ \\| | | |   \\ \n"
   echo -ne "  |.\\\` | _| >  <  | || (__| |_| (_) | |_| | |) |\n"
   echo -ne "  |_|\_|___/_/\\_\\ |_| \\___|____\\___/ \\___/|___/\n "
@@ -94,7 +94,7 @@ tar -xf latest.tar.bz2 >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Exporting files"
 mv nextcloud/ /var/www/
 direct_check $? "Moving nextcloud folder to /var/www"
-echo "<VirtualHost *:443>
+echo "<VirtualHost *:80>
   DocumentRoot /var/www/nextcloud/
   ServerName  $domain
 
@@ -123,4 +123,4 @@ systemctl restart apache2 >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Restarting apache2"
 clear
 screen
-echo -e "\n\n$GREEN done."
+echo -e "\n\n$GREEN done.$RESET"

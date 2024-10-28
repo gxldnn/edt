@@ -97,15 +97,14 @@ mv nextcloud/ /var/www/
 direct_check $? "Moving nextcloud folder to /var/www"
 chown www-data:www-data -R /var/www/ >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Giving privileges to www-data"
-echo "<VirtualHost *:80>
+echo -e "<VirtualHost *:80>
 	ServerAdmin webmaster@localhost
 	DocumentRoot /var/www/nextcloud
 	ErrorLog \${APACHE_LOG_DIR}/error.log
 	CustomLog \${APACHE_LOG_DIR}/access.log combined
-</VirtualHost
-" > /etc/apache2/sites-available/000-default.conf >>$LOGFILE 2>$ERRFILE &
-direct_check $? "Applying nextcloud conf"
-
+</VirtualHost" > /etc/apache2/sites-available/000-default.conf
+rm -rf /etc/apache2/sites-enabled/000-default.conf
+ln -s /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-enabled/000-default.conf
 a2enmod ssl >>$LOGFILE 2>$ERRFILE &
 direct_check $? "Enabling ssl"
 a2ensite default-ssl >>$LOGFILE 2>$ERRFILE &

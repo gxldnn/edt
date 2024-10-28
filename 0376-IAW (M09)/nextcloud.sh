@@ -77,7 +77,7 @@ dot_check $! "Upgrading repos"
 packets=(apache2 php php-ctype php-curl php-xml php-gd php-mbstring php-json php-posix php-zip php-pgsql php-mysql)
   echo -e "$RED Installing nextcloud requirements$RESET"
 for packet in "${packets[@]}"; do
-  echo "Installing $GREEN$packet$RESET"
+  echo -e "Installing $GREEN$packet$RESET"
   apt install -y "$packet" >>$LOGFILE 2>$ERRFILE &
   pid=$!
   wait $pid
@@ -120,4 +120,4 @@ systemctl restart apache2 >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Restarting apache2"
 clear
 screen
-echo "\n\n$GREEN done."
+echo -e "\n\n$GREEN done."

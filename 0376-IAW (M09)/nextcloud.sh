@@ -177,6 +177,20 @@ echo -e "<VirtualHost *:80>
 </VirtualHost>" > /etc/apache2/sites-available/000-default.conf
 rm -rf /etc/apache2/sites-enabled/000-default.conf
 ln -s /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-enabled/000-default.conf
+echo -e """<VirtualHost *:443>
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/nextcloud
+        ErrorLog \${APACHE_LOG_DIR}/error.log
+        CustomLog \${APACHE_LOG_DIR}/access.log combined
+        SSLEngine on
+        SSLCertificateFile      /etc/ssl/certs/ssl-cert-snakeoil.pem
+        <FilesMatch "\.(?:cgi|shtml|phtml|php)$">
+                SSLOptions +StdEnvVars
+        </FilesMatch>
+        <Directory /usr/lib/cgi-bin>
+                SSLOptions +StdEnvVars
+        </Directory>
+</VirtualHost>"""
 a2enmod ssl >>$LOGFILE 2>$ERRFILE &
 direct_check $? "Enabling ssl"
 a2ensite default-ssl >>$LOGFILE 2>$ERRFILE &

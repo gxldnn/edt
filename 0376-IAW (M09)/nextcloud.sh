@@ -70,7 +70,7 @@ clear
 screen
 apt update >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Updating repos"
-apt upgrade >>$LOGFILE 2>$ERRFILE &
+apt upgrade -y >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Upgrading repos"
 
 # For que instala todos los php y apache

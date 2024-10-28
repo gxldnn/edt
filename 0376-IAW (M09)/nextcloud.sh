@@ -69,11 +69,12 @@ clear
 screen
 echo -e "Enter your domain name"
 read -p ">" domain 
-apt update >>$LOGFILE 2>$ERRFILE &
-dot_check $! "Updating repos"
-apt upgrade -y >>$LOGFILE 2>$ERRFILE &
-dot_check $! "Upgrading repos"
-
+echo -e "Removing old nextcloud"
+rm -r /var/www/nextcloud
+rm -r /etc/apache2/sites-enabled/nextcloud.conf >>$LOGFILE 2>$ERRFILE
+rm -r /etc/apache2/sites-available/nextcloud.conf >>$LOGFILE 2>$ERRFILE
+clear
+screen
 # For que instala todos los php y apache
 packets=(apache2 php php-ctype php-curl php-xml php-gd php-mbstring php-json php-posix php-zip php-pgsql php-mysql)
   echo -e "$RED Installing nextcloud requirements$RESET"
@@ -94,29 +95,17 @@ tar -xf latest.tar.bz2 >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Exporting files"
 mv nextcloud/ /var/www/
 direct_check $? "Moving nextcloud folder to /var/www"
-chown www-data:www-data -R /var/www/
+chown www-data:www-data -R /var/www/ >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Giving privileges to www-data"
 echo "<VirtualHost *:80>
-  DocumentRoot /var/www/nextcloud/
-  ServerName  $domain
-
-  <Directory /var/www/nextcloud/>
-    Require all granted
-    AllowOverride All
-    Options FollowSymLinks MultiViews
-
-    <IfModule mod_dav.c>
-      Dav off
-    </IfModule>
-  </Directory>
-</VirtualHost>
-" >>/etc/apache2/sites-available/nextcloud.conf >>$LOGFILE 2>$ERRFILE &
+	ServerAdmin webmaster@localhost
+	DocumentRoot /var/www/nextcloud
+	ErrorLog \${APACHE_LOG_DIR}/error.log
+	CustomLog \${APACHE_LOG_DIR}/access.log combined
+</VirtualHost
+" >>/etc/apache2/sites-available/000-default.conf >>$LOGFILE 2>$ERRFILE &
 direct_check $? "Applying nextcloud conf"
-ln -s /etc/apache2/sites-available/nextcloud.conf /etc/apache2/sites-enabled/ >>$LOGFILE 2>$ERRFILE &
-direct_check $? "Creating SymLink"
 
-a2ensite nextcloud.conf >>$LOGFILE 2>$ERRFILE &
-direct_check $? "Enabling site"
 a2enmod ssl >>$LOGFILE 2>$ERRFILE &
 direct_check $? "Enabling ssl"
 a2ensite default-ssl >>$LOGFILE 2>$ERRFILE &
@@ -125,4 +114,4 @@ systemctl restart apache2 >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Restarting apache2"
 clear
 screen
-echo -e "\n\n$GREEN done.$RESET"
+echo -e "\n$GREEN done.$RESET"

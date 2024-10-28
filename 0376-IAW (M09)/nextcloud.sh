@@ -68,6 +68,8 @@ function screen {
 
 clear
 screen
+echo -e "Enter your domain name"
+read -p ">" domain 
 apt update >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Updating repos"
 apt upgrade -y >>$LOGFILE 2>$ERRFILE &
@@ -83,6 +85,8 @@ for packet in "${packets[@]}"; do
   wait $pid
 done
 pid=""
+clear
+screen
 
 # Descarga de nextcloud oficial
 wget https://download.nextcloud.com/server/releases/latest.tar.bz2 >>$LOGFILE 2>$ERRFILE &

@@ -200,6 +200,8 @@ rm -rf /etc/apache2/sites-enabled/default-ssl.conf
 ln -s /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-enabled/000-default.conf
 ln -s /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-enabled/default-ssl.conf
 
+a2ensite 000-default.conf >>$LOGFILE 2>$ERRFILE &
+direct_check $? "Enabling nextcloud"
 a2enmod ssl >>$LOGFILE 2>$ERRFILE &
 direct_check $? "Enabling ssl"
 a2ensite default-ssl >>$LOGFILE 2>$ERRFILE &

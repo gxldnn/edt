@@ -169,12 +169,6 @@ mv nextcloud/ /var/www/
 direct_check $? "Moving nextcloud folder to /var/www"
 chown www-data:www-data -R /var/www/ >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Giving privileges to www-data"
-echo -e "<VirtualHost *:80>
-	ServerAdmin webmaster@localhost
-	DocumentRoot /var/www/nextcloud
-	ErrorLog \${APACHE_LOG_DIR}/error.log
-	CustomLog \${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>" > /etc/apache2/sites-available/000-default.conf
 echo -e "<VirtualHost *:443>
 	ServerAdmin webmaster@localhost
 
@@ -194,11 +188,7 @@ echo -e "<VirtualHost *:443>
 	</Directory>
 </VirtualHost>" > /etc/apache2/sites-available/default-ssl.conf
 
-rm -rf /etc/apache2/sites-enabled/000-default.conf
 rm -rf /etc/apache2/sites-enabled/default-ssl.conf
-
-ln -s /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-enabled/000-default.conf
-ln -s /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-enabled/default-ssl.conf
 
 a2ensite 000-default.conf >>$LOGFILE 2>$ERRFILE &
 direct_check $? "Enabling nextcloud"

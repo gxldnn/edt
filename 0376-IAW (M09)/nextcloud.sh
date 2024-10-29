@@ -192,6 +192,8 @@ rm -rf /etc/apache2/sites-enabled/default-ssl.conf
 
 a2ensite 000-default.conf >>$LOGFILE 2>$ERRFILE &
 direct_check $? "Enabling nextcloud"
+a2dismod mpm_event >>$LOGFILE 2>$ERRFILE
+a2enmod php8.2 >>$LOGFILE 2>$ERRFILE
 a2enmod ssl >>$LOGFILE 2>$ERRFILE &
 direct_check $? "Enabling ssl"
 a2ensite default-ssl >>$LOGFILE 2>$ERRFILE &

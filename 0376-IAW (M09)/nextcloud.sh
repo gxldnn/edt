@@ -176,18 +176,22 @@ echo -e "<VirtualHost *:80>
 	CustomLog \${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>" > /etc/apache2/sites-available/000-default.conf
 echo -e "<VirtualHost *:443>
-        ServerAdmin webmaster@localhost
-        DocumentRoot /var/www/nextcloud
-        ErrorLog \${APACHE_LOG_DIR}/error.log
-        CustomLog \${APACHE_LOG_DIR}/access.log combined
-        SSLEngine on
-        SSLCertificateFile      /etc/ssl/certs/ssl-cert-snakeoil.pem
-        <FilesMatch \"\.(?:cgi|shtml|phtml|php)\$ \">
-                SSLOptions +StdEnvVars
-        </FilesMatch>
-        <Directory /usr/lib/cgi-bin>
-                SSLOptions +StdEnvVars
-        </Directory>
+	ServerAdmin webmaster@localhost
+
+	DocumentRoot /var/www/nextcloud
+
+	ErrorLog \${APACHE_LOG_DIR}/error.log
+	CustomLog \${APACHE_LOG_DIR}/access.log combined
+	SSLEngine on
+	SSLCertificateFile      /etc/ssl/certs/ssl-cert-snakeoil.pem
+	SSLCertificateKeyFile   /etc/ssl/private/ssl-cert-snakeoil.key
+
+	<FilesMatch \"\.(?:cgi|shtml|phtml|php)\$ \">
+		SSLOptions +StdEnvVars
+	</FilesMatch>
+	<Directory /usr/lib/cgi-bin>
+		SSLOptions +StdEnvVars
+	</Directory>
 </VirtualHost>" > /etc/apache2/sites-available/default-ssl.conf
 
 rm -rf /etc/apache2/sites-enabled/000-default.conf

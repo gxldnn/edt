@@ -1,5 +1,5 @@
 
-# 1. gabinet d'Adbocats
+# 1. Gabinet d'Adbocats
 
 Es vol dissenyar una base de dades relacional per a emmagatzemar informació
 sobre els assumptes que porta un gabinet d'advocats.

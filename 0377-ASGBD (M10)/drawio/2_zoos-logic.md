@@ -16,7 +16,7 @@ A més, s'ha de guardar informació sobre cada animal que els zoos tenen, com el
 # 3. Model lògic relacional
 ## 3.1. Esquema lògic
   Zoo(<ins>IdZoo</ins>, Nom, Ciutat, Pais, Mida, Pressupost)\
-  Animal(<ins>IdAnimal-IdZoo</ins>, Sexe, DataNaixement, PaisOrigen, Continent, *IdEspecie*)\
+  Animal(<ins>IdAnimal,IdZoo</ins>, Sexe, DataNaixement, PaisOrigen, Continent, *IdEspecie*)\
   Especie(<ins>IdEspecie</ins>, NomVulgar, NomCientific, Familia, Extincio)
 
 ## 3.2. Diagrama referencial

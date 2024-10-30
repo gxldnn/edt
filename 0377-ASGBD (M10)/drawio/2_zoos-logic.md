@@ -28,7 +28,7 @@ A més, s'ha de guardar informació sobre cada animal que els zoos tenen, com el
 Relació referencial|Clau aliena|Relació referida
 -|:-:|-
 Animal|IdZoo|Zoo
-Especie|IdAnimal|Animal
+Animal|IdEspecie|Especie
 
 
 # 4. Model físic

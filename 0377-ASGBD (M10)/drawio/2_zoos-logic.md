@@ -10,7 +10,7 @@ A més, s'ha de guardar informació sobre cada animal que els zoos tenen, com el
 
 # 2. Model conceptual
 ## 2.1. Enllaç públic a l'esquema
-[Esquema drawio -- ZOOS](https://drive.google.com/file/d/1-8aaf5AJuiRZojJW8Z4h9YdLbMSbh_GA/view?usp=sharing)
+[Esquema drawio -- ZOOS](https://drive.google.com/file/d/1Ab4533XcrnR1XXVZW0GN_wVuAtzxP7rB/view?usp=sharing)
 ## 2.2. Esquema conceptual (EC ó ER)
   ![Esquema drawio -- ZOOS](./ERZOO.png)
 # 3. Model lògic relacional

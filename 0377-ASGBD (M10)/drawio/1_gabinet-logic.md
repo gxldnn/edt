@@ -18,7 +18,7 @@ quals ens interessa també les dades personals (DNI, nom, adreça, telèfon).
 ## 2.1. Enllaç públic a l'esquema
 [Esquema drawio -- Gabinet d'Adbocats](https://drive.google.com/file/d/19jyyxrT2YkxDXFEycAip-f08-r8KN9k3/view?usp=sharing)
 ## 2.2. Esquema conceptual (EC ó ER)
-  ![Esquema drawio -- ZOOS](./Gabinet.png)
+  ![Esquema drawio -- ZOOS](./1_gabinet.png)
 # 3. Model lògic relacional
 ## 3.1. Esquema lògic
   Client (<ins>DNIClient</ins>, Nom, Adreça, Telf)\

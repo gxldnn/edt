@@ -16,10 +16,9 @@ Es vol saber de cada empleat qui és el seu cap en cas que el tingui. Modificar 
   ![Esquema drawio -- <Projectes>](./3_projectes.png)
 # 3. Model lògic relacional
 ## 3.1. Esquema lògic
-  Empleat (<ins>DNI</ins>, Nom, Adreça, Telf, *CAP*, *IdProjecte*, *IdDepartament*)\
+  Empleat (<ins>DNI</ins>, Nom, Adreça, Telf, *CodCAP*, *IdProjecte*, *IdDepartament*)\
   Projecte (<ins>IdProjecte</ins>, Titol, DuradaEst, Pressupost, *DNI*)\
   Departament (<ins>IdDepartament</ins>, NomdeDepartament)\
-  CAP (<ins>DNI</ins>, IdCAP)
 ## 3.2. Diagrama referencial
 
 * El diagrama referencial em serveix per indicar quines claus alienes hi ha a l'esquema lògic  
@@ -30,8 +29,9 @@ Relació referencial|Clau aliena|Relació referida
 -|:-:|-
 Empleat|IdProjecte|Projecte
 Empleat|IdDepartament|Departament
+Empleat|CodCAP|Empleat
 Projecte|DNI|Empleat
-CAP|DNI|Empleat
+
 
 
 # 4. Model físic

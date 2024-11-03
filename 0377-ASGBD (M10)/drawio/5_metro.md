@@ -26,7 +26,7 @@ Linias (<ins>CodiLinia</ins>, Color)\
 Estacions (<ins>IdEstacio</ins>, Nom, Ubicació)\
 Datas (<ins>DataInici</ins>, DataFi)
 
-Accessos (<ins>Nom</ins>, Ubicacio), *IdEstacio*\
+Accessos (<ins>Nom</ins>, Ubicacio, *IdEstacio*)\
 Cotxeres (<ins>IdCotxera</ins>, Nom, *IdEstacio*)\
 Trens (<ins>IdTren</ins>, NomTren, *IdCotxera*, *CodiLinia*)
 

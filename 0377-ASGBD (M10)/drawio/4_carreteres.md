@@ -21,7 +21,7 @@ Hi ha una sèrie d'àrees en les que s'agrupen els trams, cada un dels quals no 
   Tram (<ins>IdTram</ins>, KilometreEntrada, KilometreSortida, *IdCarretera*, *IdArea*)\
   Carretera (<ins>IdCarretera</ins>, Nom, Ubicació, Longitut)\
   Area (<ins>IdArea</ins>, Nom, Ubicació)\
-  Terme_Municipal (<ins>IdTerme</ins>, Nom, Comarca )\
+  Terme_Municipal (<ins>IdTerme</ins>, Nom, Comarca)\
   TermeXTram (<ins>IdTram,IdTerme</ins>)
 
 ## 3.2. Diagrama referencial

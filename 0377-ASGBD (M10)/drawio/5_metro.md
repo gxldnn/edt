@@ -24,14 +24,14 @@ Interessa conèixer tots els accessos de cada línia. De cada accés, a part del
 ## 3.1. Esquema lògic
 Linias (<ins>CodiLinia</ins>, Color)\
 Estacions (<ins>IdEstacio</ins>, Nom, Ubicació)\
-Datas (<ins>DataInici</ins>, DataFi)
+Datas (<ins>DataInici</ins>)
 
 Accessos (<ins>Nom</ins>, Ubicacio, *IdEstacio*)\
 Cotxeres (<ins>IdCotxera</ins>, Nom, *IdEstacio*)\
 Trens (<ins>IdTren</ins>, NomTren, *IdCotxera*, *CodiLinia*)
 
 
-Datas_Estacions_Linias (<ins>IdEstacio, CodiLinia</ins>, *DataInici*)
+Datas_Estacions_Linias (<ins>IdEstacio, CodiLinia</ins>, *DataInici*, DataFi)
   
 
 ## 3.2. Diagrama referencial

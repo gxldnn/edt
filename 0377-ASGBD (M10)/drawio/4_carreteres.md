@@ -18,11 +18,11 @@ Hi ha una sèrie d'àrees en les que s'agrupen els trams, cada un dels quals no 
   ![Esquema drawio -- <Carreteres>](./4_carreteres.png)
 # 3. Model lògic relacional
 ## 3.1. Esquema lògic
-  Tram (<ins>IdTram</ins>, KilometreEntrada, KilometreSortida, *IdCarretera*, *IdArea*)\
+  Tram (<ins>IdTram</ins>, Nom, KilometreSortida, *IdCarretera*, *IdArea*)\
   Carretera (<ins>IdCarretera</ins>, Nom, Ubicació, Longitut)\
   Area (<ins>IdArea</ins>, Nom, Ubicació)\
   Terme_Municipal (<ins>IdTerme</ins>, Nom, Comarca)\
-  TermeXTram (<ins>IdTram,IdTerme</ins>)
+  TermeXTram (<ins>IdTram,IdTerme</ins>, KmEntrada, KmSortida)
 
 ## 3.2. Diagrama referencial
 

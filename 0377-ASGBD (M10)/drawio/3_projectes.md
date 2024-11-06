@@ -18,7 +18,9 @@ Es vol saber de cada empleat qui és el seu cap en cas que el tingui. Modificar 
 ## 3.1. Esquema lògic
   Empleat (<ins>DNI</ins>, Nom, Adreça, Telf, *CodCAP*, *IdProjecte*, *IdDepartament*)\
   Projecte (<ins>IdProjecte</ins>, Titol, DuradaEst, Pressupost, *DNI*)\
-  Departament (<ins>IdDepartament</ins>, NomdeDepartament)\
+  Departament (<ins>IdDepartament</ins>, NomdeDepartament)
+
+  
 ## 3.2. Diagrama referencial
 
 * El diagrama referencial em serveix per indicar quines claus alienes hi ha a l'esquema lògic  

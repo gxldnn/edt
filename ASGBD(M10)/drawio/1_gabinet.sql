@@ -1,5 +1,6 @@
--- Esborrem una antiga possible taula anomenada Client
-DROP TABLE IF EXISTS client; -- Afegit `IF EXISTS` per evitar errors si la taula no existeix
+DROP DATABASE IF EXISTS gabinet -- Afegit `IF EXISTS` per evitar errors si la taula no existeix
+CREATE DATABASE gabinet;
+\c gabinet
 -- Creem la taula Client
 CREATE TABLE client (
     dniclient varchar(9),
@@ -9,8 +10,6 @@ CREATE TABLE client (
     CONSTRAINT client_dni_pk PRIMARY KEY (dniclient) -- Establim `dni` com a clau primària
 );
 
--- Esborrem una antiga possible taula anomenada Procurador
-DROP TABLE IF EXISTS procurador; -- Afegit `IF EXISTS` per evitar errors si la taula no existeix
 -- Creem la taula Procurador
 CREATE TABLE procurador (
     dniprocurador varchar(9),
@@ -21,8 +20,6 @@ CREATE TABLE procurador (
     CONSTRAINT unique_procurador_nom UNIQUE (nom) -- Restricció d'unicitat per `nom`
 );
 
--- Esborrem una antiga possible taula anomenada Assumpte
-DROP TABLE IF EXISTS assumpte; -- Afegit `IF EXISTS` per evitar errors si la taula no existeix
 -- Creem la taula Assumpte
 CREATE TABLE assumpte (
     idassumpte varchar(10),
@@ -35,8 +32,6 @@ CREATE TABLE assumpte (
     CONSTRAINT check_estat CHECK (estat='O' OR estat='T') -- Restricció de valors per `estat`
 );
 
--- Esborrem una antiga possible taula anomenada AssumpteXprocurador
-DROP TABLE IF EXISTS assumpteXprocurador; -- Afegit `IF EXISTS` per evitar errors si la taula no existeix
 -- Creem la taula assumpteXprocurador
 CREATE TABLE assumpteXprocurador (
     idassumpte varchar(20),

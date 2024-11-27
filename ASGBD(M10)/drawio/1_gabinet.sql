@@ -1,8 +1,9 @@
--- Ens conecter
+-- Ens conectem a template 1 per a poder esborrar gabinet
 \c template1
 DROP DATABASE IF EXISTS gabinet; -- Afegit `IF EXISTS` per evitar errors si la taula no existeix
 CREATE DATABASE gabinet;
 \c gabinet
+    -- Ens conectem a gabinet
 -- Creem la taula Client
 CREATE TABLE client (
     dniclient varchar(9),

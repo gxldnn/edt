@@ -42,4 +42,4 @@ AssumptesProcurador|IdAssumpte|Assumptes
 # 4. Model físic
 ## 4.1 Enllaç a l'esquema físic
 
-[NONE](./)
+[SCRIPT DE SQL GABINET](./1_gabinet.sql)

@@ -1,7 +1,8 @@
+-- Ens conecter
 \c template1
 DROP DATABASE IF EXISTS gabinet; -- Afegit `IF EXISTS` per evitar errors si la taula no existeix
 CREATE DATABASE gabinet;
-\c gabinet -- Ens conectem a la base de dades "gabinet"
+\c gabinet
 -- Creem la taula Client
 CREATE TABLE client (
     dniclient varchar(9),

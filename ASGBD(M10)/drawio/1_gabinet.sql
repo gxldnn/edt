@@ -37,7 +37,7 @@ CREATE TABLE assumpte (
 
 -- Esborrem una antiga possible taula anomenada AssumpteXprocurador
 DROP TABLE IF EXISTS assumpteXprocurador; -- Afegit `IF EXISTS` per evitar errors si la taula no existeix
--- Creem la taula AssumpteXprocurador
+-- Creem la taula assumpteXprocurador
 CREATE TABLE assumpteXprocurador (
     idassumpte varchar(20),
     dniprocurador varchar(9), -- Tipus de dada per `dniprocurador` ajustat al de la taula `procurador`

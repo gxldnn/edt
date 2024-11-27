@@ -32,7 +32,7 @@ CREATE TABLE assumpte (
     dniclient varchar(9),
     CONSTRAINT assumpte_idassumpte_pk PRIMARY KEY (idassumpte), -- Clau primària per `idassumpte`
     CONSTRAINT assumpte_dni_fk FOREIGN KEY (dniclient) REFERENCES client(dniclient), -- Referència a la taula `client` per `dni`
-    CONSTRAINT check_estat CHECK (estat IN ('O', 'T')) -- Restricció de valors per `estat`
+    CONSTRAINT check_estat CHECK (estat='O' OR estat='T') -- Restricció de valors per `estat`
 );
 
 -- Esborrem una antiga possible taula anomenada AssumpteXprocurador

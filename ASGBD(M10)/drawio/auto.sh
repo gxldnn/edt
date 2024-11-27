@@ -15,7 +15,7 @@ function ver (){
         read -p "> " table
         watch -n 0.5 "psql -U isard -d $db -c '\d $table'"
     elif [[ $1 == "-h" ]];then
-        echo -n "Do ""auto.sh items"" to see objets from a database"
+        echo -n "Do ""auto.sh items"" to see objets from a database\n"
         echo -n "Do ""auto.sh table"" to see a specific table from a database"
     fi
 }

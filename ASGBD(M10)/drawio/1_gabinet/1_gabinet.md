@@ -1,4 +1,3 @@
-
 # 1. Gabinet d'Adbocats
 
 Es vol dissenyar una base de dades relacional per a emmagatzemar informació

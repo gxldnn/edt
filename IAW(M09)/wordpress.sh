@@ -164,7 +164,7 @@ screen $RED
 #      NEXTCLOUD WEB CONF
 #
 
-wget https://wordpress.com/download/latest.tar.gz >>$LOGFILE 2>$ERRFILE &
+wget https://wordpress.org/latest.tar.gz >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Downloading nextcloud tar file"
 tar -xf latest.tar.bz2 >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Exporting files"

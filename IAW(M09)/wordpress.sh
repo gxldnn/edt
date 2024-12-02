@@ -138,12 +138,12 @@ echo -ne "$1 __      __________ __________________ ____________________  _______
 }
 
 clear
-screen "$\RED"
+screen $RED
 echo -e "Removing old wordpress"
 rm -r /var/www/nextcloud >>$LOGFILE 2>$ERRFILE
 sleep 2
 clear
-screen "$\RED"
+screen $RED
 echo -e "$RED Installing wordpress requirements$RESET"
 # For que instala todos los php y apache
 packets=(apache2 mariadb-server php php-ctype php-curl php-xml php-dom php-fileinfo libapache2-mod-php php-gd php-json php-mbstring php-posix php-simplexml php-xmlreader php-xmlwriter php-zip php-pgsql php-mysql php-intl php-ldap php-ftp php-imap php-bcmath php-gmp php-exif php-apcu php-memcached php-redis)
@@ -156,7 +156,7 @@ for packet in "${packets[@]}"; do
 done
 pid=""
 clear
-screen "$\RED"
+screen $RED
 
 
 ##################################
@@ -172,4 +172,4 @@ mv nextcloud/ /var/www/
 direct_check $? "Moving nextcloud folder to /var/www"
 chown www-data:www-data -R /var/www/ >>$LOGFILE 2>$ERRFILE &
 clear
-screen "$\GREEN"
+screen $GREEN

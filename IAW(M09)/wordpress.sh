@@ -137,14 +137,17 @@ echo -ne "$1 __      __________ __________________ ____________________  _______
 
 }
 
+
 clear
 screen $RED
 echo -e "Removing old wordpress"
-rm -r /var/www/nextcloud >>$LOGFILE 2>$ERRFILE
+rm -r /var/www/wordpress >>$LOGFILE 2>$ERRFILE
 sleep 2
 clear
 screen $RED
 echo -e "$RED Installing wordpress requirements$RESET"
+
+
 # For que instala todos los php y apache
 packets=(apache2 mariadb-server php php-ctype php-curl php-xml php-dom php-fileinfo libapache2-mod-php php-gd php-json php-mbstring php-posix php-simplexml php-xmlreader php-xmlwriter php-zip php-pgsql php-mysql php-intl php-ldap php-ftp php-imap php-bcmath php-gmp php-exif php-apcu php-memcached php-redis)
 
@@ -165,11 +168,11 @@ screen $RED
 #
 
 wget https://wordpress.org/latest.tar.gz >>$LOGFILE 2>$ERRFILE &
-dot_check $! "Downloading nextcloud tar file"
+dot_check $! "Downloading wordpress tar file"
 tar -zxvf latest.tar.gz >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Exporting files"
 mv wordpress/ /var/www/
-direct_check $? "Moving nextcloud folder to /var/www"
+direct_check $? "Moving wordpress folder to /var/www"
 rm -rf latest.tar.gz
 direct_check $? "Removing tar file"
 sleep 1
@@ -177,4 +180,85 @@ chown www-data:www-data -R /var/www/ >>$LOGFILE 2>$ERRFILE &
 direct_check $? "Giving privileges to www-data"
 sleep 2
 clear
+screen $RED
+
+echo -e "$RED Setting an HTTPS default configuration$RESET"
+
+##################################
+#
+#      NEXTCLOUD WEB CONF
+
+
+echo -e "<VirtualHost *:443>
+	ServerAdmin webmaster@localhost
+
+	DocumentRoot /var/www/wordpress
+	ServerName janpress.net
+
+	ErrorLog \${APACHE_LOG_DIR}/error.log
+	CustomLog \${APACHE_LOG_DIR}/access.log combined
+	SSLEngine on
+	SSLCertificateFile      /etc/ssl/certs/ssl-cert-snakeoil.pem
+	SSLCertificateKeyFile   /etc/ssl/private/ssl-cert-snakeoil.key
+
+	<FilesMatch \"\.(?:cgi|shtml|phtml|php)\$ \">
+		SSLOptions +StdEnvVars
+	</FilesMatch>
+	<Directory /usr/lib/cgi-bin>
+		SSLOptions +StdEnvVars
+	</Directory>
+</VirtualHost>" > /etc/apache2/sites-available/default-ssl.conf
+
+rm -rf /etc/apache2/sites-enabled/default-ssl.conf
+phpv=$(php -v | awk '/PHP/{print substr($2, 1, 3)}' | tr -d "(c)" | grep  "8")
+a2ensite 000-default.conf >>$LOGFILE 2>$ERRFILE &
+direct_check $? "Enabling default page"
+a2dismod mpm_event >>$LOGFILE 2>$ERRFILE
+a2enmod php$phpv >>$LOGFILE 2>$ERRFILE
+a2enmod ssl >>$LOGFILE 2>$ERRFILE &
+direct_check $? "Enabling ssl"
+a2ensite default-ssl >>$LOGFILE 2>$ERRFILE &
+direct_check $? "Enabling default-ssl"
+systemctl restart apache2 >>$LOGFILE 2>$ERRFILE &
+dot_check $! "Restarting apache2"
+
+
+##################################
+#
+#	SQL DATABASE CONF
+#
+
+clear
+screen $RED
+
+echo -e "Please provide the following:\n"
+echo -e "Username"
+read -p "> " user
+clear
+screen $RED
+echo -e "Please provide the following:\n"
+inppasswd
+clear
+screen $RED
+echo -e "Please provide the following:\n"
+echo -e "Database Name"
+read -p "> " dbname
+clear
+screen $RED
+
+echo -e "$RED Configuing SQL-BBDD$RESET"
+mysql -u root -e "CREATE USER '$user'@'localhost' IDENTIFIED BY '$passwd';"
+direct_check $? "Creating user $user"
+mysql -u root -e "CREATE DATABASE IF NOT EXISTS $dbname CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;"
+direct_check $? "Creating database $dbname"
+mysql -u root -e "GRANT ALL PRIVILEGES ON $dbname.* TO '$user'@'localhost';"
+direct_check $? "Granting privileges to $user"
+mysql -u root -e "FLUSH PRIVILEGES;"
+direct_check $? "Quiting"
+clear
 screen $GREEN
+
+
+
+
+

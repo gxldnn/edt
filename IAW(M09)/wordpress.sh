@@ -166,9 +166,9 @@ screen $RED
 
 wget https://wordpress.org/latest.tar.gz >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Downloading nextcloud tar file"
-tar -xf latest.tar.bz2 >>$LOGFILE 2>$ERRFILE &
+tar -zxvf latest.tar.gz >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Exporting files"
-mv nextcloud/ /var/www/
+mv wordpress/ /var/www/
 direct_check $? "Moving nextcloud folder to /var/www"
 rm -rf latest.tar.gz
 direct_check $? "Removing tar file"

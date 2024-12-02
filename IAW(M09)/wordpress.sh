@@ -164,7 +164,7 @@ screen $RED
 
 ##################################
 #
-#      NEXTCLOUD WEB CONF
+#      WORDPRESS DOWNLOAD
 #
 
 wget https://wordpress.org/latest.tar.gz >>$LOGFILE 2>$ERRFILE &
@@ -186,7 +186,7 @@ echo -e "$RED Setting an HTTPS default configuration$RESET"
 
 ##################################
 #
-#      NEXTCLOUD WEB CONF
+#      WORDPRESS WEB CONF
 
 
 echo -e "<VirtualHost *:443>

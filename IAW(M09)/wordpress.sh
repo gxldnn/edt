@@ -170,6 +170,11 @@ tar -xf latest.tar.bz2 >>$LOGFILE 2>$ERRFILE &
 dot_check $! "Exporting files"
 mv nextcloud/ /var/www/
 direct_check $? "Moving nextcloud folder to /var/www"
+rm -rf latest.tar.gz
+direct_check $? "Removing tar file"
+sleep 1
 chown www-data:www-data -R /var/www/ >>$LOGFILE 2>$ERRFILE &
+direct_check $? "Giving privileges to www-data"
+sleep 2
 clear
 screen $GREEN

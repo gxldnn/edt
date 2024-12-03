@@ -30,7 +30,7 @@ Obra (<ins>IdObra</ins>, tipus, format, TipusPintura, Material, estil, *IdMuseu,
 Museu (<ins>IdMuseu</ins>, Nom, NomCarrer, Ciutat, Pais)\
 Salas (<ins>IdSala,IdMuseu</ins>, Nom)\
 Autor (<ins>IdAutor</ins>, Nom, Nacionalitat)\
-Exposicio (<ins>IdExposicio</ins>, Titol)
+Exposicio (<ins>IdExposicio</ins>, Titol)\
 AutorXObra (<ins>IdObra,IdAutor</ins>)\
 ExpoXMuseu (<ins>IdObra,IdMuseu</ins>, *IdExposicio*, DataInici, DataFi)   
 

@@ -1,6 +1,6 @@
 \c template1
-DROP DATABASE IF EXISTS zoo
-CREATE DATABASE zoo
+DROP DATABASE IF EXISTS zoo;
+CREATE DATABASE zoo;
 \c zoo
 
 CREATE TABLE zoo (
@@ -30,7 +30,7 @@ CREATE TABLE animal (
     paisorigen varchar(20),
     continent varchar(20),
     idespecie SMALLINT,
-    CONSTRAINT animal_idzoo_fk FOREIGN KEY idzoo REFERENCES zoo(idzoo),
-    CONSTRAINT animal_idespecie_fk FOREIGN KEY idespecie REFERENCES especie(idespecie),
-    CONSTRAINT animal_idan-idzoo_pk PRIMARY KEY (idanimal,idzoo)
+  CONSTRAINT animal_idzoo_fk FOREIGN KEY (idzoo) REFERENCES zoo(idzoo), -- Referència a la taula `client` per `dni`
+    CONSTRAINT animal_idespecie_fk FOREIGN KEY (idespecie) REFERENCES especie(idespecie),
+    CONSTRAINT animal_idan_idzoo_pk PRIMARY KEY (idanimal,idzoo)
 );

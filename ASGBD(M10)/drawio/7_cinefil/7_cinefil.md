@@ -34,7 +34,7 @@ ActorXSubstitucio (<ins>IdActor1,IdActor2</ins>, GrauSubstitucio)\
 ActorXCompatibilitat (<ins>IdActor1,IdActor2</ins>, Compatible)\
 Data (<ins>DataInici</ins>)\
 ActorXCompanyiaXData (<ins>IdActor,DataInici</ins>, *IdCompanyia*, DataFi)\
-ActorXPaperXPeli (<ins>IdActor,IdPeli</ins>, *IdPaper*)\
+ActorXPaperXPeli (<ins>IdActor,IdPeli</ins>, *IdPaper*, premi)\
 DataRodatge (<ins>DataIniciRodatge</ins>)\
 FaseRodatge (<ins>IdPeli,IdCiutat,DataIniciRodatge</ins>, FaseRodatge DataFiRodatge)
 

@@ -4,6 +4,7 @@ CREATE DATABASE museu;
 \c museu
 
 -- Jerarquia
+
 CREATE TABLE format (
     idformat SMALLINT,
     descripcio VARCHAR(255) NOT NULL,
@@ -34,7 +35,7 @@ CREATE TABLE museu (
     nomcarrer varchar(20),
     ciutat varchar(20),
     pais varchar(20),
-    CONSTRAINT museu_idmuseu_pk PRIMARY KEY (idmuseu),
+    CONSTRAINT museu_idmuseu_pk PRIMARY KEY (idmuseu)
 );
 
 CREATE TABLE sala (
@@ -67,24 +68,30 @@ CREATE TABLE obra (
     idestil SMALLINT,
     idmuseu SMALLINT,
     idsala SMALLINT,
-    CONSTRAINT obra_idobra_pk PRIMARY KEY,
-    CONSTRAINT obra_idmuseuidsala_fkc FOREIGN KEY (idsala,idmuseu) REFERENCES sala(idsala,idmuseu) -- FK composta
+    CONSTRAINT obra_idobra_pk PRIMARY KEY (idobra),
+    CONSTRAINT obra_idmuseuidsala_fkc FOREIGN KEY (idsala,idmuseu) REFERENCES sala(idsala,idmuseu), -- FK composta
     CONSTRAINT obra_idformat_fk FOREIGN KEY (idformat) REFERENCES format(idformat),
     CONSTRAINT obra_idtipuspintura_fk FOREIGN KEY (idtipuspintura) REFERENCES TipusPintura(idtipuspintura),
     CONSTRAINT obra_idmaterial_fk FOREIGN KEY (idmaterial) REFERENCES Material(idmaterial),
     CONSTRAINT obra_idestil_fk FOREIGN KEY (idestil) REFERENCES Estil(idestil)
 );
 
-CREATE TABLE autorxobra (
-    idobra SMALLINT,
-    idautor SMALLINT,
-    CONSTRAINT autorxobra PRIMARY KEY (idobra,idautor),
-    CONSTRAINT autorxobra FOREIGN KEY (idobra) REFERENCES obra(idobra),
-    CONSTRAINT autorxobra FOREIGN KEY (idautor) REFERENCES autor(idautor)
-);
-
 CREATE TABLE expoxmuseu (
     idobra SMALLINT,
     idmuseu SMALLINT,
-    
+    idexposicio SMALLINT,
+    datainici date,
+    datafi date,
+    CONSTRAINT expoxmuseu_idobraidmuseu_pk PRIMARY KEY (idobra,idmuseu),
+    CONSTRAINT expoxmuseu_idmuseu_fk FOREIGN KEY (idobra) REFERENCES obra(idobra),
+    CONSTRAINT expoxmuseu_idobra_fk FOREIGN KEY (idmuseu) REFERENCES museu(idmuseu),
+    CONSTRAINT expoxmuseu_idexposicio_fk FOREIGN KEY (idexposicio) REFERENCES exposicio(idexposicio)
+);
+
+CREATE TABLE autorxobra (
+    idobra SMALLINT,
+    idautor SMALLINT,
+    CONSTRAINT autorxobra_idobraidautor_pk PRIMARY KEY (idobra,idautor),
+    CONSTRAINT autorxobra_idobra_fk FOREIGN KEY (idobra) REFERENCES obra(idobra),
+    CONSTRAINT autorxobra_idautor_fk FOREIGN KEY (idautor) REFERENCES autor(idautor)
 );

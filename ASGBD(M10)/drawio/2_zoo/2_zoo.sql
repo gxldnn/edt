@@ -25,7 +25,7 @@ CREATE TABLE especie (
 CREATE TABLE animal (
     idanimal SMALLINT,
     idzoo SMALLINT,   --FK from zoo
-    sexe varchar(20),
+    sexo VARCHAR(20) NOT NULL CHECK (sexo IN ('femenino', 'masculino', 'sin', 'hermafrodita'))
     datanaixement date,
     paisorigen varchar(20),
     continent varchar(20),

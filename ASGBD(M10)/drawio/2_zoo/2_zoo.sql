@@ -18,7 +18,7 @@ CREATE TABLE especie (
     nomvulgar varchar(20),
     nomcientific varchar(20),
     familia varchar(20),
-    extincio date,
+    extincio BOOLEAN,
     CONSTRAINT especie_idespecie_pk PRIMARY KEY (idespecie)
 );
 

@@ -35,3 +35,12 @@ CREATE TABLE animal (
     CONSTRAINT animal_idan_idzoo_pk PRIMARY KEY (idanimal,idzoo),
     CONSTRAINT animal_check_sexo CHECK (sexo IN ('femenino', 'masculino', 'sin', 'hermafrodita'))
 );
+
+INSERT INTO zoo VALUES (1, 'Zoo Barcelona', 'Barcelona', 'Espanya', 'Gran', '1000000');
+INSERT INTO zoo VALUES (2, 'Zoo Madrid', 'Madrid', 'Espanya', 'Mitjana', '750000');
+
+INSERT INTO especie VALUES (1, 'Tigre', 'Panthera tigris', 'Felidae', FALSE);
+INSERT INTO especie VALUES (2, 'Dodo', 'Raphus cucullatus', 'Columbidae', TRUE);
+
+INSERT INTO animal VALUES (1, 1, 'masculino', '2015-06-15', 'India', 'Asia', 1);
+INSERT INTO animal VALUES (2, 2, 'femenino', '2020-03-22', 'Maurici', 'África', 2);

@@ -146,7 +146,7 @@ sleep 1
 clear
 screen $RED
 echo -e "\n"
-read domain -p "What domain do you want for your wordpress?: "
+read -p "What domain do you want for your wordpress?: " domain
 echo -e "$RED Installing wordpress requirements$RESET"
 
 

@@ -46,4 +46,22 @@ CREATE TABLE tramxterme (
     CONSTRAINT tramxterme_idtram_fk FOREIGN KEY (idtram) REFERENCES tram(idtram),
     CONSTRAINT tramxterme_idterme_fk FOREIGN KEY (idterme) REFERENCES termemunicipal(idterme)
 );
+-- Insertar en la tabla carretera (ajustando la longitud de los valores)
+INSERT INTO carretera VALUES (1, 'Carretera A', 'Barcelona', '100');
+INSERT INTO carretera VALUES (2, 'Carretera B', 'Girona', '150');
 
+-- Insertar en la tabla area
+INSERT INTO area VALUES (1, 'Área Norte', 'Zona Norte');
+INSERT INTO area VALUES (2, 'Área Sur', 'Zona Sur');
+
+-- Insertar en la tabla termemunicipal
+INSERT INTO termemunicipal VALUES (1, 'Termino 1', 'Comarca A');
+INSERT INTO termemunicipal VALUES (2, 'Termino 2', 'Comarca B');
+
+-- Insertar en la tabla tram
+INSERT INTO tram VALUES (1, 'Tramo 1', '50', 1, 1);
+INSERT INTO tram VALUES (2, 'Tramo 2', '80', 2, 2);
+
+-- Insertar en la tabla tramxterme
+INSERT INTO tramxterme VALUES (1, 1, 'Entrada 1', 'Salida 1');
+INSERT INTO tramxterme VALUES (2, 2, 'Entrada 2', 'Salida 2');

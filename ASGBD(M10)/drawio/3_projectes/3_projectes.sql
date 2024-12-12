@@ -35,3 +35,13 @@ ADD CONSTRAINT empleat_idprojecte_fk FOREIGN KEY (idprojecte) REFERENCES project
 
 ALTER TABLE projecte
 ADD CONSTRAINT projecte_dni_fk FOREIGN KEY (dni) REFERENCES empleat(dni);
+
+INSERT INTO departament VALUES (1, 'Recursos Humanos');
+INSERT INTO departament VALUES (2, 'Tecnología');
+
+INSERT INTO projecte VALUES (1, 'Desarrollo Web', '2024-05-01', '15000', NULL);
+INSERT INTO projecte VALUES (2, 'Investigación IA', '2025-06-15', '30000', NULL);
+
+INSERT INTO empleat VALUES ('12345678A', 'Carlos Pérez', 'Calle Falsa 123', '912345678', '12345678A', 1, 1);
+INSERT INTO empleat VALUES ('98765432B', 'Ana López', 'Avenida Siempre Viva 45', '698745123', '12345678A', 2, 2);
+

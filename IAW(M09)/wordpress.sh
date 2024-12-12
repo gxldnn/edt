@@ -142,10 +142,13 @@ clear
 screen $RED
 echo -e "Removing old wordpress"
 rm -r /var/www/wordpress >>$LOGFILE 2>$ERRFILE
-sleep 2
+sleep 1
 clear
 screen $RED
+echo -e "\n"
+read domain -p "What domain do you want for your wordpress?: "
 echo -e "$RED Installing wordpress requirements$RESET"
+
 
 
 # For que instala todos los php y apache
@@ -257,6 +260,9 @@ mysql -u root -e "FLUSH PRIVILEGES;"
 direct_check $? "Quiting"
 clear
 screen $GREEN
+ip = $(ip a | awk '/inet.*global/ {print $2}' | cut -d/ -f1)
+echo -e "\nFor access to your wordpress via IP go to: '$BLUE$ip$RESET'"
+echo -e "\nFor access to your wordpress via domain go to: '$GREEN$domain$RESET"
 
 
 

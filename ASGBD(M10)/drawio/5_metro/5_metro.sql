@@ -58,3 +58,25 @@ CREATE TABLE dataestaciolinia (
     CONSTRAINT dataestaciolinia_codilinia_fk FOREIGN KEY (codilinia) REFERENCES linia(codilinia),
     CONSTRAINT dataestaciolinia_datainici_fk FOREIGN KEY (datainici) REFERENCES datas(datainici)
 );
+
+INSERT INTO linia VALUES (1, 'Roja');
+INSERT INTO linia VALUES (2, 'Blava');
+
+INSERT INTO estacio VALUES (1, 'Sants', 'Barcelona');
+INSERT INTO estacio VALUES (2, 'Diagonal', 'Barcelona');
+
+INSERT INTO datas VALUES ('2024-01-01');
+INSERT INTO datas VALUES ('2024-06-01');
+
+INSERT INTO accessos VALUES ('Accés A', 'Plaça Espanya', 1);
+INSERT INTO accessos VALUES ('Accés B', 'Passeig de Gràcia', 2);
+
+INSERT INTO cotxera VALUES (1, 'Cotxera Sants', 1);
+INSERT INTO cotxera VALUES (2, 'Cotxera Diagonal', 2);
+
+INSERT INTO tren VALUES (1, 'Tren R1', 1, 1);
+INSERT INTO tren VALUES (2, 'Tren B1', 2, 2);
+
+INSERT INTO dataestaciolinia VALUES (1, 1, '2024-01-01', '2024-12-31');
+INSERT INTO dataestaciolinia VALUES (2, 2, '2024-06-01', NULL);
+

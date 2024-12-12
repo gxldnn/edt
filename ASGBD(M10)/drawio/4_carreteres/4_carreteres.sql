@@ -46,7 +46,6 @@ CREATE TABLE tramxterme (
     CONSTRAINT tramxterme_idtram_fk FOREIGN KEY (idtram) REFERENCES tram(idtram),
     CONSTRAINT tramxterme_idterme_fk FOREIGN KEY (idterme) REFERENCES termemunicipal(idterme)
 );
-
 INSERT INTO carretera VALUES (1, 'Carretera A', 'Barcelona', '100');
 INSERT INTO carretera VALUES (2, 'Carretera B', 'Girona', '150');
 

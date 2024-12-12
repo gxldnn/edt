@@ -95,3 +95,36 @@ CREATE TABLE autorxobra (
     CONSTRAINT autorxobra_idobra_fk FOREIGN KEY (idobra) REFERENCES obra(idobra),
     CONSTRAINT autorxobra_idautor_fk FOREIGN KEY (idautor) REFERENCES autor(idautor)
 );
+
+INSERT INTO format VALUES (1, 'Pintura al óleo sobre lienzo');
+INSERT INTO format VALUES (2, 'Escultura de mármol');
+
+INSERT INTO tipuspintura VALUES (1, 'Óleo');
+INSERT INTO tipuspintura VALUES (2, 'Acrílico');
+
+INSERT INTO material VALUES (1, 'Lienzo');
+INSERT INTO material VALUES (2, 'Mármol');
+
+INSERT INTO estil VALUES (1, 'Impresionismo');
+INSERT INTO estil VALUES (2, 'Renacimiento');
+
+INSERT INTO museu VALUES (1, 'Museu del Prado', 'Calle Ruiz', 'Madrid', 'España');
+INSERT INTO museu VALUES (2, 'Museu Picasso', 'Calle Montcada', 'Barcelona', 'España');
+
+INSERT INTO sala VALUES (1, 1, 'Sala Goya');
+INSERT INTO sala VALUES (2, 2, 'Sala Cubismo');
+
+INSERT INTO autor VALUES (1, 'Pablo Picasso', 'Española');
+INSERT INTO autor VALUES (2, 'Leonardo da Vinci', 'Italiana');
+
+INSERT INTO exposicio VALUES (1, 'Grandes Maestros');
+INSERT INTO exposicio VALUES (2, 'Vanguardias');
+
+INSERT INTO obra VALUES (1, 1, 1, 1, 1, 1, 1, 1);
+INSERT INTO obra VALUES (2, 2, 2, 2, 2, 2, 2, 2);
+
+INSERT INTO expoxmuseu VALUES (1, 1, 1, '2024-01-01', '2024-12-31');
+INSERT INTO expoxmuseu VALUES (2, 2, 2, '2024-06-01', NULL);
+
+INSERT INTO autorxobra VALUES (1, 1);
+INSERT INTO autorxobra VALUES (2, 2);

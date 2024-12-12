@@ -128,3 +128,48 @@ CREATE TABLE faserodatje(
     CONSTRAINT faserodatje_idciutat_fk FOREIGN KEY (idciutat) REFERENCES ciutat(idciutat),
     CONSTRAINT faserodatje_datainicirodatje_fk FOREIGN KEY (datainicirodatje) REFERENCES datarodatje(datainicirodatje)
 );
+
+INSERT INTO tema VALUES (1, 'Acción');
+INSERT INTO tema VALUES (2, 'Comedia');
+
+INSERT INTO companyia VALUES (1, 'Warner Bros.');
+INSERT INTO companyia VALUES (2, 'Universal Pictures');
+
+INSERT INTO ciutat VALUES (1, 'Los Angeles');
+INSERT INTO ciutat VALUES (2, 'Londres');
+
+INSERT INTO paper VALUES (1, 'Protagonista');
+INSERT INTO paper VALUES (2, 'Antagonista');
+
+INSERT INTO data VALUES ('2024-01-01');
+INSERT INTO data VALUES ('2024-06-01');
+
+INSERT INTO datarodatje VALUES ('2024-01-15');
+INSERT INTO datarodatje VALUES ('2024-05-01');
+
+INSERT INTO pelicula VALUES (1, 'Matrix', '2024-12-01', '200M USD', 'Wachowski', 1, 1);
+INSERT INTO pelicula VALUES (2, 'Jurassic Park', '2024-11-01', '150M USD', 'Spielberg', 2, 2);
+
+INSERT INTO actor VALUES (1, 'Keanu Reeves', '1964-09-02');
+INSERT INTO actor VALUES (2, 'Sam Neill', '1947-09-14');
+
+INSERT INTO actorxtema VALUES (1, 1, 9);
+INSERT INTO actorxtema VALUES (2, 2, 8);
+
+INSERT INTO ciutatxcompanyia VALUES (1, 1, '123 Hollywood Blvd');
+INSERT INTO ciutatxcompanyia VALUES (2, 2, '321 Baker St');
+
+INSERT INTO actorxsubstitucio VALUES (1, 2, 5);
+INSERT INTO actorxsubstitucio VALUES (2, 1, 6);
+
+INSERT INTO actorxcompatibilitat VALUES (1, 2, TRUE);
+INSERT INTO actorxcompatibilitat VALUES (2, 1, TRUE);
+
+INSERT INTO actorxcompanyiaxdata VALUES (1, '2024-01-01', 1, '2024-12-31');
+INSERT INTO actorxcompanyiaxdata VALUES (2, '2024-06-01', 2, '2024-12-31');
+
+INSERT INTO actorxpaperxpeli VALUES (1, 1, 1, 'Oscar');
+INSERT INTO actorxpaperxpeli VALUES (2, 2, 2, 'Golden Globe');
+
+INSERT INTO faserodatje VALUES (1, 1, '2024-01-15', '2024-02-15', '2024-03-01');
+INSERT INTO faserodatje VALUES (2, 2, '2024-05-01', '2024-06-15', '2024-07-01');

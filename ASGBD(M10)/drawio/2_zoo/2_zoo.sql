@@ -43,6 +43,4 @@ INSERT INTO especie VALUES (1, 'Tigre', 'Panthera tigris', 'Felidae', FALSE);
 INSERT INTO especie VALUES (2, 'Dodo', 'Raphus cucullatus', 'Columbidae', TRUE);
 
 INSERT INTO animal VALUES (1, 1, 'masculino', '2015-06-15', 'India', 'Asia', 1);
-INSERT INTO animal VALUES (2, 2, 'femenino', '2020-03-22', 'Maurici', 'África', 2);
-
-
+INSERT INTO animal VALUES (1, 2, 'femenino', '2020-03-22', 'Maurici', 'África', 2);

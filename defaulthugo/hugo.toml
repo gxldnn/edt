@@ -1,0 +1,25 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Sitio Hugo Jan Ribera SSG'
+theme = 'ananke'
+
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Qui Som?"
+url = "/quisom/"
+weight = 2
+
+[[menu.main]]
+name = "Contacto"
+url = "/contacto/"
+weight = 3
+
+[[menu.main]]
+name = "Blog"
+url = "/blog/"
+weight = 4

@@ -1,0 +1,13 @@
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+  [[menus.main]]
+    name = 'Contacta'
+    pageRef = '/contacto/'
+    weight = 30
+  [[menus.main]]
+    name = 'Quienes Somos?'
+    pageRef = '/QS/'
+    weight = 30

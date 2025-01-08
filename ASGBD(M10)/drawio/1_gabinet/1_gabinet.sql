@@ -25,10 +25,10 @@ CREATE TABLE procurador (
 
 -- Creem la taula Assumpte
 CREATE TABLE assumpte (
-  idassumpte VARCHAR(10),
+  idassumpte SMALLINT,
   datainici DATE,
   datarxiu DATE,
-  estat VARCHAR(40),
+  estat VARCHAR(1),
   dniclient VARCHAR(9),
   CONSTRAINT assumpte_idassumpte_pk PRIMARY KEY (idassumpte), -- Clau primària per `idassumpte`
   CONSTRAINT assumpte_dni_fk FOREIGN KEY (dniclient) REFERENCES client(dniclient), -- Referència a la taula `client` per `dni`

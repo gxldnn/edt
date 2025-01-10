@@ -99,9 +99,9 @@ ALTER TABLE  emp ADD CONSTRAINT emp_mgr_fk FOREIGN KEY (mgr) REFERENCES emp;
 /* Exercici 1 de Moodle
 
 INSERT INTO emp VALUES 
-  (NEXTVAL('empno_seq'), 'Pepita', NULL,     7566, TO_DATE('15-12-2023', 'DD-MM-YYYY'),  2000, NULL, 40);
+  (NEXTVAL('empno_seq'), 'PEPITA', NULL,     7566, TO_DATE('15-12-2023', 'DD-MM-YYYY'),  2000, NULL, 40);
 
-UPDATE emp SET ename='PEREZ' WHERE ename='SMITH' AND deptno=20;
+UPDATE emp SET ename=UPPER('perez') WHERE ename='SMITH' AND deptno=20;
 
 -- DELETE FROM emp WHERE job='CLERK';
 
@@ -115,6 +115,16 @@ UPDATE emp SET sal = sal + sal*0.1 WHERE job='SALESMAN';
 INSERT INTO emp (empNo, ename, job, deptno, mgr) VALUES (NEXTVAL('empno_seq'), 'Andreu', 'ANALYST', 30, 8200);
 
 --3.
+--9.
+UPDATE emp SET job = UPPER('salesman'), comm = 4000 WHERE ename = 'SANZ';
+
+--10.
+UPDATE emp SET comm = comm + sal*0.2;
+
+--11.
+UPDATE emp SET sal = sal + sal*0.35 WHERE sal < (SELECT sal FROM emp WHERE ename='SANZ');
+
+--12.
 UPDATE emp SET hiredate = CURRENT_DATE WHERE ename = 'SCOTT';
 
 --4.
@@ -132,16 +142,6 @@ INSERT INTO emp (empno, ename, deptno, sal) VALUES (1657, 'SANZ', 30, 3000);
 --8.
 UPDATE emp SET deptno = 40 WHERE ename = 'SANZ';
 
---9.
-UPDATE emp SET job = UPPER('salesman'), comm = 4000 WHERE ename = 'SANZ';
-
---10.
-UPDATE emp SET comm = comm + sal*0.2;
-
---11.
-UPDATE emp SET sal = sal + sal*0.35 WHERE sal < (SELECT sal FROM emp WHERE ename='SANZ');
-
---12.
 DELETE FROM emp WHERE ename='SANZ';
 
 --13.

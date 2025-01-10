@@ -1,0 +1,13 @@
+-- 1. Afegir una treballadora anomenada Pepita, amb supervisor 7566, contractada el 15/12/2023, 2000 de salari i del departament 40
+
+
+-- 2. Modificar el nom de l'empleat de nom 'SMITH' del departament '30' pel de 'PÉREZ'
+
+
+-- 3. Esborrar els treballadors que tenen el càrrec 'CLERK'
+
+
+-- 4. Augmentar un 10% el sou dels 'SALESMAN'
+
+
+-- 5. fer que el salari del/la 'PRESIDENT' sigui el màxim del rang 5 (taula salgrade)

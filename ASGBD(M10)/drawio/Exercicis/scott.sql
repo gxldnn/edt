@@ -101,7 +101,7 @@ ALTER TABLE  emp ADD CONSTRAINT emp_mgr_fk FOREIGN KEY (mgr) REFERENCES emp;
 INSERT INTO emp VALUES 
   (NEXTVAL('empno_seq'), 'PEPITA', NULL,     7566, TO_DATE('15-12-2023', 'DD-MM-YYYY'),  2000, NULL, 40);
 
-UPDATE emp SET ename=UPPER('perez') WHERE ename='SMITH' AND deptno=20;
+UPDATE emp SET ename='PEREZ' WHERE LOWER(ename)='smith' AND deptno=20;
 
 -- DELETE FROM emp WHERE job='CLERK';
 
@@ -115,34 +115,35 @@ UPDATE emp SET sal = sal + sal*0.1 WHERE job='SALESMAN';
 INSERT INTO emp (empNo, ename, job, deptno, mgr) VALUES (NEXTVAL('empno_seq'), 'Andreu', 'ANALYST', 30, 8200);
 
 --3.
---9.
-UPDATE emp SET job = UPPER('salesman'), comm = 4000 WHERE ename = 'SANZ';
-
---10.
-UPDATE emp SET comm = comm + sal*0.2;
-
---11.
-UPDATE emp SET sal = sal + sal*0.35 WHERE sal < (SELECT sal FROM emp WHERE ename='SANZ');
-
---12.
-UPDATE emp SET hiredate = CURRENT_DATE WHERE ename = 'SCOTT';
+UPDATE emp SET hiredate = CURRENT_DATE WHERE LOWER(ename) = 'scott';
 
 --4.
-UPDATE emp SET job = UPPER('analyst'), sal = sal+sal*0.2, deptno = 30, mgr = 7566 WHERE ename = 'MILLER' ;
+UPDATE emp SET job = 'ANALYST', sal = sal+sal*0.2, deptno = 30, mgr = 7566 WHERE LOWER(ename) = 'miller' ;
 
 --5.
 UPDATE emp SET sal = sal+sal*0.06;
 
---6. Com no hi ha un activitat o baixa he decidit esborrar el registre
-DELETE FROM emp WHERE ename = 'JAMES';
+--6. Com no hi ha un camp activitat o baixa he decidit esborrar el registre
+DELETE FROM emp WHERE LOWER(ename) = 'james';
 
 --7.
 INSERT INTO emp (empno, ename, deptno, sal) VALUES (1657, 'SANZ', 30, 3000);
 
 --8.
-UPDATE emp SET deptno = 40 WHERE ename = 'SANZ';
+UPDATE emp SET deptno = 40 WHERE LOWER(ename) = 'sanz';
 
-DELETE FROM emp WHERE ename='SANZ';
+--9.
+UPDATE emp SET job = 'SALESMAN', comm = 4000 WHERE LOWER(ename) = 'sanz';
+
+--10.
+UPDATE emp SET comm = comm + sal*0.2;
+
+--11.
+UPDATE emp SET sal = sal + sal*0.35 WHERE sal < (SELECT sal FROM emp WHERE LOWER(ename)='sanz');
+
+
+--12.
+DELETE FROM emp WHERE LOWER(ename)='sanz';
 
 --13.
 DELETE FROM emp WHERE deptno = 30;

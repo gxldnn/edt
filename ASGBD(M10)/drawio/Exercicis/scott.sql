@@ -12,9 +12,6 @@ DROP DATABASE IF EXISTS scott;
 CREATE DATABASE scott;
 \c scott
 
-CREATE SEQUENCE deptno_seq
-  START WITH 50
-  INCREMENT BY 10;
 
 /* Creo la seqüència empno_seq amb valor d'inici 1 i increment de un en un */
 CREATE SEQUENCE empno_seq;
@@ -37,7 +34,6 @@ INSERT INTO dept VALUES (10, 'ACCOUNTING', 'NEW YORK');
 INSERT INTO dept VALUES (20, 'RESEARCH',   'DALLAS');
 INSERT INTO dept VALUES (30, 'SALES',      'CHICAGO');
 INSERT INTO dept VALUES (40, 'OPERATIONS', 'BOSTON');
-INSERT INTO dept VALUES (NEXTVAL('deptno_seq'), 'CONSULTORIA', 'SANTANDER');
 
 
 CREATE TABLE EMP (
@@ -110,6 +106,12 @@ UPDATE emp SET sal = sal + sal*0.1 WHERE job='SALESMAN';
 */
 
 /*Exercicis DML GitLab*/
+--1.  Crear seqüencia de departament
+     /*
+     La sequencia ja ve creada, esta una mica mes adalt abans de els inserts a dept
+     */
+INSERT INTO dept VALUES (NEXTVAL('deptno_seq'), 'CONSULTORIA', 'SANTANDER');
+
 
 --2.
 INSERT INTO emp (empNo, ename, job, deptno, mgr) VALUES (NEXTVAL('empno_seq'), 'Andreu', 'ANALYST', 30, 8200);

@@ -24,12 +24,6 @@ CONSTRAINT emp_uk UNIQUE(dname)
 );
 
 
---1.  Crear seqüencia de departament
-
-CREATE SEQUENCE deptno_seq
-  START WITH 50
-  INCREMENT BY 10;
-
 INSERT INTO dept VALUES (10, 'ACCOUNTING', 'NEW YORK');
 INSERT INTO dept VALUES (20, 'RESEARCH',   'DALLAS');
 INSERT INTO dept VALUES (30, 'SALES',      'CHICAGO');
@@ -92,24 +86,26 @@ ALTER TABLE  emp ADD CONSTRAINT emp_deptno_fk FOREIGN KEY (deptno) REFERENCES de
 ALTER TABLE  emp ADD CONSTRAINT emp_mgr_fk FOREIGN KEY (mgr) REFERENCES emp;
 
 
-/* Exercici 1 de Moodle
-
+ --Exercici 1 de Moodle
+/*
 INSERT INTO emp VALUES 
-  (NEXTVAL('empno_seq'), 'PEPITA', NULL,     7566, TO_DATE('15-12-2023', 'DD-MM-YYYY'),  2000, NULL, 40);
+  (NEXTVAL('empno_seq'), 'PEPITA', NULL, 7566, TO_DATE('15-12-2023', 'DD-MM-YYYY'), 2000, NULL, 40);
 
 UPDATE emp SET ename='PEREZ' WHERE LOWER(ename)='smith' AND deptno=20;
 
--- DELETE FROM emp WHERE job='CLERK';
+DELETE FROM emp WHERE job='CLERK';
 
 UPDATE emp SET sal = sal + sal*0.1 WHERE job='SALESMAN';
-
 */
 
+
 /*Exercicis DML GitLab*/
---1.  Crear seqüencia de departament
-     /*
-     La sequencia ja ve creada, esta una mica mes adalt abans de els inserts a dept
-     */
+--1.
+
+CREATE SEQUENCE deptno_seq
+  START WITH 50
+  INCREMENT BY 10;
+  
 INSERT INTO dept VALUES (NEXTVAL('deptno_seq'), 'CONSULTORIA', 'SANTANDER');
 
 

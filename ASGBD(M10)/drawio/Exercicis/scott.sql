@@ -50,12 +50,12 @@ INSERT INTO EMP VALUES
         (7369, 'SMITH',  'CLERK',     7902, TO_DATE('17-10-1980', 'DD-MM-YYYY'),  800, NULL, 20),
         (7499, 'ALLEN',  'SALESMAN',  7698, TO_DATE('20-02-1981', 'DD-MM-YYYY'), 1600,  300, 30),
         (7521, 'WARD',   'SALESMAN',  7698, TO_DATE('22-02-1981', 'DD-MM-YYYY'), 1250,  500, 30),
-        (7566, 'JONES',  'MANAGER',   6969, TO_DATE('2-04-1981', 'DD-MM-YYYY'),  2975, NULL, 20),
+        (7566, 'JONES',  'MANAGER',   7839, TO_DATE('2-04-1981', 'DD-MM-YYYY'),  2975, NULL, 20),
         (7654, 'MARTIN', 'SALESMAN',  7698, TO_DATE('28-09-1981', 'DD-MM-YYYY'), 1250, 1400, 30),
-        (7698, 'BLAKE',  'MANAGER',   6969, TO_DATE('1-05-1981', 'DD-MM-YYYY'),  2850, NULL, 30),
-        (7782, 'CLARK',  'MANAGER',   6969, TO_DATE('9-06-1981', 'DD-MM-YYYY'),  2450, NULL, 10),
+        (7698, 'BLAKE',  'MANAGER',   7839, TO_DATE('1-05-1981', 'DD-MM-YYYY'),  2850, NULL, 30),
+        (7782, 'CLARK',  'MANAGER',   7839, TO_DATE('9-06-1981', 'DD-MM-YYYY'),  2450, NULL, 10),
         (7788, 'SCOTT',  'ANALYST',   7566, TO_DATE('09-12-1982', 'DD-MM-YYYY'), 3000, NULL, 20),
-        (6969, 'KING',   'PRESIDENT', NULL, TO_DATE('17-11-1981', 'DD-MM-YYYY'), 5000, NULL, 10),
+        (7839, 'KING',   'PRESIDENT', NULL, TO_DATE('17-11-1981', 'DD-MM-YYYY'), 5000, NULL, 10),
         (7844, 'TURNER', 'SALESMAN',  7698, TO_DATE('8-09-1981', 'DD-MM-YYYY'),  1500,    0, 30),
         (7876, 'ADAMS',  'CLERK',     7788, TO_DATE('12-01-1983', 'DD-MM-YYYY'), 1100, NULL, 20),
         (7900, 'JAMES',  'CLERK',     7698, TO_DATE('3-12-1981', 'DD-MM-YYYY'),   950, NULL, 30),
@@ -110,7 +110,9 @@ INSERT INTO dept VALUES (NEXTVAL('deptno_seq'), 'CONSULTORIA', 'SANTANDER');
 
 
 --2.
-INSERT INTO emp (empNo, ename, job, deptno, mgr) VALUES (NEXTVAL('empno_seq'), 'Andreu', 'ANALYST', 30, 6969);
+INSERT INTO emp VALUES (8200, 'MANAGER', 'ANALYST', 7782, TO_DATE('23-01-1982', 'DD-MM-YYYY'), 1300, NULL, 10);
+
+INSERT INTO emp (empNo, ename, job, deptno, mgr) VALUES (NEXTVAL('empno_seq'), 'Andreu', 'ANALYST', 30, 8200);
 
 --3.
 UPDATE emp SET hiredate = CURRENT_DATE WHERE LOWER(ename) = 'scott';
@@ -148,5 +150,5 @@ DELETE FROM emp WHERE deptno = 30;
 
 --14.
 
-UPDATE emp SET mgr = NULL WHERE mgr = 6969;
+UPDATE emp SET mgr = NULL WHERE mgr = 8200;
 DELETE FROM emp WHERE deptno = (SELECT deptno FROM dept WHERE dname = 'ACCOUNTING');

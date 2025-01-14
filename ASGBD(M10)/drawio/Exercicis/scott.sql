@@ -86,7 +86,7 @@ ALTER TABLE  emp ADD CONSTRAINT emp_deptno_fk FOREIGN KEY (deptno) REFERENCES de
 ALTER TABLE  emp ADD CONSTRAINT emp_mgr_fk FOREIGN KEY (mgr) REFERENCES emp;
 
 
- --Exercici 1 de Moodle
+ --Exercici 1-2-3-4 de Moodle
 /*
 INSERT INTO emp VALUES 
   (NEXTVAL('empno_seq'), 'PEPITA', NULL, 7566, TO_DATE('15-12-2023', 'DD-MM-YYYY'), 2000, NULL, 40);

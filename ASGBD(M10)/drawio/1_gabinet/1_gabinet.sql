@@ -37,7 +37,7 @@ CREATE TABLE assumpte (
 
 -- Creem la taula assumpteXprocurador
 CREATE TABLE assumpteXprocurador (
-  idassumpte VARCHAR(20),
+  idassumpte ,
   dniprocurador VARCHAR(9), -- Tipus de dada per `dniprocurador` ajustat al de la taula `procurador`
   CONSTRAINT assumpteXprocurador_pk PRIMARY KEY (idassumpte, dniprocurador), -- Clau primària composta
   CONSTRAINT assumpteXprocurador_idassumpte_fk FOREIGN KEY (idassumpte) REFERENCES assumpte(idassumpte), -- Referència a la taula `assumpte`

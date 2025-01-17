@@ -41,7 +41,7 @@ CREATE TABLE assumpteXprocurador (
   dniprocurador VARCHAR(9), -- Tipus de dada per `dniprocurador` ajustat al de la taula `procurador`
   CONSTRAINT assumpteXprocurador_pk PRIMARY KEY (idassumpte, dniprocurador), -- Clau primària composta
   CONSTRAINT assumpteXprocurador_idassumpte_fk FOREIGN KEY (idassumpte) REFERENCES assumpte(idassumpte) ON DELETE CASCADE, -- Referència a la taula `assumpte`
-  CONSTRAINT assumpteXprocurador_dniprocurador_fk FOREIGN KEY (dniprocurador) REFERENCES procurador(dniprocurador) ON DELETE CASCADE ON UPDA -- Referència a la taula `procurador`
+  CONSTRAINT assumpteXprocurador_dniprocurador_fk FOREIGN KEY (dniprocurador) REFERENCES procurador(dniprocurador) ON DELETE CASCADE ON UPDATE -- Referència a la taula `procurador`
 );
 
 INSERT INTO client VALUES ('98765432Q', 'Anna Pérez', 'Carrer de les Flors, 22', '666555444');

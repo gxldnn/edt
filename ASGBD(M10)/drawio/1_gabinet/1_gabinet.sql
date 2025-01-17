@@ -17,7 +17,7 @@ CREATE TABLE client (
 -- Creem la taula Procurador
 CREATE TABLE procurador (
   dniprocurador VARCHAR(9),
-  nom VARCHAR(20) NOT NULL,s
+  nom VARCHAR(20) NOT NULL,
   adreca VARCHAR(40),
   telf VARCHAR(9),
   CONSTRAINT dniprocurador_procurador_pk PRIMARY KEY (dniprocurador), -- Clau primària per `dniprocurador`

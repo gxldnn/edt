@@ -10,7 +10,7 @@ CREATE TABLE client (
   nom VARCHAR(20) NOT NULL,
   adreca VARCHAR(40),
   telefon VARCHAR(9),
-  CONSTRAINT client_dni_pk PRIMARY KEY (dniclient) -- Establim `dni` com a clau primària
+  CONSTRAINT client_dni_pk PRIMARY KEY (dniclient) O-- Establim `dni` com a clau primària
 );
 
 -- Creem la taula Procurador

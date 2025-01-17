@@ -51,5 +51,5 @@ INSERT INTO procurador VALUES ('99988877C', 'David Ruiz', 'Passeig Marítim, 12'
 INSERT INTO assumpte VALUES ('001', '2024-01-10', NULL, 'O', '98765432Q'); 
 INSERT INTO assumpte VALUES ('002', '2023-09-15', '2024-02-01', 'T', '34567890W'); 
 INSERT INTO assumpteXprocurador VALUES ('001', '11122233X');
-INSERT INTO assumpteXprocurador VALUES ('A002', '99988877C');
+INSERT INTO assumpteXprocurador VALUES ('002', '99988877C');
 

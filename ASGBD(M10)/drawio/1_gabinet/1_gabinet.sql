@@ -31,7 +31,7 @@ CREATE TABLE assumpte (
   estat VARCHAR(1),
   dniclient VARCHAR(9),
   CONSTRAINT assumpte_idassumpte_pk PRIMARY KEY (idassumpte), -- Clau primària per `idassumpte`
-  CONSTRAINT assumpte_dni_fk FOREIGN KEY (dniclient) REFERENCES client(dniclient), -- Referència a la taula `client` per `dni`
+  CONSTRAINT assumpte_dni_fk FOREIGN KEY (dniclient) REFERENCES client(dniclient) ON DELETE SET NULL ON UPDATE CASCADE, -- Referència a la taula `client` per `dni`
   CONSTRAINT check_estat CHECK (estat='O' OR estat='T') -- Restricció de valors per `estat`
 );
 

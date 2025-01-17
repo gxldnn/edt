@@ -11,7 +11,7 @@ CREATE TABLE client (
   adreca VARCHAR(40),
   telefon VARCHAR(9),
   CONSTRAINT client_dni_pk PRIMARY KEY (dniclient)
-  ON DELETE SET NULL, -- Establim `dni` com a clau primària
+  ON DELETE SET NULL -- Establim `dni` com a clau primària
 );
 
 -- Creem la taula Procurador

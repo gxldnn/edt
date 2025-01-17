@@ -40,7 +40,7 @@ CREATE TABLE assumpteXprocurador (
   idassumpte SMALLINT,
   dniprocurador VARCHAR(9), -- Tipus de dada per `dniprocurador` ajustat al de la taula `procurador`
   CONSTRAINT assumpteXprocurador_pk PRIMARY KEY (idassumpte, dniprocurador), -- Clau primària composta
-  CONSTRAINT assumpteXprocurador_idassumpte_fk FOREIGN KEY (idassumpte) REFERENCES assumpte(idassumpte), -- Referència a la taula `assumpte`
+  CONSTRAINT assumpteXprocurador_idassumpte_fk FOREIGN KEY (idassumpte) REFERENCES assumpte(idassumpte) ON DELETE CASCA, -- Referència a la taula `assumpte`
   CONSTRAINT assumpteXprocurador_dniprocurador_fk FOREIGN KEY (dniprocurador) REFERENCES procurador(dniprocurador) -- Referència a la taula `procurador`
 );
 

@@ -48,8 +48,8 @@ INSERT INTO client VALUES ('98765432Q', 'Anna Pérez', 'Carrer de les Flors, 22'
 INSERT INTO client VALUES ('34567890W', 'Marc Martí', 'Carrer Gran, 10', '633222111');
 INSERT INTO procurador VALUES ('11122233X', 'Laura Soler', 'Avinguda Catalunya, 50', '654987123');
 INSERT INTO procurador VALUES ('99988877C', 'David Ruiz', 'Passeig Marítim, 12', '612345678');
-INSERT INTO assumpte VALUES ('A001', '2024-01-10', NULL, 'O', '98765432Q'); 
-INSERT INTO assumpte VALUES ('A002', '2023-09-15', '2024-02-01', 'T', '34567890W'); 
+INSERT INTO assumpte VALUES ('001', '2024-01-10', NULL, 'O', '98765432Q'); 
+INSERT INTO assumpte VALUES ('002', '2023-09-15', '2024-02-01', 'T', '34567890W'); 
 INSERT INTO assumpteXprocurador VALUES ('A001', '11122233X');
 INSERT INTO assumpteXprocurador VALUES ('A002', '99988877C');
 

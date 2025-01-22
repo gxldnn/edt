@@ -20,7 +20,7 @@ UPDATE emp SET hiredate = CURRENT_DATE WHERE LOWER(ename) = 'scott';
 UPDATE emp SET job = 'ANALYST', sal = sal+sal*0.2, deptno = 30, mgr = 7566 WHERE LOWER(ename) = 'miller' ;
 
 --5.
-UPDATE emp SET sal = sal+sal*0.06;
+UPDATE emp SET sal = sal+sal*0.06;a
 
 --6. Com no hi ha un camp activitat o baixa he decidit esborrar el registre
 DELETE FROM emp WHERE LOWER(ename) = 'james';

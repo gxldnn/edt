@@ -1,7 +1,6 @@
 /*Exercicis DML GitLab*/
 --1.
 
-
 CREATE SEQUENCE deptno_seq
   START WITH 50
   INCREMENT BY 10;

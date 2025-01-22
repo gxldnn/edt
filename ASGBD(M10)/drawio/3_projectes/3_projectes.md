@@ -1,7 +1,7 @@
 
 # 3. Gestió de projectes
 
-Es desitja dissenyar una base de dades que reculli la informació sobre la gestió de projectes que es porta a terme a l'empresa i la participació dels empleats. De cada empleat necessitarem saber el seau DNI, nom, adreça, telèfon i projecte en el qual participa. Cada projecte s'identificarà per un codi que serà únic, tindrà un títol, una durada estimada, una durada real, un pressupost.
+Es desitja dissenyar una base de dades que reculli la informació sobre la gestió de projectes que es porta a terme a l'empresa i la participació dels empleats. De cada empleat necessitarem saber el seu DNI, nom, adreça, telèfon i projecte en el qual participa. Cada projecte s'identificarà per un codi que serà únic, tindrà un títol, una durada estimada, una durada real, un pressupost.
 
 De cada projecte es vol saber qui és l'empleat director del projecte. A vegades passa que la mateixa persona pot dirigir diferents projectes.
 

@@ -35,7 +35,7 @@ UPDATE emp SET deptno = 40 WHERE LOWER(ename) = 'sanz';
 UPDATE emp SET job = 'SALESMAN', comm = 4000 WHERE LOWER(ename) = 'sanz';
 
 --10.
-UPDATE emp SET comm = COALESCE(comm + sal*0.2;
+UPDATE emp SET comm = COALESCE(comm,0 + sal*0.2;
 
 --11.
 UPDATE emp SET sal = sal + sal*0.35 WHERE sal < (SELECT sal FROM emp WHERE LOWER(ename)='sanz');

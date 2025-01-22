@@ -39,7 +39,7 @@ UPDATE emp SET comm = comm + sal*0.2;
 
 --11.
 UPDATE emp SET sal = sal + sal*0.35 WHERE sal < (SELECT sal FROM emp WHERE LOWER(ename)='sanz');
-
+a
 
 --12.
 DELETE FROM emp WHERE LOWER(ename)='sanz';

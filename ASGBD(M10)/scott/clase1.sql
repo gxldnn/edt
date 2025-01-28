@@ -1,1 +1,1 @@
-SELECT ename FROM emp WHERE LOWEename LIKE '_l%'; 
+SELECT ename FROM emp WHERE LOWER(ename LIKE '_l%'; 

@@ -1,1 +1,1 @@
-SELECT emp WHG
+SELECT emp WHERE 

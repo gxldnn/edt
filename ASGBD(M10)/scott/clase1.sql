@@ -1,1 +1,1 @@
-SELECT emp FROM scot
+SELECT emp FROM 

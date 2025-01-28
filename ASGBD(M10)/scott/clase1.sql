@@ -1,1 +1,1 @@
-SELECT emp W
+SELECT emp FROm 

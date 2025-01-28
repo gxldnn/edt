@@ -1,1 +1,1 @@
-SELECT ename FROM emp WHERE ename LIKE 
+SELECT ename FROM emp WHERE ename LIKE '_' 

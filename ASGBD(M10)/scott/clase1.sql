@@ -1,1 +1,1 @@
-SELECT ename FROM emp  
+SELECT ename FROM emp WHERE  

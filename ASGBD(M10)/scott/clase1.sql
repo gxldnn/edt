@@ -1,4 +1,4 @@
 SELECT ename FROM emp WHERE LOWER(ename) LIKE '_l%';
 
 
-SELECT sal, comm, (sal*comm) FROM emp;
+SELECT sal, comm, (sal+comm) FROM emp;

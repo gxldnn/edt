@@ -29,17 +29,26 @@
     
     <!--contingut -->
     <h1>Taula de Multiplicar</h1>
-    <table>
 
-      <?php
-        for ($y = 1; $y <= 10; $y++) {
-          echo "<tr>";
-          for ($x = 1; $x <=10; $x++){
-            echo "<td>". $y * $x . "</td>";
-          }
-          echo "</tr>";
+    <table>
+    <?php
+
+      echo "<tr>";
+      echo "<th>X</th>";
+      for ($i = 1; $i <= 10; $i++){
+      echo "<th>$i</th>";
+      }
+      for ($y = 1 ;$y <= 10; $y++) {
+        echo "<tr>";
+        echo "<th>$y</th>";
+        for ($x = 1; $x <=10; $x++){
+          echo "<td>". $y * $x ."</td>";
         }
-      ?>
+        echo "</tr>";
+      }
+      
+    
+    ?>
     </table>
 
     <h1>Llista de la taula</h1>

@@ -1,1 +1,1 @@
-SELE
+SELECT emp WHG

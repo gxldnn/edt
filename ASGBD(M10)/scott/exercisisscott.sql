@@ -48,7 +48,6 @@ DELETE FROM emp WHERE LOWER(ename)='sanz';
 DELETE FROM emp WHERE deptno = 30;
 
 --14.
-
 UPDATE emp SET mgr = NULL WHERE mgr = 7839;
 DELETE FROM emp WHERE deptno = (SELECT deptno FROM dept WHERE dname = 'ACCOUNTING');
 

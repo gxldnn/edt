@@ -17,4 +17,4 @@
 --SELECT * FROM pedido ORDER BY cliecod, fecha;
 
 --7. 
-SELECT * FROM repventa WHERE 
+SELECT * FROM repventa WHERE of

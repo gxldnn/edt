@@ -20,4 +20,4 @@
 --SELECT * FROM repventa WHERE ofinum IN (12, 13);
 
 --8.
-SELECT * FROM producto WHERE exist NULL
+SELECT * FROM producto WHERE exist IN 

@@ -19,4 +19,5 @@
 --7. 
 --SELECT * FROM repventa WHERE ofinum IN (12, 13);
 
---8
+--8.
+SL

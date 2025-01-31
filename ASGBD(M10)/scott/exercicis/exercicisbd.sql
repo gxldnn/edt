@@ -24,3 +24,5 @@
 
 --9.
 --SELECT * FROM repventa WHERE fcontrato + INTERVAL '5000 days' BETWEEN '2003-01-01' AND '2003-12-31';
+
+--10. 

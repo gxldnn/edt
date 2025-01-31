@@ -17,4 +17,6 @@
 --SELECT * FROM pedido ORDER BY cliecod, fecha;
 
 --7. 
-SELECT * FROM repventa WHERE ofinum IN (12, 13);
+--SELECT * FROM repventa WHERE ofinum IN (12, 13);
+
+--8

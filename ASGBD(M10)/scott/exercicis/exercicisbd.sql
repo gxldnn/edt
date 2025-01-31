@@ -1,3 +1,3 @@
 --1. 
 
-SELECT FROM 
+SELECT *

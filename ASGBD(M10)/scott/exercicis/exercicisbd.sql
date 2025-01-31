@@ -11,4 +11,4 @@
 --SELECT * FROM pedido WHERE cliecod = 2111 AND repcod = 103;
 
 --5.
-SELECT * FROM pedido WHERE cliecod = 2111 AND repcod = 103 AND fabcod = 
+SELECT * FROM pedido WHERE cliecod = 2111 AND repcod = 103 AND fabcod = 'aci'

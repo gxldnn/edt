@@ -5,4 +5,5 @@
 --SELECT repcod FROM repventa ORDER BY 1;
 
 --3.
-SELECT pednum FROM pedido WHERE cliecod = 2111;
+--SELECT pednum FROM pedido WHERE cliecod = 2111;
+

@@ -1,3 +1,3 @@
 --1. 
 
-SELECT *
+SELECT * FROM producto WHERE e

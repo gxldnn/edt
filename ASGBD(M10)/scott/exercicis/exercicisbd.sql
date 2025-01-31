@@ -3,3 +3,4 @@
 
 --2.
 --SELECT repcod FROM repventa ORDER BY 1;
+

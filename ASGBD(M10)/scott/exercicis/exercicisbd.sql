@@ -17,4 +17,4 @@
 --SELECT * FROM pedido ORDER BY cliecod, fecha;
 
 --7. 
-SELECT 
+SELECT * FROM rep

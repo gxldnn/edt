@@ -8,4 +8,4 @@
 --SELECT pednum FROM pedido WHERE cliecod = 2111;
 
 --4.
-SELECT * FROM pedido W
+SELECT * FROM pedido WHERE 

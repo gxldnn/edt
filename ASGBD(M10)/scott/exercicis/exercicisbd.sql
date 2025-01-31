@@ -23,4 +23,4 @@
 --SELECT * FROM producto WHERE exist IN (0, NULL); --per en el cas de que fos null, no faria falta
 
 --9.
-SELECT * FROM repventa WHERE fcontrato = TO DATE"1990-01-13";
+SELECT * FROM repventa WHERE fcontrato = TO_DATE"1990-01-13";

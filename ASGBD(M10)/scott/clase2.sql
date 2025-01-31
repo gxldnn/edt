@@ -1,4 +1,5 @@
 --SELECT ename,job, sal FROM emp WHERE ( job='SALESMAN' OR  job='PRESIDENT') AND sal>1500;
+
 --SELECT ename, job, deptno, hiredate FROM emp ORDER BY hiredate DESC;
 
 --SELECT ename, job, deptno, hiredate FROM emp ORDER BY deptno, ename DESC;

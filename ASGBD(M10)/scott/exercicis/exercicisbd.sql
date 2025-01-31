@@ -20,7 +20,7 @@
 --SELECT * FROM repventa WHERE ofinum IN (12, 13);
 
 --8.
---SELECT * FROM producto WHERE exist IN (0, NULL) --per en el cas de que fos null, no faria falta
+--SELECT * FROM producto WHERE exist IN (0, NULL); --per en el cas de que fos null, no faria falta
 
 --9.
 SELECT * FROM repventa WHERE fcontrato = "2003";

@@ -16,4 +16,5 @@
 --6. 
 --SELECT * FROM pedido ORDER BY cliecod, fecha;
 
---
+--7. 
+S

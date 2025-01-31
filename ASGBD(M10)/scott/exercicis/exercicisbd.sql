@@ -14,4 +14,4 @@
 --SELECT * FROM pedido WHERE cliecod = 2111 AND repcod = 103 AND LOWER(fabcod) = 'aci';
 
 --6. 
-SELECT * FROM pedido ORDER BY cliecod, dat 
+SELECT * FROM pedido ORDER BY cliecod, fecha 

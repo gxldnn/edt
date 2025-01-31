@@ -85,7 +85,7 @@ clients.
 3\. Obtenir les dades de les comandes realitzades pel client el
 codi és el 2111.
 
-4\. Obtenir les dades de les comandes realitzades pel client el
+les4\. Obtenir les dades de les comandes realitzades pel client el
 codi és el 2111 i que han estat presos pel representant el
 codi és el 103.
 

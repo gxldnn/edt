@@ -10,4 +10,5 @@
 --4.
 --SELECT * FROM pedido WHERE cliecod = 2111 AND repcod = 103;
 
---
+--5.
+

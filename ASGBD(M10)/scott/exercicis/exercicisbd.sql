@@ -23,4 +23,5 @@
 --SELECT * FROM producto WHERE exist IN (0, NULL); --per en el cas de que fos null, no faria falta
 
 --9.
-WHERE fcontrato + INTERVAL '5000 days' BETWEEN '2003-01-01' AND '2003-12-31';
+SELECT *
+FROM repventaWHERE fcontrato + INTERVAL '5000 days' BETWEEN '2003-01-01' AND '2003-12-31';

@@ -1,3 +1,3 @@
 --1. 
 
-SELECT * FROM producto WHERE exist O
+SELECT * FROM producto WHERE exist IN

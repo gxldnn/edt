@@ -5,4 +5,4 @@
 --SELECT repcod FROM repventa ORDER BY 1;
 
 --3.
-SELECT pednum FROM 
+SELECT pednum FROM oe

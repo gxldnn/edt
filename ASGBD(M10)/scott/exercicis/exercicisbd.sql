@@ -23,7 +23,7 @@
 --SELECT * FROM producto WHERE exist IN (0, NULL); --per en el cas de que fos null, no faria falta
 
 --9.
---SELECT * FROM repventa  WHERE fcontrato + 5000 BETWEEN '2003-01-01' AND '2003-12-31';
+--SELECT * FROM repventa WHERE fcontrato + 5000 BETWEEN '2003-01-01' AND '2003-12-31';
 
 --10. 
 --SELECT nombre, CURRENT_DATE-fcontrato FROM repventa;

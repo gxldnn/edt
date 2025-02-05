@@ -1,2 +1,2 @@
 --1.
-SELECT nombre, ciudad, 
+SELECT nombre, ciudad, region FROM

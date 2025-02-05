@@ -1,2 +1,2 @@
 --1.
-SELECT 
+SELECT na

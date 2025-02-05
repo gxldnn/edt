@@ -27,3 +27,5 @@ SELECT * FROM repventa WHERE TO_CHAR(fcontrato + 5000, 'YYYY') = '2003';
 
 --10. 
 --SELECT nombre, CURRENT_DATE-fcontrato FROM repventa;
+
+-- Ext

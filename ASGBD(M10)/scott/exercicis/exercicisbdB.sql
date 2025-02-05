@@ -12,5 +12,5 @@
 --4. 
 
 SELECT ciudad, region, repventa.nombre, objetivo 
-FROM repventa JOIN oficina ON rep00;
+FROM repventa JOIN oficina ON repveb00;
  

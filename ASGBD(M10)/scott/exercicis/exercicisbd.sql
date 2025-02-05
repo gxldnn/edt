@@ -26,4 +26,4 @@
 --SELECT * FROM repventa WHERE TO_CHAR(fcontrato, 'YYYY') = '1989'
 
 --10. 
-SELECT nombre, CURRENT_DATE-fcontrato FROM repventa;
+--SELECT nombre, CURRENT_DATE-fcontrato FROM repventa;

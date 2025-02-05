@@ -8,4 +8,4 @@
 --SELECT nombre, repcod, repventa.ofinum, ciudad, region FROM repventa JOIN oficina ON repventa.ofinum = oficina.ofinum ORDER BY 1;
 
 --4. 
-SELECT ciudad, region, director FROM oficina WHERE objetivo > 360000;
+SELECT ciudad, region, director, obke FROM oficina WHERE objetivo > 360000;

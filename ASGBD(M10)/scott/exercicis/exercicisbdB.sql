@@ -1,2 +1,2 @@
 --1.
-SELECT nombre, ciudad, region FROM 
+SELECT nombre, ciudad, region FROM rep

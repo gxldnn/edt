@@ -26,4 +26,4 @@ SELECT * FROM producto WHERE exist IN (0, NULL); --per en el cas de que fos null
 SELECT * FROM repventa WHERE fcontrato + 5000 BETWEEN '2003-01-01' AND '2003-12-31';
 
 --10. 
-SELECT nombre, CURRENT_DATE-fcontrato FROM repventa;asd
+SELECT nombre, CURRENT_DATE-fcontrato FROM repventa;

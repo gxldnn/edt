@@ -2,16 +2,16 @@
 --SELECT * FROM producto WHERE exist BETWEEN 25 AND 40;
 
 --2.
--SELECT DISTINCT repcod FROM pedido;
+--SELECT DISTINCT repcod FROM pedido;
 
 --3.
-SELECT * FROM pedido WHERE cliecod = 2111;
+--SELECT * FROM pedido WHERE cliecod = 2111;
 
 --4.
-SELECT * FROM pedido WHERE cliecod = 2111 AND repcod = 103;
+--SELECT * FROM pedido WHERE cliecod = 2111 AND repcod = 103;
 
 --5.
-SELECT * FROM pedido WHERE cliecod = 2111 AND repcod = 103 AND LOWER(fabcod) = 'aci';
+-SELECT * FROM pedido WHERE cliecod = 2111 AND repcod = 103 AND LOWER(fabcod) = 'aci';
 
 --6. 
 SELECT * FROM pedido ORDER BY cliecod, fecha;

@@ -11,5 +11,5 @@
 */
 --4. 
 SELECT ciudad, region, repventa.nombre, objetivo 
-FROM oficina JOIN repventa ON oficina.ofinum = repventa.ofinum 
+FROM oficina JOIN repventa ON repventa.ofinumoficina.ofinum =  
 --WHERE objetivo > 360000;

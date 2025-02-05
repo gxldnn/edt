@@ -5,4 +5,4 @@
 --SELECT *, nombre, limcred FROM pedido JOIN cliente ON pedido.cliecod = cliente.cliecod
 
 --3.
-SELECT nombre, repcod, ofinum, ci, regio FROM repventa 
+SELECT nombre, repcod, ofinum, ciudad, regio FROM repventa 

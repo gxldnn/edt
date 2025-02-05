@@ -1,2 +1,2 @@
 --1.
-SELECT nombre, ci
+SELECT nombre, ciudad, 

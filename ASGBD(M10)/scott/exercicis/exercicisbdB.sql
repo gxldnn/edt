@@ -1,2 +1,2 @@
 --1.
-SELECT nombre, ciudad, region FROM rep
+SELECT nombre, ciudad, region FROM repventa JOIN 

@@ -12,5 +12,5 @@
 --4. 
 
 SELECT ciudad, region, repventa.nombre, objetivo 
-FROM 00;
+FROM repventa 00;
  

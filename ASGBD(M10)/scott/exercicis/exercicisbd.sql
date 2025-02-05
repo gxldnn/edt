@@ -1,5 +1,5 @@
 --1. 
-SELECT * FROM producto WHERE exist BETWEEN 25 AND 40;
+--SELECT * FROM producto WHERE exist BETWEEN 25 AND 40;
 
 --2.
 SELECT DISTINCT repcod FROM pedido;

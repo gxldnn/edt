@@ -23,7 +23,7 @@
 --SELECT * FROM producto WHERE exist IN (0, NULL); --per en el cas de que fos null, no faria falta
 
 --9.
-SELECT * FROM repventa WHERE TO_CHAR(fcontrato, 'YYYY') = '1989' -- 'YYYY-MM'
+SELECT * FROM repventa WHERE TO_CHAR(fcontrato, 'YYYY') = '1989' -- 'YYYY-MM-DD'
 
 --10. 
 --SELECT nombre, CURRENT_DATE-fcontrato FROM repventa;

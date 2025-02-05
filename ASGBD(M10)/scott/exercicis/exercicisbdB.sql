@@ -12,6 +12,5 @@
 --4. 
 
 SELECT ciudad, region, repventa.jefe, objetivo 
-F
-ROM repventa JOIN oficina ON repventa.ofinum = oficina.ofinum;
+FROM repventa JOIN oficina ON repventa.ofinum = oficina.ofinum;
  

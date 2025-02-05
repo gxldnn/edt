@@ -1,2 +1,2 @@
 --1.
-SELECT nombre, ciudad, region FROM repventa JOIN oficina ON repventa.ofi
+SELECT nombre, ciudad, region FROM repventa JOIN oficina ON repventa.ofinum = ofi

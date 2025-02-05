@@ -1,2 +1,2 @@
 --1.
-SELECT nombre, ciudad, region FROM repventa JOIN oficina
+SELECT nombre, ciudad, region FROM repventa JOIN oficina O

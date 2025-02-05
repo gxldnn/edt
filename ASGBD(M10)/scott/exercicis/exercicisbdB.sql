@@ -5,3 +5,4 @@
 --SELECT *, nombre, limcred FROM pedido JOIN cliente ON pedido.cliecod = cliente.cliecod
 
 --3.
+SELECT * 

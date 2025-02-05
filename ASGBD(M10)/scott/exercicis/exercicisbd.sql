@@ -28,4 +28,4 @@ SELECT * FROM repventa WHERE TO_CHAR(fcontrato + 5000, 'YYYY') = '2003';
 --10. 
 --SELECT nombre, CURRENT_DATE-fcontrato FROM repventa;
 
--- Extra: mostrar el nom i el numero de dies que porta contr
+-- Extra: mostrar el nom i el numero de dies que porta contractat un empleat

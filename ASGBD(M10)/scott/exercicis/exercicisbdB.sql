@@ -55,5 +55,5 @@ FROM pedido JOIN cliente
 ON cliente.cliecod =  pedido.cliecod
 JOIN repventa
 ON repventa.repcod = pedido.repcod
-WHERE fecha = (SELECT MIN(fecha));
+WHERE fecha = (SELECT MIN(fecha) FROM );
 

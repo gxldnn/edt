@@ -23,8 +23,8 @@ ON repventa.ofinum = oficina.ofinum ORDER BY 1;
 /*
 SELECT ciudad, oficina.director, repventa.puesto, objetivo
 FROM oficina JOIN repventa
-ON repventa.ofinum = oficina.ofinum
-WHERE oficina.objetivo > 360000*;
+ON repventa.repcod  = oficina.director
+WHERE oficina.objetivo > 360000;
 */
 
 --5. Obtenir una llista de totes les comandes mostrant el seu número, el import i la descripció dels productes sol·licitats.

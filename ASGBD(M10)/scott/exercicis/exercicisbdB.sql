@@ -53,4 +53,4 @@ WHERE importe > 400 ORDER BY 3, 2 DESC;
 SELECT pednum, importe, cliente.nombre,
 FROM pedido JOIN cliente
 ON cliente.cliecod =  pedido.cliecod
-JOIN
+JOIN rep

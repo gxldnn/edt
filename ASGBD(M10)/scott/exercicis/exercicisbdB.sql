@@ -31,7 +31,9 @@ WHERE oficina.objetivo > 360000;
 
 SELECT pednum, importe, producto.descrip
 FROM pedido JOIN producto
-ON producto.prodcod = pedido.prodcod;
+ON producto.prodcod = pedido.prodcod
+AND producto.fabcod = pedido.fabcod
+ORDER BY 1;
 
 
 --6. Obtenir una llista de les comandes amb imports superiors a 4000. Mostrar el nom del client que va sol·licitar la comanda, número de la comanda, import de la mateixa

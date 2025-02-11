@@ -54,5 +54,6 @@ SELECT pednum, importe, cliente.nombre "Nombre cliente", repventa.repcod "Codigo
 FROM pedido JOIN cliente
 ON cliente.cliecod =  pedido.cliecod
 JOIN repventa
-ON repventa.repcod = pedido.repcod;
+ON repventa.repcod = pedido.repcod
+ORDER;
 

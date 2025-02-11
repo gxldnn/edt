@@ -54,4 +54,4 @@ SELECT pednum, importe, cliente.nombre,
 FROM pedido JOIN cliente
 ON cliente.cliecod =  pedido.cliecod
 JOIN repventa
-ON rep
+ON repventa.repco

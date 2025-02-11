@@ -51,5 +51,6 @@ WHERE importe > 400 ORDER BY 3, 2 DESC;
 --client que ho va sol·licitar i el nom del representant que va contactar amb el client per primera vegada.
 
 SELECT pednum, importe, 
-FROM pedido JOIN cliente ON
+FROM pedido JOIN cliente
+ON
 cliente.cliecod = 

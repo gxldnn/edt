@@ -33,3 +33,5 @@ JOIN repventa
 ON repventa.repcod = pedido.repcod
 WHERE importe > 400 ORDER BY 3, 2 DESC;
 */
+
+--7. 

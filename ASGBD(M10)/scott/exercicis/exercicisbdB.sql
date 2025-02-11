@@ -50,7 +50,7 @@ WHERE importe > 400 ORDER BY 3, 2 DESC;
 --7. Obtenir una llista de les comandes amb imports superiors  a 2000 euros, mostrant el número de comanda, import, nom del
 --client que ho va sol·licitar i el nom del representant que va contactar amb el client per primera vegada.
 
-SELECT pednum, importe, cliente.nombre "Nombre c", repventa.repcod
+SELECT pednum, importe, cliente.nombre "Nombre cliente", repventa.repcod
 FROM pedido JOIN cliente
 ON cliente.cliecod =  pedido.cliecod
 JOIN repventa

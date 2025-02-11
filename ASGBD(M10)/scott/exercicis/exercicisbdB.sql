@@ -48,4 +48,4 @@ WHERE importe > 400 ORDER BY 3, 2 DESC;
 */
 
 --7. Obtenir una llista de les comandes amb imports superiors  a 2000 euros, mostrant el número de comanda, import, nom del
-client que ho va sol·licitar i el nom del representant que va contactar amb el client per primera vegada.
+--client que ho va sol·licitar i el nom del representant que va contactar amb el client per primera vegada.

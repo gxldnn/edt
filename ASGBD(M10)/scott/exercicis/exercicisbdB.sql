@@ -55,5 +55,5 @@ FROM pedido JOIN cliente
 ON cliente.cliecod =  pedido.cliecod
 JOIN repventa
 ON repventa.repcod = pedido.repcod
-ORDER BY fecha fetch first 1 row only;
+ORDER BY fechafetch first 1 row only;
 

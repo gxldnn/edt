@@ -55,4 +55,10 @@ FROM pedido JOIN cliente
 ON cliente.cliecod =  pedido.cliecod
 JOIN repventa
 ON repventa.repcod = pedido.repcod
-WHERE fecha = (SELECT MIN(fecha) FROM pedido);
+WHERE WHERE p.importe > 2000
+AND p.fecha = (
+    SELECT MIN(p2.fecha)
+    FROM pedido p2
+    WHERE p2.cliecod = p.cliecod
+);
+;

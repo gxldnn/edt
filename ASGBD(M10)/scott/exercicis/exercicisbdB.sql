@@ -58,3 +58,4 @@ ON repventa.repcod = pedido.repcod
 WHERE pedido.importe > 2000
 AND fecha = (SELECT MIN(fecha) FROM pedido WHERE cliente.cliecod = pedido.cliecod);
 */
+

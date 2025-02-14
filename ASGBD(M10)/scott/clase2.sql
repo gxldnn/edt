@@ -7,5 +7,5 @@
 --SELECT empno, ename, sal*12 AS "Salari Anual" FROM emp ORDER BY 3;
 
 -- Mostrar nom del empleat el salari, el salari incrementat 20% , de qui mes cobra a menys
-SELECT ename, sal, sal*1.20 AS "Salari Incrementat" FROM emp ORDER BY 3 DESC, ename DESC;
+SELECT ename, sal, sal*1.20 AS "Salari Incrementat" FROM emp ORDER BY 3 DESC, ename DESC;s
 

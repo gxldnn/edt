@@ -132,6 +132,7 @@ WHERE p.cant > pr.exist
 SELECT r.nombre 
 FROM repventa
 
+
 --16.
 /*
 SELECT repventa.nombre, repventa_director.nombre, repventa.ofinum

@@ -72,6 +72,7 @@ JOIN repventa r ON r.repcod = c.repcod
 JOIN oficina o ON r.ofinum = o.ofinum
 WHERE importe > 150 ORDER BY 3;
 */
+
 --9. 
 /*
 SELECT pedido.pednum, pedido.importe, cliente.nombre, pedido.fecha, producto.descrip

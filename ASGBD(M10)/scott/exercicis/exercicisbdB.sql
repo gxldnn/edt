@@ -57,6 +57,7 @@ WHERE importe > 400 ORDER BY 3, 2 DESC;
 --de la comanda, l'import, el nom del client que ho va sol·licitar, 
 --el nom del representant que va contactar amb ell per primera vegada i la ciutat de loficina on el 
 --representant treballa.
+
 SELECT p.pednum, p.importe, c.nombre, r.nombre, o.ciudad
 FROM pedido p 
 JOIN cliente c ON p.cliecod = c.cliecod

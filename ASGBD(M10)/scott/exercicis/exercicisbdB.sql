@@ -58,7 +58,8 @@ WHERE importe > 400 ORDER BY 3, 2 DESC;
 --el nom del representant que va contactar amb ell per primera vegada i la ciutat de loficina on el 
 --representant treballa.
 
-/*SELECT p.pednum, p.importe, c.nombre, r.nombre, o.ciudad
+/*
+SELECT p.pednum, p.importe, c.nombre, r.nombre, o.ciudad
 FROM pedido p 
 JOIN cliente c ON p.cliecod = c.cliecod
 JOIN repventa r ON r.repcod = c.repcod

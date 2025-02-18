@@ -130,7 +130,7 @@ WHERE p.cant > pr.exist
 
 --15.
 SELECT r.nombre 
-FROM rep
+FROM repventa
 
 --16.
 /*

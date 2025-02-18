@@ -74,6 +74,7 @@ FROM pedido
 JOIN cliente ON pedido.cliecod = cliente.cliecod
 JOIN producto ON pedido.fabcod = producto.fabcod AND pedido.prodcod = producto.prodcod
 WHERE pedido.fecha BETWEEN '2003-10-01' AND '2003-10-31';
+*/
 /*
 --10.
 SELECT pedido.pednum, producto.descrip, repventa.nombre

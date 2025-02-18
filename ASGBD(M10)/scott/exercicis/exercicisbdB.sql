@@ -96,7 +96,7 @@ WHERE LOWER(o.region) = 'este';
 
 SELECT pednum
 FROM pedido
-WHERE 
+WHERE fcon
 /*
 --12.
 SELECT repventa.nombre, repventa.cuota, oficina.ciudad, oficina.objetivo

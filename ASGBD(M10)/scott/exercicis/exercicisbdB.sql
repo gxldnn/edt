@@ -61,5 +61,6 @@ WHERE pedido.importe > 2000
 AND fecha = (SELECT MIN(fecha) FROM pedido WHERE cliente.cliecod = pedido.cliecod);
 */
 
---8. Obtenir una llista de les comandes amb imports superiors a 150 euros, mostrant el codi de la comanda, l'import, el nom del client que ho va sol·licitar, el nom del representant que va contactar amb ell per primera vegada i la ciutat de loficina on el representant treballa.
+--8. Obtenir una llista de les comandes amb imports superiors a 150 euros, mostrant el codi 
+de la comanda, l'import, el nom del client que ho va sol·licitar, el nom del representant que va contactar amb ell per primera vegada i la ciutat de loficina on el representant treballa.
 

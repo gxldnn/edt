@@ -86,7 +86,7 @@ WHERE p.fecha BETWEEN '2003-10-01' AND '2003-10-31';
 --10.
 
 SELECT pednum
-FROM 
+FROM pedi
 
 --11.
 /*

@@ -74,7 +74,7 @@ SELECT
     c.nombre AS "Nom del Client",
     p.fecha AS "Data",
     pr.descrip AS "Descripció del Producte"
-FROM 
+    FROM 
     pedido p
 JOIN cliente c ON p.cliecod = c.cliecod
 JOIN producto pr ON p.fabcod = pr.fabcod AND p.prodcod = pr.prodcod

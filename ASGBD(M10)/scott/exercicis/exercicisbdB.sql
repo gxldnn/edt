@@ -119,7 +119,7 @@ JOIN oficina o ON r.ofinum = o.ofinum;
 */
 
 --14.
-SELECT p.descrip 
+SELECT pr.descrip 
 FROM pedido
 
 --15.

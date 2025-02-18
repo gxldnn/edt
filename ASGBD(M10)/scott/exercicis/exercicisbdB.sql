@@ -132,7 +132,7 @@ WHERE p.cant > pr.exist
 
 
 --16.
-
+/*
 SELECT repventa.nombre, repventa_director.nombre, repventa.ofinum
 FROM repventa
 JOIN repventa AS repventa_director ON repventa.jefe = repventa_director.repcod

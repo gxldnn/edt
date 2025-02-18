@@ -125,6 +125,8 @@ FROM producto pr
 JOIN pedido p ON p.fabcod = pr.fabcod AND p.prodcod = pr.prodcod
 WHERE p.cant > pr.exist
 */
+
+
 /*
 --15.
 

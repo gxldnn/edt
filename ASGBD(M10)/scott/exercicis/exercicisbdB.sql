@@ -88,7 +88,7 @@ WHERE oficina.region = 'Este';
 */
 
 --11.
-/
+/*
 SELECT pedido.pednum, pedido.importe, pedido.fecha
 FROM pedido
 JOIN repventa ON pedido.repcod = repventa.repcod

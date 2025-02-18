@@ -86,6 +86,7 @@ JOIN producto ON pedido.fabcod = producto.fabcod AND pedido.prodcod = producto.p
 WHERE oficina.region = 'Este';
 
 */
+
 --11.
 SELECT pedido.pednum, pedido.importe, pedido.fecha
 FROM pedido

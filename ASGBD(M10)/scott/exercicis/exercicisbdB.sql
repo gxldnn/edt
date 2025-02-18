@@ -100,7 +100,7 @@ JOIN repventa r ON r.repcod = p.repcod
 WHERE r.fcontrato = p.fecha 
 */
 
-/*
+
 --12.
 SELECT repventa.nombre, repventa.cuota, oficina.ciudad, oficina.objetivo
 FROM repventa

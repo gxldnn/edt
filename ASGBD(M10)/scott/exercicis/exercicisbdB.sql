@@ -72,7 +72,7 @@ SELECT
     p.pednum AS "Número de Comanda",
     p.importe AS "Import",
     c.nombre AS "Nom del Client",
-    p.fecha AS "Data", pr.descrip AS "Descripció del Producte"
+    p.fecha AS "Data", pr.descrip
     FROM 
     pedido p
 JOIN cliente c ON p.cliecod = c.cliecod

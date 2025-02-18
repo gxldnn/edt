@@ -96,7 +96,7 @@ WHERE LOWER(o.region) = 'este';
 
 SELECT pednum
 FROM pedido p
-JOIN repventa r ON r.repcod
+JOIN repventa r ON r.repcod = p.repc
 WHERE fcontrato = 
 /*
 --12.

@@ -95,7 +95,7 @@ WHERE LOWER(o.region) = 'este';
 --11.
 
 SELECT pednum
-
+FROM pe
 /*
 --12.
 SELECT repventa.nombre, repventa.cuota, oficina.ciudad, oficina.objetivo

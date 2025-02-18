@@ -79,7 +79,7 @@ SELECT p.pednum, p.importe, c.nombre, p.fecha, pr.descrip
 FROM pedido p
 JOIN cliente c  ON p.cliecod = c.cliecod
 JOIN producto pr ON p.fabcod = pr.fabcod AND p.prodcod = pr.prodcod
-WHERE p.fecha INTERVAL "5000" BETWEEN '2003-10-01' AND '2003-10-31';
+WHERE p.fecha INTERVAL+  "5000" BETWEEN '2003-10-01' AND '2003-10-31';
 
 
 --10.

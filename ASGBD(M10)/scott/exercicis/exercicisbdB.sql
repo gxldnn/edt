@@ -66,4 +66,5 @@ AND fecha = (SELECT MIN(fecha) FROM pedido WHERE cliente.cliecod = pedido.clieco
 --el nom del representant que va contactar amb ell per primera vegada i la ciutat de loficina on el 
 --representant treballa.
 
-SELECT pednum, importe,  FROM pedido WHERE importe > 150
+SELECT pednum, importe,  FROM pedido
+ WHERE importe > 150

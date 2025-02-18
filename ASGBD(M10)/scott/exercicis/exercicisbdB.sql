@@ -120,4 +120,7 @@ JOIN oficina ON repventa.ofinum = oficina.ofinum
 WHERE repventa.ofinum != repventa_director.ofinum;
 
 --18.
+SELECT repventa_director.nombre, oficina.ciudad
+FROM repventa AS repventa_director
+JOIN oficina ON repventa_director.ofinum = oficina.ofinum;
 

@@ -70,7 +70,7 @@ FROM pedido p
 JOIN cliente c ON p.cliecod = c.cliecod
 JOIN repventa r ON r.repcod = c.repcod
 JOIN oficina o ON r.ofinum = o.ofinum
-WHERE importe > 150 ORD;
+WHERE importe > 150 ORDER BY;
 
 --9. 
 /*

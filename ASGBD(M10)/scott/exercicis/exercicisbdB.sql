@@ -68,7 +68,7 @@ AND fecha = (SELECT MIN(fecha) FROM pedido WHERE cliente.cliecod = pedido.clieco
 
 
 --9. 
-
+/*
 SELECT pedido.pednum, pedido.importe, cliente.nombre, pedido.fecha, producto.descrip
 FROM pedido
 JOIN cliente ON pedido.cliecod = cliente.cliecod

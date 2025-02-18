@@ -119,7 +119,7 @@ JOIN oficina o ON r.ofinum = o.ofinum;
 */
 
 --14.
-SL
+SELECT
 
 --15.
 

@@ -77,7 +77,7 @@ WHERE pedido.fecha BETWEEN '2003-10-01' AND '2003-10-31';
 */
 
 --10.
-
+/*
 SELECT pedido.pednum, producto.descrip, repventa.nombre
 FROM pedido
 JOIN repventa ON pedido.repcod = repventa.repcod

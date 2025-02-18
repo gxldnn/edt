@@ -121,7 +121,7 @@ JOIN oficina o ON r.ofinum = o.ofinum;
 --14.
 SELECT pr.descrip 
 FROM producto pr
-JOIN pedido p ON p.fabcod = pr.fabcod AND 
+JOIN pedido p ON p.fabcod = pr.fabcod AND p.pedn
 
 --15.
 

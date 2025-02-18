@@ -91,7 +91,7 @@ JOIN repventa r ON p.repcod = r.repcod
 JOIN oficina o ON r.ofinum = o.ofinum
 JOIN producto pr ON p.fabcod = pr.fabcod AND p.prodcod = pr.prodcod
 WHERE o.region = "Oeste";
-
+*/
 --11.
 /*
 SELECT pedido.pednum, pedido.importe, pedido.fecha

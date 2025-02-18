@@ -119,3 +119,4 @@ JOIN repventa AS repventa_director ON repventa.jefe = repventa_director.repcod
 JOIN oficina ON repventa.ofinum = oficina.ofinum
 WHERE repventa.ofinum != repventa_director.ofinum;
 
+--

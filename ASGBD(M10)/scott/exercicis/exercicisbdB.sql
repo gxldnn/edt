@@ -75,7 +75,7 @@ WHERE importe > 150 ORDER BY 3;
 
 --9. 
 
-SELECT .pednum, pedido.importe, cliente.nombre, pedido.fecha, producto.descrip
+SELECT pedido.pednum, pedido.importe, cliente.nombre, pedido.fecha, producto.descrip
 FROM pedido
 JOIN cliente ON pedido.cliecod = cliente.cliecod
 JOIN producto ON pedido.fabcod = producto.fabcod AND pedido.prodcod = producto.prodcod

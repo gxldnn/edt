@@ -71,4 +71,4 @@ JOIN cliente c ON c.cliecod = p.cliecod
 JOIN repventa r ON r.repcod = p.repcod
 JOIN oficina o ON o.ofinum = r.ofinum
 
-WHERE importe > 150 AND fecha = (SELECT MIN(fecha) FROM pedido WHERE cliente.cliecod = pedido.cliecod);
+WHERE importe > 150 AND fecha = (SELECT MIN(fecha) FROM pedido WHERE c.cliecod = pedido.cliecod);

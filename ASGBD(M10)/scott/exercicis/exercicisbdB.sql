@@ -54,7 +54,7 @@ WHERE importe > 400 ORDER BY 3, 2 DESC;
 SELECT p.pednum, p.importe, c.nombre, r.nombre
 FROM pedido p
 JOIN cliente c ON c.cliecod = p.cliecod
-JOIN repventa r ON c.rep
+JOIN repventa r ON c.repcod 
 WHERE importe >2000;
 
 --8. Obtenir una llista de les comandes amb imports superiors a 150 euros, mostrant el codi 

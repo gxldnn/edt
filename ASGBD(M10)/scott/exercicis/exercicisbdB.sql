@@ -116,6 +116,7 @@ SELECT r.nombre, r.ventas, o.ciudad
 FROM repventa r
 JOIN oficina o ON r.ofinum = o.ofinum;
 
+*/
 
 --14.
 SELECT DISTINCT producto.descrip

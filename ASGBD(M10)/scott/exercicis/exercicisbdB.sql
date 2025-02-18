@@ -130,7 +130,7 @@ WHERE p.cant > pr.exist
 
 --15.
 SELECT r.nombre 
-WH
+FROM 
 
 --16.
 /*

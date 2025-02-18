@@ -93,7 +93,7 @@ JOIN producto pr ON p.fabcod = pr.fabcod AND p.prodcod = pr.prodcod
 WHERE LOWER(o.region) = 'este';
 */
 --11.
-
+/*
 SELECT pednum, importe, fecha
 FROM pedido p
 JOIN repventa r ON r.repcod = p.repcod

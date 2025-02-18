@@ -90,7 +90,7 @@ FROM pedido p
 JOIN repventa r ON p.repcod = r.repcod
 JOIN oficina o ON r.ofinum = o.ofinum
 JOIN producto pr ON p.fabcod = pr.fabcod AND p.prodcod = pr.prodcod
-WHERE LOWEo.region = "Este";
+WHERE LOWER(o.region = "Este";
 
 --11.
 /*

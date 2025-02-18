@@ -103,10 +103,11 @@ WHERE r.fcontrato = p.fecha
 
 --12.
 
-SELECT repventa.nombre, repventa.cuota, oficina.ciudad, oficina.objetivo
-FROM repventa
-JOIN oficina ON repventa.ofinum = oficina.ofinum
-WHERE repventa.cuota >= oficina.objetivo;
+
+SELECT r.nombre, r.cuota, o.ciudad, o.objetivo
+FROM repventa r
+JOIN oficina o ON r.ofinum = o.ofinum
+WHERE r.cuota >= o.objetivo;
 
 /*
 --13. 

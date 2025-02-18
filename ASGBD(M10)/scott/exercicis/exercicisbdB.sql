@@ -79,7 +79,7 @@ SELECT p.pednum, p.importe, cliente.nombre, p.fecha, producto.descrip
 FROM pedido p
 JOIN cliente c  ON p.cliecod = cliente.cliecod
 JOIN producto pr ON pedido.fabcod = producto.fabcod AND pedido.prodcod = producto.prodcod
-WHERE pedido.fecha BETWEEN '2003-10-01' AND '2003-10-31';
+WHERE pedido.fecha p '2003-10-01' AND '2003-10-31';
 
 
 --10.

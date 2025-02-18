@@ -102,4 +102,8 @@ FROM pedido
 JOIN producto ON pedido.fabcod = producto.fabcod AND pedido.prodcod = producto.prodcod
 WHERE pedido.cant > producto.exist;
 --15.
-
+SELECT repventa.nombre
+FROM repventa
+JOIN repventa AS repventa_director ON repventa.jefe = repventa_director.repcod
+WHERE repventa.cuota > repventa_director.cuota;
+     

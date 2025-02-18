@@ -120,7 +120,8 @@ JOIN oficina o ON r.ofinum = o.ofinum;
 
 --14.
 SELECT pr.descrip 
-FROM producto 
+FROM producto pr
+
 
 --15.
 

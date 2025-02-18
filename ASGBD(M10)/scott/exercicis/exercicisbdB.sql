@@ -68,4 +68,5 @@ AND fecha = (SELECT MIN(fecha) FROM pedido WHERE cliente.cliecod = pedido.clieco
 
 SELECT pednum, importe, c. FROM pedido p
 JOIN cliente c ON cliente.cliecod = pedido.cliecod
+
 WHERE importe > 150

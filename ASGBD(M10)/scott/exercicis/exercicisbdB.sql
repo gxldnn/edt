@@ -88,7 +88,7 @@ WHERE p.fecha BETWEEN '2003-10-01' AND '2003-10-31';
 SELECT pednum, r.nombre, pr.descrip
 FROM pedido p
 JOIN repventa r ON p.repcod = r.repcod
-JOIN oficina o ON r.ofin = o.director
+JOIN oficina o ON r.ofinum = o.director
 JOIN producto pr ON p.fabcod = pr.fabcod AND p.prodcod = pr.prodcod
 WHERE o.region = "Este"
 

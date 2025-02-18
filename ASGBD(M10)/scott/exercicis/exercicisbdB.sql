@@ -129,7 +129,8 @@ WHERE p.cant > pr.exist
 
 
 --15.
-SELECT r.nombre WE
+SELECT r.nombre 
+W
 
 --16.
 /*

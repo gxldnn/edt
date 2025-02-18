@@ -69,8 +69,9 @@ SELECT p.pednum, p.importe, c.nombre, r.nombre, o.ciudad
 FROM pedido p 
 JOIN cliente c ON p.cliecod = c.cliecod
 JOIN repventa r ON r.repcod = c.repcod
+
 WHERE importe > 150;
- 
+
 --9. 
 /*
 SELECT pedido.pednum, pedido.importe, cliente.nombre, pedido.fecha, producto.descrip

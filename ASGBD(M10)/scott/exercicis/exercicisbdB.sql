@@ -97,4 +97,8 @@ SELECT repventa.nombre, repventa.ventas, oficina.ciudad
 FROM repventa
 JOIN oficina ON repventa.ofinum = oficina.ofinum;
 --14.
+SELECT DISTINCT producto.descrip
+FROM pedido
+JOIN producto ON pedido.fabcod = producto.fabcod AND pedido.prodcod = producto.prodcod
+WHERE pedido.cant > producto.exist;
 

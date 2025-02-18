@@ -106,4 +106,4 @@ SELECT repventa.nombre
 FROM repventa
 JOIN repventa AS repventa_director ON repventa.jefe = repventa_director.repcod
 WHERE repventa.cuota > repventa_director.cuota;
-
+--16

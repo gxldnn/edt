@@ -108,6 +108,7 @@ FROM repventa r
 JOIN oficina o ON r.ofinum = o.ofinum
 
 
+
 /*
 --13. 
 SELECT repventa.nombre, repventa.ventas, oficina.ciudad

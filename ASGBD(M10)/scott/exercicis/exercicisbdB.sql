@@ -103,7 +103,7 @@ WHERE r.fcontrato = p.fecha
 
 --12.
 
-SELECT r.nombre, repventa.cuota, oficina.ciudad, oficina.objetivo
+SELECT r.nombre, r.cuota, o.ciudad, oficina.objetivo
 FROM repventa
 
 

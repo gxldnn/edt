@@ -124,3 +124,4 @@ SELECT repventa_director.nombre, oficina.ciudad
 FROM repventa AS repventa_director
 JOIN oficina ON repventa_director.ofinum = oficina.ofinum;
 
+*/

@@ -28,7 +28,7 @@ WHERE oficina.objetivo > 360000;
 */
 
 --5. Obtenir una llista de totes les comandes mostrant el seu número, el import i la descripció dels productes sol·licitats.
-
+/*
 SELECT pednum, importe, producto.descrip
 FROM pedido JOIN producto
 ON producto.prodcod = pedido.prodcod

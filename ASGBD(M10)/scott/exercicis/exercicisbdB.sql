@@ -53,6 +53,7 @@ WHERE importe > 400 ORDER BY 3, 2 DESC;
 --client que ho va sol·licitar i el nom del representant que va contactar amb el client per primera vegada.
 SELECT pednum
 
+
 --8. Obtenir una llista de les comandes amb imports superiors a 150 euros, mostrant el codi 
 --de la comanda, l'import, el nom del client que ho va sol·licitar, 
 --el nom del representant que va contactar amb ell per primera vegada i la ciutat de loficina on el 

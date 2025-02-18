@@ -93,23 +93,17 @@ JOIN producto pr ON p.fabcod = pr.fabcod AND p.prodcod = pr.prodcod
 WHERE LOWER(o.region) = 'este';
 */
 --11.
-/*
-SELECT pednum, importe, fecha
+
+SELECT pednum, importe, f
 FROM pedido p
 JOIN repventa r ON r.repcod = p.repcod
 WHERE r.fcontrato = p.fecha 
-*/
-
-
---12.
-
-SELECT r.nombre, r.cuota, o.ciudad, o.objetivo
-FROM repventa r
-JOIN oficina o ON r.ofinum = o.ofinum
-WHERE r.cuota >
-
-
 /*
+--12.
+SELECT repventa.nombre, repventa.cuota, oficina.ciudad, oficina.objetivo
+FROM repventa
+JOIN oficina ON repventa.ofinum = oficina.ofinum
+WHERE repventa.cuota >= oficina.objetivo;
 --13. 
 SELECT repventa.nombre, repventa.ventas, oficina.ciudad
 FROM repventa

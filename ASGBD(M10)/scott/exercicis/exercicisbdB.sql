@@ -66,7 +66,7 @@ AND fecha = (SELECT MIN(fecha) FROM pedido WHERE cliente.cliecod = pedido.clieco
 --el nom del representant que va contactar amb ell per primera vegada i la ciutat de loficina on el 
 --representant treballa.
 
-SELECT pednum, importe, c.nom FROM pedido p
+SELECT pednum, importe, c.nombre FROM pedido p
 JOIN cliente c ON cliente.cliecod = pedido.cliecod
 
 WHERE importe > 150

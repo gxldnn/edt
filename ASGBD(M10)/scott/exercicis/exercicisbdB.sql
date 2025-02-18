@@ -69,7 +69,7 @@ SELECT p.pednum, p.importe, c.nombre, r.nombre, o.ciudad
 FROM pedido p 
 JOIN cliente c ON p.cliecod = c.cliecod
 JOIN repventa r ON r.repcod = c.repcod
-JOIN oficina o ON r.of = o.repcod
+JOIN oficina o ON r.ofin = o.repcod
 WHERE importe > 150;
 
 --9. 

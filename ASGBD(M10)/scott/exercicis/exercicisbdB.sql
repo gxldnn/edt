@@ -67,7 +67,7 @@ AND fecha = (SELECT MIN(fecha) FROM pedido WHERE cliente.cliecod = pedido.clieco
 --representant treballa.
 SELECT p.pednum, p.importe, c.nombre, r.nombre, o.ciudad
 FROM pedido p 
-JOIN p.clie
+JOIN p.cliecod = 
 
 --9. 
 /*

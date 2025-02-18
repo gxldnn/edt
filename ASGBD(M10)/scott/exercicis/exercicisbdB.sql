@@ -82,6 +82,7 @@ JOIN producto pr ON p.fabcod = pr.fabcod AND p.prodcod = pr.prodcod
 WHERE p.fecha BETWEEN '2003-10-01' AND '2003-10-31';
 
 
+
 --10.
 /*
 SELECT pedido.pednum, producto.descrip, repventa.nombre

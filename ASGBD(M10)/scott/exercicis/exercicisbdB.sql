@@ -96,4 +96,4 @@ WHERE repventa.cuota >= oficina.objetivo;
 SELECT repventa.nombre, repventa.ventas, oficina.ciudad
 FROM repventa
 JOIN oficina ON repventa.ofinum = oficina.ofinum;
-
+--14.

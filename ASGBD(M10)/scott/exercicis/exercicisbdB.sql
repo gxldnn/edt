@@ -87,4 +87,5 @@ FROM pedido
 JOIN repventa ON pedido.repcod = repventa.repcod
 WHERE pedido.fecha = repventa.fcontrato;
 
+--12.
 

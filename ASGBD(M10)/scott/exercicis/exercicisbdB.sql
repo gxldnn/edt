@@ -101,4 +101,4 @@ SELECT DISTINCT producto.descrip
 FROM pedido
 JOIN producto ON pedido.fabcod = producto.fabcod AND pedido.prodcod = producto.prodcod
 WHERE pedido.cant > producto.exist;
---
+--.

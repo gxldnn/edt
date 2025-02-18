@@ -111,7 +111,7 @@ WHERE r.cuota >= o.objetivo;
 
 
 --13. 
-SELECT repventa.nombre, repventa.ventas, oficina.ciudad
+SELECT r.nombre, r.ventas, o.ciudad
 FROM repventa
 JOIN oficina ON repventa.ofinum = oficina.ofinum;
 

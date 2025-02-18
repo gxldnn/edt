@@ -94,7 +94,7 @@ WHERE LOWER(o.region) = 'este';
 */
 --11.
 
-*/
+SELE
 /*
 --12.
 SELECT repventa.nombre, repventa.cuota, oficina.ciudad, oficina.objetivo

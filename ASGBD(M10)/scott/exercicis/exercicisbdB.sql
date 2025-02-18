@@ -105,7 +105,7 @@ WHERE r.fcontrato = p.fecha
 
 SELECT r.nombre, r.cuota, o.ciudad, o.objetivo
 FROM repventa r
-JOIN 
+JOIN ofici
 
 
 /*

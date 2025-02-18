@@ -80,7 +80,7 @@ FROM pedido p
 JOIN cliente c  ON p.cliecod = c.cliecod
 JOIN producto pr ON p.fabcod = pr.fabcod AND p.prodcod = pr.prodcod
 WHERE p.fecha BETWEEN '2003-10-01' AND '2003-10-31';
-
+*/
 
 
 --10.

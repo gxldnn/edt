@@ -68,11 +68,8 @@ AND fecha = (SELECT MIN(fecha) FROM pedido WHERE cliente.cliecod = pedido.clieco
 
 
 --9. 
-SELECT 
-    p.pednum , p.importe , c.nombre AS "Nom del Client", p.fecha  "Data", pr.descrip
-    FROM 
-    pedido p
-JOIN cliente c ON p.cliecod = c.cliecod
-JOIN producto pr ON p.fabcod = pr.fabcod AND p.prodcod = pr.prodcod
-WHERE EXTRACT(MONTH FROM p.fecha) = 10 
-  AND EXTRACT(YEAR FROM p.fecha) = 2003;
+SELECT pedido.pednum, pedido.importe, cliente.nombre, pedido.fecha, producto.descrip
+FROM pedido
+JOIN cliente ON pedido.cliecod = cliente.cliecod
+JOIN producto ON pedido.fabcod = producto.fabcod AND pedido.prodcod = producto.prodcod
+WHERE pedido.fecha BETWEEN '2003-10-01' AND '2003-10-31';

@@ -65,8 +65,8 @@ AND fecha = (SELECT MIN(fecha) FROM pedido WHERE cliente.cliecod = pedido.clieco
 --de la comanda, l'import, el nom del client que ho va sol·licitar, 
 --el nom del representant que va contactar amb ell per primera vegada i la ciutat de loficina on el 
 --representant treballa.
+SE
 
-    
 --9. 
 /*
 SELECT pedido.pednum, pedido.importe, cliente.nombre, pedido.fecha, producto.descrip

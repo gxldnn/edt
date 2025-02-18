@@ -92,7 +92,7 @@ JOIN oficina ON repventa.ofinum = oficina.ofinum
 JOIN producto ON pedido.fabcod = producto.fabcod AND pedido.prodcod = producto.prodcod
 WHERE oficina.region = 'Este';
 
-*
+
 
 --11.
 /*

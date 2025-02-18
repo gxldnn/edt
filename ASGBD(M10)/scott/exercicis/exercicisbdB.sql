@@ -87,7 +87,7 @@ WHERE p.fecha BETWEEN '2003-10-01' AND '2003-10-31';
 
 SELECT pednum
 FROM pedido
-JOI
+JOIN
 WHERE LOWER(o.region) = "este"
 
 --11.

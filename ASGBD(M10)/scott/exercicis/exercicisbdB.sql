@@ -88,4 +88,8 @@ JOIN repventa ON pedido.repcod = repventa.repcod
 WHERE pedido.fecha = repventa.fcontrato;
 
 --12.
+SELECT repventa.nombre, repventa.cuota, oficina.ciudad, oficina.objetivo
+FROM repventa
+JOIN oficina ON repventa.ofinum = oficina.ofinum
+WHERE repventa.cuota >= oficina.objetivo;
 

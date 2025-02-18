@@ -71,7 +71,7 @@ AND fecha = (SELECT MIN(fecha) FROM pedido WHERE cliente.cliecod = pedido.clieco
 SELECT 
     p.pednum AS "Número de Comanda",
     p.importe AS "Import",
-    c.nombre AS "Nom del Client",p.fecha  "Data", pr.descrip
+c.nombre AS "Nom del Client", p.fecha  "Data", pr.descrip
     FROM 
     pedido p
 JOIN cliente c ON p.cliecod = c.cliecod

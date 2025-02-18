@@ -68,3 +68,15 @@ AND fecha = (SELECT MIN(fecha) FROM pedido WHERE cliente.cliecod = pedido.clieco
 
 
 --9. 
+SELECT 
+    p.pednum AS "Número de Comanda",
+    p.importe AS "Import",
+    c.nombre AS "Nom del Client",
+    p.fecha AS "Data",
+    pr.descrip AS "Descripció del Producte"
+FROM 
+    pedido p
+JOIN cliente c ON p.cliecod = c.cliecod
+JOIN producto pr ON p.fabcod = pr.fabcod AND p.prodcod = pr.prodcod
+WHERE EXTRACT(MONTH FROM p.fecha) = 10 
+  AND EXTRACT(YEAR FROM p.fecha) = 2003;

@@ -81,4 +81,9 @@ JOIN repventa ON pedido.repcod = repventa.repcod
 JOIN oficina ON repventa.ofinum = oficina.ofinum
 JOIN producto ON pedido.fabcod = producto.fabcod AND pedido.prodcod = producto.prodcod
 WHERE oficina.region = 'Est';
---1
+--11.
+SELECT pedido.pednum, pedido.importe, pedido.fecha
+FROM pedido
+JOIN repventa ON pedido.repcod = repventa.repcod
+WHERE pedido.fecha = repventa.fcontrato;
+

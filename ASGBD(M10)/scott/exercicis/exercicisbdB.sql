@@ -89,7 +89,6 @@ SELECT pednum, r.nombre, pr.descrip
 FROM pedido p
 JOIN repventa r ON p.repcod = r.repcod
 JOIN producto pr ON p.fabcod = pr.fabcod AND p.prodcod = pr.prodcod
-JOIN oficina o ON r.repcod = o.director
 WHERE o.region = "Este"
 
 --11.

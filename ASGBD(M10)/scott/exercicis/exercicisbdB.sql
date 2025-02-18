@@ -67,4 +67,5 @@ AND fecha = (SELECT MIN(fecha) FROM pedido WHERE cliente.cliecod = pedido.clieco
 --representant treballa.
 
 SELECT pednum, importe,  FROM pedido
- WHERE importe > 150
+JOIU
+WHERE importe > 150

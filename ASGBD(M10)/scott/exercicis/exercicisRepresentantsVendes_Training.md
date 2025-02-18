@@ -175,11 +175,6 @@ amb el client per primera vegada.
 
 
 
-
-
-
-sdfsdfds
-
 16. Obtenir una llista dels representants que treballen en una oficina
      diferent de l'oficina on treballa el seu director, mostrant
      també el nom del director i el codi de l'oficina on

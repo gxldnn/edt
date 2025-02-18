@@ -92,7 +92,7 @@ SELECT pedido.pednum, pedido.importe, pedido.fecha
 FROM pedido
 JOIN repventa ON pedido.repcod = repventa.repcod
 WHERE pedido.fecha = repventa.fcontrato;
-
+/*
 --12.
 SELECT repventa.nombre, repventa.cuota, oficina.ciudad, oficina.objetivo
 FROM repventa

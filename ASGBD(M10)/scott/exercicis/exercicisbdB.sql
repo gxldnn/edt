@@ -133,8 +133,6 @@ WHERE p.cant > pr.exist
 SELECT e.ename"Nom", e.sal, s.grade"Grau"
 FROM emp e JOIN salgrade s ON
 e.sal >= s.losal AND e.sal <= s.hisal;
-*/
-SELECT ename,dname FROM emp,dept WHERE emp.deptno = dept.deptno;
 
 
 --16.

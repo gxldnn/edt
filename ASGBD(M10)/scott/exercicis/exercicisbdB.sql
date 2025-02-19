@@ -128,6 +128,6 @@ WHERE p.cant > pr.exist
 
 --15.
 
-SELECT r.
+SELECT r.nombre
 
 

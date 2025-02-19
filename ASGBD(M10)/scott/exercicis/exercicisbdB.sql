@@ -129,7 +129,7 @@ WHERE p.cant > pr.exist
 
 
 --15.
-SELECT e.ename s.grade
+SELECT e.ename s.grade"Grau
 
 --16.
 /*

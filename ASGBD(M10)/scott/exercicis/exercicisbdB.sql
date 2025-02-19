@@ -130,7 +130,7 @@ WHERE p.cant > pr.exist
 
 --15.
 SELECT e.ename"Empleat", ej.ename "Cap"
-FROM em e JOIN emp ej;
+FROM emp e JOIN emp ej;
 
 --16.
 /*

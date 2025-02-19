@@ -131,7 +131,7 @@ WHERE p.cant > pr.exist
 --15.
 SELECT e.ename"Nom", s.grade"Grau"
 FROM emp
-WHERE sal 
+WHERE sal >= l
 
 --16.
 /*

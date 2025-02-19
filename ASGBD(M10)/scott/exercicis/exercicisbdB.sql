@@ -129,7 +129,7 @@ WHERE p.cant > pr.exist
 
 
 --15.
-SLEE;
+SELECT e.enm;
 
 --16.
 /*

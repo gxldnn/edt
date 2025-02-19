@@ -130,6 +130,6 @@ WHERE p.cant > pr.exist
 
 SELECT r.repcod, o.director
 FROM repventa r
-JOIN oficina o ON o.director = r.repcod
+LERJOIN oficina o ON o.director = r.repcod
 
 

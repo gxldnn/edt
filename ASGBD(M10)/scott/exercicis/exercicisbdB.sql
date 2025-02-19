@@ -128,8 +128,8 @@ WHERE p.cant > pr.exist
 
 --15.
 
-SELECT r.nombre
+SELECT r.
 FROM repventa r
 JOIN oficina o ON o.director = r.repcod
-WHERE
+
 

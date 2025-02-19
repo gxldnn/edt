@@ -131,7 +131,7 @@ WHERE p.cant > pr.exist
 SELECT r.nombre
 FROM repventa r
 JOIN oficina o ON o.director = r.repcod
-JOIN repventa rdir ON 
+JOIN repventa rdir ON o.dio
 WHERE r.cuota > 
 
 

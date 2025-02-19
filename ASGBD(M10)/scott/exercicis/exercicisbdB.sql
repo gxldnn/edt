@@ -134,7 +134,7 @@ SELECT e.ename"Nom", e.sal, s.grade"Grau"
 FROM emp e JOIN salgrade s ON
 e.sal >= s.losal AND e.sal <= s.hisal;
 */
-SELECT ename,dname FROM emp.dep
+SELECT ename,dname FROM emp,dept WHE
 
 --16.
 /*

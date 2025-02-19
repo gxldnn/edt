@@ -128,7 +128,7 @@ WHERE p.cant > pr.exist
 
 --15.
 
-SELECT r.repcod, o.director
+SELECT *
 FROM repventa r
 LEFT JOIN oficina o ON o.director = r.repcod
 JOIN repventa rdir ON r.repcod = rdir.repcod

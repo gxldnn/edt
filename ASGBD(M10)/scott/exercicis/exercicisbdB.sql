@@ -128,7 +128,7 @@ WHERE p.cant > pr.exist
 
 --15.
 
-SELECT * r.repcof
+SELECT * r.repcod
 FROM repventa r
 JOIN oficina o ON o.director = r.repcod
 

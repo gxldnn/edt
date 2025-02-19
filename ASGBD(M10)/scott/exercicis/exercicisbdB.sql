@@ -132,4 +132,4 @@ SELECT r.nombre,r.cuota, rdir.nombre, rdir.cuota
 FROM repventa r
 JOIN oficina o ON o.ofinum = r.ofinum
 JOIN repventa rdir ON o.director = rdir.repcod
-WHERE r.cuota > rdir.cuota
+WHERE r.cuota > rdir.cuota;

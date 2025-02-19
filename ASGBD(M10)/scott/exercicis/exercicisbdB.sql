@@ -128,11 +128,7 @@ WHERE p.cant > pr.exist
 
 
 
---15.
-
-SELECT e.ename"Nom", e.sal, s.grade"Grau"
-FROM emp e JOIN salgrade s ON
-e.sal >= s.losal AND e.sal <= s.hisal ORDER BY 2;
+--1
 
 
 --16.

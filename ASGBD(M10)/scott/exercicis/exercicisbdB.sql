@@ -132,4 +132,4 @@ SELECT *
 FROM repventa r
 LEFT JOIN oficina o ON o.director = r.repcod
 JOIN repventa rdir ON r.repcod = rdir.repcod
-WHERE r.re
+WHERE r.cuota > 

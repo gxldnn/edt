@@ -130,7 +130,7 @@ WHERE p.cant > pr.exist
 
 --15.
 SELECT e.ename"Nom", s.grade"Grau"
-FROM empe 
+FROM emp e JO
 WHERE e.sal >= s.losal AND e.sal <= s.hisal;
 
 --16.

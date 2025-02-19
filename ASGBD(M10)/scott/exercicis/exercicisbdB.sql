@@ -98,6 +98,7 @@ SELECT pednum, importe, fecha
 FROM pedido p
 JOIN repventa r ON r.repcod = p.repcod
 WHERE r.fcontrato = p.fecha 
+*/
 
 
 

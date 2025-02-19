@@ -129,23 +129,4 @@ WHERE p.cant > pr.exist
 
 
 
---16.
-/*
-SELECT repventa.nombre, repventa_director.nombre, repventa.ofinum
-FROM repventa
-JOIN repventa AS repventa_director ON repventa.jefe = repventa_director.repcod
-WHERE repventa.ofinum != repventa_director.ofinum;
---17.
-
-SELECT repventa.nombre, repventa_director.nombre, oficina.ciudad
-FROM repventa
-JOIN repventa AS repventa_director ON repventa.jefe = repventa_director.repcod
-JOIN oficina ON repventa.ofinum = oficina.ofinum
-WHERE repventa.ofinum != repventa_director.ofinum;
-
---18.
-SELECT repventa_director.nombre, oficina.ciudad
-FROM repventa AS repventa_director
-JOIN oficina ON repventa_director.ofinum = oficina.ofinum;
-
-*/
+--1

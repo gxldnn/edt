@@ -130,7 +130,7 @@ WHERE p.cant > pr.exist
 
 --15.
 SELECT e.ename"Nom", s.grade"Grau"
-FROM em
+FROM e
 
 --16.
 /*

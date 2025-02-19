@@ -129,7 +129,7 @@ WHERE p.cant > pr.exist
 
 
 --15.
-SELECT e.ename ej.ename ;
+SELECT e.ename ej.ename "CAP";
 
 --16.
 /*

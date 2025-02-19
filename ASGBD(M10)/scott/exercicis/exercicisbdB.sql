@@ -131,6 +131,6 @@ WHERE p.cant > pr.exist
 SELECT r.nombre
 FROM repventa r
 JOIN oficina o ON o.director = r.repcod
-WHERE r.cuota >
+WHERE r.cuota > 
 
 

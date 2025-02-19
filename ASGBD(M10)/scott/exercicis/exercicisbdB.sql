@@ -128,9 +128,7 @@ WHERE p.cant > pr.exist
 
 
 
---15.
-SELECT e.ename,e.job, d.dname FROM emp e
-FULL JOIN dept d ON d.deptno = e.deptno;
+--15.SELE;
 
 --16.
 /*

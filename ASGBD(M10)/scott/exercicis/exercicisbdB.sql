@@ -129,7 +129,7 @@ WHERE p.cant > pr.exist
 
 
 --15.
-SELECT ename,job,dnba
+SELECT ename,job,dname 
 
 --16.
 /*

@@ -129,9 +129,7 @@ WHERE p.cant > pr.exist
 
 
 --15.
-SELECT * 
-FROM repventa
-
+SELECT 
 
 --16.
 /*

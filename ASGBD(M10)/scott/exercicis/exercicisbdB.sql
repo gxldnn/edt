@@ -130,6 +130,6 @@ WHERE p.cant > pr.exist
 
 SELECT r.nombre
 FROM repventa r
-JOIN oficina
+JOIN oficina ON 
 
 

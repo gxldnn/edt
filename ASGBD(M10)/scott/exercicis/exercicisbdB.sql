@@ -130,6 +130,6 @@ WHERE p.cant > pr.exist
 
 SELECT *
 FROM repventa r
-LEFT JOIN oficina o ON o.director = r.repcod
+LEFT JOIN oficina o ON o.ofi8nu = r.repcod
 JOIN repventa rdir ON r.repcod = rdir.repcod
 WHERE r.cuota > rdir.cuota

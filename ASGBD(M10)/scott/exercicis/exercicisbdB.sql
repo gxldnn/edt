@@ -133,6 +133,7 @@ SELECT e.ename"Nom", e.sal, s.grade"Grau"
 FROM emp e JOIN salgrade s ON
 e.sal >= s.losal AND e.sal <= s.hisal;
 
+
 --16.
 /*
 SELECT repventa.nombre, repventa_director.nombre, repventa.ofinum

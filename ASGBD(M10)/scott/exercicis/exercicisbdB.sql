@@ -127,7 +127,7 @@ WHERE p.cant > pr.exist
 */
 
 --15.
-
+/*
 SELECT r.nombre,r.cuota, rdir.nombre, rdir.cuota
 FROM repventa r
 JOIN oficina o ON o.ofinum = r.ofinum

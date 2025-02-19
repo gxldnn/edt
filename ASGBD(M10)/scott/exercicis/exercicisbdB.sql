@@ -130,7 +130,7 @@ WHERE p.cant > pr.exist
 
 --15.
 SELECT e.ename,e.job, d.dname FROM emp e
-LEDTJOIN dept d ON d.deptno = e.deptno;
+LEFT JOIN dept d ON d.deptno = e.deptno;
 
 --16.
 /*

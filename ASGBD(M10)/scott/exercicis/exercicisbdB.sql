@@ -129,8 +129,7 @@ WHERE p.cant > pr.exist
 
 
 --15.
-SELECT e.ename"Empleat", ej.ename "Cap"
-FROM emp e JOIN emp ej ON e.mgr = ej.empno;
+SL
 
 --16.
 /*

@@ -1,1 +1,18 @@
+SGBD
+--> DDL DCL DML
+
+UNA BBDD NO TE REDUNDANCIA
+
+ARQUITECTURA ANSI x3 OARC
+USERS (Nivell extern) --> Vista de DB (Nivell conecptual) --> Representacio fisica (esquema)
+
+
+
+Integritat != dades correctes
+Inconsistencia == informacio redundada no igual, es a dir diferent informacio relacionada
+
+Si treiem inconsistencia no treiem redundancia pel fet
+
+Model jerarquic nomes un pare 1 --> n, hi ha redundancia ++, estructura arbre
+Model de xarxa  pot tindre mes dun pare n --> m hi ha reduncancia +-, estructura graf
 

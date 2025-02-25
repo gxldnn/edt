@@ -92,14 +92,15 @@ JOIN oficina o ON r.ofinum = o.ofinum
 JOIN producto pr ON p.fabcod = pr.fabcod AND p.prodcod = pr.prodcod
 WHERE LOWER(o.region) = 'este';
 */
+
+
 --11.
 /*
-SELECT pednum, importe, fecha
+SELECT pednum, importe, fecha, p.repcod, fcontrato, r.repcod
 FROM pedido p
-JOIN repventa r ON r.repcod = p.repcod
-WHERE r.fcontrato = p.fecha 
+CROSS JOIN repventa r
+WHERE r.fcontrato = p.fecha;
 */
-
 
 
 --12.
@@ -136,8 +137,27 @@ JOIN repventa rdir ON o.director = rdir.repcod
 WHERE r.cuota > rdir.cuota;
 */
 --16.
+/*
 SELECT r.nombre, r.ofinum, rdir.nombre, rdir.ofinum
 FROM repventa r
 JOIN oficina o ON o.ofinum = r.ofinum
 JOIN repventa rdir ON o.director = rdir.repcod
 WHERE r.ofinum != rdir.ofinum
+*/
+
+
+--17.
+/*
+SELECT r.nombre, o.ciudad, rdir.nombre, odir.ciudad
+FROM repventa r
+JOIN oficina o ON o.ofinum = r.ofinum
+JOIN repventa rdir ON o.director = rdir.repcod
+JOIN oficina odir ON rdir.repcod = odir.director
+WHERE r.ofinum != rdir.ofinum;
+*/
+
+--18.
+/*
+SELECT rdir.nombre FROM repventa r
+JOIN repventa rdir ON r.repcod = rdir.nombre
+*/

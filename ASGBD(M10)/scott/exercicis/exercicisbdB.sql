@@ -118,7 +118,7 @@ SELECT r.nombre, r.ventas, o.ciudad
 FROM repventa r
 LEFT JOIN oficina o ON r.ofinum = o.ofinum;
 */
-as
+
 --14.
 
 SELECT pr.descrip 

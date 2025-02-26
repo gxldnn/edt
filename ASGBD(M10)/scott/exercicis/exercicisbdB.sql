@@ -107,7 +107,7 @@ WHERE r.fcontrato = p.fecha;
 
 SELECT r.nombre, r.cuota, o.ciudad, o.objetivo
 FROM repventa r
-JOIN oficina o
+CROSS JOIN oficina o
 WHERE r.cuota >= o.objetivo;
 
 

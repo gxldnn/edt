@@ -158,8 +158,7 @@ WHERE r.ofinum != rdir.ofinum;
 
 --18.
 
-SELECT DISTINCT 
-rdir.nombre, rdir.puesto
+SELECT DISTINCT rdir.nombre, rdir.puesto
 FROM repventa r
 JOIN repventa rdir ON r.jefe = rdir.repcod;
 

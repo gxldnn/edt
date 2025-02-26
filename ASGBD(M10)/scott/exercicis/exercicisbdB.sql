@@ -137,7 +137,7 @@ WHERE r.cuota > rdir.cuota;
 */
 --16.
 /*
-SELECT r.nombre"Nom Representant", r.ofinum"Ofinum Representant", rdir.nombre"Nom Director", rdir.ofinum"Ofinum Direc
+SELECT r.nombre"Nom Representant", r.ofinum"Ofinum Representant", rdir.nombre"Nom Director", rdir.ofinum"Ofinum Director"
 FROM repventa r
 JOIN repventa rdir ON r.jefe = rdir.repcod
 WHERE r.ofinum != rdir.ofinum

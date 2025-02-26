@@ -137,7 +137,7 @@ WHERE r.cuota > rdir.cuota;
 */
 --16.
 
-SELECT r.nombre, r.ofinum, rdir.nombre, rdir.ofinum
+SELECT r.nombre"Nom", r.ofinum, rdir.nombre, rdir.ofinum
 FROM repventa r
 JOIN oficina o ON o.ofinum = r.ofinum
 JOIN repventa rdir ON o.director = rdir.repcod

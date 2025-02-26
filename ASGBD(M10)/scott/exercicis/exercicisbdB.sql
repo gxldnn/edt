@@ -125,7 +125,7 @@ SELECT pr.descrip
 FROM producto pr
 JOIN pedido p ON p.fabcod||p.prodcod = pr.fabcod||pr.prodcod 
 WHERE p.cant > pr.exist
-
+*/
 
 --15.
 /*

@@ -2,7 +2,7 @@
 
 
 --12.
-/
+/*  
 SELECT r.nombre, r.cuota, o.ciudad, o.objetivo
 FROM repventa r
 CROSS JOIN oficina o

@@ -123,7 +123,8 @@ LEFT JOIN oficina o ON r.ofinum = o.ofinum;
 
 SELECT pr.descrip 
 FROM producto pr
-JOIN pedido p ON p.fabcod = p.prodcod WHERE p.cant > pr.exist
+JOIN pedido p ON p.fabcod = p.prodcod 
+WHERE p.cant > pr.exist
 
 
 --15.

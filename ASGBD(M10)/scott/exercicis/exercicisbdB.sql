@@ -147,7 +147,7 @@ WHERE r.ofinum != rdir.ofinum
 
 SELECT r.nombre, r.ofinum, rdir.nombre, rdir.ofinum
 FROM repventa r
-JOIN repventa rdir ON o.director = rdir.repcod
+JOIN repventa rdir ON r.directo = rdir.repcod
 WHERE r.ofinum != rdir.ofinum
 
 

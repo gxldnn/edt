@@ -22,7 +22,7 @@ CREATE TABLE oficina (
     ciudad character varying(15) NOT NULL,
     region character varying(10) NOT NULL,
     director smallint,
-    objetivo numeric(9,2),
+    objetivo numeric(9,2),gh
     ventas numeric(9,2)
 );
 

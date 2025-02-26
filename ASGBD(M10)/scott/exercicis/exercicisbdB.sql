@@ -126,7 +126,7 @@ FROM producto pr
 JOIN pedido p ON p.fabcod||p.prodcod = pr.fabcod||pr.prodcod 
 WHERE p.cant > pr.exist
 */
-asdasdas
+
 --15.
 
 SELECT r.nombre,r.cuota, rdir.nombre, rdir.cuota

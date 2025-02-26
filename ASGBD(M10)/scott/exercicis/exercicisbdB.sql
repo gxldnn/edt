@@ -145,6 +145,8 @@ WHERE r.ofinum != rdir.ofinum
 
 */
 
+
+
 --17.
 /*
 SELECT r.nombre, o.ciudad, rdir.nombre, odir.ciudad

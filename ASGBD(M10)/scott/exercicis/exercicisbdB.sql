@@ -158,7 +158,7 @@ WHERE r.ofinum != rdir.ofinum;
 
 --18.
 
-SELECT rdir.nombre, rdir.p
+SELECT rdir.nombre, rdir.puesto
 FROM repventa r
 JOIN repventa rdir ON r.repcod = rdir.nombre;
 

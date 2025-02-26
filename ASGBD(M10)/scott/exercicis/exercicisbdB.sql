@@ -119,7 +119,7 @@ FROM repventa r
 LEFT JOIN oficina o ON r.ofinum = o.ofinum;
 */
 
---14.
+--14.rwerwrrrr
 
 SELECT pr.descrip 
 FROM producto pr

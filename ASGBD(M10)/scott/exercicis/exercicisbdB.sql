@@ -117,7 +117,7 @@ WHERE r.cuota >= o.objetivo;
 SELECT r.nombre, r.ventas, o.ciudad
 FROM repventa r
 LEFT JOIN oficina o ON r.ofinum = o.ofinum;
-
+*/
 
 --14.
 /*

@@ -161,3 +161,13 @@ WHERE r.ofinum != rdir.ofinum;
 SELECT rdir.nombre FROM repventa r
 JOIN repventa rdir ON r.repcod = rdir.nombre
 */
+
+------EXTRA
+--Per a cada representant mostrar el nom i le seva oficina, numero de comanda i l'import
+SELECT r.nombre "Nom Repv", o.ciudad"Ciutat", p.pednum"Numero de comanda", p.importe "Import" 
+FROM repventa r
+LEFT JOIN oficina o ON r.ofinum = o.ofinum
+JOIN pedido p ON r.repcod = p.repcod
+ORDER BY 1;
+
+--Numero de comanda i l'import

@@ -169,7 +169,7 @@ FROM repventa r
 LEFT JOIN oficina o ON r.ofinum = o.ofinum
 JOIN pedido p ON r.repcod = p.repcod
 JOIN producto pr ON p.fabcod||p.prodcod = pr.fabcod||pr.prodcod
-JOIN cliente c ON p.cliecod = c.
+JOIN cliente c ON p.cliecod = c.cliecod;
 ORDER BY 1;
 
 --Numero de comanda i l'import

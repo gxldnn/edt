@@ -164,6 +164,8 @@ JOIN repventa rdir ON r.repcod = rdir.nombre
 
 ------EXTRA
 --Per a cada representant mostrar el nom i le seva oficina, numero de comanda i l'import
+
+/*
 SELECT r.nombre "Nom Repv", COALESCE(o.ciudad,'No te Ciutat') "Ciutat", p.pednum"Numero de comanda", p.importe "Import" , pr.descrip "Producto", c.nombre "Nom del Client"
 FROM repventa r
 LEFT JOIN oficina o ON r.ofinum = o.ofinum

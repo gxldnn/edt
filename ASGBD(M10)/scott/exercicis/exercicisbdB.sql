@@ -107,7 +107,7 @@ WHERE r.fcontrato = p.fecha;
 /*
 SELECT r.nombre, r.cuota, o.ciudad, o.objetivo
 FROM repventa r
-JOIN oficina o ON r.ofinum = o.ofinum
+CROSS JOIN oficina o
 WHERE r.cuota >= o.objetivo;
 */
 
@@ -116,15 +116,14 @@ WHERE r.cuota >= o.objetivo;
 /*
 SELECT r.nombre, r.ventas, o.ciudad
 FROM repventa r
-JOIN oficina o ON r.ofinum = o.ofinum;
-
+LEFT JOIN oficina o ON r.ofinum = o.ofinum;
 */
 
 --14.
 /*
 SELECT pr.descrip 
 FROM producto pr
-JOIN pedido p ON p.fabcod = pr.fabcod AND p.prodcod = pr.prodcod
+JOIN pedido p ON p.fabcod||p.prodcod = pr.fabcod||pr.prodcod 
 WHERE p.cant > pr.exist
 */
 
@@ -138,12 +137,13 @@ WHERE r.cuota > rdir.cuota;
 */
 --16.
 /*
-SELECT r.nombre, r.ofinum, rdir.nombre, rdir.ofinum
+SELECT r.nombre"Nom Representant", r.ofinum"Ofinum Representant", rdir.nombre"Nom Director", rdir.ofinum"Ofinum Director"
 FROM repventa r
 JOIN oficina o ON o.ofinum = r.ofinum
 JOIN repventa rdir ON o.director = rdir.repcod
 WHERE r.ofinum != rdir.ofinum
 */
+
 
 
 --17.
@@ -158,6 +158,7 @@ WHERE r.ofinum != rdir.ofinum;
 
 --18.
 /*
+<<<<<<< HEAD
 SELECT rdir.nombre FROM repventa r
 JOIN repventa rdir ON r.repcod = rdir.nombre
 */
@@ -177,3 +178,9 @@ ORDER BY 1;
 SELECT count(*)
 FROM repventa;
 
+=======
+SELECT DISTINCT rdir.nombre, rdir.puesto
+FROM repventa r
+JOIN repventa rdir ON r.jefe = rdir.repcod;
+/*
+>>>>>>> 6a05be04ed5ee66312d0b617c64bd2791a63d273

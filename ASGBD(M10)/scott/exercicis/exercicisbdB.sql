@@ -175,5 +175,5 @@ LEFT JOIN cliente c ON p.cliecod = c.cliecod
 ORDER BY 1;
 */
 SELECT count(*)
-FROM repventa
+FROM repventa;
 

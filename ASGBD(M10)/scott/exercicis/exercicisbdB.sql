@@ -168,6 +168,7 @@ SELECT r.nombre "Nom Repv", COALESCE(o.ciudad,'No te Ciutat') "Ciutat", p.pednum
 FROM repventa r
 JOIN producto pr ON p.fabcod||p.prodcod = pr.fabcod||pr.prodcod
 JOIN cliente c ON p.cliecod = c.cliecod
+LEFT JOIN oficina o ON r.ofinum = o.ofinum
 LEFT JOIN pedido p ON r.repcod = p.repcod
 ORDER BY 1;
 

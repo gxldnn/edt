@@ -164,7 +164,7 @@ JOIN repventa rdir ON r.repcod = rdir.nombre
 
 ------EXTRA
 --Per a cada representant mostrar el nom i le seva oficina, numero de comanda i l'import
-SELECT r.nombre "Nom Repv", o.ciudad"Ciutat", p.pednum"Numero de comanda", p.importe "Import" , d
+SELECT r.nombre "Nom Repv", o.ciudad"Ciutat", p.pednum"Numero de comanda", p.importe "Import" , pr.descrip
 FROM repventa r
 LEFT JOIN oficina o ON r.ofinum = o.ofinum
 JOIN pedido p ON r.repcod = p.repcod

@@ -168,7 +168,7 @@ SELECT r.nombre "Nom Repv", o.ciudad"Ciutat", p.pednum"Numero de comanda", p.imp
 FROM repventa r
 LEFT JOIN oficina o ON r.ofinum = o.ofinum
 JOIN pedido p ON r.repcod = p.repcod
-
+JOIN 
 ORDER BY 1;
 
 --Numero de comanda i l'import

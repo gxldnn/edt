@@ -174,5 +174,5 @@ LEFT JOIN producto pr ON p.fabcod||p.prodcod = pr.fabcod||pr.prodcod
 LEFT JOIN cliente c ON p.cliecod = c.cliecod
 ORDER BY 1;
 */
-SELECT
+SELECT count
 

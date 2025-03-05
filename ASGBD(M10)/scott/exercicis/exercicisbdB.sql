@@ -161,4 +161,11 @@ WHERE r.ofinum != rdir.ofinum;
 SELECT DISTINCT rdir.nombre, rdir.puesto
 FROM repventa r
 JOIN repventa rdir ON r.jefe = rdir.repcod;
-/*
+*/
+
+-- Numero  de departaments asignats
+-- SELECT count(DISTINCT deptno) FROM emp;
+-- Numero de caps que hi ha
+-- SELECT count(DISTINCT mgr) FROM emp;
+-- Numero de treballs diferents
+-- SELECT count(DISTINCT job) FROM emp;

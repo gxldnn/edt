@@ -158,9 +158,31 @@ WHERE r.ofinum != rdir.ofinum;
 
 --18.
 /*
+<<<<<<< HEAD
+SELECT rdir.nombre FROM repventa r
+JOIN repventa rdir ON r.repcod = rdir.nombre
+*/
+
+------EXTRA
+--Per a cada representant mostrar el nom i le seva oficina, numero de comanda i l'import
+
+/*
+SELECT r.nombre "Nom Repv", COALESCE(o.ciudad,'No te Ciutat') "Ciutat", p.pednum"Numero de comanda", p.importe "Import" , pr.descrip "Producto", c.nombre "Nom del Client"
+FROM repventa r
+LEFT JOIN oficina o ON r.ofinum = o.ofinum
+LEFT JOIN pedido p ON r.repcod = p.repcod
+LEFT JOIN producto pr ON p.fabcod||p.prodcod = pr.fabcod||pr.prodcod
+LEFT JOIN cliente c ON p.cliecod = c.cliecod
+ORDER BY 1;
+*/
+SELECT count(*)
+FROM repventa;
+
+=======
 SELECT DISTINCT rdir.nombre, rdir.puesto
 FROM repventa r
 JOIN repventa rdir ON r.jefe = rdir.repcod;
+<<<<<<< HEAD
 */
 
 -- Numero  de departaments asignats
@@ -169,3 +191,7 @@ JOIN repventa rdir ON r.jefe = rdir.repcod;
 -- SELECT count(DISTINCT mgr) FROM emp;
 -- Numero de treballs diferents
 -- SELECT count(DISTINCT job) FROM emp;
+=======
+/*
+>>>>>>> 6a05be04ed5ee66312d0b617c64bd2791a63d273
+>>>>>>> 3ef14591ece17438bfdc0eca0cdea592f969af5a

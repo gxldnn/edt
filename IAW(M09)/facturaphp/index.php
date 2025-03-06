@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <title>Factura Jan Ribera</title> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/css2.css"> <!-- atenció, cal crear-lo! -->
+    <link rel="stylesheet" href="css/css.css"> <!-- atenció, cal crear-lo! -->
   </head>
   <body> 
     <!--contingut -->

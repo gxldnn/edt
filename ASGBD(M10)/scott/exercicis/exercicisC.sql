@@ -25,4 +25,4 @@ WHERE LOWER(fabcod) = 'aci'
 
 SELECT AVG(precio)
 FROM pedido 
-JOIN pedido p ON 
+JOIN producto p ON 

@@ -45,7 +45,7 @@ FROM emp
 ORDER BY sal DESC LIMIT 5;
 */
 
-SELECT deptno, ROUND(AVG(sal)
+SELECT deptno, ROUND(AVG(sal),2)
 FROM emp
 GROUP BY deptno
 HAVING AVG(sal) > 2000;

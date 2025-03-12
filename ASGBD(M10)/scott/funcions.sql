@@ -6,7 +6,7 @@
 
 -- 43. Mostreu el salari, mínim i màxim dels empleats, agrupats per ocupació.
 /*
-SELECT MIN(sal), MAX(sal) FROM emp
+SELECT job, MIN(sal), MAX(sal) FROM emp
 GROUP BY job;
 */
 

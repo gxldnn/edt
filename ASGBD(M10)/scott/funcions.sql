@@ -45,6 +45,6 @@ ORDER BY sal DESC LIMIT 5;
 
 SELECT deptno, max(sal)
 FROM emp
-WE
+WHERE 
 GROUP BY deptno
 HAVING max(sal) > 2900;

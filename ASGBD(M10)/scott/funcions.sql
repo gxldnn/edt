@@ -43,7 +43,7 @@ FROM emp
 ORDER BY sal DESC LIMIT 5;
 */
 
-SELECT deptno, max(sal)
+SELECT deptno, AVG(sal)
 FROM emp
 GROUP BY deptno
 HAVING max(sal) > 2900;

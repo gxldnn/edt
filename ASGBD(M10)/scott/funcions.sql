@@ -75,7 +75,7 @@ SELECT d.deptno "Numero DEpt", e.deptno"Numero DEPT emp"
 FROM dept d
 JOIN emp e ON e.deptno = d.deptno
 GROUP BY d.deptno, e.deptno
-HAVING count(empno);
+HAVING count(empno) ;
 
 
 

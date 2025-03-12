@@ -8,7 +8,7 @@ FROM repventa;
 -- 2\. Quin és l'import total de les comandes preses per Bill Adams?
 
 /*
-SELECT ventas 
+SELECT sumventas 
 FROM repventa 
 WHERE nombre = 'Bill Adams';
 

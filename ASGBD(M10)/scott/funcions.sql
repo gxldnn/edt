@@ -57,7 +57,7 @@ HAVING AVG(sal) > 2000;
 
 
 --27. Mostreu aquells el salari estigui entre 2000 i 3000.
-SELECT SAL FROM EMP WHERE SAL >=2000 AND SAL <=300
+SELECT SAL FROM EMP WHERE SAL >=2000 AND SAL <=3000;
 
 
 

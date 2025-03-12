@@ -9,4 +9,4 @@ FROM repventa;
 
 SELECT ventas 
 FROM repventa 
-WHERE nombre = ;
+WHERE nombre = 'B';

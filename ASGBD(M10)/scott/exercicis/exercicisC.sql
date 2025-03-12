@@ -11,11 +11,11 @@ FROM repventa;
 SELECT sum(ventas) 
 FROM repventa 
 WHERE nombre = 'Bill Adams';
-*/
 
+*/
 
 -- 3\. Calcula el preu mitjà dels productes del fabricant “aci”.
 
-SELECT AVG(precio)
+SELECT AVG(pre)
 FROM producto
-WHERE LOWER(fabcod) = 'aci'
+WHERE fabcod = "aci"

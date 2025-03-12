@@ -17,3 +17,4 @@ WHERE nombre = 'Bill Adams';
 -- 3\. Calcula el preu mitjà dels productes del fabricant “aci”.
 
 SELECT AVG(preu)
+FORM 

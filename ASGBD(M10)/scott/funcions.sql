@@ -49,3 +49,15 @@ SELECT deptno, ROUND(AVG(sal),2)
 FROM emp
 GROUP BY deptno
 HAVING AVG(sal) > 2000;
+*/
+
+
+
+
+
+
+
+
+
+
+

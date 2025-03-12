@@ -16,10 +16,7 @@ SELECT deptno, count(empno), sum(comm), ROUND(AVG(COALESCE(comm,0)),2)
 FROM emp
 GROUP BY deptno;
 
-SELECT deptno, COUNT (comm), SUM (comm), AVG (COALESCE(comm))
-FROM emp
-WHERE deptno IN (10,20)
-GROUP BY deptno;
+
 
 -- 45. Idem que el 44, però mostrant a més el nom de departament.
 /*

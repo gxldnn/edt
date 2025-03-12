@@ -33,4 +33,4 @@ FROM emp
 GROUP BY job, deptno;
 */
 
-S
+SELECT deptno

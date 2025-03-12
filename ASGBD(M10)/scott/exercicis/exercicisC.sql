@@ -9,4 +9,4 @@ FROM repventa;
 
 SELECT ventas 
 FROM repventa 
-WHERE enam
+WHERE ename = LOWER

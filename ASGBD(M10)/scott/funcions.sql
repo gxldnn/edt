@@ -36,3 +36,5 @@ GROUP BY job, deptno;
 SELECT deptno, count(ename)
 from emp
 GROUP BY deptno;
+*/
+SELE

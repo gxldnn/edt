@@ -42,9 +42,7 @@ SELECT ename, sal
 FROM emp
 ORDER BY sal DESC LIMIT 5;
 */
-/*
 SELECT deptno, AVG(sal)
 FROM emp
 GROUP BY deptno
 HAVING AVG(sal) > 2000;
-*/

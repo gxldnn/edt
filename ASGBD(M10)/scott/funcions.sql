@@ -17,7 +17,6 @@ FROM emp
 GROUP BY deptno;
 
 
-
 -- 45. Idem que el 44, però mostrant a més el nom de departament.
 /*
 SELECT e.empno, e.ename, e.job, e.sal, e.deptno, d.dname "Dept Dname"

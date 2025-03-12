@@ -45,6 +45,5 @@ ORDER BY sal DESC LIMIT 5;
 
 SELECT deptno, max(sal)
 FROM emp
-WHERE job = LOWER('salesman')
 GROUP BY deptno
 HAVING max(sal) > 2900;

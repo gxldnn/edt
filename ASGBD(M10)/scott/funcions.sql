@@ -37,12 +37,13 @@ SELECT deptno, count(ename)
 from emp
 GROUP BY deptno;
 */
+
+
 /*
 SELECT ename, sal
 FROM emp
 ORDER BY sal DESC LIMIT 5;
 */
-
 
 SELECT deptno, AVG(sal)
 FROM emp

@@ -44,4 +44,4 @@ ORDER BY sal DESC LIMIT 5;
 */
 
 SELECT deptno, max(sal)
-FROIM
+FROM emp

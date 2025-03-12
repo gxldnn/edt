@@ -19,7 +19,7 @@ GROUP BY deptno;
 
 
 -- 45. Idem que el 44, però mostrant a més el nom de departament.
--SELECT d.dname, count(comm), sum(comm), ROUND(AVG(COALESCE(comm,0)),2) FROM emp e
--JOIN dept d ON e.deptno = d.deptno;
+SELECT d.dname, count(comm), sum(comm), ROUND(AVG(COALESCE(comm,0)),2) FROM emp e
+JOIN dept d ON e.deptno = d.deptno;
 
 

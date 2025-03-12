@@ -64,7 +64,7 @@ SELECT SAL FROM EMP WHERE SAL >=2000 AND SAL <=3000;
 --31. Mostreu el salari mínim, màxim i mig dels empleats agrupats per feina, però només d'aquells la mitjana sigui superior a 4000.
 
 
-select min(sal) 
+select min(sal) and 
 
 
 

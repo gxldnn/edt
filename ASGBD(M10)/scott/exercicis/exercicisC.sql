@@ -16,6 +16,6 @@ WHERE nombre = 'Bill Adams';
 
 -- 3\. Calcula el preu mitjà dels productes del fabricant “aci”.
 
-SELECT AVG(precio)
+SELECT ROAVG(precio)
 FROM producto
 WHERE LOWER(fabcod) = 'aci'

@@ -37,4 +37,4 @@ SELECT deptno, count(ename)
 from emp
 GROUP BY deptno;
 */
-SELECT name, sal 
+SELECT ename, sal 

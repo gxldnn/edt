@@ -18,4 +18,4 @@ WHERE nombre = 'Bill Adams';
 
 SELECT AVG(precio)
 FROM producto
-WHERE LOWER(prodcod = LOWER('aci')
+WHERE LOWER('prodcod') = LOWER('aci')

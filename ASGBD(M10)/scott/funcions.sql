@@ -66,6 +66,8 @@ SELECT SAL FROM EMP WHERE SAL >=2000 AND SAL <=3000;
 
 
 
+
+
 --32. Vegeu el nombre i el nom dels departaments que tinguin més de tres empleats assignats.
 
 

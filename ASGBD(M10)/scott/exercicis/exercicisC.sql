@@ -18,3 +18,4 @@ WHERE nombre = 'Bill Adams';
 
 SELECT AVG(preu)
 FROM producto
+WHERE 

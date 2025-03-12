@@ -23,4 +23,4 @@ WHERE LOWER(fabcod) = 'aci'
 --4\. Quin és l'import mitjà de la comanda sol·licitada pel client
 --"acme mfg."
 
-SELECT AVG()
+SELECT AVG(precio)

@@ -27,4 +27,4 @@ SELECT AVG(pr.precio)
 FROM pedido p
 JOIN producto pr ON pr.fabcod||pr.prodcod = p.fabcod||p.prodcod
 JOIN cliente c ON c.cliecod = p.cliecod
-WHERE LOWER(p.cliecod) = 'acme mfg'
+WHERE LOWER(c) = 'acme mfg'

@@ -18,4 +18,4 @@ WHERE nombre = 'Bill Adams';
 
 SELECT AVG(precio)
 FROM producto
-WHERE prodcod = "aci"
+WHERE prodcod = aci"

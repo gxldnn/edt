@@ -39,4 +39,4 @@ GROUP BY deptno;
 */
 SELECT ename, sal,
 FROM emp
-ORDER BY sal DS;
+ORDER BY sal DESC;

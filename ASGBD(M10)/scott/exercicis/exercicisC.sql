@@ -9,4 +9,4 @@ FROM repventa;
 
 SELECT ventas 
 FROM repventa 
-WHERE nombre = LOWER("bill adams")
+WHERE nombre = LOWER("bill adams"):

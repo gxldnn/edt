@@ -38,5 +38,5 @@ from emp
 GROUP BY deptno;
 */
 SELECT ename, sal,
-FROM emp;
- 
+FROM emp
+ORDER ;

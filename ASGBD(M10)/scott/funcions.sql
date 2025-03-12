@@ -45,4 +45,4 @@ ORDER BY sal DESC LIMIT 5;
 
 SELECT deptno, max(sal)
 FROM emp
-WHERE max(sal)
+WHERE max(sal) > 2900

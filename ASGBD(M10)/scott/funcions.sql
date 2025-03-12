@@ -19,7 +19,7 @@ GROUP BY deptno;
 
 
 -- 45. Idem que el 44, però mostrant a més el nom de departament.
-SELECT e.empno, e.ename, e.job, e.sal, e.deptno, d.dname "sn"
+SELECT e.empno, e.ename, e.job, e.sal, e.deptno, d.dname "De"
 FROM emp e
 JOIN dept d ON e.deptno = d.deptno
 WHERE e.empno= 7934;

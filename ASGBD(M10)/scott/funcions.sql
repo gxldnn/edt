@@ -11,6 +11,7 @@ GROUP BY job;
 */
 
 -- 44. Seguint el que s'ha explicat en l'ex. 27, Mostreu per cada departament, el nombre d'empleats que tenen comissió, la suma i la mitjana.
+/*
 SELECT deptno, count(empno), sum(comm), ROUND(AVG(COALESCE(comm,0)),2)
 FROM emp
 WHERE comm IS NOT NULL

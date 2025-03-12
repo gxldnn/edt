@@ -2,3 +2,4 @@
 --tots els representants.
 
 SELECT SUM(cuota), SUM(ventas)
+FROM 

@@ -74,7 +74,7 @@ from emp group by job having avg(sal) >= 4000;
 SELECT *
 FROM dept d
 JOIN emp e ON e.deptno = d.deptno
-GROU;
+GROUP BY deptno;
 
 
 

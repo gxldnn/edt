@@ -16,7 +16,10 @@ SELECT deptno, count(empno), sum(comm), ROUND(AVG(COALESCE(comm,0)),2)
 FROM emp
 WHERE comm IS NOT NULL
 GROUP BY deptno;
-
+SELECT deptno, COUNT (comm), SUM (comm), AVG (COALESCE(comm))
+FROM emp
+WHERE deptno IN (10,20)
+GROUP BY deptno;
 
 -- 45. Idem que el 44, però mostrant a més el nom de departament.
 SELECT e.empno, e.ename, e.job, e.sal, e.deptno, d.dname "Dept Dname"

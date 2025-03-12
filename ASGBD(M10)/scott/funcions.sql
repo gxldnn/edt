@@ -74,7 +74,7 @@ from emp group by job having avg(sal) >= 4000;
 SELECT d.deptno "Numero DEpt", e.deptno"Numero DEPT emp", d.dname
 FROM dept d
 JOIN emp e ON e.deptno = d.deptno
-GROUP BY d.deptno, e.deptno, d.
+GROUP BY d.deptno, e.deptno, d.dname
 HAVING count(empno) > 3;
 
 

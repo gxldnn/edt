@@ -14,7 +14,6 @@ GROUP BY job;
 
 SELECT deptno, count(empno), sum(comm), ROUND(AVG(COALESCE(comm,0)),2)
 FROM emp
-WHERE comm IS NOT NULL
 GROUP BY deptno;
 
 SELECT deptno, COUNT (comm), SUM (comm), AVG (COALESCE(comm))

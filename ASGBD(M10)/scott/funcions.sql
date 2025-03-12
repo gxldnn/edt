@@ -33,4 +33,4 @@ FROM emp
 GROUP BY job, deptno;
 */
 
-SELECT deptno
+SELECT deptno, count(ename)

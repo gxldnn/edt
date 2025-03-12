@@ -75,7 +75,7 @@ SELECT d.deptno "Numero DEpt", e.deptno"Numero DEPT emp", d.dname
 FROM dept d
 JOIN emp e ON e.deptno = d.deptno
 GROUP BY d.deptno, e.deptno, d.dname
-HAVING count(empno) > 3;
+--HAVING count(empno) > 3;
 
 
 

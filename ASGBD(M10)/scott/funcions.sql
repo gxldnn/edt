@@ -35,4 +35,4 @@ GROUP BY job, deptno;
 
 SELECT deptno, count(ename)
 from emp
-GROUP B;
+GROUP BY deptno;

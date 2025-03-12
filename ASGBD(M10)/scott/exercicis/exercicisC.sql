@@ -1,5 +1,5 @@
 --1\. Mostrar la suma de les quotes i la suma de les vendes totals de
 --tots els representants.
 
-SELECT repSUM(cuota), SUM(ventas)
+SELECT repcod, SUM(cuota), SUM(ventas)
 FROM repventa;

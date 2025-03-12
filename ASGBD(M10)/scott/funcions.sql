@@ -38,4 +38,5 @@ from emp
 GROUP BY deptno;
 */
 SELECT ename, sal,
-FRO 
+FROM emp;
+ 

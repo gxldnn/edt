@@ -29,4 +29,4 @@ WHERE e.empno= 7934;
 
 SELECT job, deptno
 FROM emp
-GROUP BY jo
+GROUP BY job, deptno

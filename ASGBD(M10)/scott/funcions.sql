@@ -61,8 +61,9 @@ SELECT SAL FROM EMP WHERE SAL >=2000 AND SAL <=3000;
 
 
 
-31. Mostreu el salari mínim, màxim i mig dels empleats agrupats per feina, però només d'aquells la mitjana sigui superior a 4000.
-32. Vegeu el nombre i el nom dels departaments que tinguin més de tres empleats assignats.
+--31. Mostreu el salari mínim, màxim i mig dels empleats agrupats per feina, però només d'aquells la mitjana sigui superior a 4000.
+--32. Vegeu el nombre i el nom dels departaments que tinguin més de tres empleats assignats.
+
 
 
 

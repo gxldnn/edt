@@ -2,4 +2,5 @@
 --tots els representants.
 
 SELECT SUM(cuota), SUM(ventas)
-FROM repventa;
+FROM repventa
+GROUP B;

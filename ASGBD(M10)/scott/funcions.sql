@@ -57,7 +57,7 @@ HAVING AVG(sal) > 2000;
 
 
 --27. Mostreu aquells el salari estigui entre 2000 i 3000.
-SELECT 
+SELECT S
 
 
 

@@ -72,7 +72,7 @@ from emp group by job having avg(sal) >= 4000;
 --32. Vegeu el nombre i el nom dels departaments que tinguin més de tres empleats assignats.
 SELECT count(deptno), dname
 FROM dept d
-JOIN emp e ON e.deptno = d.d 
+JOIN emp e ON e.deptno = d.deptno 
 
 
 

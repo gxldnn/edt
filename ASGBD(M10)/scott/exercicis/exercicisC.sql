@@ -18,4 +18,4 @@ WHERE nombre = 'Bill Adams';
 
 SELECT AVG(preu)
 FROM producto
-WHERE fabcod = 
+WHERE fabcod = "aci"

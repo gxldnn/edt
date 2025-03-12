@@ -43,4 +43,4 @@ FROM emp
 ORDER BY sal DESC LIMIT 5;
 */
 
-SELECT departamen
+SELECT deptno, max(sal)

@@ -7,15 +7,15 @@ FROM repventa;
 */
 -- 2\. Quin és l'import total de les comandes preses per Bill Adams?
 
-/*
+
 SELECT sum(ventas) 
 FROM repventa 
 WHERE nombre = 'Bill Adams';
 
-*/
+
 
 -- 3\. Calcula el preu mitjà dels productes del fabricant “aci”.
 
 SELECT AVG(precio)
 FROM producto
-WHERE prodco = "aci"
+WHERE LOWER('prodcod) = 'aci'

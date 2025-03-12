@@ -74,7 +74,8 @@ from emp group by job having avg(sal) >= 4000;
 SELECT d.deptno "Numero DEpt", e.deptno"Numero DEPT emp", count(e.empno)
 FROM dept d
 JOIN emp e ON e.deptno = d.deptno
-GROUP BY d.deptno, e.ename
+GROUP BY d.deptno, e.deptno, e.ename
+HAVING count();
 
 
 

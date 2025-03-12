@@ -18,7 +18,7 @@ WHERE nombre = 'Bill Adams';
 
 SELECT ROUND(AVG(precio),2) AS "ACI PREU"
 FROM producto
-WHERE LOWER(fabcod) = 'aci'
+WHERE LOWER(fabcod) = 'aci';
 
 --4\. Quin és l'import mitjà de la comanda sol·licitada pel client
 --"acme mfg."

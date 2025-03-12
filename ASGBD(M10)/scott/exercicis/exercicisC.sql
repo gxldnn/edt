@@ -7,4 +7,5 @@ FROM repventa;
 
 -- 2\. Quin és l'import total de les comandes preses per Bill Adams?
 
-SELECT va
+SELECT ventas 
+FRO

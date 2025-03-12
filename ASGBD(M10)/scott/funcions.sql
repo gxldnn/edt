@@ -11,12 +11,12 @@ GROUP BY job;
 */
 
 -- 44. Seguint el que s'ha explicat en l'ex. 27, Mostreu per cada departament, el nombre d'empleats que tenen comissió, la suma i la mitjana.
-
+/*
 SELECT deptno, count(empno), sum(comm), ROUND(AVG(COALESCE(comm,0)),2)
 FROM emp
 GROUP BY deptno;
 
-
+*/
 -- 45. Idem que el 44, però mostrant a més el nom de departament.
 /*
 SELECT e.empno, e.ename, e.job, e.sal, e.deptno, d.dname "Dept Dname"

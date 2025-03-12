@@ -24,4 +24,4 @@ WHERE LOWER(fabcod) = 'aci'
 --"acme mfg."
 
 SELECT AVG(precio)
-FROM pro
+FROM producto

@@ -6,7 +6,7 @@ FROM repventa;
 
 */
 -- 2\. Quin és l'import total de les comandes preses per Bill Adams?
-
+/*
 
 SELECT sum(ventas) 
 FROM repventa 
@@ -19,7 +19,7 @@ WHERE nombre = 'Bill Adams';
 SELECT ROUND(AVG(precio),2) AS "ACI PREU"
 FROM producto
 WHERE LOWER(fabcod) = 'aci';
-
+*/
 --4\. Quin és l'import mitjà de la comanda sol·licitada pel client
 --"acme mfg."
 

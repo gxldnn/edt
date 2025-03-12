@@ -68,7 +68,7 @@ SELECT SAL FROM EMP WHERE SAL >=2000 AND SAL <=3000;
 select min(sal), max(sal), avg(sal)
 from emp group by job having avg(sal) >= 4000;
 
-
+*/
 
 --32. Vegeu el nombre i el nom dels departaments que tinguin més de tres empleats assignats.
 SELECT *

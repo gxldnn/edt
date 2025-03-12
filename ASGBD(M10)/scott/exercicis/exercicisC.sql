@@ -19,3 +19,4 @@ WHERE nombre = 'Bill Adams';
 SELECT ROUND(AVG(precio),2) AS "ACI PREU"
 FROM producto
 WHERE LOWER(fabcod) = 'aci'
+

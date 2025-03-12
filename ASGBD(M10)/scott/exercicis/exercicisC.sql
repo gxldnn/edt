@@ -23,6 +23,6 @@ WHERE LOWER(fabcod) = 'aci'
 --4\. Quin és l'import mitjà de la comanda sol·licitada pel client
 --"acme mfg."
 
-SELECT AVG(precio)
+SELECT AVG(pr.precio)
 FROM pedido 
 JOIN producto p ON 

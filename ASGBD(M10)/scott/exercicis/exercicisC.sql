@@ -9,4 +9,4 @@ FROM repventa;
 
 SELECT ventas 
 FROM repventa 
-WHERE ename = LOWER(bull a)
+WHERE ename = LOWER("bill adam")

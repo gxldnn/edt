@@ -11,3 +11,5 @@ FROM repventa;
 SELECT ventas 
 FROM repventa 
 WHERE nombre = 'Bill Adams';
+
+*/

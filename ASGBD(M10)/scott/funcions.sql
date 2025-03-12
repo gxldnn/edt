@@ -27,6 +27,6 @@ WHERE e.empno= 7934;
 
 ---------------------------------------------------------------------------------------------------------------------
 
-SELECT job, deptno, sum ()
+SELECT job, deptno, sum (sal)
 FROM emp
 GROUP BY job, deptno

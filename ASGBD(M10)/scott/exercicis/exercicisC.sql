@@ -89,6 +89,6 @@ FROM repventa;
 --pròpies quotes?
 
 SELECT count(DISTINCT o.ofinum)
-FROM repventa
+FROM repventa r
 JOIN oficina o 
 WHERE 

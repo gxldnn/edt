@@ -106,4 +106,4 @@ ORDER BY r.repcod;
 --15\. Quin és el rang de les quotes dels representants assignats a
 -- cada oficina (mínim i màxim)?
 
-SELECT MIN(cuota)"Cuota Minima", MAX(cuota) "Cuota MAxima"
+SELECT MIN(cuota)"Cuota Minima", MAX(cuota) "Cuota Maxima"

@@ -148,4 +148,4 @@ ORDER BY c.cliecod;
 
 SELECT SUM(importe)
 FROM pedido p 
-JOIN repventa r 
+JOIN repventa r ON 

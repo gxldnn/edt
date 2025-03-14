@@ -88,6 +88,6 @@ FROM repventa;
 --13\. Quantes oficines tenen representants que superen les seves
 --pròpies quotes?
 
-SELECT DISTINCT ofinum)
+SELECT DISTINCT ofinum
 FROM repventa
 WHERE ventas > cuota;

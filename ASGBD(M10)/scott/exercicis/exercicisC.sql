@@ -108,3 +108,4 @@ ORDER BY r.repcod;
 
 SELECT MIN(cuota)"Cuota Minima", MAX(cuota) "Cuota Maxima"
 FROM repventa
+GROUP 

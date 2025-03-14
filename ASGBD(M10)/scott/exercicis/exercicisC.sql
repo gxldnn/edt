@@ -88,6 +88,7 @@ FROM repventa;
 --13\. Quantes oficines tenen representants que superen les seves
 --pròpies quotes?
 
-SELECT count(DISTINCT ofinum)
+SELECT count(DISTINCT o.ofinum)
 FROM repventa
+
 WHERE 

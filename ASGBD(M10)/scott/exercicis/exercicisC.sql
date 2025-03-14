@@ -82,5 +82,4 @@ FROM pedido;
 --12\. Quants llocs de treball diferents hi ha a l'empresa?
 
 SELECT count(DISTINCT puesto)
-
 FROM repventa;

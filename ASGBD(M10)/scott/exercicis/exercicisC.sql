@@ -135,5 +135,5 @@ GROUP BY r.repcod;
 
 SELECT SUM(p.importe), c.cliecod, r.repcod
 FROM pedido p 
-JOIN repventa r ON p.recpod = r.recpod
+JOIN repventa r ON p.repcod = r.recpod
 JOIN cliente c ON r.repcod = c.repcod

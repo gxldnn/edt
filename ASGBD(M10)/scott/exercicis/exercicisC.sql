@@ -114,9 +114,9 @@ ORDER BY ofinum;
 
 --16\. Quants representants hi ha assignats a cada oficina? Mostra Ciutat
 --i nombre de representants.
-
+/*
 SELECT count(r.repcod)"Nombre representants", o.ciudad "Ciutat"
 FROM repventa r
 JOIN oficina o ON r.ofinum = o.ofinum
 GROUP BY o.ofinum;
-
+*/

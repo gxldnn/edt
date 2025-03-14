@@ -60,7 +60,7 @@ FROM cliente;
 --9\. Quants representants han obtingut un import de vendes superior a
 --la seva pròpia quota?
 
-SELECT count(recpod)
+SELECT count(repcod)
 FROM repventa
 WHERE ventas > cuota
 GROUP BY repcod;

@@ -90,4 +90,4 @@ FROM repventa;
 
 SELECT count(DISTINCT ofinum)
 FROM repventa r
-WHERE r.
+WHERE 

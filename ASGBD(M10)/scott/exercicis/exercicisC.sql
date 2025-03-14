@@ -147,3 +147,4 @@ ORDER BY c.cliecod;
 --representant.
 
 SELECT SUM(importe)
+FROM rep

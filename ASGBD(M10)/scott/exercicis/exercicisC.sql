@@ -158,4 +158,4 @@ ORDER BY r.repcod;
 
 SELECT count(repcod), ofinum
 FROM repventa
-GROUP B
+GROUP BY repcod

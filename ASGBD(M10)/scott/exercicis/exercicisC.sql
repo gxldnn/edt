@@ -107,4 +107,4 @@ ORDER BY r.repcod;
 -- cada oficina (mínim i màxim)?
 
 SELECT MIN(cuota)"Cuota Minima", MAX(cuota) "Cuota Maxima"
-FROM reo
+FROM repventa

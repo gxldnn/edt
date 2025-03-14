@@ -89,5 +89,5 @@ FROM repventa;
 --pròpies quotes?
 
 SELECT count(DISTINCT ofinum)
-FROM repventa r
+FROM repventa
 WHERE 

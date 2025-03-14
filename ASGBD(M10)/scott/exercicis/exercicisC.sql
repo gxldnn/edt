@@ -160,3 +160,5 @@ SELECT ofinum, count(repcod), SUM(cuota), SUM(ventas)
 FROM repventa
 GROUP BY ofinum
 HAVING COUNT(repcod) > 1;
+*/
+

@@ -97,6 +97,6 @@ WHERE ventas > cuota;
 --representant?
 
 SELECT AVG(p.importe) 
-FROM repventa
+FROM repventa r 
 JOIN pedido ON p.repcod = r.repcod
 GROUP BY repcod;

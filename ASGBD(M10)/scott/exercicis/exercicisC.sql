@@ -167,4 +167,3 @@ HAVING COUNT(repcod) > 1;
 SELECT *
 FROM pedido p
 JOIN producto pr ON pr.prodcod||pr.fabcod = p.prodcod||p.fabcod
-WHERE 

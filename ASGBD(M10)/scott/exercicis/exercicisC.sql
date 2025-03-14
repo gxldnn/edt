@@ -25,7 +25,6 @@ WHERE LOWER(fabcod) = 'aci';
 /*
 SELECT AVG(p.importe), c.nombre "Client"
 FROM pedido p
-JOIN producto pr ON pr.fabcod||pr.prodcod = p.fabcod||p.prodcod
 JOIN cliente c ON c.cliecod = p.cliecod
 WHERE LOWER(c.nombre) = 'acme mfg.'
 GROUP BY c.nombre;

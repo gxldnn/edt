@@ -104,4 +104,4 @@ ORDER BY r.repcod;
 */
 
 --15\. Quin és el rang de les quotes dels representants assignats a
---cada oficina (mínim i màxim)?
+-- cada oficina (mínim i màxim)?

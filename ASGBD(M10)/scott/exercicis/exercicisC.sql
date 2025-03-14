@@ -69,4 +69,4 @@ WHERE ventas > cuota;
 
 SELECT count(pednum)
 FROM pedido
-WHERE import > 150;
+WHERE importe > 150;

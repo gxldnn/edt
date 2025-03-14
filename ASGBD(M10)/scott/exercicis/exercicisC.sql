@@ -93,5 +93,5 @@ FROM repventa
 WHERE ventas > cuota;
 */
 
--14\. Quin és l'import mitjà de les comandes preses per cada
-representant?
+--14\. Quin és l'import mitjà de les comandes preses per cada
+--representant?

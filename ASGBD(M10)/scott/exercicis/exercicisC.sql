@@ -124,4 +124,4 @@ GROUP BY o.ofinum;
 --17\. Quants clients ha contactat per primer cop cada representant?
 --Mostra el codi de representant, nom i número de clients.
 
-SELECT count
+SELECT count()

@@ -90,5 +90,5 @@ FROM repventa;
 
 SELECT count(DISTINCT o.ofinum)
 FROM repventa r
-JOIN oficina o 
+JOIN oficina o ON 
 WHERE 

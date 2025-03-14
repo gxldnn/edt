@@ -125,5 +125,5 @@ GROUP BY o.ofinum;
 --Mostra el codi de representant, nom i número de clients.
 
 SELECT r.repcod, count(r.cliecod), c.cliecod, c.nombre
-FROM repventa
+FROM repventa r
 JOIN cliente c ON r.cliecod = c.cliecod; 

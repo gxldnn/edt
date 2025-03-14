@@ -126,4 +126,4 @@ GROUP BY o.ofinum;
 
 SELECT r.repcod, count(r.cliecod), c.cliecod, c.nombre
 FROM repventa r
-JOIN cliente c ON r.repcod = c.cliecod; 
+JOIN cliente c ON r.repcod = c.repcod; 

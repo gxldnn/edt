@@ -166,3 +166,4 @@ HAVING COUNT(repcod) > 1;
 
 SELECT count(pednum)
 FROM pedido
+JOIJ

@@ -92,3 +92,5 @@ SELECT count(ofinum)
 FROM repventa
 WHERE ventas > cuota;
 */
+
+-

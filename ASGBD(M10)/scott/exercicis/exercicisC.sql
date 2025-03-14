@@ -159,4 +159,4 @@ ORDER BY r.repcod;
 SELECT ofinum, count(repcod)
 FROM repventa
 GROUP BY ofinum
-HAV;
+HAVING ;

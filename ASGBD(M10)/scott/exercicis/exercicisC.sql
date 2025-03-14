@@ -97,4 +97,4 @@ WHERE ventas > cuota;
 --representant?
 
 SELECT AVG(importe) 
-FROM pedido
+FROM repven

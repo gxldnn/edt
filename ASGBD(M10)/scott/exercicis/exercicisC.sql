@@ -53,4 +53,5 @@ FROM repventa;
 
 --8\. Quants clients té lempresa?
 
+SELECT cpunt9
 

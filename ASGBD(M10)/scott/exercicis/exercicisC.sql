@@ -65,4 +65,4 @@ FROM repventa
 WHERE ventas > cuota;
 */
 
-
+-´

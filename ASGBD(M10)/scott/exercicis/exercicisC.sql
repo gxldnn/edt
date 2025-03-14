@@ -113,4 +113,4 @@ ORDER BY ofinum;
 */
 
 --16\. Quants representants hi ha assignats a cada oficina? Mostra Ciutat
-i nombre de representants.
+-i nombre de representants.

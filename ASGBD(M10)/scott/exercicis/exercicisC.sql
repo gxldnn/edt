@@ -130,3 +130,5 @@ JOIN cliente c ON r.repcod = c.repcod
 GROUP BY r.repcod;
 */
 
+--18\. Calcula el total de l'import de les comandes sol·licitades per cada
+client a cada representant.

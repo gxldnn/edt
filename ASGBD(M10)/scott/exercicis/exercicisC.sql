@@ -46,6 +46,7 @@ FROM pedido;
 
 --7\. Quin és el millor rendiment de vendes de tots els representants?
 --(considerar-ho com el percentatge de vendes sobre la quota).
+/*
 SELECT MAX(ventas) "Millor Rendiment"
 FROM repventa;
 

@@ -110,3 +110,5 @@ SELECT ofinum, MIN(cuota)"Cuota Minima", MAX(cuota) "Cuota Maxima"
 FROM repventa
 GROUP BY ofinum
 ORDER BY ofinum;
+*/
+

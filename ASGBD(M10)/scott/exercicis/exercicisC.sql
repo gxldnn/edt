@@ -124,4 +124,5 @@ GROUP BY o.ofinum;
 --17\. Quants clients ha contactat per primer cop cada representant?
 --Mostra el codi de representant, nom i número de clients.
 
-SELECT r.repcod, count(r.cliecod), c.cliecod, c. 
+SELECT r.repcod, count(r.cliecod), c.cliecod, c.nombre
+F 

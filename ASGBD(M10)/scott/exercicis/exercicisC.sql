@@ -66,7 +66,8 @@ WHERE ventas > cuota;
 */
 
 --10\. Quantes comandes s'han pres de més de 150 euros?
-
+/*
 SELECT count(pednum)
 FROM pedido
 WHERE importe > 150;
+*/

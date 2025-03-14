@@ -55,4 +55,5 @@ FROM repventa;
 /*
 SELECT count(cliecod)
 FROM cliente;
+*/
 

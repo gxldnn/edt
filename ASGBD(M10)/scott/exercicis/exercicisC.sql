@@ -69,3 +69,4 @@ WHERE ventas > cuota;
 
 SELECT count(pednum)
 FROM pedido
+

@@ -112,3 +112,5 @@ GROUP BY ofinum
 ORDER BY ofinum;
 */
 
+--16\. Quants representants hi ha assignats a cada oficina? Mostra Ciutat
+i nombre de representants.

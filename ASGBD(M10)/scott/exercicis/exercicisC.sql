@@ -60,5 +60,6 @@ FROM cliente;
 --9\. Quants representants han obtingut un import de vendes superior a
 --la seva pròpia quota?
 
-SELECT nombre "Nom Representant
+SELECT nombre "Nom Representant"
 FROM repventa
+

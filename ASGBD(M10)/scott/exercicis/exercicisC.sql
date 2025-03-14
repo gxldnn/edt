@@ -96,4 +96,4 @@ WHERE ventas > cuota;
 --14\. Quin és l'import mitjà de les comandes preses per cada
 --representant?
 
-SELECT
+SELECT 

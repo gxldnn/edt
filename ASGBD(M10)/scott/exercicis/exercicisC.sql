@@ -22,9 +22,29 @@ WHERE LOWER(fabcod) = 'aci';
 */
 --4\. Quin és l'import mitjà de la comanda sol·licitada pel client
 --"acme mfg."
-
-SELECT AVG(pr.precio)
+/*
+SELECT AVG(p.importe), c.nombre "Client"
 FROM pedido p
 JOIN producto pr ON pr.fabcod||pr.prodcod = p.fabcod||p.prodcod
 JOIN cliente c ON c.cliecod = p.cliecod
 WHERE LOWER(c.nombre) = 'acme mfg.'
+GROUP BY c.nombre;
+*/
+--5\. Mostrar la quota màxima i la quota mínima de les quotes dels
+--representants.
+/*
+SELECT MIN(coalesce(cuota,0)), MAX(coalesce(cuota,0)), nombre "Nom Representant"
+FROM repventa
+GROUP BY nombre;
+*/
+
+--6\. Quina és la data de la comanda més antiga que es té registrada?
+/*
+SELECT MIN(fecha) "Data mes antiga"
+FROM pedido;
+*/
+
+--7\. Quin és el millor rendiment de vendes de tots els representants?
+--(considerar-ho com el percentatge de vendes sobre la quota).
+
+

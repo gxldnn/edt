@@ -49,7 +49,8 @@ FROM pedido;
 SELECT MAX(ventas) "Millor Rendiment"
 FROM repventa;
 */
---
 
+
+--8\. Quants clients té lempresa?
 
 

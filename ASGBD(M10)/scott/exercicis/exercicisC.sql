@@ -149,4 +149,4 @@ ORDER BY c.cliecod;
 SELECT SUM(importe)
 FROM pedido p 
 JOIN repventa r ON p.repcod = r.repcod
-GROUP BY r.repcod
+GROUP BY r.repcod;

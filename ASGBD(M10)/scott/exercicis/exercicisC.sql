@@ -135,4 +135,4 @@ GROUP BY r.repcod;
 
 SELECT SUM(p.importe), c.cliecod, r.repcod
 FROM pedido p 
-JOI
+JOIN 

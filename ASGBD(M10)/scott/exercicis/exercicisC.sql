@@ -63,4 +63,4 @@ FROM cliente;
 SELECT count(recpod)
 FROM repventa
 WHERE ventas > cuota
-GROUP BY recpv;
+GROUP BY repcod;

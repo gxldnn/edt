@@ -75,5 +75,5 @@ WHERE importe > 150;
 --11\. Troba el nombre total de comandes, l'import mitjà, l'import total
 --dels mateixos.
 
-SELECT count(pednum)"Numero de comandes", ROUND(AVG(importe),2)"Im", SUM(importe)
+SELECT count(pednum)"Numero de comandes", ROUND(AVG(importe),2)"Import Mitjà", SUM(importe)
 FROM pedido;

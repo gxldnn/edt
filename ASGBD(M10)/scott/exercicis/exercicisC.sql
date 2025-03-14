@@ -115,4 +115,4 @@ ORDER BY ofinum;
 --16\. Quants representants hi ha assignats a cada oficina? Mostra Ciutat
 --i nombre de representants.
 
-SELECT count(r.repcod), o.ciudad, o.
+SELECT count(r.repcod), o.ciudad "Ci"

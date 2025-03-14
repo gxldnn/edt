@@ -83,3 +83,5 @@ FROM pedido;
 /*
 SELECT count(DISTINCT puesto)
 FROM repventa;
+*/
+

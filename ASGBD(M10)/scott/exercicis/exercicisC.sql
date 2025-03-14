@@ -61,4 +61,4 @@ FROM cliente;
 --la seva pròpia quota?
 
 SELECT nombre "Nom Representant
-FROMrep
+FROM repventa

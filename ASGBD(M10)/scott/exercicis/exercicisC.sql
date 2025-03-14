@@ -134,3 +134,4 @@ GROUP BY r.repcod;
 --client a cada representant.
 
 SELECT SUM(p.importe), c.cliecod, r.repcod
+FROM 

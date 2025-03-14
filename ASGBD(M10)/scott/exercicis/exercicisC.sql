@@ -116,3 +116,4 @@ ORDER BY ofinum;
 --i nombre de representants.
 
 SELECT count(r.repcod)"Nombre representants", o.ciudad "Ciutat"
+FRO

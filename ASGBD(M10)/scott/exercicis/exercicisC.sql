@@ -157,4 +157,4 @@ ORDER BY r.repcod;
 --les quotes i el total de les vendes de tots els representants.
 
 SELECT count(r.repcod), ofinum
-F 
+FROM repventa 

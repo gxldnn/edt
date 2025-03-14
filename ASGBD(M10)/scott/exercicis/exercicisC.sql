@@ -100,4 +100,4 @@ SELECT r.repcod "Codi representant", AVG(p.importe)
 FROM repventa r 
 JOIN pedido p ON p.repcod = r.repcod
 GROUP BY r.repcod
-ORDER ;
+ORDER BY r.repcd;

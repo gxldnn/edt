@@ -148,3 +148,4 @@ ORDER BY c.cliecod;
 
 SELECT SUM(importe)
 FROM pedido p 
+JOI

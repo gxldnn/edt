@@ -99,4 +99,4 @@ WHERE ventas > cuota;
 SELECT AVG(p.importe) 
 FROM repventa
 JOIN pedido ON p.repcod = r.repcod
-GROUP BY repc
+GROUP BY repcod;

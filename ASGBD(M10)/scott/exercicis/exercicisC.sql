@@ -117,3 +117,4 @@ ORDER BY ofinum;
 
 SELECT count(r.repcod)"Nombre representants", o.ciudad "Ciutat"
 FROM repventa
+JOIN o

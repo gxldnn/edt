@@ -89,4 +89,4 @@ FROM repventa;
 --pròpies quotes?
 
 SELECT count(ofinum)
-WHERE 
+FROM 

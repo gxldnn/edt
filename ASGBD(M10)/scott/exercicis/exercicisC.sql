@@ -163,4 +163,4 @@ HAVING COUNT(repcod) > 1;
 */
 
 --21\. Mostra el nombre de comandes que superen el 75% de les existències.
-+
+

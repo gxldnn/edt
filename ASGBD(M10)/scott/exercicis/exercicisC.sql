@@ -96,6 +96,6 @@ WHERE ventas > cuota;
 --14\. Quin és l'import mitjà de les comandes preses per cada
 --representant?
 
-SELECT AVG(importe) 
+SELECT AVG(pimporte) 
 FROM repventa
 JOIN pedido ON p.repcod = r.repcod

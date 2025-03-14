@@ -146,7 +146,7 @@ ORDER BY c.cliecod;
 --19\. Llista l'import total de les comandes preses per cada
 --representant.
 
-SELECT SUM(importe)
+SELECT r.rSUM(importe)
 FROM pedido p 
 JOIN repventa r ON p.repcod = r.repcod
 GROUP BY r.repcod;

@@ -166,4 +166,4 @@ HAVING COUNT(repcod) > 1;
 
 SELECT count(pednum)
 FROM pedido p
-JOIN producto pr ON pr.prodcod||pr.fabcod 
+JOIN producto pr ON pr.prodcod||pr.fabcodpr.prodcod||pr.fabcod 

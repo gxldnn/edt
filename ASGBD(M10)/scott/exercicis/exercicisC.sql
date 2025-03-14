@@ -109,4 +109,4 @@ ORDER BY r.repcod;
 SELECT ofinum, MIN(cuota)"Cuota Minima", MAX(cuota) "Cuota Maxima"
 FROM repventa
 GROUP BY ofinum
-ORDER ;
+ORDER BY ofinum;

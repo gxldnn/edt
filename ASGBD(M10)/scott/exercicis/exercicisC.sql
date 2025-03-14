@@ -78,3 +78,7 @@ WHERE importe > 150;
 SELECT count(pednum)"Numero de comandes", ROUND(AVG(importe),2)"Import Mitjà", SUM(importe) "Total de imports"
 FROM pedido;
 */
+
+--12\. Quants llocs de treball diferents hi ha a l'empresa?
+
+SELECT 

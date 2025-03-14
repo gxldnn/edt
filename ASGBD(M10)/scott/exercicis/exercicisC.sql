@@ -73,4 +73,5 @@ WHERE importe > 150;
 */
 
 --11\. Troba el nombre total de comandes, l'import mitjà, l'import total
-dels mateixos.
+--dels mateixos.
+

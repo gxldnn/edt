@@ -159,4 +159,4 @@ ORDER BY r.repcod;
 SELECT ofinum, count(repcod), SUM(cuota), SUM(ventas)
 FROM repventa
 GROUP BY ofinum
-HAVIN
+HAVING 

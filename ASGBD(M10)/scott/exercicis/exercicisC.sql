@@ -62,4 +62,4 @@ FROM cliente;
 
 SELECT nombre "Nom Representant"
 FROM repventa
-
+WHERE ven

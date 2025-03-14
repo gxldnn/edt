@@ -49,5 +49,7 @@ FROM pedido;
 /*
 SELECT MAX(ventas) "Millor Rendiment"
 FROM repventa;
+*/
+
 
 

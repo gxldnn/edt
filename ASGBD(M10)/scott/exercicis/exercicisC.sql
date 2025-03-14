@@ -76,4 +76,4 @@ WHERE importe > 150;
 --dels mateixos.
 
 SELECT count(pednum), AVG(impore), SUM(importe)
-FROM 
+FROM pe

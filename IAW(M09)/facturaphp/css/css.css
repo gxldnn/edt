@@ -7,9 +7,9 @@ table {
 th, td {
   border: 1px solid black;
   padding: 8px;
-  text-align: center;
 }
 
 th {
   font-weight: bold;
+  text-align: left;
 }

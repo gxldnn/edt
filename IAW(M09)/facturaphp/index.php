@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <title>Factura Jan Ribera</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/css2.css"> <!-- atenció, cal crear-lo! -->
+    <link rel="stylesheet" href="css/css3.css"> <!-- atenció, cal crear-lo! -->
   </head>
   <body>
     <!--contingut -->
@@ -23,7 +23,7 @@
         $tcant = 0;
         $tnoiva = 0;
         $tiva = 0;
-        for ($x = 1; $x < mt_rand(10,20); $x++) {
+        for ($x = 1; $x <= 10; $x++) {
           $quantitat = rand(1,5);
           $preu = mt_rand(5,60);
           $subtotal = $quantitat * $preu;

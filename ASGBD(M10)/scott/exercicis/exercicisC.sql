@@ -164,7 +164,7 @@ HAVING COUNT(repcod) > 1;
 
 --21\. Mostra el nombre de comandes que superen el 75% de les existències.
 /*
-SELECT *
+SELECT COUNT(pednum)
 FROM pedido p
 JOIN producto pr ON pr.prodcod||pr.fabcod = p.prodcod||p.fabcod
 WHERE cant > exist * 0.75

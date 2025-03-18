@@ -32,13 +32,11 @@ SELECT MIN(coalesce(cuota,0)), MAX(coalesce(cuota,0)), nombre "Nom Representant"
 FROM repventa
 GROUP BY nombre;
 */
-
 --6\. Quina és la data de la comanda més antiga que es té registrada?
 /*
 SELECT MIN(fecha) "Data mes antiga"
 FROM pedido;
 */
-
 --7\. Quin és el millor rendiment de vendes de tots els representants?
 --(considerar-ho com el percentatge de vendes sobre la quota).
 /*

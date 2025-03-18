@@ -74,13 +74,11 @@ WHERE importe > 150;
 SELECT count(pednum)"Numero de comandes", ROUND(AVG(importe),2)"Import Mitjà", SUM(importe) "Total de imports"
 FROM pedido;
 */
-
 --12\. Quants llocs de treball diferents hi ha a l'empresa?
 /*
 SELECT count(DISTINCT puesto)
 FROM repventa;
 */
-
 --13\. Quantes oficines tenen representants que superen les seves
 --pròpies quotes?
 /*
@@ -88,7 +86,6 @@ SELECT count(ofinum)
 FROM repventa
 WHERE ventas > cuota;
 */
-
 --14\. Quin és l'import mitjà de les comandes preses per cada
 --representant?
 /*
@@ -98,7 +95,6 @@ JOIN pedido p ON p.repcod = r.repcod
 GROUP BY r.repcod
 ORDER BY r.repcod;
 */
-
 --15\. Quin és el rang de les quotes dels representants assignats a
 -- cada oficina (mínim i màxim)?
 /*

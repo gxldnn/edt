@@ -107,7 +107,6 @@ FROM repventa
 GROUP BY ofinum
 ORDER BY ofinum;
 */
-
 --16\. Quants representants hi ha assignats a cada oficina? Mostra Ciutat
 --i nombre de representants.
 /*
@@ -116,7 +115,6 @@ FROM repventa r
 JOIN oficina o ON r.ofinum = o.ofinum
 GROUP BY o.ofinum;
 */
-
 --17\. Quants clients ha contactat per primer cop cada representant?
 --Mostra el codi de representant, nom i número de clients.
 /*

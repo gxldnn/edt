@@ -45,14 +45,11 @@ FROM pedido;
 SELECT MAX(ventas) "Millor Rendiment"
 FROM repventa;
 */
-
-
 --8\. Quants clients té lempresa?
 /*
 SELECT count(cliecod)
 FROM cliente;
 */
-
 --9\. Quants representants han obtingut un import de vendes superior a
 --la seva pròpia quota?
 /*

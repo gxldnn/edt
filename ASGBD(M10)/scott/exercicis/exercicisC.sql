@@ -137,8 +137,6 @@ JOIN cliente c ON r.repcod = c.repcod
 GROUP BY c.cliecod, r.repcod
 ORDER BY c.cliecod;
 */
-
-
 --19\. Llista l'import total de les comandes preses per cada
 --representant.
 /*

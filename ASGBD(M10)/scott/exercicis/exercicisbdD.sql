@@ -43,11 +43,11 @@ WHERE ofinum != ALL (SELECT o.ofinum FROM oficina o JOIN repventa r ON r.repcod 
 */
 --6\. Obtenir una llista de tots els clients que han demanat comandes
 --del fabricant ACI entre gener i juny del 2003.
-
+/*
 SELECT * 
 FROM cliente
 WHERE 
-
+*/
 --7\. Obtenir una llista dels productes dels quals s'ha pres una comanda
 --de 150 euros o més.
 

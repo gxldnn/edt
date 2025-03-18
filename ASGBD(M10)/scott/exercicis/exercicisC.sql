@@ -53,14 +53,13 @@ SELECT count(cliecod)
 FROM cliente;
 */
 
---9\. Quants representants han obtingut un import de vendes superior a
+--9. Quants representants han obtingut un import de vendes superior a
 --la seva pròpia quota?
 /*
 SELECT count(repcod)
 FROM repventa
 WHERE ventas > cuota;
 */
-
 --10\. Quantes comandes s'han pres de més de 150 euros?
 /*
 SELECT count(pednum)

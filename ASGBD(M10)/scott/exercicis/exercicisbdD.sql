@@ -72,7 +72,7 @@ WHERE repcod IN
 --9\. Obtenir una llista de les oficines on hi hagi algun representant
 --la quota del qual sigui més del 55% de l'objectiu de l'oficina. Per comprovar el vostre
 --exercici, feu una Consulta prèvia el resultat de la qual valideu l'exercici.
-
+/*
 SELECT *
 FROM oficina
 WHERE ofinum IN 

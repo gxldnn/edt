@@ -45,7 +45,7 @@ WHERE ofinum != ALL (SELECT o.ofinum FROM oficina o JOIN repventa r ON r.repcod 
 --del fabricant ACI entre gener i juny del 2003.
 
 
---INSERT INTO pedido VALUES (113015, '2003-01-11', 2111, 105, 'aci', 41003, 35, 3745.00); INSERT PE
+--INSERT INTO pedido VALUES (113015, '2003-01-11', 2111, 105, 'aci', 41003, 35, 3745.00); INSERT PER A QUE HI HAGI
 
 SELECT * 
 FROM cliente

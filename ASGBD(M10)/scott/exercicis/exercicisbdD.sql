@@ -36,11 +36,11 @@ WHERE ventas > ANY (SELECT objetivo FROM oficina);
 */
 --5\. Obtenir una llista dels representants que no treballen a les
 --oficines dirigides per Larry Fitch.
-
+/*
 SELECT *
 FROM repventa
 WHERE ofinum != ALL (SELECT o.ofinum FROM oficina o JOIN repventa r ON r.repcod = o.director WHERE r.nombre = 'Larry Fitch');
-
+*/
 --6\. Obtenir una llista de tots els clients que han demanat comandes
 --del fabricant ACI entre gener i juny del 2003.
 

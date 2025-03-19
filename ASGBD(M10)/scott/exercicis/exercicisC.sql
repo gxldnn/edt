@@ -117,7 +117,7 @@ GROUP BY r.repcod;
 
 SELECT SUM(importe), cliecod, repcod
 FROM pedido 
-GROUP BY c.cliecod, r.repcod
+GROUP BY cliecod, repcod
 ORDER BY c.cliecod;
 
 --19\. Llista l'import total de les comandes preses per cada

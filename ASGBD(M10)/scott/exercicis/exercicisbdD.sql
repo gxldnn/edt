@@ -84,7 +84,7 @@ WHERE ofinum IN
 
 SELECT *
 FROM repventa
-WHERE 0.10cuota > ANY (SELECT 0.55*c FROM pedido p WHERE importe)
+WHERE 0.10*cuota > ANY (SELECT 0.55*c FROM pedido p WHERE importe)
 
 
 --11\. Obtenir una llista de les oficines on el total de vendes

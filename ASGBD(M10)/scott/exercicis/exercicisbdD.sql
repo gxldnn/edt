@@ -83,7 +83,7 @@ WHERE ofinum IN
 --l'import del qual sigui més del 10% de la seva quota.
 
 SELECT *
-FROM repventa 
+FROM repventa r
 WHERE cuota > ANY (SELECT importe FROM pedido p JOIN repventa r ON p.repcod = r.repcod);
 
 

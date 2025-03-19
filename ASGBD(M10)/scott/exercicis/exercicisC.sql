@@ -117,7 +117,6 @@ GROUP BY r.repcod;
 
 SELECT SUM(p.importe), c.cliecod, r.repcod
 FROM pedido p 
-
 GROUP BY c.cliecod, r.repcod
 ORDER BY c.cliecod;
 

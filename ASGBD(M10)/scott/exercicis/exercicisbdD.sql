@@ -39,7 +39,7 @@ WHERE ventas > ANY (SELECT objetivo FROM oficina);
 
 SELECT *
 FROM repventa
-WHERE ofinum != ANY (SELECT o.ofinum FROM oficina o JOIN repventa r ON r.repcod = o.director WHERE r.nombre = 'Larry Fitch');
+WHERE ofinum != ALL (SELECT o.ofinum FROM oficina o JOIN repventa r ON r.repcod = o.director WHERE r.nombre = 'Larry Fitch');
 
 --6\. Obtenir una llista de tots els clients que han demanat comandes
 --del fabricant ACI entre gener i juny del 2003.

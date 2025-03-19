@@ -1,20 +1,3 @@
-
-S'ha obert la conversa. Conté un missatge no llegit.
-
-Ves al contingut
-Utilitza Correu de Escola del Treball de Barcelona amb lectors de pantalla
-1 de 410
-BD
-Safata d'entrada
-Elena Ramos Alvarez
-	
-Fitxers adjunts12:24 (fa 10 minuts)
-	
-per a mi
-
- Un fitxer adjunt  •  Escanejat per Gmail
-	
-
 \c template1
 drop database if exists training;
 create database training;
@@ -231,6 +214,3 @@ COPY pedido (pednum, fecha, cliecod, repcod, fabcod, prodcod, cant, importe) FRO
 
 ALTER TABLE ONLY OFICINA ADD CONSTRAINT FK_OFICINA_DIRECTOR FOREIGN KEY(DIRECTOR) REFERENCES REPVENTA(REPCOD);
 ALTER TABLE ONLY REPVENTA ADD CONSTRAINT FK_REPVENTA_JEFE FOREIGN KEY(JEFE) REFERENCES REPVENTA(REPCOD);
-
-taulesTraining.sql
-Es mostra taulesTraining.sql.

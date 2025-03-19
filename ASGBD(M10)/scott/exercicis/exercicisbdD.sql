@@ -72,7 +72,7 @@ WHERE repcod IN (SELECT repcod FROM repventa WHERE nombre = 'Sue Smith') AND cli
 
 SELECT *
 FROM oficina
-WH
+WHERE 
 
 --10\. Obtenir una llista dels representants que han pres alguna comanda
 --l'import del qual sigui més del 10% de la seva quota.

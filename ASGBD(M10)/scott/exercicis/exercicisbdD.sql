@@ -53,7 +53,7 @@ WHERE cliecod = (SELECT cliecod FROM pedido WHERE fabcod = 'aci' AND fecha BETWE
 */
 --7\. Obtenir una llista dels productes dels quals s'ha pres una comanda
 --de 150 euros o més.
-
+/
 SELECT *
 FROM producto
 WHERE fabcod||prodcod IN (SELECT fabcod||prodcod FROM pedido WHERE importe > 150);

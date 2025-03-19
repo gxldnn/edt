@@ -207,6 +207,7 @@ COPY pedido (pednum, fecha, cliecod, repcod, fabcod, prodcod, cant, importe) FRO
 112987	1989-12-31	2103	105	aci	4100y	11	27500.00
 113057	1990-02-18	2111	103	aci	4100x	24	600.00
 113042	1990-02-02	2113	101	rei	2a44r	5	22500.00
+
 \.
 
 

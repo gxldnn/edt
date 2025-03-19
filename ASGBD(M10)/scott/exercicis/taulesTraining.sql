@@ -136,7 +136,7 @@ COPY oficina (ofinum, ciudad, region, director, objetivo, ventas) FROM stdin;
 COPY repventa (repcod, nombre, edad, ofinum, puesto, fcontrato, jefe, cuota, ventas) FROM stdin;
 105	Bill Adams	37	13	Representante Ventas	1988-02-12	104	350000.00	367911.00
 109	Mary Jones	31	11	Representante Ventas	1989-10-12	106	300000.00	392725.00
-102	Sue Smith	48	21	Representante Ventas	1986-12-10	108	350000.00	474050.00
+102	Sue Smith	48	21	Representante Ventas	1986-12-10	108	142594.00	474050.00
 106	Sam Clark	52	11	VP Ventas	1988-06-14	\N	275000.00	299912.00
 104	Bob Smith	33	12	Dir Ventas	1987-05-19	106	200000.00	142594.00
 101	Dan Roberts	45	12	Representante Ventas	1986-10-20	104	300000.00	305673.00

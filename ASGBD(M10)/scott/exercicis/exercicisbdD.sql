@@ -77,9 +77,11 @@ SELECT *
 FROM oficina
 WHERE ofinum IN 
     (SELECT ofinum FROM repventa WHERE cuota > ANY (SELECT 0.55 * objetivo FROM oficina o JOIN repventa r ON o.ofinum = r.ofinum))
+*/
 
 --10\. Obtenir una llista dels representants que han pres alguna comanda
 --l'import del qual sigui més del 10% de la seva quota.
+
 
 --11\. Obtenir una llista de les oficines on el total de vendes
 --dels seus representants han aconseguit un import de vendes que supera el

@@ -66,7 +66,7 @@ FROM cliente
 WHERE repcod IN 
     (SELECT repcod FROM repventa WHERE nombre = 'Sue Smith') AND 
     cliecod IN 
-    (SELECT cliecod FROM pedido WHERE importe < 5000)
+    (SELECT cliecod FROM pedido WHERE importe < 5000);
 */
 
 --9\. Obtenir una llista de les oficines on hi hagi algun representant

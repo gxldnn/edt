@@ -115,7 +115,7 @@ GROUP BY r.repcod;
 -- 8\. Calcula el total de l'import de les comandes sol·licitades per cada
 --client a cada representant.
 
-SELECT SUM(importe), cliecod, repcod
+SELECT  cliecod, repcod
 FROM pedido 
 GROUP BY cliecod, repcod
 ORDER BY cliecod;

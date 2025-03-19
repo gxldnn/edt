@@ -141,9 +141,9 @@ COPY repventa (repcod, nombre, edad, ofinum, puesto, fcontrato, jefe, cuota, ven
 104	Bob Smith	33	12	Dir Ventas	1987-05-19	106	200000.00	142594.00
 101	Dan Roberts	45	12	Representante Ventas	1986-10-20	104	300000.00	305673.00
 110	Tom Snyder	41	\N	Representante Ventas	1990-01-13	101	\N	75985.00
-108	Larry Fitch	62	21	Dir Ventas	1989-10-12	106	350000.00	361865.00
+108	Larry Fitch	62	21	Dir Ventas	1989-10-12	106	350000.00	142594.00
 103	Paul Cruz	29	12	Representante Ventas	1987-03-01	104	275000.00	286775.00
-107	Nancy Angelli	49	22	Representante Ventas	1988-11-14	108	300000.00	186042.00
+107	Nancy Angelli	49	22	Representante Ventas	1988-11-14	108	142594.00	186042.00
 \.
 
 

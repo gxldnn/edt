@@ -82,7 +82,7 @@ WHERE ofinum IN
 --10\. Obtenir una llista dels representants que han pres alguna comanda
 --l'import del qual sigui més del 10% de la seva quota.
 
-SELECT COALESCE(*::TEXT,"Nulo")
+SELECT *
 FROM repventa
 WHERE repcod IN (SELECT repcod FROM pedido p WHERE importe > ANY (SELECT 0.10 * r.cuota FROM repventa r WHERE p.repcod = r.repcod));
 --11\. Obtenir una llista de les oficines on el total de vendes

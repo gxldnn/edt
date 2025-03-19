@@ -56,7 +56,7 @@ WHERE cliecod = (SELECT cliecod FROM pedido WHERE fabcod = 'aci' AND fecha BETWE
 
 SELECT *
 FROM prodcuto
-WHERE fabcod||prodcod IN (SELECT )
+WHERE fabcod||prodcod IN (SELECT importe FROM pe)
 
 --8\. Obtenir una llista dels clients contactats per Sue Smith que no
 --han sol·licitat comandes amb imports superiors a 18 euros.

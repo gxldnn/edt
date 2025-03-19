@@ -61,6 +61,8 @@ WHERE fabcod||prodcod IN (SELECT fabcod||prodcod FROM pedido WHERE importe > 150
 --8\. Obtenir una llista dels clients contactats per Sue Smith que no
 --han sol·licitat comandes amb imports superiors a 18 euros.
 
+
+
 --9\. Obtenir una llista de les oficines on hi hagi algun representant
 --la quota del qual sigui més del 55% de l'objectiu de l'oficina. Per comprovar el vostre
 --exercici, feu una Consulta prèvia el resultat de la qual valideu l'exercici.

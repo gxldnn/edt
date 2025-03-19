@@ -83,7 +83,7 @@ WHERE ofinum IN
 --l'import del qual sigui més del 10% de la seva quota.
 
 SELECT *
-FROM repventa
+FROM repventa r
 WHERE repcod IN (SELECT repcod FROM pedido WHERE importe > ANY (SELECT 0.10*cuota FROM repventa))
 
 --11\. Obtenir una llista de les oficines on el total de vendes

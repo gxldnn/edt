@@ -75,7 +75,7 @@ WHERE repcod IN
 
 SELECT *
 FROM oficina
-WHERE 
+WHERE ofinum = 
 
 --10\. Obtenir una llista dels representants que han pres alguna comanda
 --l'import del qual sigui més del 10% de la seva quota.

@@ -1,5 +1,5 @@
 --0. Mostrar el nom i el lloc dels que són cap (ja està fet amb self join, ara amb subconsultes)
-/*
+
 SELECT nombre, puesto
 FROM repventa
 WHERE repcod IN (SELECT jefe FROM repventa);

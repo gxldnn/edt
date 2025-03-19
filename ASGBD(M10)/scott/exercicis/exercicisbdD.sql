@@ -84,7 +84,7 @@ WHERE ofinum IN
 
 SELECT *
 FROM repventa
-WHERE repcod = (SELECT repcod FROM pedido WHERE importe )
+WHERE repcod = (SELECT repcod FROM pedido WHERE importe IN >)
 
 --11\. Obtenir una llista de les oficines on el total de vendes
 --dels seus representants han aconseguit un import de vendes que supera el

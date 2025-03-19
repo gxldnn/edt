@@ -76,7 +76,7 @@ WHERE repcod IN
 SELECT *
 FROM oficina
 WHERE ofinum IN 
-    (SELECT ofinum FROM repventa WHERE cuota > (SELECT objetivo FROM oficina JOIN repventa r))
+    (SELECT ofinum FROM repventa WHERE cuota > (SELECT objetivo FROM oficina o JOIN repventa r ON o.o))
 
 --10\. Obtenir una llista dels representants que han pres alguna comanda
 --l'import del qual sigui més del 10% de la seva quota.

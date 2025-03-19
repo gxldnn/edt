@@ -63,7 +63,7 @@ WHERE fabcod||prodcod IN (SELECT fabcod||prodcod FROM pedido WHERE importe > 150
 
 SELECT *
 FROM cliente 
-WHERE cliecod = (SELECT cliecod FROM repventa WHERE LOWER(nombre) = 'Sue Sm')
+WHERE cliecod = (SELECT cliecod FROM repventa WHERE LOWER(nombre) = 'Sue Smith')
 
 --9\. Obtenir una llista de les oficines on hi hagi algun representant
 --la quota del qual sigui més del 55% de l'objectiu de l'oficina. Per comprovar el vostre

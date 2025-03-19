@@ -135,15 +135,15 @@ COPY oficina (ofinum, ciudad, region, director, objetivo, ventas) FROM stdin;
 
 COPY repventa (repcod, nombre, edad, ofinum, puesto, fcontrato, jefe, cuota, ventas) FROM stdin;
 105	Bill Adams	37	13	Representante Ventas	1988-02-12	104	350000.00	367911.00
-109	Mary Jones	31	11	Representante Ventas	1989-10-12	106	142594.00	392725.00
-102	Sue Smith	48	21	Representante Ventas	1986-12-10	108	142594.00	474050.00
-106	Sam Clark	52	11	VP Ventas	1988-06-14	\N	275000.00	142594.00
+109	Mary Jones	31	11	Representante Ventas	1989-10-12	106	300000.00	392725.00
+102	Sue Smith	48	21	Representante Ventas	1986-12-10	108	350000.00	474050.00
+106	Sam Clark	52	11	VP Ventas	1988-06-14	\N	275000.00	299912.00
 104	Bob Smith	33	12	Dir Ventas	1987-05-19	106	200000.00	142594.00
-101	Dan Roberts	45	12	Representante Ventas	1986-10-20	104	142594.00	305673.00
-110	Tom Snyder	41	\N	Representante Ventas	1990-01-13	101	\N	142594.00
-108	Larry Fitch	62	21	Dir Ventas	1989-10-12	106	350000.00	142594.00
-103	Paul Cruz	29	12	Representante Ventas	1987-03-01	104	142594.00	286775.00
-107	Nancy Angelli	49	22	Representante Ventas	1988-11-14	108	142594.00	186042.00
+101	Dan Roberts	45	12	Representante Ventas	1986-10-20	104	300000.00	305673.00
+110	Tom Snyder	41	\N	Representante Ventas	1990-01-13	101	\N	75985.00
+108	Larry Fitch	62	21	Dir Ventas	1989-10-12	106	350000.00	361865.00
+103	Paul Cruz	29	12	Representante Ventas	1987-03-01	104	275000.00	286775.00
+107	Nancy Angelli	49	22	Representante Ventas	1988-11-14	108	300000.00	186042.00
 \.
 
 
@@ -203,10 +203,11 @@ COPY pedido (pednum, fecha, cliecod, repcod, fabcod, prodcod, cant, importe) FRO
 112993	1989-01-04	2106	102	rei	2a45c	24	1896.00
 113065	1990-02-27	2106	102	qsa	xk47 	6	2130.00
 113003	1990-01-25	2108	109	imm	779c 	3	5625.00
-113049	1990-02-10	2118	108	qsa	xk47 	2	776.00
 112987	1989-12-31	2103	105	aci	4100y	11	27500.00
 113057	1990-02-18	2111	103	aci	4100x	24	600.00
 113042	1990-02-02	2113	101	rei	2a44r	5	22500.00
+113049	2003-02-02	2111	101	aci	4100z	4	2200.00
+
 \.
 
 

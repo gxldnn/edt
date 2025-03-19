@@ -46,7 +46,7 @@ WHERE ofinum != ALL (SELECT o.ofinum FROM oficina o JOIN repventa r ON r.repcod 
 
 SELECT * 
 FROM cliente
-WHERE cliecod = (SELECT cliecod FROM pedido WHERE fabc)
+WHERE cliecod = (SELECT cliecod FROM pedido WHERE fabcod = )
 
 --7\. Obtenir una llista dels productes dels quals s'ha pres una comanda
 --de 150 euros o més.

@@ -43,7 +43,7 @@ WHERE ofinum != ALL (SELECT o.ofinum FROM oficina o JOIN repventa r ON r.repcod 
 */
 --6\. Obtenir una llista de tots els clients que han demanat comandes
 --del fabricant ACI entre gener i juny del 2003.
-INSERT INTO pedido VALUES (113012, '2003-01-11', 2111, 105, aci	41003	35	3745.00
+INSERT INTO pedido VALUES (113012, '2003-01-11', 2111, 105, 'aci'	41003	35	3745.00
 )
 SELECT * 
 FROM cliente

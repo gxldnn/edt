@@ -70,7 +70,7 @@ WHERE repcod IN (SELECT repcod FROM repventa WHERE nombre = 'Sue Smith') AND cli
 --la quota del qual sigui més del 55% de l'objectiu de l'oficina. Per comprovar el vostre
 --exercici, feu una Consulta prèvia el resultat de la qual valideu l'exercici.
 
-SELECT 
+SELECT
 
 --10\. Obtenir una llista dels representants que han pres alguna comanda
 --l'import del qual sigui més del 10% de la seva quota.

@@ -50,6 +50,7 @@ WHERE cliecod = (SELECT cliecod FROM pedido WHERE fabcod = 'aci' AND fecha BETWE
 
 --7\. Obtenir una llista dels productes dels quals s'ha pres una comanda
 --de 150 euros o més.
+    113043	2003-02-02	2111	101	aci	4100z	4	2200.00
 
 --8\. Obtenir una llista dels clients contactats per Sue Smith que no
 --han sol·licitat comandes amb imports superiors a 18 euros.

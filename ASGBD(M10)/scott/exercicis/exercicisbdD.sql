@@ -83,6 +83,7 @@ WHERE ofinum IN
 --l'import del qual sigui més del 10% de la seva quota.
 
 SELECT *
+FROM 
 
 --11\. Obtenir una llista de les oficines on el total de vendes
 --dels seus representants han aconseguit un import de vendes que supera el

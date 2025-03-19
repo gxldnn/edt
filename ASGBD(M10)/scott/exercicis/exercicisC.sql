@@ -116,7 +116,7 @@ GROUP BY r.repcod;
 --client a cada representant.
 
 SELECT SUM(importe), cliecod, repcod
-FROM pedido p 
+FROM pedido 
 GROUP BY c.cliecod, r.repcod
 ORDER BY c.cliecod;
 

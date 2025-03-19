@@ -84,7 +84,7 @@ WHERE ofinum IN
 
 SELECT *
 FROM repventa
-WHERE repcod IN (SELECT repcod FROM pedido p JOINWHERE importe > ANY (SELECT 0.10 * r.cuota FROM repventa r WHERE p.repcod = r.repcod));
+WHERE repcod IN (SELECT repcod FROM pedido p WHERE importe > ANY (SELECT 0.10 * r.cuota FROM repventa r WHERE p.repcod = r.repcod));
 
 
 --11\. Obtenir una llista de les oficines on el total de vendes

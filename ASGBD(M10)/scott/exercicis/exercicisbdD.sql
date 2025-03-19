@@ -45,7 +45,7 @@ WHERE ofinum != ALL (SELECT o.ofinum FROM oficina o JOIN repventa r ON r.repcod 
 --del fabricant ACI entre gener i juny del 2003.
 
 SELECT * 
-FROM clienb
+FROM cliente
 WHERE   
 
 --7\. Obtenir una llista dels productes dels quals s'ha pres una comanda

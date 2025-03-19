@@ -178,7 +178,7 @@ COPY cliente (cliecod, nombre, repcod, limcred) FROM stdin;
 
 COPY pedido (pednum, fecha, cliecod, repcod, fabcod, prodcod, cant, importe) FROM stdin;
 112961	1989-12-17	2117	106	rei	2a44l	7	31500.00
-113012	2003-01-11	2111	105	aci	41003	35	3745.00
+113012	1990-01-11	2111	105	aci	41003	35	3745.00
 112989	1990-01-03	2101	106	fea	114  	6	1458.00
 113051	1990-02-10	2118	108	qsa	xk47 	4	1420.00
 112968	1989-10-12	2102	101	aci	41004	34	3978.00

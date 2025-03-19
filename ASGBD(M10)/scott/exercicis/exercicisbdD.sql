@@ -71,7 +71,8 @@ WHERE repcod IN (SELECT repcod FROM repventa WHERE nombre = 'Sue Smith') AND cli
 --exercici, feu una Consulta prèvia el resultat de la qual valideu l'exercici.
 
 SELECT *
-FROM ofici
+FROM oficina
+WH
 
 --10\. Obtenir una llista dels representants que han pres alguna comanda
 --l'import del qual sigui més del 10% de la seva quota.

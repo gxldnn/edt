@@ -24,6 +24,8 @@ WHERE repcod = (SELECT repcod FROM repventa WHERE nombre = 'Bill Adams');
 --existències superen les existències del producte 41004 del mateix
 --fabricant.
 
+SELECT * 
+FROM p
 --4\. Obtenir una llista dels representants que treballen a les oficines
 --que han aconseguit superar el seu objectiu de vendes.
 --

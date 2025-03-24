@@ -48,7 +48,7 @@ WHERE ofinum NOT IN (SELECT ofinum FROM repventa WHERE nombre = 'Larry Fitch');
 
 SELECT *
 FROM cliente
-WHERE pednum = (SELECT pednum)
+WHERE pednum = (SELECT pednum FROM pr)
 
 --7\. Obtenir una llista dels productes dels quals s'ha pres una comanda
 --de 150 euros o més.

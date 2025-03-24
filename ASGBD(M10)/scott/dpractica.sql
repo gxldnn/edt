@@ -24,7 +24,7 @@ WHERE repcod = (SELECT repcod FROM repventa WHERE nombre = 'Bill Adams');
 --existències superen les existències del producte 41004 del mateix
 --fabricant.
 /**
-SELECT * 
+SELECT  
 FROM producto
 WHERE fabcod = 'aci' AND exist > ANY (SELECT exist FROM producto WHERE prodcod = '41004');
 */

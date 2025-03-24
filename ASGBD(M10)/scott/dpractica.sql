@@ -23,7 +23,7 @@ WHERE repcod = (SELECT repcod FROM repventa WHERE nombre = 'Bill Adams');
 --3\. Obtenir una llista de tots els productes del fabricant ACI les del qual
 --existències superen les existències del producte 41004 del mateix
 --fabricant.
---
+
 --4\. Obtenir una llista dels representants que treballen a les oficines
 --que han aconseguit superar el seu objectiu de vendes.
 --

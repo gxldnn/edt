@@ -31,14 +31,16 @@ WHERE fabcod = 'aci' AND exist  > ANY (SELECT exist FROM producto WHERE prodcod 
 
 --4\. Obtenir una llista dels representants que treballen a les oficines
 --que han aconseguit superar el seu objectiu de vendes.
-
+/*
 SELECT *
 FROM repventa r
 WHERE ventas > (SELECT objetivo FROM oficina o WHERE r.ofinum = o.ofinum);
-
+*/
 --5\. Obtenir una llista dels representants que no treballen a les
 --oficines dirigides per Larry Fitch.
---
+
+
+
 --6\. Obtenir una llista de tots els clients que han demanat comandes
 --del fabricant ACI entre gener i juny del 2003.
 --

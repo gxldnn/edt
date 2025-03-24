@@ -45,7 +45,7 @@ WHERE ofinum NOT IN (SELECT ofinum FROM repventa WHERE nombre = 'Larry Fitch');
 
 --6\. Obtenir una llista de tots els clients que han demanat comandes
 --del fabricant ACI entre gener i juny del 2003.
---
+
 --7\. Obtenir una llista dels productes dels quals s'ha pres una comanda
 --de 150 euros o més.
 --

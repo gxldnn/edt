@@ -34,7 +34,7 @@ WHERE fabcod = 'aci' AND exist  > ANY (SELECT exist FROM producto WHERE prodcod 
 
 SELECT *
 FROM repventa r
-WHERE ventas > (SELECT objetivo FROM oficina WHERE r.ofinb)
+WHERE ventas > (SELECT objetivo FROM oficina WHERE r.ofinum = o.)
 
 --5\. Obtenir una llista dels representants que no treballen a les
 --oficines dirigides per Larry Fitch.

@@ -9,7 +9,7 @@ ORDER BY 1;
 
 SELECT *
 FROM repventa 
-WHERE cuota > ANY (SELECT objecti)
+WHERE cuota > ANY (SELECT objectivo FROM )
 
 --2\. Obtenir una llista de tots els clients (nom) que van ser
 --contactats per primera vegada per Bill Adams.

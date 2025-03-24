@@ -1,16 +1,17 @@
 --0. Mostrar el nom i el lloc dels que són cap (ja està fet amb self join, ara amb subconsultes)
-
+/*
 SELECT repcod, puesto
 FROM repventa
 WHERE repcod IN (SELECT jefe FROM repventa)
 ORDER BY 1;
+*/
 --1\. Obtenir una llista dels representants les quotes dels quals són iguals o
 --superiors a lobjectiu de loficina dAtlanta.
 /*
 SELECT *
 FROM repventa 
 WHERE cuota >= ANY (SELECT objetivo FROM oficina WHERE ciudad = 'Atlanta');
-
+*/
 --2\. Obtenir una llista de tots els clients (nom) que van ser
 --contactats per primera vegada per Bill Adams.
 

@@ -41,7 +41,7 @@ WHERE ventas > (SELECT objetivo FROM oficina o WHERE r.ofinum = o.ofinum);
 
 SELECT * 
 FROM repventa 
-WHERE ofinum IN (SELECT ofinum FROM repventa WHERE nombre = 'Larry Fitch');
+WHERE ofinum NOT IN (SELECT ofinum FROM repventa WHERE nombre = 'Larry Fitch');
 
 --6\. Obtenir una llista de tots els clients que han demanat comandes
 --del fabricant ACI entre gener i juny del 2003.

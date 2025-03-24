@@ -45,7 +45,7 @@ WHERE ofinum NOT IN (SELECT ofinum FROM repventa WHERE nombre = 'Larry Fitch');
 */
 --6\. Obtenir una llista de tots els clients que han demanat comandes
 --del fabricant ACI entre gener i juny del 2003.
-
+/*
 SELECT *
 FROM cliente
 WHERE cliecod = (SELECT cliecod FROM pedido WHERE fabcod = 'aci' AND fecha BETWEEN '2003-01-01' AND '2003-06-30');

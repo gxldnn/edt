@@ -25,7 +25,7 @@ WHERE repcod = (SELECT repcod FROM repventa WHERE nombre = 'Bill Adams');
 --fabricant.
 
 SELECT * 
-FROM producte
+FROM product
 --4\. Obtenir una llista dels representants que treballen a les oficines
 --que han aconseguit superar el seu objectiu de vendes.
 --

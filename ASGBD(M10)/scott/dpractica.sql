@@ -14,11 +14,11 @@ WHERE cuota >= ANY (SELECT objetivo FROM oficina WHERE ciudad = 'Atlanta');
 */
 --2\. Obtenir una llista de tots els clients (nom) que van ser
 --contactats per primera vegada per Bill Adams.
-
+/*
 SELECT *
 FROM cliente
 WHERE repcod = (SELECT repcod FROM repventa WHERE nombre = 'Bill Adams');
-
+*/
 
 --3\. Obtenir una llista de tots els productes del fabricant ACI les del qual
 --existències superen les existències del producte 41004 del mateix

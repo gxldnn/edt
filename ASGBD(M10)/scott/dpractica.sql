@@ -40,7 +40,8 @@ WHERE ventas > (SELECT objetivo FROM oficina o WHERE r.ofinum = o.ofinum);
 --oficines dirigides per Larry Fitch.
 
 SELECT * 
-FROM reo
+FROM repventa 
+
 
 --6\. Obtenir una llista de tots els clients que han demanat comandes
 --del fabricant ACI entre gener i juny del 2003.

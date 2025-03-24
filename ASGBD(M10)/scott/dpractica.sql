@@ -49,10 +49,11 @@ WHERE ofinum NOT IN (SELECT ofinum FROM repventa WHERE nombre = 'Larry Fitch');
 SELECT *
 FROM cliente
 WHERE cliecod = (SELECT cliecod FROM pedido WHERE fabcod = 'aci' AND fecha BETWEEN '2003-01-01' AND '2003-06-30');
+*/
 
 --7\. Obtenir una llista dels productes dels quals s'ha pres una comanda
 --de 150 euros o més.
---
+-
 --8\. Obtenir una llista dels clients contactats per Sue Smith que no
 --han sol·licitat comandes amb imports superiors a 18 euros.
 --

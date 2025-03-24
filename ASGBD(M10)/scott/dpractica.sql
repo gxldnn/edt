@@ -16,7 +16,7 @@ WHERE cuota >= ANY (SELECT objetivo FROM oficina WHERE ciudad = 'Atlanta');
 
 SELECT *
 FROM cliente
-WHERE repcod = (SELECT repcod FROM repventa WHERE nombre = 'Bill A')
+WHERE repcod = (SELECT repcod FROM repventa WHERE nombre = 'Bill Adams')
 --
 --3\. Obtenir una llista de tots els productes del fabricant ACI les del qual
 --existències superen les existències del producte 41004 del mateix

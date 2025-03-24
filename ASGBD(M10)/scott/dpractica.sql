@@ -6,7 +6,7 @@ WHERE repcod IN (SELECT jefe FROM repventa)
 ORDER BY 1;
 --1\. Obtenir una llista dels representants les quotes dels quals són iguals o
 --superiors a lobjectiu de loficina dAtlanta.
-
+/*
 SELECT *
 FROM repventa 
 WHERE cuota >= ANY (SELECT objetivo FROM oficina WHERE ciudad = 'Atlanta');

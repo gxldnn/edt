@@ -39,7 +39,7 @@ WHERE ventas > (SELECT objetivo FROM oficina o WHERE r.ofinum = o.ofinum);
 --5\. Obtenir una llista dels representants que no treballen a les
 --oficines dirigides per Larry Fitch.
 
-
+SELECT 
 
 --6\. Obtenir una llista de tots els clients que han demanat comandes
 --del fabricant ACI entre gener i juny del 2003.

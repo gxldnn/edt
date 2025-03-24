@@ -9,6 +9,7 @@ ORDER BY 1;
 
 SELECT *
 FROM repventa 
+WHERE cu
 
 --2\. Obtenir una llista de tots els clients (nom) que van ser
 --contactats per primera vegada per Bill Adams.

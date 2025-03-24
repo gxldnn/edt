@@ -32,7 +32,7 @@ WHERE fabcod = 'aci' AND exist  > ANY (SELECT exist FROM producto WHERE prodcod 
 --4\. Obtenir una llista dels representants que treballen a les oficines
 --que han aconseguit superar el seu objectiu de vendes.
 
-
+SELECT * 
 
 --5\. Obtenir una llista dels representants que no treballen a les
 --oficines dirigides per Larry Fitch.

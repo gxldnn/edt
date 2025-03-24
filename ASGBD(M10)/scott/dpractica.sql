@@ -15,6 +15,7 @@ WHERE cuota >= ANY (SELECT objetivo FROM oficina WHERE ciudad = 'Atlanta');
 --contactats per primera vegada per Bill Adams.
 
 SELECT *
+FROM cliente
 --
 --3\. Obtenir una llista de tots els productes del fabricant ACI les del qual
 --existències superen les existències del producte 41004 del mateix

@@ -8,7 +8,7 @@ ORDER BY 1;
 --superiors a lobjectiu de loficina dAtlanta.
 
 SELECT *
-
+FROM repvenat
 
 --2\. Obtenir una llista de tots els clients (nom) que van ser
 --contactats per primera vegada per Bill Adams.

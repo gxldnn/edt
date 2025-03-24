@@ -26,7 +26,7 @@ WHERE repcod = (SELECT repcod FROM repventa WHERE nombre = 'Bill Adams');
 
 SELECT * 
 FROM producto
-WHERE fabcod = 'aci' AND exist > IN (SELECT exist FROM producto WHERE prodcod = '41004');
+WHERE fabcod = 'aci' AND exist >  (SELECT exist FROM producto WHERE prodcod = '41004');
 
 --4\. Obtenir una llista dels representants que treballen a les oficines
 --que han aconseguit superar el seu objectiu de vendes.

@@ -2,7 +2,8 @@
 
 SELECT repcod, puesto
 FROM repventa
-WHERE repcod IN (SELECT jefe FROM repventa);
+WHERE repcod IN (SELECT jefe FROM repventa)
+ORDE;
 --1\. Obtenir una llista dels representants les quotes dels quals són iguals o
 --superiors a lobjectiu de loficina dAtlanta.
 --

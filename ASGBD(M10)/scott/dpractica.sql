@@ -1,7 +1,7 @@
 --0. Mostrar el nom i el lloc dels que són cap (ja està fet amb self join, ara amb subconsultes)
 
 SELECT repcod, puesto
-FRO
+FROM repventa 
 --1\. Obtenir una llista dels representants les quotes dels quals són iguals o
 --superiors a lobjectiu de loficina dAtlanta.
 --

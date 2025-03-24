@@ -33,7 +33,8 @@ WHERE fabcod = 'aci' AND exist  > ANY (SELECT exist FROM producto WHERE prodcod 
 --que han aconseguit superar el seu objectiu de vendes.
 
 SELECT *
-FROM repv
+FROM repventa
+WHERE 
 
 --5\. Obtenir una llista dels representants que no treballen a les
 --oficines dirigides per Larry Fitch.

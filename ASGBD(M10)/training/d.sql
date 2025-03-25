@@ -94,8 +94,8 @@ WHERE 0.1*cuota > ANY (SELECT importe FROM pedido p WHERE p.repcod = r.repcod);
 --oficina (suposeu que el camp vendes d'oficina no existeix).
 
 SELECT *
-FROM oficina
-WHERE objectiu
+FROM oficina o
+WHERE objectiu 
 
 --12\. Quina és la descripció del primer producte sol·licitat en una comanda?
 

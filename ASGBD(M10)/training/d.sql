@@ -3,16 +3,17 @@
 SELECT nombre, puesto
 FROM repventa
 WHERE repcod IN (SELECT jefe FROM repventa);
+*/
 --1\. Obtenir una llista dels representants les quotes dels quals són iguals o
 --superiors a lobjectiu de loficina dAtlanta.
-
+/*
 SELECT nombre, cuota
 FROM repventa
 WHERE cuota >= ANY (SELECT objetivo FROM oficina);
-
+*/
 --2\. Obtenir una llista de tots els clients (nom) que van ser
 --contactats per primera vegada per Bill Adams.
-
+/*
 SELECT nombre
 FROM cliente
 WHERE repcod = (SELECT repcod FROM repventa WHERE nombre = 'Bill Adams');

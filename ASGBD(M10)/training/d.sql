@@ -111,6 +111,8 @@ WHERE ventas = (SELECT MAX(ventas) FROM repventa)
 
 --14\. Quin representant té el pitjor percentatge de vendes?
 
+
+
 --15. Quin producte (Descripció) té més comandes?
 
 --16 . Quin producte s'ha venut més?

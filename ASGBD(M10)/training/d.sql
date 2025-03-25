@@ -119,7 +119,8 @@ WHERE ventas = (SELECT MIN(ventas) FROM repventa)
 /*
 SELECT prodcod||fabcod
 FROM producto
-WHERE prodcod||fabcod = 
+WHERE prodcod||fabcod = SELECT prodcod||fabcod AS "clau", COUNT(prodcod||fabcod) AS "count" FROM pedido GROUP BY prodcod||fabcod;
+
 */
 SELECT prodcod||fabcod AS "clau", COUNT(prodcod||fabcod) AS "count" FROM pedido GROUP BY prodcod||fabcod;
 

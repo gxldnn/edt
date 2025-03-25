@@ -93,7 +93,7 @@ WHERE 0.1*cuota > ANY (SELECT importe FROM pedido p WHERE p.repcod = r.repcod);
 --50% de lobjectiu de loficina. Mostrar també l'objectiu de cada
 --oficina (suposeu que el camp vendes d'oficina no existeix).
 
-
+SELECT 
 
 --12\. Quina és la descripció del primer producte sol·licitat en una comanda?
 

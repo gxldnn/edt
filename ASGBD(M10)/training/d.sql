@@ -114,7 +114,7 @@ WHERE ventas = (SELECT MAX(ventas) FROM repventa);
 SELECT repcod, nombre
 FROM repventa
 WHERE ventas = (SELECT MIN(ventas) FROM repventa)
-
+*/
 --15. Quin producte (Descripció) té més comandes?
 
 --16 . Quin producte s'ha venut més?

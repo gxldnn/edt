@@ -121,6 +121,6 @@ SELECT prodcod||fabcod
 FROM producto
 WHERE prodcod||fabcod = 
 */
-SELECT prodcod||fabcod AS"Clau", COUNT(prodcod||fabcod) AS "count" FROM pedido GROUP BY prodcod||fabcod;
+SELECT prodcod||fabcod AS "clau", COUNT(prodcod||fabcod) AS "count" FROM pedido GROUP BY prodcod||fabcod;
 
 --16 . Quin producte s'ha venut més?

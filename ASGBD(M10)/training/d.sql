@@ -95,7 +95,7 @@ WHERE 0.1*cuota > ANY (SELECT importe FROM pedido p WHERE p.repcod = r.repcod);
 
 SELECT *
 FROM oficina o
-WHERE 0.5 * o.objetivo < ANY (SELECT SUM(ventas) FROM repventa r WHERE r.ofinum = o.ofinum GROUP);
+WHERE 0.5 * o.objetivo < ANY (SELECT SUM(ventas) FROM repventa r WHERE r.ofinum = o.ofinum GROUP BY );
 
 --12\. Quina és la descripció del primer producte sol·licitat en una comanda?
 

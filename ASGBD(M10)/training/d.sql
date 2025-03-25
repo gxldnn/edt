@@ -119,6 +119,6 @@ WHERE ventas = (SELECT MIN(ventas) FROM repventa)
 
 SELECT prodcod||fabcod
 FROM producto
-WHERE prodcod||fabcod = (SELECT COUNT(prodcod||fabcod) FROM pedido GROUP BY prodc)
+WHERE prodcod||fabcod = (SELECT COUNT(prodcod||fabcod) FROM pedido GROUP BY prodcod||)
 
 --16 . Quin producte s'ha venut més?

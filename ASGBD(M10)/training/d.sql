@@ -119,6 +119,6 @@ WHERE ventas = (SELECT MIN(ventas) FROM repventa)
 
 SELECT prodcod||fabcod
 FROM producto
-WHERE prodcod||fabcod = (SELE)
+WHERE prodcod||fabcod = (SELECT prodcod)
 
 --16 . Quin producte s'ha venut més?

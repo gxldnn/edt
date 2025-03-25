@@ -101,7 +101,7 @@ WHERE 0.5 * o.objetivo < ANY (SELECT SUM(ventas) FROM repventa r WHERE r.ofinum 
 
 SELECT descrip
 FROM producto
-WHERE prodcod||
+WHERE prodcod||fabcod = ()
 
 --13\. Quin representant té el millor percentatge de vendes?
 

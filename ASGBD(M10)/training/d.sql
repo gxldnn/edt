@@ -99,7 +99,7 @@ WHERE 0.5 * o.objetivo < ANY (SELECT SUM(ventas) FROM repventa r WHERE r.ofinum 
 */
 --12\. Quina és la descripció del primer producte sol·licitat en una comanda?
 
-
+SELECT 
 
 --13\. Quin representant té el millor percentatge de vendes?
 

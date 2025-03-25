@@ -86,6 +86,7 @@ FROM repventa r
 WHERE 0.1*cuota > ANY (SELECT importe FROM pedido p WHERE p.repcod = r.repcod);
 
 */
+
 --11\. Obtenir una llista de les oficines on el total de vendes
 --dels seus representants han aconseguit un import de vendes que supera el
 --50% de lobjectiu de loficina. Mostrar també l'objectiu de cada

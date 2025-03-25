@@ -104,10 +104,10 @@ FROM producto
 WHERE prodcod||fabcod = (SELECT prodcod||fabcod FROM pedido WHERE fecha = (SELECT MIN(fecha) FROM pedido));
 */
 --13\. Quin representant té el millor percentatge de vendes?
-
+/*
 SELECT repcod, nombre
 FROM repventa
-WHERE ventas = (SELECT MAX(ventas) FROM repventa)
+WHERE ventas = (SELECT MAX(ventas) FROM repventa);
 
 --14\. Quin representant té el pitjor percentatge de vendes?
 

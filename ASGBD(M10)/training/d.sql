@@ -92,11 +92,11 @@ WHERE 0.1*cuota > ANY (SELECT importe FROM pedido p WHERE p.repcod = r.repcod);
 --dels seus representants han aconseguit un import de vendes que supera el
 --50% de lobjectiu de loficina. Mostrar també l'objectiu de cada
 --oficina (suposeu que el camp vendes d'oficina no existeix).
-
+/*
 SELECT *
 FROM oficina o
 WHERE 0.5 * o.objetivo < ANY (SELECT SUM(ventas) FROM repventa r WHERE r.ofinum = o.ofinum);
-
+*/
 --12\. Quina és la descripció del primer producte sol·licitat en una comanda?
 
 

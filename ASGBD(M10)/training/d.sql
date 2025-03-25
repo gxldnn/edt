@@ -29,11 +29,11 @@ WHERE fabcod = 'aci' AND exist > (SELECT exist FROM producto WHERE prodcod = '41
 */
 --4\. Obtenir una llista dels representants que treballen a les oficines
 --que han aconseguit superar el seu objectiu de vendes.
-
+/*
 SELECT *
 FROM repventa
 WHERE ventas > ANY (SELECT objetivo FROM oficina);
-
+*/
 --5\. Obtenir una llista dels representants que no treballen a les
 --oficines dirigides per Larry Fitch.
 

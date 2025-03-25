@@ -105,7 +105,7 @@ WHERE prodcod||fabcod = (SELECT prodcod||fabcod FROM pedido WHERE fecha = (SELEC
 */
 --13\. Quin representant té el millor percentatge de vendes?
 
-SELECT 
+SELECT repco
 
 --14\. Quin representant té el pitjor percentatge de vendes?
 

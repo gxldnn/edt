@@ -117,6 +117,6 @@ WHERE ventas = (SELECT MIN(ventas) FROM repventa)
 */
 --15. Quin producte (Descripció) té més comandes?
 
-SELECTpMAX(count)
+SELECT prod, MAX(count)
 FROM (SELECT prodcod||fabcod AS "prod", COUNT(prodcod||fabcod) AS "count" FROM pedido GROUP BY prodcod||fabcod) AS "subtaula"
 --16i. Quin producte s'ha venut més?

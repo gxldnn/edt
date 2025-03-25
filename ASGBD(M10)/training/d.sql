@@ -98,7 +98,7 @@ FROM oficina o
 WHERE 0.5 * o.objetivo < ANY (SELECT SUM(ventas) FROM repventa r WHERE r.ofinum = o.ofinum);
 */
 --12\. Quina és la descripció del primer producte sol·licitat en una comanda?
-
+/*
 SELECT descrip
 FROM producto
 WHERE prodcod||fabcod = (SELECT prodcod||fabcod FROM pedido WHERE fecha = (SELECT MIN(fecha) FROM pedido));

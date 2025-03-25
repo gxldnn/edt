@@ -81,11 +81,11 @@ WHERE ofinum IN
 
 --10\. Obtenir una llista dels representants que han pres alguna comanda
 --l'import del qual sigui més del 10% de la seva quota.
- 
+ /*
 SELECT *
 FROM repventa r
 WHERE 0.1*cuota > ANY (SELECT importe FROM pedido p WHERE p.repcod = r.repcod);
-
+*/
 
 
 --11\. Obtenir una llista de les oficines on el total de vendes

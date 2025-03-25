@@ -17,16 +17,16 @@ WHERE cuota >= ANY (SELECT objetivo FROM oficina);
 SELECT nombre
 FROM cliente
 WHERE repcod = (SELECT repcod FROM repventa WHERE nombre = 'Bill Adams');
-
+*/
 
 --3\. Obtenir una llista de tots els productes del fabricant ACI les del qual
 --existències superen les existències del producte 41004 del mateix
 --fabricant.
-
+/*
 SELECT *
 FROM producto
 WHERE fabcod = 'aci' AND exist > (SELECT exist FROM producto WHERE prodcod = '41004');
-
+*/
 --4\. Obtenir una llista dels representants que treballen a les oficines
 --que han aconseguit superar el seu objectiu de vendes.
 

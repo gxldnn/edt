@@ -110,7 +110,7 @@ FROM repventa
 WHERE ventas = (SELECT MAX(ventas) FROM repventa);
 */
 --14\. Quin representant té el pitjor percentatge de vendes?
-
+/*
 SELECT repcod, nombre
 FROM repventa
 WHERE ventas = (SELECT MIN(ventas) FROM repventa)

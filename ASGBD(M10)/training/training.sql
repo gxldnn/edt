@@ -121,7 +121,7 @@ rei	2a44g	Pasador Bisagra	350.00	14
 --
 
 COPY oficina (ofinum, ciudad, region, director, objetivo, ventas) FROM stdin;
-22	Denver	Oeste	108	300000.00	150000.00
+22	Denver	Oeste	108	300000.00	140000.00
 11	New York	Este	106	575000.00	692637.00
 12	Chicago	Este	104	800000.00	735042.00
 13	Atlanta	Este	105	550000.00	367911.00

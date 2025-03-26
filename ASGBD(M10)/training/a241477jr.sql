@@ -18,16 +18,14 @@ ORDER BY 4 DESC, 3,2;
 */
 
 --3.
-
---SELECT (S), import
---FROM lloguer;
-
-SELECT genere
-FROM genere
-JOIN p.
+/*
+SELECT DISTINCT genere
+FROM genere g
+JOIN pelicula p ON p.codgen = g.codgen
 WHERE p.codpeli NOT IN (SELECT p.codpeli
     FROM genere g
     JOIN pelicula p ON g.codgen = p.codgen 
     JOIN dvd d ON d.codpeli = p.codpeli
     JOIN lloguer l ON l.coddvd = d.coddvd)
 ORDER BY 1;
+*/

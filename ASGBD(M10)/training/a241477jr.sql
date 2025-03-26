@@ -9,10 +9,8 @@ WHERE CURRENT_DATE BETWEEN datapres AND datadev;
 */
 
 --2.
-/*
-SELECT s.codsoci, COUNT(s.codsoci), SUM(import)
+
+SELECT s.codsoci, s.cognoms||','||s.nom "Nom Soci",COUNT(s.codsoci), SUM(import)
 FROM soci s
 JOIN lloguer l ON l.codsoci = s.codsoci
 GROUP BY s.codsoci;
-*/
-

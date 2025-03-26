@@ -31,15 +31,19 @@ WHERE p.codpeli NOT IN (SELECT p.codpeli
     JOIN dvd d ON d.codpeli = p.codpeli
     JOIN lloguer l ON l.coddvd = d.coddvd)
 ORDER BY 1;
-DRAMA
-terror
-COMEDIA
-ciencia FICCIO
+
+No pueden tener 
+ 2
+ 5
+ 1
+ 8
+
+
 
 1
+1
+1
 2
-3
-5
-9
-12
-21
+4
+6
+10

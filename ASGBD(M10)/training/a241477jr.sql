@@ -14,4 +14,4 @@ SELECT s.codsoci "Codi Soci", s.cognoms||', '||s.nom "Soci",COUNT(s.codsoci) "Pr
 FROM soci s
 JOIN lloguer l ON l.codsoci = s.codsoci
 GROUP BY s.codsoci
-ORDER BY 4;
+ORDER BY 4 DESC;

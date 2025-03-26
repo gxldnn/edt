@@ -1,3 +1,3 @@
 SELECT *
 FROM lloguer 
-WHERE CURRENT_DATE BETWEEN datapres AND 
+WHERE CURRENT_DATE BETWEEN datapres AND datadev

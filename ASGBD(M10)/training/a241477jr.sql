@@ -22,3 +22,4 @@ SELECT p.codpeli, p.codgen, g.codgen, g.genere
 FROM genere g
 JOIN pelicula p ON g.codgen = p.codgen 
 JOIN dvd d ON d.codpeli = p.codpeli
+JOIN 

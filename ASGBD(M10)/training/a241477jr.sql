@@ -1,6 +1,6 @@
 --1. 
 
-SELECT codpeli, coddvd, p.titol, nom||' '||cognoms "Nom Soci", 
+SELECT codpeli, coddvd, p.titol, nom||' '||cognoms "Nom Soci", datapres
 FROM lloguer l
 
 

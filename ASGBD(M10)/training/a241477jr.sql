@@ -22,28 +22,12 @@ ORDER BY 4 DESC, 3,2;
 --SELECT (S), import
 --FROM lloguer;
 
-SELECT p.codpeli, g.genere
-FROM pelicula p
-JOIN genere g ON p.codgen = g.codgen
+SELECT genere
+FROM genere
+JOIN p.
 WHERE p.codpeli NOT IN (SELECT p.codpeli
     FROM genere g
     JOIN pelicula p ON g.codgen = p.codgen 
     JOIN dvd d ON d.codpeli = p.codpeli
     JOIN lloguer l ON l.coddvd = d.coddvd)
 ORDER BY 1;
-
-No pueden tener 
- 2
- 5
- 1
- 8
-
-
-
-1
-1
-1
-2
-4
-6
-10

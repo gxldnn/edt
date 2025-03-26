@@ -1,7 +1,8 @@
 --1. 
 
 SELECT 
-FROM lloguer L 
+FROM lloguer l
+ 
 
 
 

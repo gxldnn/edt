@@ -23,4 +23,3 @@ FROM genere g
 JOIN pelicula p ON g.codgen = p.codgen 
 JOIN dvd d ON d.codpeli = p.codpeli
 JOIN lloguer l ON l.coddvd = d.coddvd
-WHERE import IS NOT NULL

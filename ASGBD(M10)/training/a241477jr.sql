@@ -1,8 +1,8 @@
 --1. 
 
-SELECT 
+SELECT codpeli, d
 FROM lloguer l
- 
+
 
 
 

@@ -1,6 +1,6 @@
 --1. 
 
-SELECT *
+SELECT 
 FROM lloguer 
 
 

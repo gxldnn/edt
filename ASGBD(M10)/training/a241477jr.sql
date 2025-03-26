@@ -20,9 +20,9 @@ ORDER BY 4 DESC, 3,2;
 --3.
 
 SELECT ( SELECT p.codpeli, p.codgen, g.codgen, g.genere
-FROM genere g
-JOIN pelicula p ON g.codgen = p.codgen 
-JOIN dvd d ON d.codpeli = p.codpeli
+    FROM genere g
+    JOIN pelicula p ON g.codgen = p.codgen 
+J    OIN dvd d ON d.codpeli = p.codpeli
 JOIN lloguer l ON l.coddvd = d.coddvd
 )
 FROM

@@ -1,3 +1,3 @@
 SELECT *
 FROM lloguer 
-WHERE 
+WHERE CURREN

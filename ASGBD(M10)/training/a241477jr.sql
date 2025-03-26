@@ -36,3 +36,10 @@ terror
 COMEDIA
 ciencia FICCIO
 
+1
+2
+3
+5
+9
+12
+21

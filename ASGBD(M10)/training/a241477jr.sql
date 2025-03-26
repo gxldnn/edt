@@ -18,6 +18,6 @@ ORDER BY 4 DESC, 3,2;
 */
 
 --3.
-SELECT p.codpeli, p., g.codgen, g.genere
+SELECT p.codpeli, p.codgen, g.codgen, g.genere
 FROM genere g
 JOIN pelicula p ON g.codgen = p.codgen 

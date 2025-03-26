@@ -1,6 +1,6 @@
 --1. 
 
-SELECT codpeli, coddvd, p.titol,
+SELECT codpeli, coddvd, p.titol,nom
 FROM lloguer l
 
 

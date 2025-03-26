@@ -1,2 +1,3 @@
 SELECT *
-FROM llo
+FROM lloguer 
+WHERE 

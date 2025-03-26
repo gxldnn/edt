@@ -116,8 +116,26 @@ FROM repventa
 WHERE ventas = (SELECT MIN(ventas) FROM repventa)
 */
 --15. Quin producte (Descripció) té més comandes?
+/*
+SELECT s.descrip, MAX(var)
+FROM (SELECT descrip, SUM(cant) AS var FROM pedido s1 
+      JOIN producto p ON s1.prodcod||s1.fabcod = p.prodcod||p.fabcod 
+      GROUP BY s1.prodcod||s1.fabcod, p.descrip) AS s
+;
+*/
+/*
+SELECT COUNT(*), fabcod||prodcod
+FROM pedido p
+GROUP BY fabcod||prodcod;
+*/
 
-SELECT (SE)
-FROM (SELECT descrip AS "descrip", COUNT(prodcod||fabcod) AS "count" FROM pedido GROUP BY prod) AS "subtaula"
-WHERE MAX(count) > ALL (SELECT COUNT(prodcod||fabcod) FROM pedido)
---16i. Quin producte s'ha venut més?
+SELECT max
+FROM(SELECT MAX(count) "max"
+     FROM (SELECT prodcod||fabcod "prod", COUNT(prodcod||fabcod) AS "count" 
+     FROM (SELECT * FROM pedido) AS "sub2"
+     GROUP BY prod) AS "sub1");
+
+/*
+
+--16. Quin producte s'ha venut més?
+*/

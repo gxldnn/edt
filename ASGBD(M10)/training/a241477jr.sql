@@ -15,3 +15,5 @@ FROM soci s
 JOIN lloguer l ON l.codsoci = s.codsoci
 GROUP BY s.codsoci;
 
+
+

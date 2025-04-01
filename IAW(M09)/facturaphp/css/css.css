@@ -1,15 +1,19 @@
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-}
-
-th, td {
-  border: 1px solid black;
-  padding: 8px;
-}
-
-th {
-  font-weight: bold;
-  text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  th, td {
+    border: 1px solid black;
+  }
+  td{
+    max-width: 50px;  
+    max-height: 50px;
+  }
+  img {
+    max-width: 50px;  
+    max-height: 50px; 
+    height: 70px;     
+    width: auto;      
+    object-fit: contain; 
 }

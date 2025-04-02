@@ -1,6 +1,6 @@
 /*
-\e
-\d
+\e edit
+\d shj
 \du
 \dt
 \ds

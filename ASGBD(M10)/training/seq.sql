@@ -1,7 +1,7 @@
 /*
 \e edit
-\d shj
-\du
+\d show
+\du show 
 \dt
 \ds
 \c

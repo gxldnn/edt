@@ -1,6 +1,6 @@
 /*
 \e edit
-\d show
+\d show e
 \du show users
 \dt show tables
 \ds 

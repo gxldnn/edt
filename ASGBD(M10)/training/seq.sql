@@ -5,8 +5,8 @@
 \dt show tables
 \ds show seq
 \c connect
-\x horizontal display -- vertical sipl
-\i
+\x horizontal display -- vertical display
+\i import
 \l
 
 */

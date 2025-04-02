@@ -1,6 +1,6 @@
 /*
 \e edit
-\d show e
+\d show relai
 \du show users
 \dt show tables
 \ds 

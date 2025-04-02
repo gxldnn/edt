@@ -5,7 +5,7 @@
 \dt show tables
 \ds show seq
 \c connect
-\x horizont
+\x horizontal display
 \i
 \l
 

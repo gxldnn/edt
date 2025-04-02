@@ -6,7 +6,9 @@
 \ds show seq
 \c connect
 \x horizontal display -- vertical display
-\i import
-\l
-
+\i import (script)
+\l list
 */
+
+
+

@@ -2,8 +2,8 @@
 \e edit
 \d show
 \du show users
-\dt show tb
-\ds
+\dt show tables
+\ds 
 \c
 \x
 \i

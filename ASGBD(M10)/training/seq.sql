@@ -3,7 +3,7 @@
 \d show relations
 \du show users
 \dt show tables
-\ds shwo
+\ds show
 \c
 \x
 \i

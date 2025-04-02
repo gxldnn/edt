@@ -4,7 +4,7 @@
 \du show users
 \dt show tables
 \ds show seq
-\c
+\c conn
 \x
 \i
 \l

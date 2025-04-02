@@ -4,8 +4,8 @@
 \du show users
 \dt show tables
 \ds show seq
-\c conn
-\x
+\c connect
+\x ho
 \i
 \l
 

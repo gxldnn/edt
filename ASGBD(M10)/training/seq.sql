@@ -1,9 +1,9 @@
 /*
 \e edit
-\d show relai
+\d show relations
 \du show users
 \dt show tables
-\ds 
+\ds shwo
 \c
 \x
 \i

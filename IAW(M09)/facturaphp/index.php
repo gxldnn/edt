@@ -16,22 +16,34 @@
        //   echo "$array[$i]<br >";
        // }
 
+
+        // array amb tota la llista de productes del 
+        // enunciat amb la seva respectiva informacio
         $producte = [["Patates", "images/patata.jpg","kg",2.05],["Ceba","images/ceba.jpg","kg",2.5] ,["Api","images/api.jpg","manat",3],["Oli Granel","images/oli.jpg","l",8.5],["Pastilla Sabó","images/sabo.jpg","unitat",4.99],["LLuc","images/lluc.jpg","kg",10.55],["Manat de Pastanaga", "images/pastanaga_manat.jpg","manat",3.5]];
 
-        $arraypergen = [];
+        //definim un array per a un ús futur
+        $arraypergen = []; 
 
+        //Començem un bucle per a crear una llista de 10 productes aleatoris
         for($x = 0, $count = count($producte)-1; $x < 10; $x++){
-            $itemseleccionat = mt_rand(0,$count);
-            $prodseleccionat = $producte[$itemseleccionat][0];
-            $imatgeruta =  $producte[$itemseleccionat][1];
-            $mesura =  $producte[$itemseleccionat][2];
+
+            $itemseleccionat = mt_rand(0,$count);  //seleciona una posició random dins del array gràcies al count
+            $prodseleccionat = $producte[$itemseleccionat][0]; // Seleccionem la posico 0 es a dir el producte
+            $imatgeruta =  $producte[$itemseleccionat][1]; // Seleccionem la posico 1 es a dir la ruta de la img 
+            $mesura =  $producte[$itemseleccionat][2]; // Seleccionem la posico 2 es a dir el metode de mesura
+            $preu =  $producte[$itemseleccionat][3]; // Agafem el preu del producte seleccionat
+
+            // En cas de que la mesura sigui unitaria no aplicarem decimals
             if ($mesura == "manat" or $mesura == "unitat"){
                 $quantitat = mt_rand(1, 8);
             }else{
                 $quantitat = round(mt_rand(100, 800) / 100, 2); // afegim decimals
             }
-            $preu =  $producte[$itemseleccionat][3];
+
+            // Definim la variable Subtotal per a poder calcular si n'hi ha descompte
             $subtotal = $quantitat * $preu;
+
+            // En cas de <30 no descompte, en cas de 30-50 5% de descompte, en cas de >50  10%
             if ($subtotal < 30){
                 $descompte = 0;
             } elseif ($subtotal >= 30 && $subtotal <= 50){
@@ -39,20 +51,32 @@
             } elseif ($subtotal > 50){
                 $descompte = 10;
             };
+
+            // En cas de que el descompte sigui 0 creem la variable preudescomptat i la establim a 0
+            // per a evitar fer multiplicacions amb 0 ja que ens trencaria el codi
             if ($descompte == 0){
                 $preudescomptat = 0;
             } else {
                 $preudescomptat = $subtotal * $descompte / 100;
             }
+
+            // Calculem el total de IVA que s'aplicara despres de el descompte
             $ivaaplicat = (($subtotal - $preudescomptat) * 1.21) - ($subtotal - $preudescomptat);
+            // Calculem el preu total que tindra aquest producte
             $totalpreuproducte = (($subtotal - $preudescomptat) * 1.21);
             
+
+            // Guardarem tota aquesta informacio en el array que hem definit previament
+            // fora del "for", aixi podem emmagatzemar tota la informacio
             $arraypergen[] = [$prodseleccionat,$imatgeruta,$mesura,$quantitat,$preu,$subtotal,$descompte,$preudescomptat,$ivaaplicat,$totalpreuproducte];            
         }
-
+        
+        // Fora del for ordenarem el array per la primera columna que es el nom del producte
+        // de forma ascendent aixi s'ordenarà alfabeticament
         $names = array_column($arraypergen, 0);
         array_multisort($names, SORT_ASC, $arraypergen);  
         
+        //Per a cada subarray dins del array anirem seleccionant cada variable amb els numeros que fan referència al index
         foreach ($arraypergen as $item){
             echo "<tr>
                 <td class=img><img src=$item[1]><br>$item[0]</td>
@@ -69,4 +93,3 @@
     </table>
   </body>
 </html>
-

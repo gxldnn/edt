@@ -4,7 +4,7 @@
 \du show users
 \dt show tables
 \ds show seq
-\dp sh
+\dp show privileges
 \c connect
 \x horizontal display -- vertical display
 \i import (script)

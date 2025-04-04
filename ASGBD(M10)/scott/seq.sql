@@ -10,6 +10,10 @@
 \i import (script)
 \l list
 */
+/*
+CREATE ROLE <rolename> [PRIVILEGES];
 
-
-
+EX. 
+CREATE ROLE jansitt LOGIN CREATEDB;
+ALTER ROLE jansitt PASSWORD 'pass';
+*/

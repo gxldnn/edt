@@ -2,36 +2,104 @@
 <html lang="ca-ES">
   <head>
     <meta charset="utf-8"/>
-    <title>Factura Jan Ribera</title> 
+    <title>Factura Jan Ribera</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/css.css"> <!-- atenció, cal crear-lo! -->
   </head>
-  <body> 
+  <body>
     <!--contingut -->
     <h1>Factura</h1>
     <table>
         <tr><td>Article</td><td>Quantitat</td><td>Preu/u</td><td>Subtotal</td><td>Descompte</td><td>Iva 21%</td><td>Total</td></tr>
     <?php
-       // for ($i = 0, $arrl = count($array); $i < $arrl; $i++){
-       //   echo "$array[$i]<br >";
-       // }
 
+        //definim un array per a un ús futur de memoria
+        $arraypergen = [];
 
-        // array amb tota la llista de productes del 
+        
+
+        // array amb tota la llista de productess del
         // enunciat amb la seva respectiva informacio
-        $producte = [["Patates", "images/patata.jpg","kg",2.05],["Ceba","images/ceba.jpg","kg",2.5] ,["Api","images/api.jpg","manat",3],["Oli Granel","images/oli.jpg","l",8.5],["Pastilla Sabó","images/sabo.jpg","unitat",4.99],["LLuc","images/lluc.jpg","kg",10.55],["Manat de Pastanaga", "images/pastanaga_manat.jpg","manat",3.5]];
 
-        //definim un array per a un ús futur
-        $arraypergen = []; 
+        $productes = [["patates", "images/patata.jpg","kg",2.05],["ceba","images/ceba.jpg","kg",2.5] ,["api","images/api.jpg","manat",3],["oli granel","images/oli.jpg","l",8.5],["pastilla sabó","images/sabo.jpg","unitat",4.99],["lluc","images/lluc.jpg","kg",10.55],["manat de pastanaga", "images/pastanaga_manat.jpg","manat",3.5]];
 
-        //Començem un bucle per a crear una llista de 10 productes aleatoris
-        for($x = 0, $count = count($producte)-1; $x < 10; $x++){
+        ////////////////////////////////
+        //
+        //        FUNCIONS
+        //
+
+
+        /**
+         * Calcular l'IVA.
+         * @param float $iva És l'IVA que aplicarem al producte. Si es deixa buit o a 0 es posarà automàticament al 21%
+         * @param float $import És el import total abans d'aplicar el IVA
+         *
+         * @return float Retorna l'IVA calculat que s'aplicarà.
+         */
+        function calcularIVA($iva, float $import) {
+            if ($iva == 0 || $iva == "" || $iva == NULL) {
+                $iva = 1.21;
+                $ivaaplicat = ($import * $iva)-$import;
+            } else {
+                $ivaaplicat = ($import * (($iva+100)/100)) - ($import);
+            }
+            return $ivaaplicat;
+        }
+
+        /**
+         * Get Productes.
+         * 
+         * Aquesta funció retorna el nom d'un producte a partir d'un array de productes.
+         * 
+         * @param array $productes És l'array on s'emmagatzemen els productes.
+         * @param int $i És l'índex on volem buscar, automàticament ho farà el bucle.
+         *
+         * @return string Retorna el nom del producte com a string.
+         */
+        function getproductes(array $arraypergen, int $i) {
+            $nom = $arraypergen[$i][0];
+            return $nom;
+        }
+
+        /**
+         * Get Unitat.
+         * 
+         * Aquesta funció retorna la unitat d'un producte a partir d'un array de productes.
+         * 
+         * @param array $productes És l'array on s'emmagatzemen els productes.
+         * @param int $i És l'índex on volem buscar, automàticament ho farà el bucle.
+         *
+         * @return string Retorna la unitat del producte com a string.
+         */
+        function getunitat(array $arraypergen, int $i) {
+            $nom = $arraypergen[$i][2];
+            return $nom;
+        }
+
+        /**
+         * Get Preu Unitat.
+         * 
+         * Aquesta funció retorna el preu per unitat d'un producte a partir d'un array de productes.
+         * 
+         * @param array $productes És l'array on s'emmagatzemen els productes.
+         * @param int $i És l'índex on volem buscar, automàticament ho farà el bucle.
+         *
+         * @return float Retorna el preu per unitat del producte com a float.
+         */
+        function getpreuunitat(array $arraypergen, int $i) {
+            $pr = $arraypergen[$i][3];  
+            return $pr;
+        }
+
+
+        //Començem un bucle per a crear una llista de 10 productess aleatoris
+        for($i = 0, $count = count($productes)-1; $i < 10; $i++){
 
             $itemseleccionat = mt_rand(0,$count);  //seleciona una posició random dins del array gràcies al count
-            $prodseleccionat = $producte[$itemseleccionat][0]; // Seleccionem la posico 0 es a dir el producte
-            $imatgeruta =  $producte[$itemseleccionat][1]; // Seleccionem la posico 1 es a dir la ruta de la img 
-            $mesura =  $producte[$itemseleccionat][2]; // Seleccionem la posico 2 es a dir el metode de mesura
-            $preu =  $producte[$itemseleccionat][3]; // Agafem el preu del producte seleccionat
+            $prodseleccionat = $productes[$itemseleccionat][0]; // Seleccionem la posico 0 es a dir el productes
+            $imatgeruta =  $productes[$itemseleccionat][1]; // Seleccionem la posico 1 es a dir la ruta de la img
+            $mesura =  getunitat($productes,$itemseleccionat); // Seleccionem la posico 2 es a dir el metode de mesura
+            $preu =  getpreuunitat($productes,$itemseleccionat); // Agafem el preu del producte seleccionat
 
             // En cas de que la mesura sigui unitaria no aplicarem decimals
             if ($mesura == "manat" or $mesura == "unitat"){
@@ -60,35 +128,41 @@
                 $preudescomptat = $subtotal * $descompte / 100;
             }
 
-            // Calculem el total de IVA que s'aplicara despres de el descompte
-            $ivaaplicat = (($subtotal - $preudescomptat) * 1.21) - ($subtotal - $preudescomptat);
-            // Calculem el preu total que tindra aquest producte
-            $totalpreuproducte = (($subtotal - $preudescomptat) * 1.21);
             
-
+            $import = $subtotal-$preudescomptat;
+            
+            // Calculem el total de IVA que s'aplicara despres de el descompte
+            $ivaaplicat = calcularIVA(NULL,$import);
+            $totalpreuproducte = $import + $ivaaplicat;
             // Guardarem tota aquesta informacio en el array que hem definit previament
             // fora del "for", aixi podem emmagatzemar tota la informacio
-            $arraypergen[] = [$prodseleccionat,$imatgeruta,$mesura,$quantitat,$preu,$subtotal,$descompte,$preudescomptat,$ivaaplicat,$totalpreuproducte];            
+            $arraypergen[] = [$prodseleccionat,$imatgeruta,$mesura,$preu,$quantitat,$subtotal,$descompte,$preudescomptat,$ivaaplicat,$totalpreuproducte];
+
         }
         
-        // Fora del for ordenarem el array per la primera columna que es el nom del producte
+        // Fora del "for" ordenarem el array per la primera columna que es el nom del producte
         // de forma ascendent aixi s'ordenarà alfabeticament
         $names = array_column($arraypergen, 0);
-        array_multisort($names, SORT_ASC, $arraypergen);  
-        
+        array_multisort($names, SORT_ASC, $arraypergen);
+
         //Per a cada subarray dins del array anirem seleccionant cada variable amb els numeros que fan referència al index
+        $i = 0;
         foreach ($arraypergen as $item){
+            $maj = substr(getproductes($arraypergen,$i),0,1); //agafo la primera lletra del nom
+            $prod = strtoupper($maj)."".substr(getproductes($arraypergen,$i), 1); // La ffaig majuscula i li concateno el resto
+            $unit = getunitat($arraypergen,$i);
+            $preu = getpreuunitat($arraypergen,$i);
             echo "<tr>
-                <td class=img><img src=$item[1]><br>$item[0]</td>
-                <td>$item[3] $item[2]</td>
-                <td>$item[4] €/$item[2]</td>
-                <td>{$item[5]}€</td>
+                <td class=img><img src=$item[1]><br>$prod</td>
+                <td>$item[4] $unit</td>
+                <td>$preu €/$item[2]</td>
+                <td>".round($item[5])."€</td>
                 <td>{$item[6]}% (-".round($item[7],2)." €)</td>
                 <td>".round($item[8],2)." €</td>
                 <td>".round($item[9],2)." €</td>
             </tr>";
+            $i++;
         }
-
         ?>
     </table>
   </body>

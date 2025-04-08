@@ -11,7 +11,7 @@ description: operations updating and deleting restricted by default
 DROP DATABASE IF EXISTS scott;
 CREATE DATABASE scott;
 \c scott
-
+CREATE SCHEMA ribee;
 CREATE SEQUENCE deptno_seq
   START WITH 50
   INCREMENT BY 10;

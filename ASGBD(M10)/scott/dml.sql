@@ -53,4 +53,3 @@ CREATE TABLE proyecto.clientes(
 
 --5.3. Volver al rol original
 --RESET ROLE;
->>>>>>> d15630eb7989d211d319d7b78d110e92fa1d1533

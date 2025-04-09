@@ -40,7 +40,6 @@ clear
 madeby
 read -p "Quantas puntualidades tienes? " punt
 
-# Operaciones bien hechas
 faltes2=$(( punt / 3 ))
 faltestot=$(( faltas + faltes2 ))
 

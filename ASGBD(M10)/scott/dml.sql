@@ -56,8 +56,8 @@
 
     --5.3. Volver al rol original
     --RESET ROLE;
-=======
---Ejercicio 1: Crear roles con y sin login
+
+cio 1: Crear roles con y sin login
 
 --1.1. Crear usuario ana con contraseña y con login
 --CREATE USER ana PASSWORD 'ana123' LOGIN;

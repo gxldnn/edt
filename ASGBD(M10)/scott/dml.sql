@@ -1,4 +1,3 @@
-<<<<<<< HEAD
     --Ejercicio 1: Crear roles con y sin login
 
     --1.1. Crear usuario ana con contraseña y con login

@@ -81,7 +81,7 @@
 --3.1. Permitir uso y creación de objetos en el esquema desarrolladores
 --GRANT CREATE, USAGE ON SCHEMA proyecto TO desarrolladores;
 --3.2. Revocar permisos públicos
---REVOKE ALL PRIVILEGES ON SCHEMA proyecto FROM public;
+--REVOKE ALL PRIVILEGES ON SCHEMA proyecto FROM public;as
 
 
 

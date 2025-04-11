@@ -9,6 +9,7 @@
 \x horizontal display -- vertical display
 \i import (script)
 \l list
+\drg
 */
 /*
 CREATE ROLE <rolename> [PRIVILEGES];

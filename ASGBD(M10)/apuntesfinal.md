@@ -47,7 +47,9 @@ En aquest cas hem de tindre compte ja que `p_empno` ha de ser un SMALLINT pero a
 ```sql
 SELECT mostraempleat(7499::SMALLINT); -- FORMA CORRECTE
 ```
-``````
+```diff
+
+```
 ```sql
 SELECT mostraempleat(7499); -- FOMRA INCORRECTA
 ```

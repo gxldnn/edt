@@ -54,6 +54,7 @@ SELECT mostraempleat(7499::SMALLINT); -- FORMA CORRECTE
  (1 row)
 ```
 
+
 Si ho posem de forma incorrecta ens surtira un error aixi, que nombra el error de casting
 
 ```sql

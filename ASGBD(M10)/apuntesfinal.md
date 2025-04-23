@@ -46,6 +46,7 @@ $$ LANGUAGE PLPGSQL;
 En aquest cas hem de tindre compte ja que `p_empno` ha de ser un SMALLINT pero a la hora de cridar a la funcio i posar un numero, exemple: `SELECT mostraempleat(7499)`, donç hem de cambiar el valor de el "input" amb un cast de la següent forma, `SELECT mostraempleat(7499::SMALLINT)`
 ```sql
 SELECT mostraempleat(7499::SMALLINT);
+```sql HINT: No function matches the given name and argument types. You might need to add explicit type casts. ``` 
 
 SELECT mostraempleat(7499);
 ```

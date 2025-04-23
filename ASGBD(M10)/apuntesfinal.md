@@ -38,7 +38,7 @@ AS $$
     DECLARE 
     v_ename varchar(100);
     BEGIN
-        SELECT ename INTO vFROM emp WHERE empno = p_empno;
+        SELECT ename INTO v_name FROM emp WHERE empno = p_empno;
     END;
 $$ LANGUAGE PLPGSQL;
 ```

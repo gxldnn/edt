@@ -20,7 +20,7 @@ AS $$
     BEGIN
         RETURN 'Hello World!';
     END;
-$$ LANGUAGE PGPSQL;
+$$ LANGUAGE PLPGSQL;
 ```
 Per a cridar a la funcio hem de fer un SELECT com si fos una variable del sistema
 ```sql

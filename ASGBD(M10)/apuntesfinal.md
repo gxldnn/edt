@@ -50,5 +50,5 @@ SELECT mostraempleat(7499::SMALLINT); -- FORMA CORRECTE
 
 SELECT mostraempleat(7499); -- FOMRA INCORRECTA
 ```
-! HINT: No function matches the given name and argument types. You might need to add explicit type casts.
+`` HINT: No function matches the given name and argument types. You might need to add explicit type casts.
 

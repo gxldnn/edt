@@ -36,7 +36,7 @@ CREATE OR REPLACE FUNCTION mostraempleat(p_empno SMALLINT)
 RETURNS varchar
 AS $$
     DECLARE 
-    v_ename v
+    v_ename varchart
     BEGIN
         SELECT ename FROM emp WHERE empno = p_empno
     END;

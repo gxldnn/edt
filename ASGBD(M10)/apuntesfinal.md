@@ -38,6 +38,5 @@ AS $$
         RETURN (SELECT ename FROM emp WHERE empno = p_empno)
     END;
 $$ LANGUAGE PGPLSQL;
-
 ```
 

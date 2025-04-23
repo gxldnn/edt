@@ -48,7 +48,7 @@ En aquest cas hem de tindre compte ja que `p_empno` ha de ser un SMALLINT pero a
 SELECT mostraempleat(7499::SMALLINT); -- FORMA CORRECTE
 
 
-SELECT mostraempleat(7499);
+SELECT mostraempleat(7499); -- FOMRA 
 
 HINT: No function matches the given name and argument types. You might need to add explicit type casts.
 ```

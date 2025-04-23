@@ -30,6 +30,7 @@ SELECT helloworld();
 
 Crea una funcio que selecciona el nom de un empleat segons el codi que li donem com parametre
 
-```
+```sql
+
 ```
 

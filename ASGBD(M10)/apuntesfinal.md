@@ -43,5 +43,5 @@ AS $$
     END;
 $$ LANGUAGE PLPGSQL;
 ```
-En aquest cas hem de tindre compte ja que p_empno es un SMALLINT per
+En aquest cas hem de tindre compte ja que p_empno es un SMALLINT pero a la hora de c
 

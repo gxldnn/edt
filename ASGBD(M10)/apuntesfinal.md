@@ -43,5 +43,5 @@ AS $$
     END;
 $$ LANGUAGE PLPGSQL;
 ```
-En aquest cas hem de 
+En aquest cas hem de tindre compte 
 

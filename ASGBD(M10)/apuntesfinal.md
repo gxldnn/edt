@@ -31,6 +31,6 @@ SELECT helloworld();
 Crea una funcio que selecciona el nom de un empleat segons el codi que li donem com parametre
 
 ```sql
-CREATE OR REPLACE FUNCTION mostraemple
+CREATE OR REPLACE FUNCTION mostraempleat()
 ```
 

@@ -43,5 +43,5 @@ AS $$
     END;
 $$ LANGUAGE PLPGSQL;
 ```
-En aquest cas hem de tindre compte ja que ``` es un SMALLINT pero a la hora de cridar a la funcio i posar un numero, exemple: `SELECT mostraempleat(7499)` 
+En aquest cas hem de tindre compte ja que `` es un SMALLINT pero a la hora de cridar a la funcio i posar un numero, exemple: `SELECT mostraempleat(7499)` 
 

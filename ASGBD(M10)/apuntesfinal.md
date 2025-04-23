@@ -54,7 +54,7 @@ SELECT mostraempleat(7499::SMALLINT); -- FORMA CORRECTE
  (1 row)
 ```
 
-Si ho posem de forma incorrecta ens surtira un erro
+Si ho posem de forma incorrecta ens surtira un error aixi, que n
 
 ```sql
 SELECT mostraempleat(7499); -- FOMRA INCORRECTA

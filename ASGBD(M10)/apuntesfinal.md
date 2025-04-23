@@ -34,6 +34,6 @@ Crea una funcio que selecciona el nom de un empleat segons el codi que li donem 
 CREATE OR REPLACE FUNCTION mostraempleat(p_empno SMALLINT)
 RETURNS varchar
 AS $$ 
-
+    BEGIN
 ```
 

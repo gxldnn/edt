@@ -48,4 +48,6 @@ En aquest cas hem de tindre compte ja que `p_empno` ha de ser un SMALLINT pero a
 SELECT mostraempleat(7499::SMALLINT);
 
 SELECT mostraempleat(7499);
+
+
 ```

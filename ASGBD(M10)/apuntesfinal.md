@@ -16,7 +16,7 @@ La funcio retorna un resultat sobre el nom de RETURN, en aquest especificarem qu
 CREATE OR REPLACE FUNCTION helloworld()
 RETURNS varchar
 AS $$
-DECLARE
+    DECLARE
     BEGIN
         RETURN 'Hello World!';
     END;

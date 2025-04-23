@@ -49,7 +49,7 @@ SELECT mostraempleat(7499::SMALLINT); -- FORMA CORRECTE
 ```
 ```diff
  mostraempleat 
----------------
+ ---------------
  ALLEN
 (1 row)
 ```

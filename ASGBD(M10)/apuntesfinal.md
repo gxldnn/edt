@@ -48,7 +48,10 @@ En aquest cas hem de tindre compte ja que `p_empno` ha de ser un SMALLINT pero a
 SELECT mostraempleat(7499::SMALLINT); -- FORMA CORRECTE
 ```
 ```diff
-
+ mostraempleat 
+---------------
+ ALLEN
+(1 row)
 ```
 ```sql
 SELECT mostraempleat(7499); -- FOMRA INCORRECTA

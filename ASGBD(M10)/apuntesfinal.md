@@ -43,5 +43,5 @@ AS $$
     END;
 $$ LANGUAGE PLPGSQL;
 ```
-En aquest cas hem de tindre compte ja que p_empno es un SMALLINT pero a la hora de cridar a la funcio 
+En aquest cas hem de tindre compte ja que p_empno es un SMALLINT pero a la hora de cridar a la funcio i posar un num
 

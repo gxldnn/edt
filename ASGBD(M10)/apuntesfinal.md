@@ -39,6 +39,7 @@ AS $$
     v_ename varchar(100);
     BEGIN
         SELECT ename INTO v_ename FROM emp WHERE empno = p_empno;
+        RETURN
     END;
 $$ LANGUAGE PLPGSQL;
 ```

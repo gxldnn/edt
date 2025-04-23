@@ -39,7 +39,6 @@ AS $$
     v_ename varchar(100);
     BEGIN
         SELECT ename FROM emp WHERE empno = p_empno
-    
     END;
 $$ LANGUAGE PLPGSQL;
 ```

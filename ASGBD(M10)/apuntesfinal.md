@@ -35,6 +35,6 @@ CREATE OR REPLACE FUNCTION mostraempleat(p_empno SMALLINT)
 RETURNS varchar
 AS $$ 
     BEGIN
-        RETURN (S
+        RETURN (SELE)
 ```
 

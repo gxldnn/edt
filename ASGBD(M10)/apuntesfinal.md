@@ -51,7 +51,7 @@ SELECT mostraempleat(7499::SMALLINT); -- FORMA CORRECTE
   mostraempleat 
  ---------------
   ALLEN
-  (1 row)
+(1 row)
 ```
 ```sql
 SELECT mostraempleat(7499); -- FOMRA INCORRECTA

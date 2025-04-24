@@ -14,7 +14,7 @@
 <details>
 <summary><b>Open that shii up!!</b></summary>
 
-![Crema de mani](https://preview.redd.it/ensgyk3pwvcc1.gif?width=220&format=mp4&s=deb2507d5ab337790fca36e92cbbc6bc0c04585b)
+![Crema de mani](https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fguys-dont-use-peanut-butter-on-your-face-before-november-v0-zxzx5wjg3w9a1.jpg%3Fwidth%3D320%26crop%3Dsmart%26auto%3Dwebp%26s%3Da2f6a8868d9bcb2950b1acbf8be6fdf5d0422fc9)
 
 </details>
 

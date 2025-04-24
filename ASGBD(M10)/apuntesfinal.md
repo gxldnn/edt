@@ -54,6 +54,7 @@ SELECT mostraempleat(7499::SMALLINT); -- FORMA CORRECTE
  (1 row)
 ```
 Si ho posem de forma incorrecta ens surtira un error aixi, que nombra el error de casting
+CASTING (::TEXT/SMALLINT/(datatypes))
 
 ```sql
 SELECT mostraempleat(7499); -- FOMRA INCORRECTA
@@ -61,4 +62,3 @@ SELECT mostraempleat(7499); -- FOMRA INCORRECTA
 ```diff 
 HINT: No function matches the given name and argument types. You might need to add explicit type casts.
 ```
-

@@ -14,7 +14,7 @@
 <details>
 <summary><b>Open that shii up!!</b></summary>
 
-![Crema de mani]([https://i.imgur.com/0QKSNkp.jpeg](https://preview.redd.it/ensgyk3pwvcc1.gif)
+![Crema de mani](https://preview.redd.it/ensgyk3pwvcc1.gif?width=220&format=mp4&s=deb2507d5ab337790fca36e92cbbc6bc0c04585b)
 
 </details>
 

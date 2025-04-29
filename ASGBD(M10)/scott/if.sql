@@ -11,7 +11,7 @@ CREATE OR REPLACE FUNCTION mostrar(ename){
     DECLARE
     BEGIN
         SELECT ename INTO v_ename FROM emp;
-        SELECT 
+        SELECT s
 
 
 

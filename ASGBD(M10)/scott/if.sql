@@ -12,7 +12,8 @@ CREATE OR REPLACE FUNCTION mostrar(ename){
     BEGIN
         SELECT ename INTO v_ename FROM emp;
         SELECT sal * 1.1 INTO sal_sales FROM emp WHERE job = 'SALESMAN'
-        SELECT sal * 1.1 INTO sal_CLERKFROM emp WHERE job = 'SALESMAN'
+        SELECT sal * 1.1 INTO sal_CLERK FROM emp WHERE job = 'SALESMAN'
+        SELECT sal * 1.1 INTO sal_CLERK FROM emp WHERE job = 'SALESMAN'
 
 
 

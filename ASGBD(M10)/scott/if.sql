@@ -9,6 +9,7 @@ CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT){
             
             EXCEPTION
                 WHEN NO DATA FOUND THEN
+                        RETURN 'No s''ha trobat cap empleat amb aquest número.';
         END;
     $$ LANGUAGE PLPGSQL;
 }

@@ -11,6 +11,6 @@ CREATE OR REPLACE FUNCTION mostrar(){
     AS $$
         DECLARE
         v_emp RECORD;
-        v_sal emp.sal
+        v_sal emp.sal%type
 
 }

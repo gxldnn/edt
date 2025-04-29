@@ -10,7 +10,7 @@ CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT)
                 v_sal := v_emp.sal*1.1;
             ELSE IF LOWER(v_emp.job) = 'clerk' THEN
                 v_sal := v_emp.sal*1.2;
-            ELSE V
+            ELSE v_sa
 
             RETURN v_sal;
             

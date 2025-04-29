@@ -95,10 +95,3 @@ CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT)
                 RETURN 'No s''ha trobat cap empleat amb aquest número.';
         END;
     $$ LANGUAGE PLPGSQL;
-<<<<<<< HEAD
-
-
-```
-=======
-´´´
->>>>>>> b81659a00168278bfdd11ded5fbfd2a84146a354

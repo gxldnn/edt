@@ -10,6 +10,6 @@ CREATE OR REPLACE FUNCTION mostrar(){
     RETURNS varchar
     AS $$
         DECLARE
-        v_emp
+        v_emp RECORD;
 
 }

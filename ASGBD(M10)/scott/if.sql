@@ -10,7 +10,7 @@ CREATE OR REPLACE FUNCTION mostrar(){
     RETURNS v_ename varchar(100)
     AS $$
     DECLARE
-        v_ename e;
+        v_ename varchar;
         sal_sales SMALLINT;
         sal_clerk SMALLINT;
         sal_others SMALLINT;

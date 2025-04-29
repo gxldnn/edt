@@ -1,6 +1,6 @@
 /*
 
-mostrar nom, salari, salari incremental i job segobs e
+mostrar nom, salari, salari incremental i job segobs emp
 SALESMAN +10%
 CLERK +20%
 OTHERS +30%

@@ -9,7 +9,7 @@ OTHERS +30%
 CREATE OR REPLACE FUNCTION mostrar(ename){
     RETURNS en
     DECLARE
-        v_ename varchar(100),
+        v_ename varchar(100);
         
     BEGIN
         SELECT ename INTO v_ename FROM emp;

@@ -7,7 +7,7 @@ CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT){
         BEGIN
             SELECT * INTO STRICT v_emp FROM emp WHERE empno = p_empno;  
 
-            RE
+            RETURN 
             
         EXCEPTION
             WHEN NO DATA FOUND THEN

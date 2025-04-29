@@ -63,7 +63,6 @@ SELECT mostraempleat(7499); -- FOMRA INCORRECTA
 HINT: No function matches the given name and argument types. You might need to add explicit type casts.
 ```
 
-
 ## Exercici SQL Funcions
 Exercici que demana:
 Segons el numero de empleat rebut com a parametre, donam: el nom de l'empleat, el seu salari y el seu salari augmentat; si es `SALESMAN (10%)`,  `CLERK (20%)`, `ALTRES (30%)`

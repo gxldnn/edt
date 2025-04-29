@@ -10,9 +10,9 @@ CREATE OR REPLACE FUNCTION mostrar(){
     RETURNS varchar
     AS $$
         DECLARE
-        v_emp RECORD;
-        v_sal emp.sal%type;
+            v_emp RECORD;
+            v_sal emp.sal%type;
         BEGIN
-            
+    
 
 }

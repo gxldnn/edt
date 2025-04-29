@@ -68,10 +68,7 @@ Exercici que demana:
 Segons el numero de empleat rebut com a parametre, donam: el nom de l'empleat, el seu salari y el seu salari augmentat; si es `SALESMAN (10%)`,  `CLERK (20%)`, `ALTRES (30%)`
 
 ```sql
-=======
-## Exercici funcions clase
-´´´sql
->>>>>>> b81659a00168278bfdd11ded5fbfd2a84146a354
+
 CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT)
     RETURNS varchar
     AS $$

@@ -64,4 +64,5 @@ HINT: No function matches the given name and argument types. You might need to a
 ```
 
 
-## Ecercici SQL Fu
+## Ecercici SQL Funcions
+```

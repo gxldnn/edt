@@ -6,11 +6,11 @@ CLERK +20%
 OTHERS +30%
 */
 
-CREATE OR REPLACE FUNCTION mostrar(ename,){
+CREATE OR REPLACE FUNCTION mostrar(ename){
     RETURNS en
     DECLARE
     BEGIN
-        SELECT ename INTO v_ename
+        SELECT ename INTO v_ename 
 
 
 

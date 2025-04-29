@@ -12,7 +12,7 @@ CREATE OR REPLACE FUNCTION mostrar(){
         DECLARE
         v_emp RECORD;
         v_sal emp.sal%type;
-    BEGIN
-    
+        BEGIN
+        
 
 }

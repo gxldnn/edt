@@ -10,7 +10,7 @@ CREATE OR REPLACE FUNCTION mostrar(ename){
     RETURNS en
     DECLARE
     BEGIN
-        SELECT ename INTO v_ename FROM
+        SELECT ename INTO v_ename FROM 
 
 
 

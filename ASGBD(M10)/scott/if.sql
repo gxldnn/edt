@@ -20,6 +20,7 @@ CREATE OR REPLACE FUNCTION mostrar(){
         SELECT sal * 1.2 INTO sal_clerk FROM emp WHERE job = 'CLERK';
         SELECT sal * 1.3 INTO sal_others FROM emp WHERE job != 'SALESMAN' OR job != 'CLERK';
         RETURN v_ename, sal_sales, sal_clerk, sal_others
+    ENDM
 
 
 

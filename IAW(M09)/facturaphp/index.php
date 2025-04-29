@@ -9,9 +9,9 @@
   <body>
     <!--contingut -->
     <h1>Factura</h1>
-    <table>
-        <tr><td>Article</td><td>Quantitat</td><td>Preu/u</td><td>Subtotal</td><td>Descompte</td><td>Iva 21%</td><td>Total</td></tr>
     <?php
+    echo "<table>";
+    echo "<tr><td>Article</td><td>Quantitat</td><td>Preu/u</td><td>Subtotal</td><td>Descompte</td><td>Iva 21%</td><td>Total</td></tr>";
 
         //definim un array per a un ús futur de memoria
         $arraypergen = [];
@@ -21,7 +21,15 @@
         // array amb tota la llista de productess del
         // enunciat amb la seva respectiva informacio
 
-        $productes = [["patates", "images/patata.jpg","kg",2.05],["ceba","images/ceba.jpg","kg",2.5] ,["api","images/api.jpg","manat",3],["oli granel","images/oli.jpg","l",8.5],["pastilla sabó","images/sabo.jpg","unitat",4.99],["lluc","images/lluc.jpg","kg",10.55],["manat de pastanaga", "images/pastanaga_manat.jpg","manat",3.5]];
+        $productes = [
+            ["patates", "images/patata.jpg","kg",2.05],
+            ["ceba","images/ceba.jpg","kg",2.5],
+            ["api","images/api.jpg","manat",3],
+            ["oli granel","images/oli.jpg","l",8.5],
+            ["pastilla sabó","images/sabo.jpg","unitat",4.99],
+            ["lluc","images/lluc.jpg","kg",10.55],
+            ["manat de pastanaga", "images/pastanaga_manat.jpg","manat",3.5]
+        ];
 
         ////////////////////////////////
         //
@@ -139,11 +147,6 @@
             $arraypergen[] = [$prodseleccionat,$imatgeruta,$mesura,$preu,$quantitat,$subtotal,$descompte,$preudescomptat,$ivaaplicat,$totalpreuproducte];
 
         }
-        
-        // Fora del "for" ordenarem el array per la primera columna que es el nom del producte
-        // de forma ascendent aixi s'ordenarà alfabeticament
-        $names = array_column($arraypergen, 0);
-        array_multisort($names, SORT_ASC, $arraypergen);
 
         //Per a cada subarray dins del array anirem seleccionant cada variable amb els numeros que fan referència al index
         $i = 0;
@@ -162,8 +165,28 @@
                 <td>".round($item[9],2)." €</td>
             </tr>";
             $i++;
+
+            //Guardo el nom de cada producte en una llista per a poder fer la llista secundaria despres
+            $listaprod[] = $prod;
         }
+    echo "</table>";
+    
+    $listapeq = [];
+
+        
+    foreach ($listaprod as $p){
+        $f = in_array($p, $listapeq);
+        if ($f == true){
+            echo "";
+        }else{
+            $listapeq[] = $p;
+        }
+
+    }
+    asort($listapeq);
+    foreach ($listapeq as $s){
+        echo "$s, ";
+    }
         ?>
-    </table>
   </body>
 </html>

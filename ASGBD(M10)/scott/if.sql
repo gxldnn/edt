@@ -6,7 +6,7 @@ CLERK +20%
 OTHERS +30%
 */
 
-CREATE OR REPLACE FUNCTION mostrar(p_empno SMA){
+CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT){
     RETURNS varchar
     AS $$
         DECLARE
@@ -15,4 +15,5 @@ CREATE OR REPLACE FUNCTION mostrar(p_empno SMA){
         BEGIN
             SELECT * INTO STRICT v_emp FROM emp WHERE empno = p_empno
             EXCEPTION
+            
 }

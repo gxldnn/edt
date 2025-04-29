@@ -22,7 +22,4 @@ CREATE OR REPLACE FUNCTION mostrar(){
         RETURN v_ename, sal_sales, sal_clerk, sal_others
     END;
     $$ LANGUAGE PLPGSQL;
-
-
-
-
+}

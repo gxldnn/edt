@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT){
+CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT)
     RETURNS varchar
     AS $$
         DECLARE
@@ -15,4 +15,3 @@ CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT){
                 RETURN 'No s''ha trobat cap empleat amb aquest número.';
         END;
     $$ LANGUAGE PLPGSQL;
-}

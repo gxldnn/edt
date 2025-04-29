@@ -14,8 +14,9 @@ CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT)
 
             RETURN v_sal;
             
-        EXCEPTION
-            WHEN NO DATA FOUND THEN
-                RETURN 'No s''ha trobat cap empleat amb aquest número.';
+        
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        RETURN 'No s''ha trobat cap empleat amb aquest número.';
         END;
     $$ LANGUAGE PLPGSQL;

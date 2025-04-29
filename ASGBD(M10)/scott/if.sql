@@ -6,7 +6,8 @@ CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT){
             v_sal emp.sal%type;
         BEGIN
             SELECT * INTO STRICT v_emp FROM emp WHERE empno = p_empno;  
-            IF LOWER(v_emp.job = 'salesman')
+            IF LOWER(v_emp.job = 'salesman') THEN
+                
             RETURN 
             
         EXCEPTION

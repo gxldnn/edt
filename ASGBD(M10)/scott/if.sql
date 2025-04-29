@@ -8,6 +8,7 @@ OTHERS +30%
 
 CREATE OR REPLACE FUNCTION mostrar(){
     RETURNS en
+    
     DECLARE
         v_ename varchar(100);
         sal_sales SMALLINT

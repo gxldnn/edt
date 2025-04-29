@@ -14,7 +14,7 @@ CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT)
                     v_sal := v_emp.sal*1.2;
                 ELSE v_sal := v_emp.sal*1.3;
                 END IF;
-            END
+            END IF;
             
 
             RETURN v_emp.ename ||' '||v_emp.job||' '||v_emp.sal||' '||v_sal;

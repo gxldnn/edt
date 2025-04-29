@@ -12,8 +12,8 @@ CREATE OR REPLACE FUNCTION mostrar(){
     DECLARE
         v_ename varchar(100);
         sal_sales SMALLINT;
-        sal_clerk SMALLINT
-        sal_others SMALLINT
+        sal_clerk SMALLINT;
+        sal_others SMALLINT;
     BEGIN
         SELECT ename INTOv_ename FROM emp;
         SELECT sal * 1.1 INTO sal_sales FROM emp WHERE job = 'SALESMAN';

@@ -6,7 +6,7 @@ CLERK +20%
 OTHERS +30%
 */
 
-CREATE OR REPLACE FUNCTION mostrar(){
+CREATE OR REPLACE FUNCTION mostrar(ename,){
     RETURNS en
     DECLARE
     BEGIN

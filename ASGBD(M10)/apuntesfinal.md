@@ -65,7 +65,7 @@ HINT: No function matches the given name and argument types. You might need to a
 
 
 ## Exercici SQL Funcions
-Exercici que demana: Se
+Exercici que demana: Seg
 
 ```sql
 CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT)

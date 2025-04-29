@@ -66,7 +66,7 @@ HINT: No function matches the given name and argument types. You might need to a
 
 ## Exercici SQL Funcions
 Exercici que demana:
-Segons el numero de empleat 
+Segons el numero de empleat rebut per l 
 
 ```sql
 CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT)

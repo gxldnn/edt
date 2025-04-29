@@ -14,7 +14,7 @@ CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT)
             ELSE v_sal := v_emp.sal*1.3;
             END IF;
 
-            RETURN v_sal;
+            RETURN v_;
             
         EXCEPTION
             WHEN NO_DATA_FOUND THEN

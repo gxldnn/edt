@@ -13,6 +13,7 @@ CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT)
             ELSE v_sal := v_emp.sal*1.3;
 
             RETURN v_sal;
+            
             EXCEPTION
                 WHEN NO_DATA_FOUND THEN
                     RETURN 'No s''ha trobat cap empleat amb aquest número.';

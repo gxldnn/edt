@@ -7,5 +7,5 @@ OTHERS +30%
 */
 
 CREATE OR REPLACE FUNCTION mostrar(){
-    RETURNS varchar(100)
+    RETURNS varchar
     AS $$

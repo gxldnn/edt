@@ -16,5 +16,5 @@ CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT){
             SELECT * INTO STRICT v_emp FROM emp WHERE empno = p_empno
             
             EXCEPTION
-                EHR
+                WHEN NO DATA FO
 }

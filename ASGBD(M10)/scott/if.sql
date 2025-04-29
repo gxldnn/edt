@@ -7,7 +7,7 @@ OTHERS +30%
 */
 
 CREATE OR REPLACE FUNCTION mostrar(){
-    RETURNS varchar
+    RETURNS v
     AS $$
     DECLARE
         v_ename varchar(100);

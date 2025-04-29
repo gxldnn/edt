@@ -8,6 +8,7 @@ CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT)
             SELECT * INTO STRICT v_emp FROM emp WHERE empno = p_empno;  
             IF LOWER(v_emp.job = 'salesman') THEN
                 v_sal := v_emp.sal*1.1;
+
             RETURN v_sal;
             
         EXCEPTION

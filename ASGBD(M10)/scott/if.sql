@@ -10,7 +10,7 @@ CREATE OR REPLACE FUNCTION mostrar(){
     RETURNS en
     DECLARE
     BEGIN
-        SELECT 
+        SELECT enane
 
 
 

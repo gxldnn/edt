@@ -6,7 +6,7 @@ CLERK +20%
 OTHERS +30%
 */
 
-CREATE OR REPLACE FUNCTION mostrar(p_empno){
+CREATE OR REPLACE FUNCTION mostrar(p_empno SMA){
     RETURNS varchar
     AS $$
         DECLARE

@@ -6,3 +6,4 @@ CLERK +20%
 OTHERS +30%
 */
 
+

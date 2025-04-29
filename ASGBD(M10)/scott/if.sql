@@ -8,8 +8,9 @@ CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT)
             SELECT * INTO STRICT v_emp FROM emp WHERE empno = p_empno;  
             IF LOWER(v_emp.job = 'salesman') THEN
                 v_sal := v_emp.sal*1.1;
-            ELSEIF LOWER(v_emp.job) = 'clerk' THEN
-                v_sal := v_emp.sal*1.2;
+            ELSE
+                IF LOWER(v_emp.job) = 'clerk' THEN
+                    v_sal := v_emp.sal*1.2;
             ELSE v_sal := v_emp.sal*1.3;
             END IF;
             RETURN v_sal;

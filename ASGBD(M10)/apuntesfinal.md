@@ -66,7 +66,7 @@ HINT: No function matches the given name and argument types. You might need to a
 
 ## Exercici SQL Funcions
 Exercici que demana:
-Segons el numero de empleat rebut com a parametre, donam: el nom de l'empleat, el seu salari y el seu salari augmentat; si es `SALESMAN (10%)` `CLERK (20%)` `ALTRES (30%)`
+Segons el numero de empleat rebut com a parametre, donam: el nom de l'empleat, el seu salari y el seu salari augmentat; si es `SALESMAN (10%)`, `CLERK (20%)` `ALTRES (30%)`
 
 ```sql
 CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT)

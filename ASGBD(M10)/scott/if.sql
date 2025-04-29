@@ -13,6 +13,6 @@ CREATE OR REPLACE FUNCTION mostrar(){
             v_emp RECORD;
             v_sal emp.sal%type;
         BEGIN
-            SELECT * INTO STRICT v_emp FROM emp WHERE empno = p_em
+            SELECT * INTO STRICT v_emp FROM emp WHERE empno = p_emp
 
 }

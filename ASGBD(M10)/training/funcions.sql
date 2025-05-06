@@ -44,39 +44,50 @@ CREATE OR REPLACE FUNCTION stock0k(p_cant INT, p_fabcod char, p_prodcod char)
         END; 
     $$ LANGUAGE PLPGSQL;
           
-CREATE OR REPLACE FUNCTION altaComanda(p_cliecod INT, p_cant INT, p_fabcod varchar,p_prodcod varchar)
-    RETURNS varchar
-    AS $$
-        DECLARE
-            v_data pedido.fecha%type;
-            v_pednum pedido.pednum%type;
-            v_importe pedido.importe%type;
-        BEGIN
-            SELECT CURRENT_DATE INTO STRICT v_data;
-            select setval('pednum_seq', (select max(pednum) from pedido)+1, true) INTO STRICT v_pednum;
+CREATE OR REPLACE FUNCTION crear_comanda(
+    p_cliecod varchar,
+    p_fabcod varchar,
+    p_prodcod varchar,
+    p_cant integer
+)
+RETURNS varchar AS $$
+DECLARE
+    v_data pedido.fecha%type;
+    v_pednum pedido.pednum%type;
+    v_importe pedido.importe%type;
+BEGIN
+    -- Obtener la fecha actual
+    SELECT CURRENT_DATE INTO v_data;
 
-            IF NOT existeixClient(p_cliecod) THEN
-                RETURN format('Client %s no existeix, no es pot fer la comanda',p_cliecod);
-            END IF;
+    -- Obtener el siguiente número de pedido
+    SELECT setval('pednum_seq', (SELECT max(pednum) FROM pedido) + 1, true) INTO v_pednum;
 
-            IF NOT stock0k(p_cant, p_fabcod, p_prodcod) THEN
-                RETURN format('No hi han existencies suficients del producte $s', p_fabcod||p_prodcod );
-            END IF;
+    -- Verificar si el cliente existe
+    IF NOT existeixClient(p_cliecod) THEN
+        RETURN format('Client %s no existeix, no es pot fer la comanda', p_cliecod);
+    END IF;
 
-            SELECT precio*p_cant INTO STRICT v_importe FROM producto
-            WHERE fabcod||prodcod = p_fabcod||p_prodcod;
-            
-            
-            INSERT INTO pedido
-            VALUES (v_pednum, v_data, p_cliecod, NULL, p_fabcod, p_prodcod, p_cant, v_importe);
-            
-            RETURN format(
-                'Una quantitat de %s del producte %s amb un import de %.2f € s’ha afegit a pedidos pel client %s',
-                p_cant,
-                p_prodcod,
-                v_importe,
-                p_cliecod
-            );
-            INSERT INTO pedido ()
-        END;
-    $$ LANGUAGE PLPGSQL;
+    -- Verificar si hay suficiente stock
+    IF NOT stock0k(p_cant, p_fabcod, p_prodcod) THEN
+        RETURN format('No hi han existències suficients del producte %s', p_fabcod || p_prodcod);
+    END IF;
+
+    -- Calcular el importe de la comanda
+    SELECT precio * p_cant INTO v_importe
+    FROM producto
+    WHERE fabcod || prodcod = p_fabcod || p_prodcod;
+
+    -- Insertar el pedido en la tabla
+    INSERT INTO pedido (pednum, fecha, cliecod, otrocampo, fabcod, prodcod, cantidad, importe)
+    VALUES (v_pednum, v_data, p_cliecod, NULL, p_fabcod, p_prodcod, p_cant, v_importe);
+
+    -- Devolver el mensaje con el detalle de la comanda
+    RETURN format(
+        'Una quantitat de %s del producte %s amb un import de %.2f € s’ha afegit a pedidos pel client %s',
+        p_cant,
+        p_prodcod,
+        v_importe,
+        p_cliecod
+    );
+END;
+$$ LANGUAGE plpgsql;

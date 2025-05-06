@@ -26,3 +26,4 @@ CREATE OR REPLACE FUNCTION altaClient(p_nombre CHAR,p_repcod INT,p_limcred INT)
 CREATE OR REPLACE FUNCTION stock0k(p_cant INT, p_fabcod INT, p_prodcod INT)
     RETURNS boolean
     AS $$
+        DECLARE

@@ -59,7 +59,7 @@ AS $$
         IF NOT existeixClient(p_cliecod::SMALLINT) THEN
             RETURN format('Client %s no existeix, no es pot fer la comanda', p_cliecod);
         END IF;
-*/
+
         IF NOT stock0k(p_cant, p_fabcod, p_prodcod) THEN
             RETURN format('No hi han existències suficients del producte %s', p_fabcod||p_prodcod);
         END IF;

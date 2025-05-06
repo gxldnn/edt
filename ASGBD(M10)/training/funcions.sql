@@ -14,4 +14,4 @@ CREATE OR REPLACE FUNCTION altaClient(p_nombre::CHAR,p_repcod::INT,p_limcred::IN
     RETURNS varchar
     AS $$
         BEGIN
-            INSERT INTO client
+            INSERT INTO cliente VALUES

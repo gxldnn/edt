@@ -81,6 +81,6 @@ AS $$
             v_importe,
             p_cliecod
         );
-        */
+        
     END;
 $$ LANGUAGE plpgsql;

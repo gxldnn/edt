@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION existeixClient(p_cliecod)
+CREATE OR REPLACE FUNCTION existeixClient(p_cliecod SMA)
     RETURNS boolean
     AS $$
         DECLARE

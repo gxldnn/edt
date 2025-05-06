@@ -4,4 +4,4 @@ CREATE OR REPLACE FUNCTION existeixClient(p_cliecod)
         DECLARE
             v_bool boolean;
         BEGIN
-            SELECT cliecod INTO STRICT v_bool FROM cliente
+            SELECT cliecod INTO STRICT v_bool FROM cliente WHERE cli

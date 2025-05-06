@@ -30,4 +30,4 @@ CREATE OR REPLACE FUNCTION stock0k(p_cant INT, p_fabcod INT, p_prodcod INT)
         v_bool boolean;
         v_exist producto.exist%type
         BEGIN
-            SELECT exist INTO STRICT v_exist
+            SELECT exist INTO STRICT v_exist 

@@ -82,5 +82,5 @@ AS $$
             p_prodcod || p_fabcod,
             ROUND(v_importe::numeric, 2),
             p_cliecod
-);
+        );
     $$ LANGUAGE plpgsql;

@@ -17,4 +17,4 @@ CREATE OR REPLACE FUNCTION altaClient(p_nombre::CHAR,p_repcod::INT,p_limcred::IN
             v_cliecod cliente.cliecod%type;
         BEGIN
             select setval('cliecod_seq', (select max(cliecod) from cliente), true) INTO STRICT v_cliecod;
-            INSERT INTO cliente (cliecod, nombre, repcod, limcred) VALUES (NEXTVAL('cliecod_seq'), p_nombre, p_repcod, p_limcred);
+            INSERT INTO cliente (cliecod, nombre, repcod, limcred) VALUES (NEXTVAL('cliecod_seq, p_nombre, p_repcod, p_limcred);

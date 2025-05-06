@@ -4,7 +4,7 @@ select setval('cliecod_seq', (SELECT max(cliecod) FROM cliente), true);
 SELECT setval('pednum_seq', (SELECT max(pednum) FROM pedido), true);
 DROP FUNCTION existeixClient(p_cliecod SMALLINT);
 DROP FUNCTION altaClient(p_nombre CHAR,p_repcod INT,p_limcred INT);
-DROP FUNCTION existeixClient(p_cliecod SMALLINT);
+DROP FUNCTION stock0k(p_cant INT, p_fabcod char, p_prodcod char);
 DROP FUNCTION existeixClient(p_cliecod SMALLINT);
 
 CREATE OR REPLACE FUNCTION existeixClient(p_cliecod SMALLINT)

@@ -59,7 +59,7 @@ AS $$
         IF NOT existeixClient(p_cliecod::SMALLINT) THEN
             RETURN format('Client %s no existeix, no es pot fer la comanda', p_cliecod);
         END IF;
-/*
+
         IF NOT stock0k(p_cant, p_fabcod, p_prodcod) THEN
             RETURN format('No hi han existències suficients del producte %s', p_fabcod||p_prodcod);
         END IF;
@@ -67,7 +67,7 @@ AS $$
         SELECT precio * p_cant INTO v_importe
         FROM producto
         WHERE fabcod||prodcod = p_fabcod||p_prodcod;
-        /*
+        
         IF NOT FOUND OR v_importe IS NULL THEN
             RETURN format('No s’ha pogut calcular l’import producte %s no trobat o preu nul', p_fabcod||p_prodcod);
         END IF;

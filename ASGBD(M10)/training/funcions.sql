@@ -4,7 +4,7 @@ CREATE OR REPLACE FUNCTION existeixClient(p_cliecod SMALLINT)
         DECLARE
             v_bool boolean;
         BEGIN
-            SELECT EXISTS SLECcliecod INTO STRICT v_bool FROM cliente WHERE cliecod = p_cliecod;
+            SELECT EXISTS SELE Tcliecod INTO STRICT v_bool FROM cliente WHERE cliecod = p_cliecod;
             
             
             RETURN v_bool;

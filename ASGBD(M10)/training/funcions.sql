@@ -62,7 +62,7 @@ CREATE OR REPLACE FUNCTION altaComanda(p_cliecod INT, p_cant INT, p_fabcod varch
                 RETURN format('No hi han existencies suficients del producte $s', p_fabcod||p_prodcod );
             END IF;
 
-            INSERT INTO
+            INSERT INTO pedido
 
             INSERT INTO pedido ()
         END;

@@ -19,7 +19,7 @@ CREATE OR REPLACE FUNCTION altaClient(p_nombre CHAR,p_repcod INT,p_limcred INT)
     RETURNS varchar
     AS $$
         DECLARE
-            v_cliecod cliente.cliecod%type;
+            v_re cliente.cliecod%type;
         BEGIN
             INSERT INTO cliente (cliecod, nombre, repcod, limcred) VALUES (NEXTVAL('cliecod_seq'), p_nombre, p_repcod, p_limcred);
             RETURN ('Client %s s’ha donat d’alta correctament', v_cliecod);

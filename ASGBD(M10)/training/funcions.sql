@@ -79,7 +79,7 @@ AS $$
         RETURN format(
             'Una quantitat de %s del producte %s amb un import de %.2f € s’ha afegit a pedidos pel client %s',
             p_cant,
-            p_prodcod,
+            p_prodcod||,
             v_importe,
             p_cliecod
         );

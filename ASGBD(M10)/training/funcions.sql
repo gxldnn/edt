@@ -88,4 +88,4 @@ AS $$
         RETURN 'Una quantitat de '||p_cant||' del producte '||p_fabcod||p_prodcod||' amb un import de '||p_importe||' € sha afegit a pedidos pel client '||p_cliecod||'';
         
     END;
-$$ LANGUAGE plpgsql;
+$$ LANGUAGE plpgsql;ç

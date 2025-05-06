@@ -68,7 +68,7 @@ CREATE TABLE cliente (
 --
 
 CREATE TABLE pedido (
-    ,  integer CONSTRAINT PK_PEDIDO_PEDNUM PRIMARY KEY ,
+    pednum integer CONSTRAINT PK_PEDIDO_PEDNUM PRIMARY KEY ,
     fecha date NOT NULL,
     cliecod smallint NOT NULL,
     repcod smallint,

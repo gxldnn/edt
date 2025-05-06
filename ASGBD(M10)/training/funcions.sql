@@ -4,4 +4,4 @@ CREATE OR REPLACE FUNCTION existeixClient(p_cliecod)
         DECLARE
             v_bool boolean;
         BEGIN
-            SELECT cliecod INT
+            SELECT cliecod INTO v_

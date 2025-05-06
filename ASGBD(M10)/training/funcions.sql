@@ -78,7 +78,7 @@ AS $$
 
         RETURN format('Una quantitat de %s del producte %s amb un import de %s € s’ha afegit a pedidos pel client %s',
             p_cant,
-            p_prodcod|| p_fabcod,
+            p_prodcod||p_fabcod,
             TO_CHAR(v_importe, 'FM999999999.00'), -- Canvi aquí per formatar l'import
             p_cliecod
         );

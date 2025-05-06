@@ -10,4 +10,4 @@ CREATE OR REPLACE FUNCTION existeixClient(p_cliecod SMALLINT)
     $$ LANGUAGE PLPGSQL;
 
 
-C
+CREATE O

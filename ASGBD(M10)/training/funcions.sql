@@ -72,6 +72,7 @@ CREATE OR REPLACE FUNCTION altaComanda(p_cliecod INT, p_cant INT, p_fabcod varch
                 v_pednum,
                 v_data,
                 p_cliecod,
+                NU
                 p_fabcod,
                 p_prodcod,
                 p_cant,

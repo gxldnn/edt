@@ -64,7 +64,7 @@ CREATE OR REPLACE FUNCTION altaComanda(p_cliecod INT, p_cant INT, p_fabcod varch
             END IF;
 
             SELECT precio*p_cant INTO STRICT v_importe FROM producto
-            WHERE fabcod||prodcod = p_fabcod||p_prodcod
+            WHERE fabcod||prodcod = p_fabcod||p_prodcod;
             
             
             INSERT INTO pedido (pednum, fecha, cliecod, fabcod, prodcod, cant, importe)

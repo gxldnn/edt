@@ -62,7 +62,7 @@ CREATE OR REPLACE FUNCTION altaComanda(p_cliecod INT, p_cant INT, p_fabcod varch
                 RETURN format('No hi han existencies suficients del producte $s', p_fabcod||p_prodcod );
             END IF;
 
-            SELECT precio*p_cant FROM producto
+            SELECT precio*p_cant INTO ST FROM producto
             WHERE fabcod||prodcod = p_fabcod||p_prodcod
             
             

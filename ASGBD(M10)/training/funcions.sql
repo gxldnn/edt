@@ -23,7 +23,7 @@ CREATE OR REPLACE FUNCTION altaClient(p_nombre CHAR,p_repcod INT,p_limcred INT)
         BEGIN
             SELECT repcod INTO STRICT v_repcod
             FROM repventa
-            WHERE repcod = P_REPCO
+            WHERE repcod = P_REP
 
             INSERT INTO cliente
             VALUES (NEXTVAL('cliecod_seq'), p_nombre, p_repcod, p_limcred);

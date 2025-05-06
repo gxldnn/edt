@@ -32,7 +32,7 @@ CREATE OR REPLACE FUNCTION altaClient(p_nombre CHAR,p_repcod INT,p_limcred INT)
         
             EXCEPTION
                 WHEN NO_DATA_FOUND THEN
-                    RETURN 'Er'
+                    RETURN 'El representa'
         END;
     $$ LANGUAGE PLPGSQL;
 

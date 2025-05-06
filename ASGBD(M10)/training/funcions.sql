@@ -50,4 +50,4 @@ CREATE OR REPLACE FUNCTION altaComanda(p_cliecod INT, p_cant INT, p_prodcod INT,
         DECLARE
 
         BEGIN
-            IF existeixClient(p_cliecod) 
+            IF existeixClient(p_cliecod) == 

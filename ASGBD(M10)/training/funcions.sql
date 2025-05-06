@@ -27,7 +27,6 @@ CREATE OR REPLACE FUNCTION stock0k(p_cant INT, p_fabcod INT, p_prodcod INT)
     RETURNS boolean
     AS $$
         DECLARE
-        v_bool boolean;
         v_exist producto.exist%type
         BEGIN
             SELECT exist INTO STRICT v_exist 

@@ -28,4 +28,4 @@ CREATE OR REPLACE FUNCTION stock0k(p_cant INT, p_fabcod INT, p_prodcod INT)
     AS $$
         DECLARE
         v_bool boolean;
-        VE
+        BEGIN 

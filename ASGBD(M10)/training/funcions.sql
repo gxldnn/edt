@@ -54,4 +54,4 @@ CREATE OR REPLACE FUNCTION altaComanda(p_cliecod INT, p_cant INT, p_prodcod INT,
                 RETURN format('Client %s no existeix, no es pot fer la comanda',p_cliecod);
 
             IF stock0k(p_cant, p_fabcod, p_prodcod) == false THEN
-            
+                

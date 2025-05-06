@@ -49,9 +49,10 @@ CREATE OR REPLACE FUNCTION altaComanda(p_cliecod INT, p_cant INT, p_fabcod varch
     AS $$
         DECLARE
             v_data pedido.fecha%type;
+            
         BEGIN
             SELECT CURRENT_DATE INTO STRICT v_data;
-            select setval('pednum_seq', (select max(pednum) from pedido)+1, true) INTO STRICT v_pe;
+            select setval('pednum_seq', (select max(pednum) from pedido)+1, true) INTO STRICT v_pednum;
 
             IF existeixClient(p_cliecod) == false THEN
                 RETURN format('Client %s no existeix, no es pot fer la comanda',p_cliecod);

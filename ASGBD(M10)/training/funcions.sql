@@ -1,7 +1,7 @@
 CREATE sequence cliecod_seq;
 CREATE sequence pednum_seq;
 
-CREATE OR REPLACE FUNCTION existeixClient(p_cliecod SMALLINT)
+CREATE OR REPLACE FUNCTION existeixClient(p_cliecod INT)
     RETURNS boolean
     AS $$
         DECLARE

@@ -1,5 +1,5 @@
 CREATE OR REPLACE FUNCTION existeixClient(p_cliecod)
-    RETURNS varchar
+    RETURNS 
     AS $$
         DECLARE
             v_bool boolean;

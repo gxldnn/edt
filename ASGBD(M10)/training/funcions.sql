@@ -1,7 +1,7 @@
 CREATE sequence cliecod_seq;
 CREATE sequence pednum_seq;
-select setval('cliecod_seq', (select max(cliecod) from cliente)+1, true)
-        SELECT setval('pednum_seq', (SELECT max(pednum) FROM pedido) + 1, true) INTO v_pednum;
+select setval('cliecod_seq', (select max(cliecod) from cliente)+1, true);
+SELECT setval('pednum_seq', (SELECT max(pednum) FROM pedido) + 1, true) INTO v_pednum;
 
 
 CREATE OR REPLACE FUNCTION existeixClient(p_cliecod SMALLINT)

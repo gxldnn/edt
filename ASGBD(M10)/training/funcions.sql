@@ -59,7 +59,7 @@ CREATE OR REPLACE FUNCTION altaComanda(p_cliecod INT, p_cant INT, p_fabcod varch
                 RETURN format('Client %s no existeix, no es pot fer la comanda',p_cliecod);
             END IF;
 
-            IF  stock0k(p_cant, p_fabcod, p_prodcod) THEN
+            IF NOT stock0k(p_cant, p_fabcod, p_prodcod) THEN
                 RETURN format('No hi han existencies suficients del producte $s', p_fabcod||p_prodcod );
             END IF;
 

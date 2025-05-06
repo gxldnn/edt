@@ -29,6 +29,8 @@ CREATE OR REPLACE FUNCTION altaClient(p_nombre CHAR,p_repcod INT,p_limcred INT)
             VALUES (NEXTVAL('cliecod_seq'), p_nombre, p_repcod, p_limcred);
             
             RETURN ('El client '||p_nombre||' s’ha donat d’alta correctament');
+        
+            
         END;
     $$ LANGUAGE PLPGSQL;
 

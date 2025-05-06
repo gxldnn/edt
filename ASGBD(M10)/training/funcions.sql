@@ -17,7 +17,7 @@ CREATE OR REPLACE FUNCTION altaClient(p_nombre CHAR,p_repcod INT,p_limcred INT)
         DECLARE
             v_cliecod cliente.cliecod%type;
         BEGIN
-            select setval('cliecod_seq', (select max(cliecod) from cliente)+1, true) INTO STRICT;
+            select setval('cliecod_seq', (select max(cliecod) from cliente)+1, true) INTO STRICT v_cl;
             INSERT INTO cliente (cliecod, nombre, repcod, limcred) VALUES (v_cliecod, p_nombre, p_repcod, p_limcred);
             RETURN format('Client %s s’ha donat d’alta correctament', v_cliecod);
         END;

@@ -1,1 +1,1 @@
-CREATE OR REPLACE FUNCTION existeixClient
+CREATE OR REPLACE FUNCTION existeixClient()

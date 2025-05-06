@@ -67,9 +67,9 @@ CREATE OR REPLACE FUNCTION altaComanda(p_cliecod INT, p_cant INT, p_fabcod varch
             WHERE fabcod||prodcod = p_fabcod||p_prodcod;
             
             
-INSERT INTO pedido
-VALUES (v_pednum, v_data, p_cliecod, NULL, p_fabcod, p_prodcod, p_cant, v_importe);
-
+        INSERT INTO pedido
+        VALUES (v_pednum, v_data, p_cliecod, NULL, p_fabcod, p_prodcod, p_cant, v_importe);
+        
             RETURN format(
                 'Una quantitat de %s del producte %s amb un import de %.2f € s’ha afegit a pedidos pel client %s',
                 p_cant,

@@ -73,7 +73,7 @@ AS $$
             END IF;
         
         
-    INSERT INTO pedido
+        INSERT INTO pedido
         VALUES (v_pednum, v_data, p_cliecod, NULL, p_fabcod, p_prodcod, p_cant, v_importe);
 
         RETURN format(

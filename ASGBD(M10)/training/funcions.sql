@@ -1,1 +1,1 @@
-CREATE OR REPLACE FUNCTION existeixClient(p)
+CREATE OR REPLACE FUNCTION existeixClient(p_cliecod)

@@ -3,6 +3,8 @@ CREATE sequence pednum_seq;
 select setval('cliecod_seq', (SELECT max(cliecod) FROM cliente), true);
 SELECT setval('pednum_seq', (SELECT max(pednum) FROM pedido), true);
 DROP FUNCTION existeixClient(p_cliecod SMALLINT);
+DROP FUNCTION existeixClient(p_cliecod SMALLINT);
+DROP FUNCTION existeixClient(p_cliecod SMALLINT);
 
 CREATE OR REPLACE FUNCTION existeixClient(p_cliecod SMALLINT)
     RETURNS boolean

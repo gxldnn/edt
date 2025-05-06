@@ -77,7 +77,7 @@ AS $$
         SELECT precio * p_cant INTO v_importe
         FROM producto
         WHERE fabcod||prodcod = p_fabcod||p_prodcod;
-        /**
+        
         IF NOT FOUND OR v_importe IS NULL THEN
             RETURN format('No sha pogut calcular limport producte %s no trobat o preu nul', p_fabcod||p_prodcod);
         END IF;

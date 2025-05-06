@@ -8,3 +8,6 @@ CREATE OR REPLACE FUNCTION existeixClient(p_cliecod SMALLINT)
             RETURN v_bool;
         END;
     $$ LANGUAGE PLPGSQL;
+
+
+    

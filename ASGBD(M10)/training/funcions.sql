@@ -1,2 +1,2 @@
 CREATE OR REPLACE FUNCTION existeixClient(p_cliecod)
-    RETURNS va
+    RETURNS varchar

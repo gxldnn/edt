@@ -81,7 +81,7 @@ AS $$
         IF NOT FOUND OR v_importe IS NULL THEN
             RETURN format('No sha pogut calcular limport producte %s no trobat o preu nul', p_fabcod||p_prodcod);
         END IF;
-        */
+        
         
         INSERT INTO pedido
         VALUES (NEXTVAL('pednum_seq'), v_data, p_cliecod, NULL, p_fabcod, p_prodcod, p_cant, v_importe);

@@ -49,7 +49,7 @@ CREATE OR REPLACE FUNCTION altaComanda(p_cliecod INT, p_cant INT, p_fabcod varch
     AS $$
         DECLARE
             v_data pedido.fecha%type;
-            v_pednum pedido.pednum5type
+            v_pednum pedido.pednum%type
         BEGIN
             SELECT CURRENT_DATE INTO STRICT v_data;
             select setval('pednum_seq', (select max(pednum) from pedido)+1, true) INTO STRICT v_pednum;

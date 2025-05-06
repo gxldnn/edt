@@ -85,7 +85,7 @@ AS $$
         
         INSERT INTO pedido
         VALUES (NEXTVAL('pednum_seq'), v_data, p_cliecod, NULL, p_fabcod, p_prodcod, p_cant, v_importe);
-        RETURN forma'Una quantitat de %s del producte %s amb un import de %s € sha afegit a pedidos pel client %s';
+        RETURN 'Una quantitat de %s del producte %s amb un import de %s € sha afegit a pedidos pel client %s';
         
     END;
 $$ LANGUAGE plpgsql;

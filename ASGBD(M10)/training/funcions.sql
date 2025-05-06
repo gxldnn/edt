@@ -17,4 +17,3 @@ CREATE OR REPLACE FUNCTION altaClient(p_nombre::CHAR,p_repcod::INT,p_limcred::IN
             v_cliecod cliente.cliecod%type;
         BEGIN
             INSERT INTO cliente (cliecod, nombre, repcod, limcred) VALUES (NEXTVAL('cliecod_seq'), p_nombre, p_repcod, p_limcred);
-            RETURNS 

@@ -30,7 +30,7 @@ CREATE OR REPLACE FUNCTION altaClient(p_nombre CHAR,p_repcod INT,p_limcred INT)
             WHERE repcod = p_repcod;
 
             INSERT INTO cliente
-            VALUES (NEXTVAL('cliecod_seq')+1, p_nombre, p_repcod, p_limcred);
+            VALUES (NEXTVAL('cliecod_seq'), p_nombre, p_repcod, p_limcred);
             
             RETURN 'El client '||p_nombre||' s’ha donat d’alta correctament';
         

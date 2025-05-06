@@ -33,4 +33,5 @@ CREATE OR REPLACE FUNCTION stock0k(p_cant INT, p_fabcod INT, p_prodcod INT)
             SELECT exist INTO STRICT v_exist 
             FROM producto 
             WHERE fabcod||prodcod = p_fabcod||p_prodcod;
-              
+
+            if   

@@ -30,4 +30,4 @@ CREATE OR REPLACE FUNCTION stock0k(p_cant INT, p_fabcod INT, p_prodcod INT)
         v_bool boolean;
         v_exist
         BEGIN
-            SELECT exist
+            SELECT exist INTOP 

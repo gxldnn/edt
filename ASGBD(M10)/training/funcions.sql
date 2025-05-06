@@ -28,6 +28,6 @@ CREATE OR REPLACE FUNCTION stock0k(p_cant INT, p_fabcod INT, p_prodcod INT)
     AS $$
         DECLARE
         v_bool boolean;
-        v_exist producto.e
+        v_exist producto.exist
         BEGIN
             SELECT exist INTO STRICT v_exist

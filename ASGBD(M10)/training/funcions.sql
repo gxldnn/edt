@@ -11,7 +11,7 @@ CREATE OR REPLACE FUNCTION existeixClient(p_cliecod SMALLINT)
     $$ LANGUAGE PLPGSQL;
 */
 
-CREATE OR REPLACE FUNCTION altaClient(p_nombre::varchar,p_repcod::INT,p_limcred::INT)
+CREATE OR REPLACE FUNCTION altaClient(p_nombre varchar,p_repcod::INT,p_limcred::INT)
     RETURNS varchar
     AS $$
         DECLARE

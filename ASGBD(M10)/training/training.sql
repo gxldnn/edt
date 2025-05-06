@@ -4,6 +4,7 @@ create database training;
 \c training
 
 CREATE sequence cliecod_seq;
+CREATE S
 
 CREATE TABLE producto (
     fabcod character(3),

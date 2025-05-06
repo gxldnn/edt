@@ -58,4 +58,4 @@ CREATE OR REPLACE FUNCTION altaComanda(p_cliecod INT, p_cant INT, p_prodcod INT,
                 RETURN format('No hi han existencies suficients del producte $s', p_fabcod||p_prodcod );
             END IF;
         END;
-    $$ LANGUAGE PLP
+    $$ LANGUAGE PLPGSQL;

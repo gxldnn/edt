@@ -76,6 +76,6 @@ AS $$
         INSERT INTO pedido
         VALUES (v_pednum, v_data, p_cliecod, NULL, p_fabcod, p_prodcod, p_cant, v_importe);
 
-        RETURN format('ask %s', p_cliecod);
+        RETURN format('ask %s', );
     END;
 $$ LANGUAGE plpgsql;

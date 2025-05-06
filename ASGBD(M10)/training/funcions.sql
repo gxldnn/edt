@@ -48,4 +48,5 @@ CREATE OR REPLACE FUNCTION altaComanda(p_cliecod INT, p_cant INT, p_prodcod INT,
     RETURNS varchar
     AS $$
         DECLARE
+            
         BEGIN

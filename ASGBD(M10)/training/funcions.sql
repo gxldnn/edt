@@ -33,7 +33,7 @@ CREATE OR REPLACE FUNCTION stock0k(p_cant INT, p_fabcod INT, p_prodcod INT)
             FROM producto 
             WHERE fabcod||prodcod = p_fabcod||p_prodcod;
 
-            IF p_cant > v_exist THEN
+            IF p_cant < v_exist THEN
                 RETURN FALSE;
             ELSE
                 RETURN TRUE;  

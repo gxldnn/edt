@@ -68,7 +68,7 @@ AS $$
         FROM producto
         WHERE fabcod || prodcod = p_fabcod || p_prodcod;
 
-        INSERT INTO pedido (pednum, fecha, cliecod, otrocampo, fabcod, prodcod, cantidad, importe)
+        INSERT INTO pedido (pednum, fecha, cliecod, repcod, fabcod, prodcod, cantidad, importe)
         VALUES (v_pednum, v_data, p_cliecod, NULL, p_fabcod, p_prodcod, p_cant, v_importe);
 
         RETURN format(

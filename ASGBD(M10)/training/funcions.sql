@@ -77,11 +77,9 @@ BEGIN
     FROM producto
     WHERE fabcod || prodcod = p_fabcod || p_prodcod;
 
-    -- Insertar el pedido en la tabla
     INSERT INTO pedido (pednum, fecha, cliecod, otrocampo, fabcod, prodcod, cantidad, importe)
     VALUES (v_pednum, v_data, p_cliecod, NULL, p_fabcod, p_prodcod, p_cant, v_importe);
 
-    -- Devolver el mensaje con el detalle de la comanda
     RETURN format(
         'Una quantitat de %s del producte %s amb un import de %.2f € s’ha afegit a pedidos pel client %s',
         p_cant,

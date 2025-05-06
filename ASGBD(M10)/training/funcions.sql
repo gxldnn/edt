@@ -34,4 +34,4 @@ CREATE OR REPLACE FUNCTION stock0k(p_cant INT, p_fabcod INT, p_prodcod INT)
             FROM producto 
             WHERE fabcod||prodcod = p_fabcod||p_prodcod;
 
-            if   
+            IF   

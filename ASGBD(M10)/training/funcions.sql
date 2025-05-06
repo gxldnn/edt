@@ -41,3 +41,4 @@ CREATE OR REPLACE FUNCTION stock0k(p_cant INT, p_fabcod char, p_prodcod char)
         END; 
     $$ LANGUAGE PLPGSQL;
           
+CR

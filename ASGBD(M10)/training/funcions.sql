@@ -39,5 +39,5 @@ CREATE OR REPLACE FUNCTION stock0k(p_cant INT, p_fabcod INT, p_prodcod INT)
                 RETURN TRUE;
             ENDIF;
         END;
-    
+    $$ LANGUAGE 
           

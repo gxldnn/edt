@@ -76,7 +76,7 @@ CREATE OR REPLACE FUNCTION altaComanda(p_cliecod INT, p_cant INT, p_fabcod varch
                 p_cant,
                 v_importe
             );
-            RETURN format('Una quantitat de x, prod')
+            RETURN format('Una quantitat de x, producte ')
 
             INSERT INTO pedido ()
         END;

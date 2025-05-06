@@ -66,7 +66,7 @@ CREATE OR REPLACE FUNCTION altaComanda(p_cliecod INT, p_cant INT, p_fabcod varch
             VALUES(
                 v_pednum,
                 v_data,
-                
+                p_
             )
 
             INSERT INTO pedido ()

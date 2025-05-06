@@ -79,7 +79,7 @@ AS $$
         WHERE fabcod||prodcod = p_fabcod||p_prodcod;
         
         IF NOT FOUND OR v_importe IS NULL THEN
-            RETURN 'No sha pogut calcular limport producte %s no trobat o preu nul';
+            RETURN 'No sha pogut calcular limport producte '' no trobat o preu nul';
         END IF;
         
         

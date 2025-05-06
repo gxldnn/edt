@@ -83,5 +83,5 @@ AS $$
             ROUND(v_importe::numeric, 2),
             p_cliecod
         );
-        END
+        END;
     $$ LANGUAGE plpgsql;

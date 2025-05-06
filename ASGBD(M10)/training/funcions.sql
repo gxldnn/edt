@@ -48,7 +48,7 @@ CREATE OR REPLACE FUNCTION crear_comanda(
     p_cliecod varchar,
     p_fabcod varchar,
     p_prodcod varchar,
-    p_cant inte)
+    p_cant int)
 RETURNS varchar 
 AS $$
     DECLARE

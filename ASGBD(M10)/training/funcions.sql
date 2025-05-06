@@ -5,8 +5,6 @@ CREATE OR REPLACE FUNCTION existeixClient(p_cliecod SMALLINT)
             v_bool boolean;
         BEGIN
             SELECT EXISTS (SELECT 1 FROM cliente WHERE cliecod = p_cliecod) INTO v_bool;
-            
-            
             RETURN v_bool;
         END;
     $$ LANGUAGE PLPGSQL;

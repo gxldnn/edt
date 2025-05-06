@@ -56,7 +56,6 @@ DECLARE
     v_pednum pedido.pednum%type;
     v_importe pedido.importe%type;
 BEGIN
-    -- Obtener la fecha actual
     SELECT CURRENT_DATE INTO v_data;
 
     SELECT setval('pednum_seq', (SELECT max(pednum) FROM pedido) + 1, true) INTO v_pednum;

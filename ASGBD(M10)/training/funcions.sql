@@ -59,10 +59,8 @@ BEGIN
     -- Obtener la fecha actual
     SELECT CURRENT_DATE INTO v_data;
 
-    -- Obtener el siguiente número de pedido
     SELECT setval('pednum_seq', (SELECT max(pednum) FROM pedido) + 1, true) INTO v_pednum;
 
-    -- Verificar si el cliente existe
     IF NOT existeixClient(p_cliecod) THEN
         RETURN format('Client %s no existeix, no es pot fer la comanda', p_cliecod);
     END IF;

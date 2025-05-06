@@ -31,7 +31,7 @@ CREATE OR REPLACE FUNCTION altaClient(p_nombre CHAR,p_repcod INT,p_limcred INT)
             RETURN ('El client '||p_nombre||' s’ha donat d’alta correctament');
         
             EXCEPTION
-                WHEN NO_DATA_FOUND
+                WHEN NO_DATA_FOUND THEN
         END;
     $$ LANGUAGE PLPGSQL;
 

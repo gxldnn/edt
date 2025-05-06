@@ -13,4 +13,4 @@ CREATE OR REPLACE FUNCTION existeixClient(p_cliecod SMALLINT)
 CREATE OR REPLACE FUNCTION altaClient(p_nombre::CHAR,p_repcod::INT,p_limcred::INT)
     RETURNS varchar
     AS $$
-    
+        

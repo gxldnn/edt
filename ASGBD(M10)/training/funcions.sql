@@ -67,12 +67,10 @@ BEGIN
         RETURN format('Client %s no existeix, no es pot fer la comanda', p_cliecod);
     END IF;
 
-    -- Verificar si hay suficiente stock
     IF NOT stock0k(p_cant, p_fabcod, p_prodcod) THEN
         RETURN format('No hi han existències suficients del producte %s', p_fabcod || p_prodcod);
     END IF;
 
-    -- Calcular el importe de la comanda
     SELECT precio * p_cant INTO v_importe
     FROM producto
     WHERE fabcod || prodcod = p_fabcod || p_prodcod;

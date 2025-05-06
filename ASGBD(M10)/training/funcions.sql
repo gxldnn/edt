@@ -48,7 +48,7 @@ CREATE OR REPLACE FUNCTION altaComanda(p_cliecod INT, p_cant INT, p_fabcod varch
     RETURNS varchar
     AS $$
         DECLARE
-
+    
         BEGIN
             IF existeixClient(p_cliecod) == false THEN
                 RETURN format('Client %s no existeix, no es pot fer la comanda',p_cliecod);

@@ -83,9 +83,9 @@ AS $$
 
         -- Retornar el missatge de confirmació
         RETURN format('Una quantitat de %s del producte %s amb un import de %s € s’ha afegit a pedidos pel client %s',
-            p_cant,
+            p_cant::text,
             (p_prodcod || p_fabcod)::text,
-            v_importe,
+            v_importe::text,
             p_cliecod::text
         );
     END;

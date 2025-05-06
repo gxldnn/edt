@@ -1,3 +1,4 @@
+/**
 CREATE OR REPLACE FUNCTION existeixClient(p_cliecod SMALLINT)
     RETURNS boolean
     AS $$

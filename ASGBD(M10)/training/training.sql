@@ -3,7 +3,7 @@ drop database if exists training;
 create database training;
 \c training
 
-CREATE seq
+CREATE sequence 
 CREATE TABLE producto (
     fabcod character(3),
     prodcod character(5),

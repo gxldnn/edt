@@ -32,7 +32,7 @@ CREATE OR REPLACE FUNCTION stock0k(p_cant INT, p_fabcod char, p_prodcod char)
         DECLARE
         v_exist producto.exist%type;
         BEGIN
-            SELECT exist INTO STRICT v_exist 
+            SELECT exist INTO v_exist 
             FROM producto 
             WHERE fabcod||prodcod = p_fabcod||p_prodcod;
 

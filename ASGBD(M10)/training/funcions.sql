@@ -21,7 +21,7 @@ CREATE OR REPLACE FUNCTION altaClient(p_nombre CHAR,p_repcod INT,p_limcred INT)
         BEGIN
             select setval('cliecod_seq', (select max(cliecod) from cliente)+1, true) INTO STRICT v_cliecod;
             INSERT INTO cliente (cliecod, nombre, repcod, limcred) VALUES (v_cliecod, p_nombre, p_repcod, p_limcred);
-            RETURN format('Client %s s’ha donat d’alta correctament', v_cliecod);
+            RETURN ('Client %s s’ha donat d’alta correctament');
         END;
     $$ LANGUAGE PLPGSQL;
 

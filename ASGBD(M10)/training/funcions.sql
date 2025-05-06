@@ -76,7 +76,7 @@ AS $$
         INSERT INTO pedido
         VALUES (v_pednum, v_data, p_cliecod, NULL, p_fabcod, p_prodcod, p_cant, v_importe);
 
-        RETURN format('Una quantitat de %%s del producte %s amb un import de %%s € s’ha afegit a pedidos pel client %s',
+        RETURN format('Una quantitat de %%s del producte %%s amb un import de %%s € s’ha afegit a pedidos pel client %s',
             p_cant,
             p_prodcod||p_fabcod,
             v_importe,

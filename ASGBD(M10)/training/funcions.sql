@@ -44,4 +44,4 @@ CREATE OR REPLACE FUNCTION stock0k(p_cant INT, p_fabcod char, p_prodcod char)
         END; 
     $$ LANGUAGE PLPGSQL;
           
-CREATE OR REPLACE FUNCTION altaComanda(p_cl)
+CREATE OR REPLACE FUNCTION altaComanda(p_cliecod )

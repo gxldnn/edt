@@ -51,7 +51,7 @@ RETURNS varchar
 AS $$
     DECLARE
         v_data pedido.fecha%type;
-            v_importe pedido.importe%type;
+        v_importe pedido.importe%type;
     BEGIN
         SELECT CURRENT_DATE INTO v_data;
 

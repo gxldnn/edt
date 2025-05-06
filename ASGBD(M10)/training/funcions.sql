@@ -67,7 +67,7 @@ AS $$
 
 
         IF NOT existeixClient(p_cliecod::SMALLINT) THEN
-            RETURN 'Client %s no existeix, no es pot fer la comanda');
+            RETURN 'Client %s no existeix, no es pot fer la comanda';
         END IF;
 
         IF NOT stock0k(p_cant, p_fabcod, p_prodcod) THEN

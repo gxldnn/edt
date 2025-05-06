@@ -10,4 +10,4 @@ CREATE OR REPLACE FUNCTION existeixClient(p_cliecod SMALLINT)
     $$ LANGUAGE PLPGSQL;
 
 
-CREATE OR REPLACE FUNCTION altaClient(p_nombre,p_repcod,p_prodcod)
+CREATE OR REPLACE FUNCTION altaClient(p_nombre,p_repcod,p_limcre)

@@ -71,7 +71,7 @@ AS $$
         END IF;
 
         IF NOT stock0k(p_cant, p_fabcod, p_prodcod) THEN
-            RETURN 'No hi han existències suficients del producte '||prodcod||'';
+            RETURN 'No hi han existències suficients del producte '||fabco||'';
         END IF;
 
         SELECT precio * p_cant INTO v_importe

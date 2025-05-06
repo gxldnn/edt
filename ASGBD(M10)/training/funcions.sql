@@ -56,7 +56,7 @@ AS $$
 
         SELECT setval('pednum_seq', (SELECT max(pednum) FROM pedido) + 1, true) INTO v_pednum;
 
-        IF NOT existeixClient(p_cliecod) THEN
+        IF NOT existeixClient(p_cliecod::SMALLINT) THEN
             RETURN format('Client %s no existeix, no es pot fer la comanda', p_cliecod);
         END IF;
 

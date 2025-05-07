@@ -39,4 +39,4 @@ function postgresdocker() {
 EOF
 
 
-echo -e ""
+echo -e "Haz el coma"

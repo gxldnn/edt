@@ -87,11 +87,7 @@ AS $$
         SELECT precio * p_cant INTO v_importe
         FROM producto
         WHERE fabcod||prodcod = p_fabcod||p_prodcod;
-        
-        IF NOT FOUND OR v_importe IS NULL THEN
-            RETURN 'No sha pogut calcular limport producte '||p_fabcod||p_prodcod||' no trobat o preu nul';
-        END IF;
-        
+    
         
         INSERT INTO pedido
         VALUES (NEXTVAL('pednum_seq'), v_data, p_cliecod, NULL, p_fabcod, p_prodcod, p_cant, v_importe);

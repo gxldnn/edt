@@ -101,7 +101,7 @@ AS $$
 $$ LANGUAGE plpgsql;
 
 
-CREATE OR REPLACE FUNCTION preusenseIVA(p_precio int)
+CREATE OR REPLACE FUNCTION preuSenseIVA(p_precio int)
 RETURNS numeric(9,2)
 AS $$
     DECLARE

@@ -24,8 +24,7 @@ volumes:
   pgdata:
 EOF
 
-cat << 'EOF' >> ~/.bashrc
-
+a
 function postgresdocker() {
   docker stop \$(docker ps -a -q)
   docker rm \$(docker ps -a -q)

@@ -120,5 +120,5 @@ SELECT existeixClient(2111);
 SELECT altaClient('Jose', 107, 4000);
 SELECT stock0k(40, 'rei'::varchar, '2a45c'::varchar);
 SELECT altaComanda(2111, 'rei'::varchar, '2a45c'::varchar, 20);
-SELECT preusenseIVA();
+SELECT preusenseIVA(56);
 

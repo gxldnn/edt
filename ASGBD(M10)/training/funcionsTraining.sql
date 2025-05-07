@@ -61,8 +61,7 @@ CREATE OR REPLACE FUNCTION stockOk(p_cant INT, p_fabcod varchar, p_prodcod varch
             IF p_cant > v_exist THEN
                 RETURN FALSE;
             ELSE
-                WHENNO_DATA_FOUND THEN
-                    RETURN FALSE;
+                RETURN FALSE;
         END; 
     $$ LANGUAGE PLPGSQL;
 

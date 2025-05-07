@@ -1,13 +1,14 @@
 #!/bin/bash
 
 mkdir -p ~/Documents/dockerpsql
+mkdir -p ~/Documents/dockerpsql/sql
 
 cat << 'EOF' > ~/Documents/dockerpsql/docker-compose.yaml
 services:
   postgres:
     image: postgres:latest
     command: >
-      bash -c "echo 'connect() { psql --host=localhost --username=\$1 -d template1; }' >> /etc/bash.bashrc && exec docker-entrypoint.sh postgres"
+      bash -c "echo 'connect() { psql --host=localhost --username=$1 -d template1; }' >> /etc/bash.bashrc && exec docker-entrypoint.sh postgres"
     container_name: postgres_server
     environment:
       POSTGRES_USER: admin
@@ -24,15 +25,15 @@ volumes:
   pgdata:
 EOF
 
-a
+cat << 'EOF' >> ~/.bashrc
+
 function postgresdocker() {
-  docker stop \$(docker ps -a -q)
-  docker rm \$(docker ps -a -q)
+  docker stop $(docker ps -a -q)
+  docker rm $(docker ps -a -q)
   cd ~/Documents/dockerpsql
   docker compose down
   docker compose up -d
-  id=\$(docker ps | awk 'NR>1 {print \$1}')
-  docker exec -it \$id bash
+  id=$(docker ps | awk 'NR>1 {print $1}')
+  docker exec -it $id bash
 }
 EOF
-

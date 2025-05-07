@@ -39,4 +39,4 @@ function postgresdocker() {
 EOF
 
 
-echo 
+echo -e ""

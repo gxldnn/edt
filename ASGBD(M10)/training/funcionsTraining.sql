@@ -102,7 +102,7 @@ $$ LANGUAGE plpgsql;
 
 
 CREATE OR REPLACE FUNCTION preusenseIVA(p_precio int)
-RETURNS numeric()
+RETURNS numeric(1)
 AS $$
     DECLARE<p
         v_iva

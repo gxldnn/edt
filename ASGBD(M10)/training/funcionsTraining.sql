@@ -72,7 +72,6 @@ AS $$
         v_importe pedido.importe%type;
     BEGIN
 
-
         IF NOT existeixClient(p_cliecod::SMALLINT) THEN
             RETURN 'Client '||p_cliecod||' no existeix, no es pot fer la comanda';
         END IF;

@@ -36,3 +36,4 @@ function postgresdocker() {
   docker exec -it \$id bash
 }
 EOF
+

@@ -15,7 +15,7 @@ services:
       POSTGRES_DB: template1
     ports:
       - "5432:5432"
-    working_dir: /workspace/sql/edt/ASGBD(M10)/
+    working_dir: /workspace/sql/edt/ASGBD()/
     volumes:
       - pgdata:/var/lib/postgresql/data
       - ./sql:/workspace/sql

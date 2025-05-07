@@ -57,7 +57,8 @@ CREATE OR REPLACE FUNCTION stockOk(p_cant INT, p_fabcod varchar, p_prodcod varch
             SELECT exist INTO STRICT v_exist 
             FROM producto 
             WHERE fabcod||prodcod = p_fabcod||p_prodcod AND p_cant <= v_exist;ç
-            
+
+            IF 
                 RETURN TRUE;
             EXCEPTION
                 WHEN NO_DATA_FOUND THEN

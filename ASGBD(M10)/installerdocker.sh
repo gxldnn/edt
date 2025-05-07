@@ -25,4 +25,4 @@ volumes:
 
 
 " >> /Documents/dockerpsql/docker-compose.yaml
-echo "" >> .bashr
+echo "" >> .bashrc

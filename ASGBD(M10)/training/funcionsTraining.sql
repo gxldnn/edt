@@ -119,7 +119,7 @@ AS $$
     DECLARE
         v_iva numeric(9,2);
     BEGIN
-        SELECT p_precio * 0.21 INTO STRICT v_iva;
+        SELECT p_precio * 1.21 INTO STRICT v_iva;
         RETURN v_iva;
     END;
 $$ LANGUAGE PLPGSQL;

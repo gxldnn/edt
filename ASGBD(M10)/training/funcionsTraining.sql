@@ -69,10 +69,8 @@ CREATE OR REPLACE FUNCTION altaComanda(p_cliecod int, p_fabcod char, p_prodcod c
 RETURNS varchar 
 AS $$
     DECLARE
-        v_data pedido.fecha%type;
         v_importe pedido.importe%type;
     BEGIN
-        SELECT CURRENT_DATE INTO v_data;
 
 
         IF NOT existeixClient(p_cliecod::SMALLINT) THEN

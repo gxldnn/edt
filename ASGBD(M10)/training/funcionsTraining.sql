@@ -60,7 +60,7 @@ CREATE OR REPLACE FUNCTION stock0k(p_cant INT, p_fabcod varchar, p_prodcod varch
                 RETURN TRUE;
             EXCEPTION
                 WHEN NO_DATA_FOUND THEN
-                    RETURN TRUE;
+                    RETURN ;
             END IF;
         END; 
     $$ LANGUAGE PLPGSQL;

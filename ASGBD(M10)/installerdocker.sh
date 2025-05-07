@@ -1,8 +1,10 @@
 #!/bin/bash
 
 mkdir -p /Docments/dockerpsql/docker-compose.yaml
+mkdir -p ~/Documents/dockerpsql
 
-echo "services:
+cat << 'EOF' > ~/Documents/dockerpsql/docker-compose.yaml
+services:
   postgres:
     image: postgres:latest
     command: >
@@ -21,18 +23,17 @@ echo "services:
 
 volumes:
   pgdata:
+EOF
 
+cat << 'EOF' >> ~/.bashrc
 
-
-" >> /Documents/dockerpsql/docker-compose.yaml
-echo -ne "
 function postgresdocker() {
-  docker stop $(docker ps -a -q)
-  docker remove $(docker ps -a -q)
-  cd ~/Documents/docker/postgres
+  docker stop \$(docker ps -a -q)
+  docker rm \$(docker ps -a -q)
+  cd ~/Documents/dockerpsql
   docker compose down
   docker compose up -d
-  id=$(docker ps | awk 'NR>1 {print $1}')
-  docker exec -it $id bash
+  id=\$(docker ps | awk 'NR>1 {print \$1}')
+  docker exec -it \$id bash
 }
-" >> ~/.bashrc
+EOF

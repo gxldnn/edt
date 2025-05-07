@@ -113,7 +113,7 @@ AS $$
 $$ LANGUAGE PLPGSQL;
 
 
-CREATE OR REPLACE FUNCTION preusenseIVA(p_precio int)
+CREATE OR REPLACE FUNCTION preuSenseIVA(p_precio int)
 RETURNS numeric(9,2)
 AS $$
     DECLARE
@@ -133,5 +133,5 @@ SELECT altaClient('Jose', 107, 4000);
 SELECT stock0k(40, 'rei'::varchar, '2a45c'::varchar);
 SELECT altaComanda(2111, 'rei'::varchar, '2a45c'::varchar, 20);
 SELECT preuSenseIVA(56);
-SELECT preuambIVA(56);
+SELECT preumbIVA(56);
 

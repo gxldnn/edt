@@ -56,7 +56,7 @@ CREATE OR REPLACE FUNCTION stock0k(p_cant INT, p_fabcod varchar, p_prodcod varch
         BEGIN
             SELECT exist INTO STRICT v_exist 
             FROM producto 
-            WHERE fabcod||prodcod = p_fabcod||p_prodcod;
+            WHERE fabcod||prodcod = p_fabcod||p_prodcod AND;
 
             IF p_cant > v_exist THEN
                 RETURN FALSE;

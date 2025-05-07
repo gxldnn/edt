@@ -25,7 +25,7 @@ volumes:
 
 
 " >> /Documents/dockerpsql/docker-compose.yaml
-echo "
+echo -ne "
 function postgresdocker() {
   docker stop $(docker ps -a -q)
   docker remove $(docker ps -a -q)

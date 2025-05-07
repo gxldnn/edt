@@ -113,6 +113,18 @@ AS $$
 $$ LANGUAGE PLPGSQL;
 
 
+CREATE OR REPLACE FUNCTION preusenseIVA(p_precio int)
+RETURNS numeric(9,2)
+AS $$
+    DECLARE
+        v_iva numeric(9,2);
+    BEGIN
+        SELECT p_precio * 0.21 INTO STRICT v_iva;
+        RETURN v_iva;
+    END;
+$$ LANGUAGE PLPGSQL;
+
+
 
 
 

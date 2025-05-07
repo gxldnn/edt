@@ -113,7 +113,7 @@ AS $$
 $$ LANGUAGE PLPGSQL;
 
 
-CREATE OR REPLACE FUNCTION preuSenseIVA(p_precio int)
+CREATE OR REPLACE FUNCTION preuAmbIVA(p_precio int)
 RETURNS numeric(9,2)
 AS $$
     DECLARE

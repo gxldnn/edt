@@ -39,4 +39,4 @@ function postgresdocker() {
 EOF
 
 
-echo -e "Haz el comando : "
+echo -e "Haz el comando: $SHEÑ"

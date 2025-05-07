@@ -76,7 +76,7 @@ AS $$
             RETURN 'Client '||p_cliecod||' no existeix, no es pot fer la comanda';
         END IF;
 
-        IF NOT stock0k(p_cant, p_fabcod, p_prodcod) THEN
+        IF NOT stockk(p_cant, p_fabcod, p_prodcod) THEN
             RETURN 'No hi han existències suficients del producte '||p_fabcod||p_prodcod||'';
         END IF;
 

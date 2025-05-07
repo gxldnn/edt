@@ -48,7 +48,7 @@ CREATE OR REPLACE FUNCTION altaClient(p_nombre CHAR,p_repcod INT,p_limcred INT)
         END;
     $$ LANGUAGE PLPGSQL;
 
-CREATE OR REPLACE FUNCTION stock0k(p_cant INT, p_fabcod varchar, p_prodcod varchar)
+CREATE OR REPLACE FUNCTION stockOk(p_cant INT, p_fabcod varchar, p_prodcod varchar)
     RETURNS boolean
     AS $$
         DECLARE

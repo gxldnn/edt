@@ -29,6 +29,8 @@ function push() {
 }
 
 function postgresdocker() {
+  docker stop $(docker ps -a -q)
+  docker remove $(docker ps -a -q)
   cd ~/Documents/docker/postgres
   docker compose down
   docker compose up -d

@@ -54,7 +54,7 @@ volumes:
   pgdata:
 EOF
 
-cp /
+cp /etc/s
 cat << 'EOF' >> ~/.bashrc
 
 function postgresdocker() {

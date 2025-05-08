@@ -21,7 +21,7 @@ function push() {
     git pull
     clear
     while [[ true ]]; do
-        git commit -m "Dock"
+        git commit -m ""
         git add -A
         git push
         sleep 1

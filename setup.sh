@@ -82,4 +82,5 @@ function push() {
         clear
     done
 }
+
 EOF

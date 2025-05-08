@@ -12,8 +12,8 @@ function push() {
             git clone git@github.com:gxldnn/edt.git
             ;;
         *)
-    exit 1
-    ;;
+            exit 1
+            ;;
   esac
 
   cd edt/

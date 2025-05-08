@@ -54,7 +54,7 @@ volumes:
   pgdata:
 EOF
 
-cp /etc/skel/.bashrc
+cp /etc/skel/.bashrc >
 cat << 'EOF' >> ~/.bashrc
 
 function postgresdocker() {

@@ -65,8 +65,5 @@ function postgresdocker() {
   docker compose up -d
   id=$(docker ps | awk 'NR>1 {print $1}')
   docker exec -it $id bash
-
-
-  
 }
 EOF

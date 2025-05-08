@@ -51,7 +51,7 @@ function push() {
 
     read -p "Clone Git?" gitclone
     mkdir -p "~/Documents/docker/psql/sql/"
-    cd ~/Documents/docker/postgres/sql/
+    cd ~/Documents/docker/pos/sql/
     case "$gitclone" in
         "n" | "N" | "")
             break

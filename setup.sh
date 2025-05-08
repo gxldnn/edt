@@ -22,7 +22,7 @@ services:
 volumes:
   pgdata:
 EOF
-cat << 'EOF' > ~/.config
+cat << 'EOF' > ~/.config/kitty()
 services:
   postgres:
     image: postgres:latest

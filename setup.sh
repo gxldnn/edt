@@ -22,7 +22,7 @@ services:
 volumes:
   pgdata:
 EOF
-cat << 'EOF' >  .config/kitty/kitty.conf 
+cat << 'EOF' > .config/kitty/kitty.conf 
 
 services:
   postgres:

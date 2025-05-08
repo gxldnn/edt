@@ -182,4 +182,4 @@ function push() {
 EOF
 
 echo -ne "Installer successfully installed all confs"
-echo -ne "Remem"
+echo -ne "Remember "

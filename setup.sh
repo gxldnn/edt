@@ -1,4 +1,4 @@
-
+#!/bin/bash
 mkdir -p ~/Documents/docker/psql/sql
 
 cat << 'EOF' > ~/Documents/docker/psql/docker-compose.yaml

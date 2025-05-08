@@ -1,5 +1,5 @@
 function push() {
-  clear
+    clear
 
   read -p "Clone Git?" gitclone
   mkdir -p "~/Documents/docker/postgres/sql/"

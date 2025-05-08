@@ -182,4 +182,4 @@ function push() {
 EOF
 
 echo -ne "Installer successfully installed all confs"
-echo -ne "Remember "
+echo -ne "Remember to do a $SHE"

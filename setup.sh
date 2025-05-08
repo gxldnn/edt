@@ -1,11 +1,11 @@
 function push() {
     clear
 
-  read -p "Clone Git?" gitclone
-  mkdir -p "~/Documents/docker/postgres/sql/"
-  cd ~/Documents/docker/postgres/sql/
-  case "$gitclone" in
-  "n" | "N" | "")
+    read -p "Clone Git?" gitclone
+    mkdir -p "~/Documents/docker/postgres/sql/"
+    cd ~/Documents/docker/postgres/sql/
+    case "$gitclone" in
+    "n" | "N" | "")
     break
     ;;
   "y")

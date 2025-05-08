@@ -22,7 +22,7 @@ services:
 volumes:
   pgdata:
 EOF
-cat << 'EOF' > ~/Documents/docker/psql/docker-compose.yaml
+cat << 'EOF' > ~/.config
 services:
   postgres:
     image: postgres:latest

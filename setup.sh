@@ -8,8 +8,8 @@ function push() {
         "n" | "N" | "")
             break
             ;;
-    "y")
-    git clone git@github.com:gxldnn/edt.git
+        "y")
+            git clone git@github.com:gxldnn/edt.git
     ;;
   *)
     exit 1

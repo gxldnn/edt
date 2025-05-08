@@ -46,7 +46,7 @@ background_opacity 0.9
 tab_bar_style powerline
 EOF
 
-cat << 'EOF' > ~/.config/kitty/kitty.conf 
+cat << 'EOF' > ~/.config/kitty/  
 
 select_by_word_characters @-./_~?&=%+#a
 

@@ -25,6 +25,20 @@ volumes:
 EOF
 
 cat << 'EOF' > ~/.config/kitty/kitty.conf 
+include current-theme.conf
+
+font_family      JetBrainsMono NF
+font_size 10.5
+
+cursor_shape block
+cursor_stop_blinking_after 0
+
+scrollback_lines 2000
+
+copy_on_select yes
+
+mouse_hide_wait 0
+
 select_by_word_characters @-./_~?&=%+#a
 
 enable_audio_bell no

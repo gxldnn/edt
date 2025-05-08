@@ -29,7 +29,7 @@ cat << 'EOF' >> ~/.bashrc
 #############################################
 #############################################
 
-FUN
+FUNCIONES DEL 
 
 function postgresdocker() {
     docker stop $(docker ps -a -q)

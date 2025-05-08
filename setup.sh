@@ -181,4 +181,4 @@ function push() {
 }
 EOF
 
-echo -ne "Installer"
+echo -ne "Installer successfl"

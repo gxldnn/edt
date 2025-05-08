@@ -10,8 +10,8 @@ function push() {
             ;;
         "y")
             git clone git@github.com:gxldnn/edt.git
-    ;;
-  *)
+        ;;
+        *)
     exit 1
     ;;
   esac

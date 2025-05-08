@@ -15,12 +15,12 @@ function push() {
             exit 1
             ;;
     esac
-
-  cd edt/
-  git config --global pull.rebase false
-  git pull
-  clear
-  while [[ true ]]; do
+    
+    cd edt/
+    git config --global pull.rebase false
+    git pull
+    clear
+    while [[ true ]]; do
     git commit -m "Docker Push"
     git add -A
     git push

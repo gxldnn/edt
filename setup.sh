@@ -48,6 +48,7 @@ tab_bar_style powerline
 
 EOF
 
+
 cp /etc/skel/.bashrc ~/
 cat << 'EOF' >> ~/.bashrc
 

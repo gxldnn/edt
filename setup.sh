@@ -181,4 +181,4 @@ function push() {
 }
 EOF
 
-echo 
+echo -ne ""

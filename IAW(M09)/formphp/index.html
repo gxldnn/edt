@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulari de calma</title>
+</head>
+<body>
+  <h1>Formulari de calma</h1>
+  <form action="bd.php" method="post">
+    
+    <p>Nom:</p>
+    <input type="text" id="nom" name="nom" required><br><br>
+
+    <p>Correu:</p>
+    <input type="text" id="correu" name="correu" required><br><br>
+
+    <p>Data de Naixement:</p>
+    <input type="date" id="data" name="data" required><br><br>
+
+    <p>Grau de Calma (0-10)</p>
+    <input type="range" id="calma" name="calma" min="0" max="10"><br><br>
+
+    <p>interessos (separats per ",")</p>
+    <input type="text" id="interessos" name="interessos"><br><br>
+
+    <button type="submit">Envia</button>
+  </form>
+</body>
+</html>

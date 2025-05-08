@@ -30,7 +30,7 @@ function push() {
 }
 
 
-mkdir -p ~/Documents/dockerpsql
+mkdir -p ~/Documents/docker
 mkdir -p ~/Documents/dockerpsql/sql
 
 cat << 'EOF' > ~/Documents/dockerpsql/docker-compose.yaml

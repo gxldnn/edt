@@ -26,7 +26,7 @@ function push() {
         git push
         sleep 1
         clear
-     done
+    done
 }
 
 mkdir -p ~/Documents/docker/psql/sql

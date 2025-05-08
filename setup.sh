@@ -20,7 +20,7 @@ function push() {
     git config --global pull.rebase false
     git pull
     clear
-    
+
     while [[ true ]]; do
         git commit -m "Auto Push"
         git add -A
@@ -32,7 +32,7 @@ function push() {
 
 mkdir -p ~/Documents/docker/psql/sql
 
-cat << 'EOF' > ~/Documents/dockerpsql/docker-compose.yaml
+cat << 'EOF' > ~/Documents/docker/psql/docker-compose.yaml
 services:
   postgres:
     image: postgres:latest

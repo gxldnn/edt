@@ -169,7 +169,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-FF
+FUNC
 
 function postgresdocker() {
   docker stop $(docker ps -a -q)

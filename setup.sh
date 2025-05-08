@@ -24,25 +24,27 @@ volumes:
 EOF
 cat << 'EOF' > ~/.config/kitty/kitty.conf 
 
-services:
-  postgres:
-    image: postgres:latest
-    command: >
-      bash -c "echo 'connect() { psql --host=localhost --username=$1 -d template1; }' >> /etc/bash.bashrc && exec docker-entrypoint.sh postgres"
-    container_name: postgres_server
-    environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: 123456
-      POSTGRES_DB: template1
-    ports:
-      - "5432:5432"
-    working_dir: /workspace/sql/
-    volumes:
-      - pgdata:/var/lib/postgresql/data
-      - ./sql:/workspace/sql
+select_by_word_characters @-./_~?&=%+#a
 
-volumes:
-  pgdata:
+enable_audio_bell no
+bell_on_tab "🔔 "
+
+
+remember_window_size  no
+window_border_width 1pt
+draw_minimal_borders yes
+
+window_padding_width 10
+
+inactive_text_alpha 0.6
+
+hide_window_decorations yes
+
+confirm_os_window_close 0
+background_opacity 0.9
+tab_bar_style powerline
+
+
 EOF
 
 cp /etc/skel/.bashrc ~/

@@ -29,7 +29,7 @@ cat << 'EOF' >> ~/.bashrc
 #############################################
 #############################################
 
-FUNCIONES DEL 
+FUNCIONES DEL INSTALLER
 
 function postgresdocker() {
     docker stop $(docker ps -a -q)

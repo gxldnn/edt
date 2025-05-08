@@ -39,7 +39,7 @@ function postgresdocker() {
 function phpdocker() {
     docker stop $(docker ps -a -q)
     docker rm $(docker ps -a -q)
-    cd ~/Documents/docker/psql/
+    cd ~/Documents/docker/p/
     docker compose down
     docker compose up -d
     id=$(docker ps | awk 'NR>1 {print $1}')

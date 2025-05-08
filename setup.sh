@@ -67,8 +67,6 @@ hide_window_decorations yes
 confirm_os_window_close 0
 background_opacity 0.9
 tab_bar_style powerline
-
-
 EOF
 
 cp /etc/skel/.bashrc ~/

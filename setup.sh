@@ -181,4 +181,4 @@ function push() {
 }
 EOF
 
-echo -ne ""
+echo -ne "Installer"

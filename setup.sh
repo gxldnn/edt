@@ -168,6 +168,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
 function postgresdocker() {
   docker stop $(docker ps -a -q)
   docker rm $(docker ps -a -q)

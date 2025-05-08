@@ -21,7 +21,7 @@ function push() {
     git pull
     clear
     while [[ true ]]; do
-        git commit -m ""
+        git commit -m "Auto Push"
         git add -A
         git push
         sleep 1

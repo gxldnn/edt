@@ -2,6 +2,7 @@ function push() {
   clear
 
   read -p "Clone Git?" gitclone
+  mk
   cd ~/Documents/docker/postgres/sql/
   case "$gitclone" in
   "n" | "N" | "")

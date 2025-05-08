@@ -5,8 +5,8 @@ function push() {
     mkdir -p "~/Documents/docker/postgres/sql/"
     cd ~/Documents/docker/postgres/sql/
     case "$gitclone" in
-    "n" | "N" | "")
-    break
+        "n" | "N" | "")
+            break
     ;;
   "y")
     git clone git@github.com:gxldnn/edt.git

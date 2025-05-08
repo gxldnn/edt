@@ -129,13 +129,20 @@ FROM pedido p
 GROUP BY fabcod||prodcod;
 */
 
-SELECT max
-FROM(SELECT MAX(count) "max"
-     FROM (SELECT prodcod||fabcod "prod", COUNT(prodcod||fabcod) AS "count" 
-     FROM (SELECT * FROM pedido) AS "sub2"
-     GROUP BY prod) AS "sub1");
-
 /*
+SELECT max
+FROM (SELECT MAX(count) "max", prod
+FROM (SELECT p.prodcod || p.fabcod "prod", COUNT(p.prodcod || p.fabcod) "count" FROM producto p GROUP BY prod) AS "sub1"
+	JOIN producto p ON p.prodcod || p.fabcod = sub1.prod GROUP BY prod) AS "subf"
+
+    -- FROM (SELECT * FROM pedido) AS "sub2" GROUP BY prodcod||fabcod)
+*/
+
+
+
 
 --16. Quin producte s'ha venut més?
-*/
+
+SELECT prodcod
+FROM (SELECT count(prodcod) "count" FROM pedido WHERE count = (SELECT MAX(count) FROM sub1)) AS "sub1"
+

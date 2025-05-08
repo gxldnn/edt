@@ -181,4 +181,4 @@ function push() {
 }
 EOF
 
-echo -ne "Installer successfully insta"
+echo -ne "Installer successfully installed all confs"

@@ -61,26 +61,64 @@ tab_bar_style powerline
 EOF
 
 cat << 'EOF' > ~/.config/kitty/current-theme.conf
+# The basic colors
+foreground              #a5b6cf
+background              #0d0f18
+selection_foreground    #0d0f18
+selection_background     #c296eb
 
-select_by_word_characters @-./_~?&=%+#a
+# Cursor colors
+cursor                  #a5b6cf
+cursor_text_color       #0d0f18
 
-enable_audio_bell no
-bell_on_tab "🔔 "
+# URL underline color when hovering with mouse
+url_color               #86aaec
 
+# Kitty window border colors
+active_border_color     #c296eb
+inactive_border_color   #3d414f
+bell_border_color       #ecd3a0
 
-remember_window_size  no
-window_border_width 1pt
-draw_minimal_borders yes
+# Tab bar colors
+active_tab_foreground   #0d0f18
+active_tab_background   #c296eb
+inactive_tab_foreground #a5b6cf
+inactive_tab_background #3d414f
+tab_bar_background      #0d0f18
 
-window_padding_width 10
+# The 16 terminal colors
 
-inactive_text_alpha 0.6
+# black
+color0 #3d414f
+color8 #3d414f
 
-hide_window_decorations yes
+# red
+color1 #dd6777
+color9 #dd6777
 
-confirm_os_window_close 0
-background_opacity 0.9
-tab_bar_style powerline
+# green
+color2  #90ceaa
+color10 #90ceaa
+
+# yellow
+color3  #ecd3a0
+color11 #ecd3a0
+
+# blue
+color4  #86aaec
+color12 #86aaec
+
+# magenta
+color5  #c296eb
+color13 #c296eb
+
+# cyan
+color6  #93cee9
+color14 #93cee9
+
+# white
+color7  #cbced3
+color15 #cbced3
 EOF
 
 cat << 'EOF' >> ~/.bashrc

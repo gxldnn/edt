@@ -1,6 +1,6 @@
 #!/bin/bash
 mkdir -p ~/Documents/docker/psql/sql
-
+cp /etc/skel/.bashrc ~/
 cat << 'EOF' > ~/Documents/docker/psql/docker-compose.yaml
 services:
   postgres:

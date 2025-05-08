@@ -31,7 +31,7 @@ function push() {
 
 
 mkdir -p ~/Documents/docker
-mkdir -p ~/Documents/docker//sql
+mkdir -p ~/Documents/docker/psql/sql
 
 cat << 'EOF' > ~/Documents/dockerpsql/docker-compose.yaml
 services:

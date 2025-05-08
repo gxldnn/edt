@@ -15,7 +15,7 @@ function push() {
             exit 1
             ;;
     esac
-    
+
     cd edt/
     git config --global pull.rebase false
     git pull

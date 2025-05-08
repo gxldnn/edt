@@ -7,8 +7,8 @@ function push() {
     case "$gitclone" in
         "n" | "N" | "")
             break
-    ;;
-  "y")
+            ;;
+    "y")
     git clone git@github.com:gxldnn/edt.git
     ;;
   *)

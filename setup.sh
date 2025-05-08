@@ -36,7 +36,7 @@ function postgresdocker() {
     docker exec -it $id bash
 }
 
-function php() {
+function phpdocker() {
     docker stop $(docker ps -a -q)
     docker rm $(docker ps -a -q)
     cd ~/Documents/docker/psql/

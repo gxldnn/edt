@@ -22,6 +22,7 @@ services:
 volumes:
   pgdata:
 EOF
+
 cat << 'EOF' > ~/.config/kitty/kitty.conf 
 
 select_by_word_characters @-./_~?&=%+#a

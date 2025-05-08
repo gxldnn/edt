@@ -21,11 +21,11 @@ function push() {
     git pull
     clear
     while [[ true ]]; do
-    git commit -m "Docker Push"
-    git add -A
-    git push
-    sleep 1
-    clear
+        git commit -m "Docker Push"
+        git add -A
+        git push
+        sleep 1
+        clear
   done
 }
 

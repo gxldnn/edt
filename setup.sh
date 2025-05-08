@@ -22,7 +22,8 @@ services:
 volumes:
   pgdata:
 EOF
-cat << 'EOF' > ~/.config/kitty/
+cat << 'EOF' > nano .config/kitty/kitty.conf 
+
 services:
   postgres:
     image: postgres:latest

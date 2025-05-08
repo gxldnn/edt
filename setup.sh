@@ -20,6 +20,7 @@ function push() {
     git config --global pull.rebase false
     git pull
     clear
+    
     while [[ true ]]; do
         git commit -m "Auto Push"
         git add -A

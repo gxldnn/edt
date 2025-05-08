@@ -1,4 +1,5 @@
 #!/bin/bash
+
 mkdir -p ~/Documents/docker/psql/sql
 cp /etc/skel/.bashrc ~/
 

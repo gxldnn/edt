@@ -69,7 +69,6 @@ background_opacity 0.9
 tab_bar_style powerline
 EOF
 
-cp /etc/skel/.bashrc ~/
 cat << 'EOF' >> ~/.bashrc
 
 ################################################

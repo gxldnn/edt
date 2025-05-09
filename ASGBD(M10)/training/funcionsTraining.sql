@@ -5,7 +5,7 @@ DROP DATABASE training;
 */
 DROP FUNCTION existeixClient(p_cliecod SMALLINT);
 DROP FUNCTION altaClient(p_nombre CHAR,p_repcod INT,p_limcred INT);
-DROP FUNCTION stock0k(p_cant INT, p_fabcod varchar, p_prodcod varchar);
+DROP FUNCTION stockOk(p_cant INT, p_fabcod varchar, p_prodcod varchar);
 DROP FUNCTION altaComanda(p_cliecod int, p_fabcod varchar, p_prodcod varchar, p_cant int);
 
 CREATE sequence cliecod_seq;

@@ -2,34 +2,31 @@
 <link rel="stylesheet" href="css/css.css">
     <body>
         <?php
-            /*function printdump(array $listapeticiones){
-                echo "<ul>";
-                foreach ($listapeticiones as $i){
-                    echo "$i    ";
-                }
-*/
-
-                /*
-                if (isset($_POST['nom'])){
-                    echo "<br><br><br>
-                    Les dades rebudes son aquestes:<br><br>
-                    <ul>
-                        <li>\$_GET:<span class ='hola'>Numero de Interessos = ".count($listainteressos)."</span></li>
-                        <li>\$_POST: <span class='hola'>nom = ".$_POST["nom"]."</span> <span class='hola'>Correu = ".$_POST["correu"]."</span> <span class='hola'>Data Naixement = ".$_POST["data"]."</span> <span class='hola'>Nivell de calma = ".$_POST["calma"]."</span> <span class='hola'>Numero de Interessos = ".count($listainteressos)."</span></li>
-                        <li>\$_REQUEST: <span class='hola'>nom = ".$_REQUEST["nom"]."</span> <span class='hola'>Correu = ".$_REQUEST["correu"]."</span> <span class='hola'>Data Naixement = ".$_REQUEST["data"]."</span> <span class='hola'>Nivell de calma = ".$_REQUEST["calma"]."</span> <span class='hola'>Numero de Interessos = ".count($listainteressos)."</span></li>                
-                    </ul>";
-                } else{
-                    echo "<br><br><br>
-                    Les dades rebudes son aquestes:<br><br>
-                    <ul>
-                        <li>\$_GET: <span class ='hola'>nom = ".$_GET["nom"]."</span> <span class ='hola'>Correu = ".$_GET["correu"]."</span> <span class ='hola'>Data Naixement = ".$_GET["data"]."</span> <span class ='hola'>Nivell de calma = ".$_GET["calma"]."</span> <span class ='hola'>Numero de Interessos = ".count($listainteressos)."</span></li>
-                        <li>\$_POST: <span class='hola'>Numero de Interessos = ".count($listainteressos)."</span></li>
-                        <li>\$_REQUEST: <span class='hola'>nom = ".$_REQUEST["nom"]."</span> <span class='hola'>Correu = ".$_REQUEST["correu"]."</span> <span class='hola'>Data Naixement = ".$_REQUEST["data"]."</span> <span class='hola'>Nivell de calma = ".$_REQUEST["calma"]."</span> <span class='hola'>Numero de Interessos = ".count($listainteressos)."</span></li>                
-                    </ul>";
-                }
-                */
-            //}
-            
+            $tipos = ["POST", "GET", "REQ"];
+            foreach ($tipos as $x){
+                
+                $listapeticiones["$x"] = "".$_."".$x."
+                switch($_REQUEST["calma"]){
+                    case 0:
+                    case 1:
+                    case 2:
+                    case 3:
+                        echo "estressada";
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                    case 7:
+                        echo "normalet";
+                        break;
+                    case 8:
+                    case 9:
+                        echo "zen";
+                        break;
+                    case 10:
+                        echo "samadhi";
+                        break;
+            }
             if (isset($_POST['nom'])){
 
                 echo "(\$_POST) --> Hola ".$_POST["nom"]." <br>";
@@ -60,9 +57,7 @@
                 }
             }
 
-            $listapeticiones["POST"] = $_POST;
-            $listapeticiones["GET"] = $_GET;
-            $listapeticiones["REQUEST"] = $_REQUEST;
+
             
             var_dump($listapeticiones);
             /*function printdump(array $listapeticiones){

@@ -58,11 +58,7 @@ CREATE OR REPLACE FUNCTION stockOk(p_cant INT, p_fabcod varchar, p_prodcod varch
             FROM producto 
             WHERE fabcod||prodcod = p_fabcod||p_prodcod AND p_cant <= (SELECT exist FROM producto WHERE fabcod||prodcod = p_fabcod||p_prodcod);
 /*
-            IF p_cant > v_exist THEN
-                RETURN FALSE;
-            ELSE
-                RETURN TRUE;
-            END IF;*/
+
             RETURN TRUE;
             EXCEPTION
                 WHEN NO_DATA_FOUND THEN

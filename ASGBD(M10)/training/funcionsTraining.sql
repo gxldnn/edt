@@ -2,7 +2,7 @@
 DROP DATABASE training;
 \i training/training.sql
 
-DROP FUNCTION existeixClient(p_cliecod SMALLINT);
+DROP IF EFUNCTION existeixClient(p_cliecod SMALLINT);
 DROP FUNCTION altaClient(p_nombre CHAR,p_repcod INT,p_limcred INT);
 DROP FUNCTION stockOk(p_cant INT, p_fabcod varchar, p_prodcod varchar);
 DROP FUNCTION altaComanda(p_cliecod int, p_fabcod varchar, p_prodcod varchar, p_cant int);

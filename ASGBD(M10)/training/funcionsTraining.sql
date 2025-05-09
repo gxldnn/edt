@@ -64,8 +64,7 @@ CREATE OR REPLACE FUNCTION stockOk(p_cant INT, p_fabcod varchar, p_prodcod varch
             EXCEPTION
                 WHEN NO_DATA_FOUND THEN
                     RETURN FALSE;
-                    
-                    
+                
         END; 
     $$ LANGUAGE PLPGSQL;
 

@@ -6,7 +6,7 @@ DROP FUNCTION existeixClient(p_cliecod SMALLINT);
 DROP FUNCTION altaClient(p_nombre CHAR,p_repcod INT,p_limcred INT);
 DROP FUNCTION stockOk(p_cant INT, p_fabcod varchar, p_prodcod varchar);
 DROP FUNCTION altaComanda(p_cliecod int, p_fabcod varchar, p_prodcod varchar, p_cant int);
-DROP sequence cliecod_seq
+DROP sequence cliecod_seq;
 CREATE sequence cliecod_seq;
 CREATE sequence pednum_seq;
 select setval('cliecod_seq', (SELECT max(cliecod) FROM cliente)+1, true);

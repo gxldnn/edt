@@ -1,0 +1,12 @@
+span.hola{
+    border-radius: 25px;
+    padding-block: 0px;
+    padding-left: 5px;    
+    padding-right: 5px;
+    font-size: small;
+    background: rgb(255, 174, 0);        
+    border: 1px solid #000; 
+}
+body{
+background-color: rgb(253, 230, 127);
+}

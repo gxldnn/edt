@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
+  <link rel="stylesheet" href="css/css.css">
   <meta charset="UTF-8">
-  <title>Formulari de calmaasd</title>
+  <title>Formulari de calma</title>
 </head>
 <body>
+  
   <h1>Formulari de calma</h1>
-  <form action="bd.php" method="post">
+  <form action="bd.php">
     
     <p>Nom:</p>
     <input type="text" id="nom" name="nom" required><br><br>
@@ -23,7 +25,9 @@
     <p>interessos (separats per ",")</p>
     <input type="text" id="interessos" name="interessos"><br><br>
 
-    <button type="submit">Envia</button>
+    <button type="submit" formmethod="POST">Envia POST</button>
+    <button type="submit" formmethod="GET">Envia GET</button>
+
   </form>
 </body>
 </html>

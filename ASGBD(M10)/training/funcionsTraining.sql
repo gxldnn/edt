@@ -9,8 +9,8 @@ DROP FUNCTION altaComanda(p_cliecod int, p_fabcod varchar, p_prodcod varchar, p_
 DROP SEQUENCE cliecod_seq;
 DROP SEQUENCE pednum_seq;
 
-CREATE sequence cliecod_seq;
-CREATE sequence pednum_seq;
+CREATE SEQUENCE cliecod_seq;
+CREATE SEQUENCE pednum_seq;
 select setval('cliecod_seq', (SELECT max(cliecod) FROM cliente)+1, true);
 SELECT setval('pednum_seq', (SELECT max(pednum) FROM pedido), true);
 

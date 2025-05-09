@@ -1,4 +1,3 @@
-
 \c template1
 DROP DATABASE training;
 \i training/training.sql

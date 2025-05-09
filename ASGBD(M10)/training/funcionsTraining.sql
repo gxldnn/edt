@@ -2,7 +2,7 @@
 \c template1
 DROP DATABASE training;
 \i training/training.sql
-*/
+
 DROP FUNCTION existeixClient(p_cliecod SMALLINT);
 DROP FUNCTION altaClient(p_nombre CHAR,p_repcod INT,p_limcred INT);
 DROP FUNCTION stockOk(p_cant INT, p_fabcod varchar, p_prodcod varchar);

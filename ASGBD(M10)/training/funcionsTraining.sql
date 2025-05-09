@@ -118,9 +118,6 @@ AS $$
 $$ LANGUAGE PLPGSQL;
 
 
-
-
-
 SELECT existeixClient(2111);
 SELECT altaClient('Jose', 107, 4000);
 SELECT stockOk(40, 'rei'::varchar, '2a45c'::varchar);

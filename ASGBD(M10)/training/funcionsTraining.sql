@@ -13,7 +13,7 @@ CREATE SEQUENCE cliecod_seq;
 CREATE SEQUENCE pednum_seq;
 
 setval('cliecod_seq', (SELECT max(cliecod) FROM cliente)+1, true);
- setval('pednum_seq', (SELECT max(pednum) FROM pedido), true);
+setval('pednum_seq', (SELECT max(pednum) FROM pedido), true);
 
 CREATE OR REPLACE FUNCTION existeixClient(p_cliecod INT)
     RETURNS boolean

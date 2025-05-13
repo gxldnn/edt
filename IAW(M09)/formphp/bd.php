@@ -2,31 +2,70 @@
 <link rel="stylesheet" href="css/css.css">
     <body>
         <?php
-            $tipos = ["POST", "GET", "REQ"];
-            foreach ($tipos as $x){
-                
-                $listapeticiones["$x"] = "".$_."".$x."
-                switch($_REQUEST["calma"]){
-                    case 0:
-                    case 1:
-                    case 2:
-                    case 3:
-                        echo "estressada";
-                        break;
-                    case 4:
-                    case 5:
-                    case 6:
-                    case 7:
-                        echo "normalet";
-                        break;
-                    case 8:
-                    case 9:
-                        echo "zen";
-                        break;
-                    case 10:
-                        echo "samadhi";
-                        break;
+            switch($_POST["calma"]){
+                case 0:
+                case 1:
+                case 2:
+                case 3:
+                    echo "estressada";
+                    break;
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                    echo "normalet";
+                    break;
+                case 8:
+                case 9:
+                    echo "zen";
+                    break;
+                case 10:
+                    echo "samadhi";
+                    break;
             }
+            
+            switch($_GET["calma"]){
+                case 0:
+                case 1:
+                case 2:
+                case 3:
+                    echo "estressada";
+                    break;
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                    echo "normalet";
+                    break;
+                case 8:
+                case 9:
+                    echo "zen";
+                    break;
+                case 10:
+                    echo "samadhi";
+                    break;
+            }switch($_REQUEST["calma"]){
+                case 0:
+                case 1:
+                case 2:
+                case 3:
+                    echo "estressada";
+                    break;
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                    echo "normalet";
+                    break;
+                case 8:
+                case 9:
+                    echo "zen";
+                    break;
+                case 10:
+                    echo "samadhi";
+                    break;
+            }
+   
             if (isset($_POST['nom'])){
 
                 echo "(\$_POST) --> Hola ".$_POST["nom"]." <br>";
@@ -58,8 +97,13 @@
             }
 
 
+
+
+            $listapeticiones["POST"] = $_POST;
+            $listapeticiones["GET"] = $_GET;
+            $listapeticiones["REQUEST"] = $_REQUEST;
+
             
-            var_dump($listapeticiones);
             /*function printdump(array $listapeticiones){
                 echo "<ul>";
                 $z = 0;
@@ -79,7 +123,7 @@
                         foreach ($dades as $clau => $valor) {
                             echo "<span class='hola'>$clau = $valor</span> ";
                         }
-                        if ($metode === "GET" || $metode === "POST" || $metode === "REQ") {
+                        if ($metode === "GET" || $metode === "POST" || $metode === "REQUEST") {
                             echo "<span class='hola'>Numero de Interessos = " . count($listainteressos) . "</span>";
                         }
                     }

@@ -99,7 +99,7 @@ CREATE OR REPLACE FUNCTION preuSenseIVA(p_precio int)
 RETURNS numeric(9,2)
 AS $$
     BEGIN
-        RETURN p;
+        RETURN p_precio;
     END;
 $$ LANGUAGE PLPGSQL;
 

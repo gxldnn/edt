@@ -16,7 +16,7 @@ CREATE OR REPLACE FUNCTION mostrar(p_empno SMALLINT)
                 END IF;
             END IF;
             
-
+sss
             RETURN v_emp.ename ||' '||v_emp.job||' '||v_emp.sal||' '||v_sal;
             
         EXCEPTION

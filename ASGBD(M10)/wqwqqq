@@ -1,0 +1,11 @@
+                                                        List of functions
+ Schema |      Name      | Result data type  |                            Argument data types                             | Type 
+--------+----------------+-------------------+----------------------------------------------------------------------------+------
+ public | altaclient     | character varying | p_nombre character, p_repcod integer, p_limcred integer                    | func
+ public | altacomanda    | character varying | p_cliecod integer, p_fabcod character, p_prodcod character, p_cant integer | func
+ public | existeixclient | boolean           | p_cliecod integer                                                          | func
+ public | preuambiva     | numeric           | p_precio integer                                                           | func
+ public | preusenseiva   | numeric           | p_precio integer                                                           | func
+ public | stockok        | boolean           | p_cant integer, p_fabcod character varying, p_prodcod character varying    | func
+(6 rows)
+

@@ -111,7 +111,7 @@ CREATE OR REPLACE FUNCTION preuAmbIVA(p_precio int)
 RETURNS numeric(9,2)
 AS $$
     BEGIN
-        RETURN v_iva;
+        RETURN p_precio *;
     END;
 $$ LANGUAGE PLPGSQL;
 

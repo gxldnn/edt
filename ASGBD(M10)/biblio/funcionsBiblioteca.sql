@@ -36,13 +36,11 @@ AS $$
     BEGIN
         SELECT bloquejat INTO STRICT v_bloq FROM usuari
         WHERE p_codiusuari = idUsuari;
-
         IF NOT v_bloq THEN
             RETURN 0;
         ELSE
             RETURN 1;
         END IF;
-
         EXCEPTION
             WHEN NO_DATA_FOUND THEN
                 RETURN 2;

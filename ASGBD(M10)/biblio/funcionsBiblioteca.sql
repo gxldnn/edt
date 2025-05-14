@@ -61,7 +61,7 @@ AS $$
         WHERE p_usuari = idUsuari
     END;
 
-    RETURN 
+    RETURN v_numdocs;
 $$ LANGUAGE PLPGSQL
 
 

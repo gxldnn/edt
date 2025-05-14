@@ -62,8 +62,7 @@ AS $$
         JOIN document d ON e.idDocument = d.idDocument
         WHERE p_usuari = p.idUsuari AND LOWER(format) = 'cd';
 
-        SELECT iddocument INTO STRICT v_iddocument FROM exemplar
-        WHERE p_usuari = idUsuari;
+
 
 
         RETURN v_numdocs;

@@ -35,5 +35,6 @@ AS $$
         v_bloq usuari.bloquejat%type
     BEGIN
     
+
     END;
 $$ LANGUAGE PLPGSQL

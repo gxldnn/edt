@@ -8,8 +8,7 @@ AS $$
         WHERE LOWER(p_titol) = LOWER(titol)
 
         RETURN v_isbn;
-    
-    
-    
+            EXCEPTION
+                
     END;
 $$ LANGUAGE PLPGSQL

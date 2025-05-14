@@ -54,7 +54,6 @@ RETURNS INT
 AS $$
     DECLARE
         v_idusuari usuari.idUsuari%type;
-        v_numdocs INT;
     BEGIN
         SELECT COUNT() INTO STRICT v_prestecusuari FROM prestec
         WHERE p_usuari = idUsuari;

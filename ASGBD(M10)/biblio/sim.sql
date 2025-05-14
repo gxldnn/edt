@@ -2,7 +2,7 @@ CREATE OR REPLACE FUNCTION codiExemplarDisponible(p_titol varchar, p_format varc
 RETURNS INT
 AS $$
     DECLARE
-        v_isbn llibre.isbn%type
+        v_isbn llibre.isbn%type;
     BEGIN
     
     

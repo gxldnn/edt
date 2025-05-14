@@ -9,7 +9,7 @@
 -- Darrera rev.:12/05/2020
 -- Versió:      0.3
 
-drop database  if exists biblioteca;
+drop database  if e\xists biblioteca;
 create database biblioteca;
 \c biblioteca
 

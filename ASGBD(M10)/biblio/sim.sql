@@ -5,7 +5,7 @@ AS $$
         v_isbn llibre.isbn%type;
     BEGIN
         SELECT ISBN INTO STRICT v_ISBN FROM llibre
-        WHERE p_
+        WHERE p_titol = 
     
     
     

@@ -48,3 +48,4 @@ AS $$
                 RETURN 2;
     END;
 $$ LANGUAGE PLPGSQL
+

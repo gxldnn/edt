@@ -11,9 +11,6 @@ AS $$
         WHERE LOWER(p_titol) = LOWER(titol);    
         
 
-        SELECT estat INTO STRICT v_estat FROM exemplar
-        WHERE llibre.idDocument = v_iddocument;
-
         
         IF estat = 'Discponible' THEN
             RETURN v_isbn;

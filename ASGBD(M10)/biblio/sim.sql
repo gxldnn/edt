@@ -28,7 +28,7 @@ AS $$
 $$ LANGUAGE PLPGSQL
 */
 
-CREATE OR REPLACE FUNCTION usuarioOK(p_codiusuari )
+CREATE OR REPLACE FUNCTION usuarioOK(p_codiusuari serual)
 RETURNS INT
 AS $$
     DECLARE

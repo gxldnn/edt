@@ -32,7 +32,7 @@ CREATE OR REPLACE FUNCTION usuarioOK(p_codiusuari)
 RETURNS INT
 AS $$
     DECLARE
-        v_
+        v_bloq
     BEGIN
     
     END;

@@ -1,4 +1,4 @@
-/*CREATE OR REPLACE FUNCTION codiExemplarDisponible(p_titol varchar, p_format varchar)
+CREATE OR REPLACE FUNCTION codiExemplarDisponible(p_titol varchar, p_format varchar)
 RETURNS varchar
 AS $$
     DECLARE
@@ -26,7 +26,7 @@ AS $$
                 RETURN 0;  
     END;
 $$ LANGUAGE PLPGSQL
-*/
+
 
 DROP FUNCTION usuarioOK(p_codiusuari INT);
 CREATE OR REPLACE FUNCTION usuarioOK(p_codiusuari INT)

@@ -8,6 +8,8 @@ AS $$
     BEGIN
         SELECT ISBN, idDocument INTO STRICT v_isbn, v_iddocument
         FROM llibre
+        WHERE LOWER(p_titol) = LOWER(titol);        SELECT ISBN, idDocument INTO STRICT v_isbn, v_iddocument
+        FROM llibre
         WHERE LOWER(p_titol) = LOWER(titol);
 
         SELECT estat INTO STRICT v_estat FROM exemplar

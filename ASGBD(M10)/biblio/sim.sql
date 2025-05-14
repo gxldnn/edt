@@ -29,4 +29,9 @@ $$ LANGUAGE PLPGSQL
 */
 
 CREATE OR REPLACE FUNCTION usuarioOK(p_codiusuari)
-RETURNS
+RETURNS INT
+AS $$
+    DECLARE
+    BEGIN
+    END;
+    

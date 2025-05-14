@@ -11,7 +11,6 @@ AS $$
         JOIN exemplar
         WHERE LOWER(p_titol) = LOWER(titol);
 
-        SELECT estat INTO STRICT v_estat FROM exemplar
         WHERE idDocument = v_iddocument;
 
         

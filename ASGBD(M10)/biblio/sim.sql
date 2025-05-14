@@ -5,7 +5,8 @@ AS $$
         v_isbn varchar;
         v_iddocument int;
     BEGIN
-        SELECT ISBN INTO STRICT v_isbn, idDocument INTO SFROM llibre
+        SELECT ISBN INTO STRICT v_isbn, idDocument INTO S
+        FROM llibre
         WHERE LOWER(p_titol) = LOWER(titol);
 
         SELECT

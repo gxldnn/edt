@@ -47,7 +47,7 @@ AS $$
             WHEN NO_DATA_FOUND THEN
                 RETURN 2;
     END;
-$$ LANGUAGE PLPGSQL
+$$ LANGUAGE PLPGSQL;
 
 CREATE OR REPLACE FUNCTION documentsPrestats(p_usuari INT, p_format varchar)
 RETURNS INT

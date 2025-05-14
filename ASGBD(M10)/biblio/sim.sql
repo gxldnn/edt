@@ -18,7 +18,7 @@ AS $$
             RETURN v_isbn;
             ELSE
                 RETURN 0;
-            ENDIF;
+        ENDIF;
         
         EXCEPTION
             WHEN NO_DATA_FOUND THEN

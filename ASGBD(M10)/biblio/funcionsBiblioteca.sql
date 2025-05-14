@@ -58,7 +58,7 @@ AS $$
         v_numdocs INT;
     BEGIN
         SELECT COUNT(*) FROM prestecs
-        
+        WHERE p_usuari
 
 
     END;

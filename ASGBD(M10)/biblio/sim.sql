@@ -15,7 +15,7 @@ AS $$
 
 
         
-        IF v_estat IN 'Disponible' THEN
+        IF v_estat = 'Disponible' THEN
             RETURN v_isbn;
             ELSE
                 RETURN 0;

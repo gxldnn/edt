@@ -10,7 +10,7 @@ AS $$
         FROM llibre
         WHERE LOWER(p_titol) = LOWER(titol);
 
-        SELECT estat INTO STRICT v-estat 
+        SELECT estat INTO STRICT v_estat 
 
         RETURN v_isbn;
 

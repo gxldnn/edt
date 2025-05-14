@@ -4,6 +4,7 @@ AS $$
     DECLARE
         v_isbn varchar;
         v_iddocument int;
+        v_estat varchar;
     BEGIN
         SELECT ISBN, idDocument INTO STRICT v_isbn, v_iddocument
         FROM llibre

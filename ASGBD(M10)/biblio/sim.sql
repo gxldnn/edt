@@ -10,7 +10,6 @@ AS $$
         WHERE LOWER(p_titol) = LOWER(titol);
 
     
-        IF 
 
         RETURN v_isbn;
 

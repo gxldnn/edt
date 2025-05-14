@@ -10,7 +10,7 @@ AS $$
         FROM llibre
         WHERE LOWER(p_titol) = LOWER(titol);        
         
-        SELECT idDocument INTO STRICT v_isbn, v_iddocument
+        SELECT idDocument INTO STRICT v_iddocument
         FROM llibre
         WHERE LOWER(p_titol) = LOWER(titol);
 

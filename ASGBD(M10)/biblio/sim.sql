@@ -34,7 +34,8 @@ AS $$
     DECLARE
         v_bloq usuari.bloquejat%type
     BEGIN
-        SELECT 
+        SELECT bloquejat FROM usuari
+        WHERE 
 
     END;
 $$ LANGUAGE PLPGSQL

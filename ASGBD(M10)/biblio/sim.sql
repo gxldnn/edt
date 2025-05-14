@@ -20,8 +20,8 @@ AS $$
             RETURN 0;
         ENDIF;
         
-            EXCEPTION
-                WHEN NO_DATA_FOUND THEN
-                    RETURN 0;
+        EXCEPTION
+            WHEN NO_DATA_FOUND THEN
+                RETURN 0;
     END;
 $$ LANGUAGE PLPGSQL

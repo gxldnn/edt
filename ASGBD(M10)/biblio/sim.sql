@@ -10,7 +10,7 @@ AS $$
         FROM llibre
         WHERE LOWER(p_titol) = LOWER(titol);    
 
-                SELECT titol, p_titol
+        SELECT titol, p_titol
         FROM llibre
         WHERE LOWER(titol) = LOWER(p_titol);
     

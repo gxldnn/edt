@@ -38,7 +38,7 @@ AS $$
         WHERE p_codiusuari = idUsuari;
 
         IF v_bloq THEN
-            
+            RETURN
 
     END;
 $$ LANGUAGE PLPGSQL

@@ -57,7 +57,8 @@ AS $$
         v_iddocument document.format%type;
         v_numdocs INT;
     BEGIN
-        SELECT COUNT(*) FROM document
+        SELECT COUNT(*) FROM prestecs
+        
 
 
     END;

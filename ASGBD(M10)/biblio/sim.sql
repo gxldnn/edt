@@ -35,7 +35,9 @@ AS $$
         v_bloq usuari.bloquejat%type
     BEGIN
         SELECT bloquejat FROM usuari
-        WHERE p_codiusuari = idUsuari
+        WHERE p_codiusuari = idUsuari;
+
+        
 
     END;
 $$ LANGUAGE PLPGSQL

@@ -37,7 +37,7 @@ AS $$
         SELECT bloquejat FROM usuari
         WHERE p_codiusuari = idUsuari;
 
-        
+        IF b
 
     END;
 $$ LANGUAGE PLPGSQL

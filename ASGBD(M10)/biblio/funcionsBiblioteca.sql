@@ -57,7 +57,7 @@ AS $$
         v_iddocument document.format%type;
         v_numdocs INT;
     BEGIN
-        SELECT COUNT(idUsuari) INTO STRICT FROM prestecs
+        SELECT COUNT(idUsuari) INTO STRICT v_numdocs FROM prestecs
         WHERE p_usuari = idUsuari
     END;
 

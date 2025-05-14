@@ -53,7 +53,6 @@ CREATE OR REPLACE FUNCTION documentsPrestats(p_usuari INT, p_format varchar)
 RETURNS INT
 AS $$
     DECLARE
-        v_prestecusuari recor
         v_idusuari usuari.idUsuari%type;
         v_iddocument document.format%type;
         v_numdocs INT;

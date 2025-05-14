@@ -70,6 +70,3 @@ AS $$
 
 $$ LANGUAGE PLPGSQL;
 
-
-
-

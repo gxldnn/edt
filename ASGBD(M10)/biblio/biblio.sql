@@ -245,7 +245,7 @@ create table exemplar(
 );
 
 insert into exemplar(idExemplar,idDocument)
-values (1,1), (2,1), (3,1),
+values (1,1), (3,1),
 			(4,2), (5,2),
 			(6,3),(7,3), (8,3),
 			(9,4)

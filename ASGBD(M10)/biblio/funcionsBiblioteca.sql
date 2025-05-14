@@ -62,7 +62,7 @@ AS $$
         WHERE p_usuari = idUsuari;
 
         SELECT COUNT(idUsuari) FROM v_prestecusuari
-        WHERE format = 
+        WHERE format = p_format
         RETURN v_numdocs;
 
     END;

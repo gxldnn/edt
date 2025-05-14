@@ -34,7 +34,7 @@ AS $$
     DECLARE
         v_bloq usuari.bloquejat%type
     BEGIN
-        SELECT bloquejat FROM usuari
+        SELECT bloquejat INTO STRICT v_bloq FROM usuari
         WHERE p_codiusuari = idUsuari;
 
         IF blo

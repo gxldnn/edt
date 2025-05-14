@@ -4,7 +4,7 @@ AS $$
     DECLARE
         v_isbn llibre.isbn%type;
     BEGIN
-        SELECT ISBN INTO STRICT 
+        SELECT ISBN INTO STRICT v_ISBN
     
     
     

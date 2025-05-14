@@ -45,6 +45,7 @@ AS $$
 
         EXCEPTION
             WHEN NO_DATA_FOUND THEN
-                RETURN 2
+                RETURN 2;
+
     END;
 $$ LANGUAGE PLPGSQL

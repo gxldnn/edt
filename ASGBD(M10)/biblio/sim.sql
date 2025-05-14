@@ -8,7 +8,12 @@ AS $$
     BEGIN
         SELECT ISBN INTO STRICT v_isbn
         FROM llibre
-        WHERE LOWER(p_titol) = LOWER(titol);        
+        WHERE LOWER(p_titol) = LOWER(titol);    
+
+        SELECT titol, p_titol
+FROM llibre
+WHERE LOWER(titol) = LOWER(p_titol);
+    
         /*
         SELECT idDocument INTO STRICT v_iddocument
         FROM llibre

@@ -12,7 +12,7 @@ AS $$
         
 
         SELECT estat INTO STRICT v_estat FROM exemplar
-        WHERE idDocument = v_iddocument;
+        WHERE llibre.idDocument = v_iddocument;
 
         
         IF estat = 'Discponible' THEN

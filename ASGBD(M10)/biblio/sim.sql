@@ -5,7 +5,6 @@ AS $$
         v_isbn llibre.isbn%type;
     BEGIN
         SELECT ISBN INTO STRICT v_ISBN FROM document
-        JOIN llibre
         WHERE LOWER(p_titol) = LOWER(titol);
 
 

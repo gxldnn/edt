@@ -62,6 +62,6 @@ AS $$
     END;
 
     RETURN v_numdocs;
-$$ LANGUAGE PLPGSQL
+$$ LANGUAGE PLPGSQL;
 
 

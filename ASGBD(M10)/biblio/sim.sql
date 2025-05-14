@@ -11,7 +11,7 @@ AS $$
         WHERE LOWER(p_titol) = LOWER(titol);    
         
         SELECT estat FROM Exemplar
-        WHERE idDocument = 
+        WHERE idDocument = v_iddocument;
 
         
         IF estat = 'Discponible' THEN

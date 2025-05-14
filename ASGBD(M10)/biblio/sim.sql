@@ -6,13 +6,16 @@ AS $$
         v_iddocument int;
         v_estat record;
     BEGIN
-        SELECT llibre.ISBN, llibre.idDocument INTO v_isbn, v_iddocument
+        SELECT llibre.ISBN, llibre.idDocument INTO STRICT v_isbn, v_iddocument
         FROM llibre
         WHERE LOWER(p_titol) = LOWER(titol);    
+        
+        SELECT DISTINCT estat INTO STRICT v_estat FROM exemplar
+        WHERE idDocument = v_iddocument;
 
 
         
-        IF v_estat = 'Disponible' THEN
+        IF v_estat IN 'Disponible' THEN
             RETURN v_isbn;
             ELSE
                 RETURN 0;

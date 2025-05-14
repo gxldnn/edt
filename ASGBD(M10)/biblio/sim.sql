@@ -10,4 +10,4 @@ AS $$
     
     
     END;
-    $$ LANGUAGE PLPGSQL
+$$ LANGUAGE PLPGSQL

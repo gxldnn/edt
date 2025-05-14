@@ -23,7 +23,6 @@ AS $$
         
         EXCEPTION
             WHEN NO_DATA_FOUND THEN
-                RETURN 0;
-                
+                RETURN 0;  
     END;
 $$ LANGUAGE PLPGSQL

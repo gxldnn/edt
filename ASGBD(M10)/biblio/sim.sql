@@ -1,1 +1,1 @@
-CREATE OR REPLACE FUNCTION codiExemplarDisponible(p_titol varchar, )
+CREATE OR REPLACE FUNCTION codiExemplarDisponible(p_titol varchar, p_format)

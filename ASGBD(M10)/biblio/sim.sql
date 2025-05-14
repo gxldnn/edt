@@ -40,7 +40,7 @@ AS $$
         IF v_bloq THEN
             RETURN 0
         ELSE
-            RE
+            RETURN 1
 
     END;
 $$ LANGUAGE PLPGSQL

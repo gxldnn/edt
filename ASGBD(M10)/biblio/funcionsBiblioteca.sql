@@ -62,12 +62,14 @@ AS $$
 
         SELECT iddocument INTO STRICT v_iddocument FROM exemplar
         WHERE p_usuari = idUsuari;
-        
+
 
         RETURN v_numdocs;
 
     END;
 
 $$ LANGUAGE PLPGSQL;
+
+
 
 

@@ -58,7 +58,7 @@ AS $$
         v_numdocs INT;
     BEGIN
         SELECT COUNT(idUsuari) INTO STRICT v_numdocs FROM prestec
-        WHERE p_usuari = idUsuari AND ;
+        WHERE p_usuari = idUsuari;
 
         RETURN v_numdocs;
 

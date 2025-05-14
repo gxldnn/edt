@@ -8,7 +8,7 @@
 -- Data creació:20/04/2019
 -- Darrera rev.:12/05/2020
 -- Versió:      0.3
-\c template1
+
 drop database  if exists biblioteca;
 create database biblioteca;
 \c biblioteca
@@ -241,7 +241,7 @@ create table exemplar(
 	idDocument int,  -- no funciona: references document(idDocument),
 	estat varchar(100) default 'Disponible',
 	descripcio varchar(200),
-	constraint exemplar_idExemplar_ck  check (estat in ('Disponible','Reservat','Exclòs de prèstec','En exposició'))
+	constraint exemplar_idExemplar_ck check (estat in ('Disponible','Reservat','Exclòs de prèstec','En exposició'))
 );
 
 insert into exemplar(idExemplar,idDocument)

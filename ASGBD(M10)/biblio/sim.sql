@@ -32,7 +32,7 @@ CREATE OR REPLACE FUNCTION usuarioOK(p_codiusuari INT)
 RETURNS INT
 AS $$
     DECLARE
-        v_bloq usuari.bloquejat%type
+        v_bloq usuari.bloquejat%type;
     BEGIN
         SELECT bloquejat INTO STRICT v_bloq FROM usuari
         WHERE p_codiusuari = idUsuari;

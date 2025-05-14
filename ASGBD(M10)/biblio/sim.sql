@@ -37,7 +37,8 @@ AS $$
         SELECT bloquejat INTO STRICT v_bloq FROM usuari
         WHERE p_codiusuari = idUsuari;
 
-        IF blo
+        IF v_bloq THEN
+            
 
     END;
 $$ LANGUAGE PLPGSQL

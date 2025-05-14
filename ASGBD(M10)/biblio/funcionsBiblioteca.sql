@@ -61,7 +61,7 @@ AS $$
         WHERE p_usuari = idUsuari
     END;
 
-    RET
+    RETURN 
 $$ LANGUAGE PLPGSQL
 
 

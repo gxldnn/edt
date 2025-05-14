@@ -12,7 +12,8 @@ AS $$
         
         SELECT idDocument INTO STRICT v_iddocument
         FROM llibre
-        WHERE LOWER(p_titol) = LOWER(titol);
+        WHERE LOWER(p_titol) = LOWER(titol)
+        LIMIT 1;
 
         SELECT estat INTO STRICT v_estat FROM exemplar
         WHERE idDocument = v_iddocument;

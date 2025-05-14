@@ -14,7 +14,7 @@ AS $$
         WHERE idDocument = v_iddocument;
 
         
-        IF 
+        IF estat
             RETURN v_isbn;
 
             EXCEPTION

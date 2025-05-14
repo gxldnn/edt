@@ -11,7 +11,7 @@ AS $$
         WHERE LOWER(p_titol) = LOWER(titol);
 
         SELECT estat INTO STRICT v_estat FROM exemplar
-        WHERE 
+        WHERE idDocument = v_iddocument
 
         RETURN v_isbn;
 

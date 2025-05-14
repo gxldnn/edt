@@ -28,6 +28,8 @@ AS $$
 $$ LANGUAGE PLPGSQL
 */
 
+FUNCTION usuarioOK(p_codiusuari INT
+
 CREATE OR REPLACE FUNCTION usuarioOK(p_codiusuari INT)
 RETURNS INT
 AS $$
@@ -36,7 +38,7 @@ AS $$
     BEGIN
         SELECT bloquejat INTO STRICT v_bloq FROM usuari
         WHERE p_codiusuari = idUsuari;
-        
+
         IF NOT v_bloq THEN
             RETURN 0;
         ELSE

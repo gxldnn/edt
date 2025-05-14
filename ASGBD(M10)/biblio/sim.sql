@@ -8,13 +8,16 @@ AS $$
     BEGIN
         SELECT ISBN, idDocument INTO STRICT v_isbn, v_iddocument
         FROM llibre
-        JOIN exemplar
         WHERE LOWER(p_titol) = LOWER(titol);
-idDocument = v_iddocument;
+
+        SELECT estat INTO STRICT v_estat FROM exemplar
+        WHERE idDocument = v_iddocument;
 
         
-        RETURN v_isbn;
-
+        IF estat = 'Discponible'
+            RETURN v_isbn;
+        ELSE
+        
             EXCEPTION
                 WHEN NO_DATA_FOUND THEN
                     RETURN 0;

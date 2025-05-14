@@ -44,6 +44,6 @@ AS $$
         END IF;
 
         EXCEPTION
-        
+            WHEN NO
     END;
 $$ LANGUAGE PLPGSQL

@@ -26,3 +26,4 @@ AS $$
                 RETURN 0;  
     END;
 $$ LANGUAGE PLPGSQL
+*/

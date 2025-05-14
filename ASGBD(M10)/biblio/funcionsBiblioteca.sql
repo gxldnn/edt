@@ -53,14 +53,13 @@ CREATE OR REPLACE FUNCTION documentsPrestats(p_usuari INT, p_format varchar)
 RETURNS INT
 AS $$
     DECLARE
-        v_prestecusuari record;
+        v_prestecusuari recor
         v_idusuari usuari.idUsuari%type;
         v_iddocument document.format%type;
         v_numdocs INT;
     BEGIN
-        SELECT * INTO STRICT v_prestecusuari FROM prestec
+        SELECT COUNT(idUsuari) INTO STRICT v_numdocs FROM prestec
         WHERE p_usuari = idUsuari;
-
 
         RETURN v_numdocs;
 

@@ -3,7 +3,7 @@ RETURNS varchar
 AS $$
     DECLARE
         v_isbn varchar;
-        idexemplar int;
+        v_idexemplar int;
     BEGIN
         SELECT ISBN INTO STRICT v_isbn FROM llibre
         WHERE LOWER(p_titol) = LOWER(titol);

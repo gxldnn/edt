@@ -4,4 +4,4 @@ AS $$
     DECLARE
     BEGIN
     END;
-    
+    $$ LANGUAGE PLPGSQL

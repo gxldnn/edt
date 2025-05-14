@@ -241,8 +241,7 @@ create table exemplar(
 	idDocument int,  -- no funciona: references document(idDocument),
 	estat varchar(100) default 'Disponible',
 	descripcio varchar(200),
-	constraint exemplar_idExemplar_ck 
-    check (estat in ('Disponible','Reservat','Exclòs de prèstec','En exposició'))
+	constraint exemplar_idExemplar_ck  check (estat in ('Disponible','Reservat','Exclòs de prèstec','En exposició'))
 );
 
 insert into exemplar(idExemplar,idDocument)

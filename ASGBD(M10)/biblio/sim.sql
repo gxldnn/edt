@@ -14,8 +14,8 @@ AS $$
         WHERE idDocument = v_iddocument;
 
         
-
-        RETURN v_isbn;
+        IF 
+            RETURN v_isbn;
 
             EXCEPTION
                 WHEN NO_DATA_FOUND THEN

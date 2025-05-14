@@ -4,8 +4,9 @@ AS $$
     DECLARE
         v_isbn llibre.isbn%type;
     BEGIN
-        SELECT ISBN INTO STRICT v_ISBN FROM llibre
+        SELECT ISBN INTO STRICT v_ISBN FROM document
         WHERE LOWER(p_titol) = LOWER(titol);
+        
 
         RETURN v_isbn;
 

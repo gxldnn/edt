@@ -61,7 +61,7 @@ AS $$
         SELECT * INTO STRICT v_prestecusuari FROM prestec
         WHERE p_usuari = idUsuari;
 
-        SELECT COUNT(idUsuari) INTO STRICT  FROM v_prestecusuari
+        SELECT COUNT(idUsuari) INTO STRICT v_numdocs FROM v_prestecusuari
         WHERE format = p_format;
 
         RETURN v_numdocs;

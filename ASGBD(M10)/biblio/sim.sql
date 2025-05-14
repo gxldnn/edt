@@ -11,8 +11,7 @@ AS $$
         WHERE LOWER(p_titol) = LOWER(titol);    
         
         SELECT DISTINCT estat INTO STRICT v_estat FROM exemplar
-        WHERE idDocument = v_iddocument
-        GROUP BY estat;
+        WHERE idDocument = v_iddocument;
 
 
         RETURN v_isbn, v_iddocument, v_estat;

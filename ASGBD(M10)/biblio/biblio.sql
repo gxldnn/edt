@@ -8,7 +8,7 @@
 -- Data creació:20/04/2019
 -- Darrera rev.:12/05/2020
 -- Versió:      0.3
-
+\c template1
 drop database  if exists biblioteca;
 create database biblioteca;
 \c biblioteca

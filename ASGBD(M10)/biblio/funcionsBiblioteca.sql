@@ -58,7 +58,7 @@ AS $$
         v_numdocs INT;
     BEGIN
         SELECT COUNT(idUsuari) INTO STRICT v_numdocs FROM prestec p
-        JOIN Exemplar e p.idExemplar  ON e.idExemplar = 
+        JOIN Exemplar e p.idExemplar  ON e.idExemplar 
         WHERE p_usuari = idUsuari;
 
         SELECT iddocument INTO STRICT v_iddocument FROM exemplar

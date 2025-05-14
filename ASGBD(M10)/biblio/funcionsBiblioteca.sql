@@ -28,7 +28,7 @@ AS $$
 $$ LANGUAGE PLPGSQL
 */
 
-DROP FUNCTION usuarioOK(p_codiusuari INT
+DROP FUNCTION usuarioOK(p_codiusuari INT);
 
 CREATE OR REPLACE FUNCTION usuarioOK(p_codiusuari INT)
 RETURNS INT

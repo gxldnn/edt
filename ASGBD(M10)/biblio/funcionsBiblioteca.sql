@@ -57,7 +57,7 @@ AS $$
         v_iddocument document.format%type;
         v_numdocs INT;
     BEGIN
-        SELECT COUNT(*)
+        SELECT COUNT(*) FROM document
 
 
     END;

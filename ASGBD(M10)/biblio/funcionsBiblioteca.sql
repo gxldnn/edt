@@ -59,9 +59,9 @@ AS $$
     BEGIN
         SELECT COUNT(*) FROM prestecs
         WHERE p_usuari = idUsuari
-
-
     END;
+
+    RET
 $$ LANGUAGE PLPGSQL
 
 

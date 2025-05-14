@@ -49,4 +49,4 @@ AS $$
     END;
 $$ LANGUAGE PLPGSQL
 
-CREATE OR REPLACE FUNCTION documentsPrestats()
+CREATE OR REPLACE FUNCTION documentsPrestats(p_usuari INT)

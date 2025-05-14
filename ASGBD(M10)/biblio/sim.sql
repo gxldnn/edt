@@ -6,7 +6,7 @@ AS $$
         v_iddocument int;
         v_estat record;
     BEGIN
-        SELECT llibre.ISBN, llibre.idDocument INTO STRICT v_isbn, v_iddocument
+        SELECT llibre.ISBN, llibre.idDocument INTO v_isbn, v_iddocument
         FROM llibre
         WHERE LOWER(p_titol) = LOWER(titol);    
 

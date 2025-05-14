@@ -7,7 +7,7 @@ AS $$
         SELECT ISBN INTO STRICT v_ISBN FROM llibre
         WHERE LOWER(p_titol) = LOWER(titol)
 
-        RETU
+        RETURN v_isbn;
     
     
     

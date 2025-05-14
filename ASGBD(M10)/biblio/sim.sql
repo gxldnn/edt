@@ -9,9 +9,6 @@ AS $$
         SELECT llibre.ISBN, llibre.idDocument INTO STRICT v_isbn, v_iddocument
         FROM llibre
         WHERE LOWER(p_titol) = LOWER(titol);    
-        
-        SELECT DISTINCT estat INTO STRICT v_estat FROM exemplar
-        WHERE idDocument = v_iddocument;
 
 
         

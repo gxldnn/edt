@@ -42,6 +42,8 @@ AS $$
         ELSE
             RETURN 1;
         END IF;
+
+        EXCEPTION
         
     END;
 $$ LANGUAGE PLPGSQL

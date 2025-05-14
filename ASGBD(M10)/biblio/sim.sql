@@ -3,7 +3,7 @@ RETURNS varchar
 AS $$
     DECLARE
         v_isbn varchar;
-        v_ido int;
+        v_iddocument int;
     BEGIN
         SELECT ISBN INTO STRICT v_isbn FROM llibre
         WHERE LOWER(p_titol) = LOWER(titol);

@@ -61,10 +61,7 @@ AS $$
         JOIN exemplar e ON p.idExemplar = e.idExemplar 
         JOIN document d ON e.idDocument = d.idDocument
         WHERE p_usuari = p.idUsuari AND LOWER(format) = 'cd';
-
-
-
-
+        
         RETURN v_numdocs;
 
     END;

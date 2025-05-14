@@ -33,7 +33,6 @@ RETURNS INT
 AS $$
     DECLARE
         v_bloq usuari.bloquejat%type
-        
     BEGIN
     
     END;

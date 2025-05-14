@@ -14,10 +14,8 @@ AS $$
         WHERE idDocument = v_iddocument;
 
         
-        IF estat = 'Discponible'
-            RETURN v_isbn;
-        ELSE
-        
+        RETURN v_isbn;
+
             EXCEPTION
                 WHEN NO_DATA_FOUND THEN
                     RETURN 0;

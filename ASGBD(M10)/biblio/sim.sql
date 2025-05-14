@@ -17,7 +17,8 @@ AS $$
         IF estat = 'Discponible' THEN
             RETURN v_isbn;
         ELSE
-            RETURN 
+            RETURN 0;
+        ENDIF;
         
             EXCEPTION
                 WHEN NO_DATA_FOUND THEN

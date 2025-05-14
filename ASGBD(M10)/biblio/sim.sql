@@ -14,8 +14,7 @@ AS $$
         WHERE idDocument = v_iddocument;
 
 
-        RETURN v_isbn, v_iddocument, v_estat;
-        /*
+        
         IF v_estat = 'Disponible' THEN
             RETURN v_isbn;
             ELSE
@@ -25,6 +24,6 @@ AS $$
         EXCEPTION
             WHEN NO_DATA_FOUND THEN
                 RETURN 0;
-                */
+                
     END;
 $$ LANGUAGE PLPGSQL

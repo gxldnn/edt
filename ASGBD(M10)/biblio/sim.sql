@@ -10,8 +10,7 @@ AS $$
         FROM llibre
         JOIN exemplar
         WHERE LOWER(p_titol) = LOWER(titol);
-
-        WHERE idDocument = v_iddocument;
+idDocument = v_iddocument;
 
         
         RETURN v_isbn;

@@ -14,7 +14,7 @@ AS $$
         WHERE idDocument = v_iddocument;
 
         
-        IF estat = 'Discponible'
+        IF estat = 'Discponible' THEN
             RETURN v_isbn;
         ELSE
         

@@ -56,7 +56,7 @@ AS $$
         v_idusuari usuari.idUsuari%type;
         v_iddocument document.format%type;
     BEGIN
-
+        SELECT 
 
 
     END;

@@ -54,7 +54,7 @@ RETURNS INT
 AS $$
     DECLARE
         v_idusuari usuari.idUsuari%type;
-        v_iddocument document.format%type;
+        v_idexemplar document.format%type;
         v_numdocs INT;
     BEGIN
         SELECT COUNT(idUsuari) INTO STRICT v_numdocs FROM prestec

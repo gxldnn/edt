@@ -50,6 +50,9 @@ AS $$
 $$ LANGUAGE PLPGSQL
 
 CREATE OR REPLACE FUNCTION documentsPrestats(p_usuari INT, p_format varchar)
-RETURNS
+RETURNS INT
+AS $$
+    DECLARE
+    BEGN
 
 

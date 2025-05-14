@@ -6,7 +6,7 @@ AS $$
         v_iddocument int;
         v_estat varchar;
     BEGIN
-        SELECT ISBN, idDocument INTO STRICT v_isbn, v_iddocument
+        SELECT ISBN INTO STRICT v_isbn, v_iddocument
         FROM llibre
         WHERE LOWER(p_titol) = LOWER(titol);        
         

@@ -54,7 +54,7 @@ RETURNS INT
 AS $$
     DECLARE
         v_idusuari usuari.idUsuari%type;
-        v_
+        v_iddocument 
     BEGIN
 
 

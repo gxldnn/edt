@@ -59,9 +59,10 @@ AS $$
     BEGIN
         SELECT COUNT(idUsuari) INTO STRICT v_numdocs FROM prestecs
         WHERE p_usuari = idUsuari;
+            RETURN v_numdocs;
+
     END;
 
-    RETURN v_numdocs;
 $$ LANGUAGE PLPGSQL;
 
 

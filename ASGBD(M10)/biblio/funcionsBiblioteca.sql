@@ -37,7 +37,7 @@ AS $$
         SELECT bloquejat INTO STRICT v_bloq FROM usuari
         WHERE p_codiusuari = idUsuari;
 
-        IF v_bloq THEN
+        IF NOT v_bloq THEN
             RETURN 0;
         ELSE
             RETURN 1;

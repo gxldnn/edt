@@ -58,7 +58,7 @@ AS $$
         v_iddocument document.format%type;
         v_numdocs INT;
     BEGIN
-        SELECT * INTO STRICT v_numdocs FROM prestec
+        SELECT * INTO STRICT v_prestecusuari FROM prestec
         WHERE p_usuari = idUsuari;
 
         RETURN v_numdocs;

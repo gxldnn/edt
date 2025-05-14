@@ -13,7 +13,7 @@ AS $$
         SELECT estat INTO STRICT v_estat FROM Exemplar
         WHERE idDocument = v_iddocument;
 
-        
+        /*
         IF v_estat = 'Disponible' THEN
             RETURN v_isbn;
             ELSE

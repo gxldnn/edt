@@ -11,8 +11,9 @@ DROP SEQUENCE pednum_seq;
 
 CREATE SEQUENCE cliecod_seq;
 CREATE SEQUENCE pednum_seq;
-select setval('cliecod_seq', (SELECT max(cliecod) FROM cliente)+1, true);
-SELECT setval('pednum_seq', (SELECT max(pednum) FROM pedido), true);
+
+setval('cliecod_seq', (SELECT max(cliecod) FROM cliente), true);
+setval('pednum_seq', (SELECT max(pednum) FROM pedido), true);
 
 CREATE OR REPLACE FUNCTION existeixClient(p_cliecod INT)
     RETURNS boolean
@@ -98,11 +99,8 @@ $$ LANGUAGE plpgsql;
 CREATE OR REPLACE FUNCTION preuSenseIVA(p_precio int)
 RETURNS numeric(9,2)
 AS $$
-    DECLARE
-        v_iva numeric(9,2);
     BEGIN
-        SELECT p_precio * 0.21 INTO STRICT v_iva;
-        RETURN v_iva;
+        RETURN p_precio / 1.21;
     END;
 $$ LANGUAGE PLPGSQL;
 
@@ -110,11 +108,8 @@ $$ LANGUAGE PLPGSQL;
 CREATE OR REPLACE FUNCTION preuAmbIVA(p_precio int)
 RETURNS numeric(9,2)
 AS $$
-    DECLARE
-        v_iva numeric(9,2);
     BEGIN
-        SELECT p_precio * 1.21 INTO STRICT v_iva;
-        RETURN v_iva;
+        RETURN p_precio * 1.21;
     END;
 $$ LANGUAGE PLPGSQL;
 

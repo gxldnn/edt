@@ -118,11 +118,9 @@ AS $$
     END;
 $$ LANGUAGE PLPGSQL;
 
-
 SELECT existeixClient(2111);
 SELECT altaClient('Jose', 107, 4000);
 SELECT stockOk(40, 'rei'::varchar, '2a45c'::varchar);
 SELECT altaComanda(2111, 'rei'::varchar, '2a45c'::varchar, 20);
 SELECT preuSenseIVA(56);
 SELECT preuAmbIVA(56);
-

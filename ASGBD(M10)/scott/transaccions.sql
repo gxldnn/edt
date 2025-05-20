@@ -4,4 +4,4 @@ CREATE DATABASE scott;
 \c scott
 
 BEGIN;
-DELE
+DELETE FROM 

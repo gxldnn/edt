@@ -1,1 +1,1 @@
-\
+\c template1

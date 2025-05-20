@@ -4,4 +4,6 @@ CREATE DATABASE scott;
 \c scott
 
 BEGIN;
-DELETE FROM 
+emp WHERE deptno = 30;
+DELETE FROM dept WHERE deptno = 30;
+COMMIT;

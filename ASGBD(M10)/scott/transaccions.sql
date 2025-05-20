@@ -1,4 +1,5 @@
 \c template1
 DROP DATABASE IF EXISTS scott;
 CREATE DATABASE scott;
-|c 
+\c scott
+

@@ -5,4 +5,5 @@ CREATE DATABASE scott;
 
 BEGIN;
 DELETE FROM dept WHERE deptno = 30;
+
 COMMIT;

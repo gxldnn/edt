@@ -84,4 +84,7 @@ INSERT INTO punts (id, valor) VALUES (61,9);
 ROLLBACK TO b;
 COMMIT;
 SELECT SUM(valor) FROM punts;
+
+////////
+
 ```

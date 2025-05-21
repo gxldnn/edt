@@ -91,5 +91,5 @@ SELECT SUM(valor) FROM punts;
 
 ////////
 
-S'esborra el contingut de punts e inserimb un registre `ID = 30, valor = 5`
+S'esborra el contingut de punts e inserimb un registre amb`ID = 60, valor = 5`
 ```

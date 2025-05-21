@@ -26,7 +26,7 @@ SELECT valor FROM punts WHERE id = 20;
 
 ////////
 
-Primerament inserim un registre amb `ID = 20, valor = 5`, començem la transacció cambiem 
+Primerament inserim un registre amb `ID = 20, valor = 5`, començem la transacció cambiem el camp vlor 
 ```
 
 

@@ -55,6 +55,8 @@ SAVEPOINT a;
 INSERT INTO punts (id, valor) VALUES (41,7);
 ROLLBACK TO a;
 SELECT COUNT(*) FROM punts;
+
+////////
 ```
 5. Analitzant les següents sentències explica quins canvis es realitzen i on es realitzen. Finalment digues quin valor s'obtindrà amb l'últim SELECT.
 ```

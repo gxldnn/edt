@@ -91,5 +91,5 @@ SELECT SUM(valor) FROM punts;
 
 ////////
 
-S'esborra el contingut de punts e inserimb un registre amb `ID = 60, valor = 5`, comença la transacció, actualitzem el valor del registre anterior a `4` i es fa un SAVEPOINT amb identificador A, s'insereix un altre registre amb `ID = 61, valor = 8` i es fa un altre SAVEPOINT amb identificador B, s'insereix un altre registre amb `ID = 61, valor = 9`, que fallarà ja que el ID es clau primaria, per tant es duplica, es fa un ROLLBACK al identificador B, per tant solucionem el problema i es fa un COMMIT exitós, per tant nomes s'an inserit dos registres (`ID = 60, valor = 5`, `ID = 61, valor = 8`),
+S'esborra el contingut de punts e inserimb un registre amb `ID = 60, valor = 5`, comença la transacció, actualitzem el valor del registre anterior a `4` i es fa un SAVEPOINT amb identificador A, s'insereix un altre registre amb `ID = 61, valor = 8` i es fa un altre SAVEPOINT amb identificador B, s'insereix un altre registre amb `ID = 61, valor = 9`, que fallarà ja que el ID es clau primaria, per tant es duplica, es fa un ROLLBACK al identificador B, per tant solucionem el problema i es fa un COMMIT exitós, per tant nomes s'an inserit dos registres (`ID = 60, valor = 5`, `ID = 61, valor = 8`), doç
 ```

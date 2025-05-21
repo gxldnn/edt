@@ -44,7 +44,7 @@ SELECT valor FROM punts WHERE id = 30;
 ////////
 
 Primerament inserim un registre amb `ID = 30, valor = 5`, començem la transacció, es canvia el camp valor per `4` on el ID = 30, es fa un SAVEPOINT amb identificador A,
-s'insereix un altre registre amb `ID = 31, valor = 7` 
+s'insereix un altre registre amb `ID = 31, valor = 7`, des
 ```
 
 4. Analitzant les següents sentències explica quins canvis es realitzen i on es realitzen. Finalment digues quin valor s'obtindrà amb l'últim SELECT.

@@ -2,7 +2,7 @@
 DROP DATABASE IF EXISTS scott;
 CREATE DATABASE scott;
 \i scott
-\c scooscott
+\c scott/scott
 
 BEGIN;
 

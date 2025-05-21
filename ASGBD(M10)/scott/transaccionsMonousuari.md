@@ -26,7 +26,7 @@ SELECT valor FROM punts WHERE id = 20;
 
 ////////
 
-Primerament inserim u
+Primerament inserim un registre
 ```
 
 

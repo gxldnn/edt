@@ -60,7 +60,7 @@ SELECT COUNT(*) FROM punts;
 
 ////////
 
-Veiem com s'esborra la taula punts abans d'iniciar un transacció per tant la
+Veiem com s'esborra la taula punts abans d'iniciar un transacció per tant la resta de co
 ```
 5. Analitzant les següents sentències explica quins canvis es realitzen i on es realitzen. Finalment digues quin valor s'obtindrà amb l'últim SELECT.
 ```

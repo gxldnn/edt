@@ -68,3 +68,4 @@ ROLLBACK TO b;
 COMMIT;
 SELECT SUM(valor) FROM punts;
 ```
+    

@@ -68,6 +68,7 @@ UPDATE punts SET valor = 4 WHERE id = 50;
 COMMIT;
 SELECT valor FROM punts WHERE id = 50;
 
+////////
 
 ```
 6. Analitzant les següents sentències explica quins canvis es realitzen i on es realitzen. Finalment digues quin valor s'obtindrà amb l'últim SELECT.

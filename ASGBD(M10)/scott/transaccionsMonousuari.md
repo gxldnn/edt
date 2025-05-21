@@ -24,7 +24,7 @@ UPDATE punts SET valor = 4 WHERE id = 20;
 COMMIT;
 SELECT valor FROM punts WHERE id = 20;
 
-///////
+/////////
 ```
 
 

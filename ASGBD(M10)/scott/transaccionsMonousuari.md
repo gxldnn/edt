@@ -13,7 +13,7 @@ SELECT valor FROM punts WHERE id = 10;
 
 ////////
 
-Ens surtira el valor 10 ja que a la hora de fer el rollback estem "desfent" el UPDATE que el cambia a 4
+Ens surtira el valor 10 ja que a la hora de fer el rollback estem "desfent" el UPDATE que el cambia a 4.
 ```
 
 2. Analitzant les següents sentències explica quins canvis es realitzen i on es realitzen. Finalment digues quin valor s'obtindrà amb l'últim SELECT.  

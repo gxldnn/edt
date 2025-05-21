@@ -60,7 +60,7 @@ SELECT COUNT(*) FROM punts;
 
 ////////
 
-Veiem com s'esborra la informacio sencera de la taula punts, despres 
+Veiem com s'esborra la informacio sencera de la taula punts, despres com insermi
 ```
 5. Analitzant les següents sentències explica quins canvis es realitzen i on es realitzen. Finalment digues quin valor s'obtindrà amb l'últim SELECT.
 ```

@@ -1,4 +1,4 @@
-# Funcions de transaccions (MONOUSUARI)
+# Funcions de transaccions (MONOUSUARI) | Jan 
 
 Creeu una base de dades anomenada __transaccions__, amb una única taula anomenada __punts__, amb la següent estructura: id de tipus INT (CP) i valor de tipus SMALLINT.
 

@@ -91,5 +91,5 @@ SELECT SUM(valor) FROM punts;
 
 ////////
 
-S'esborra el contingut de punts e inserimb un registre amb `ID = 60, valor = 5`, comença la transacció, actualitzem el valor del registre anterior a `4` i es fa un SAVEPOINT amb identificador A
+S'esborra el contingut de punts e inserimb un registre amb `ID = 60, valor = 5`, comença la transacció, actualitzem el valor del registre anterior a `4` i es fa un SAVEPOINT amb identificador A, s'ine
 ```

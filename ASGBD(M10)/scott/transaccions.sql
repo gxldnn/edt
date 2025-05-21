@@ -2,7 +2,7 @@
 DROP DATABASE IF EXISTS scott;
 CREATE DATABASE scott;
 \i scott
-\c scott/scott.s
+\c scott/scott.sql
 /*
 BEGIN;
 

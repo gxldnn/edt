@@ -26,7 +26,7 @@ SELECT valor FROM punts WHERE id = 20;
 
 ////////
 
-Primerament inserim un registre amb `ID = 20, valor = 5`, començem la transacció, es canvia el camp valor per `4` on el ID = 20, es fa un COMMIT, es a dir, es gu
+Primerament inserim un registre amb `ID = 20, valor = 5`, començem la transacció, es canvia el camp valor per `4` on el ID = 20, es fa un COMMIT, es a dir, es guarden els can
 ```
 
 

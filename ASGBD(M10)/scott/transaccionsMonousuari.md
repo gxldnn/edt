@@ -60,7 +60,7 @@ SELECT COUNT(*) FROM punts;
 
 ////////
 
-Veiem com s'esborra la informacio sencera de la taula punts, despres com inserim un registre amb `ID = 40, valor = 5`, seguid
+Veiem com s'esborra la informacio sencera de la taula punts, despres com inserim un registre amb `ID = 40, valor = 5`, seguidament comença la 
 ```
 5. Analitzant les següents sentències explica quins canvis es realitzen i on es realitzen. Finalment digues quin valor s'obtindrà amb l'últim SELECT.
 ```

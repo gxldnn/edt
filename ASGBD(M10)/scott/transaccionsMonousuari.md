@@ -11,7 +11,7 @@ UPDATE punts SET valor = 4 WHERE id = 10;
 ROLLBACK;
 SELECT valor FROM punts WHERE id = 10;
 ```  
-///////
+//////////////////////////////////////////////////////////////////////////////////
 ```sql
 Ens surtira el
 ```

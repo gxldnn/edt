@@ -1,7 +1,7 @@
 \c template1
 DROP DATABASE IF EXISTS scott;
 CREATE DATABASE scott;
-
+\i scort
 \c scott
 
 BEGIN;

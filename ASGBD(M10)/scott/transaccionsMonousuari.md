@@ -43,7 +43,7 @@ SELECT valor FROM punts WHERE id = 30;
 
 ////////
 
-Primerament inserim un registre amb `ID = 20, valor = 5`, començem la transacció, es canvia el camp valor per `4` on el ID = 20, es fa un COMMIT, es a dir, es guarden els canvis, despres es fa un select, que donarà 4
+Primerament inserim un registre amb `ID = 390, valor = 5`, començem la transacció, es canvia el camp valor per `4` on el ID = 20, es fa un COMMIT, es a dir, es guarden els canvis, despres es fa un select, que donarà 4
 ```
 
 4. Analitzant les següents sentències explica quins canvis es realitzen i on es realitzen. Finalment digues quin valor s'obtindrà amb l'últim SELECT.

@@ -73,7 +73,7 @@ SELECT valor FROM punts WHERE id = 50;
 
 ////////
 
-Primerament s'insereix un registre amb `ID = 50, valor = 5`, es comença la transacció, 
+Primerament s'insereix un registre amb `ID = 50, valor = 5`, es comença la transacció, e
 ```
 6. Analitzant les següents sentències explica quins canvis es realitzen i on es realitzen. Finalment digues quin valor s'obtindrà amb l'últim SELECT.
 ```

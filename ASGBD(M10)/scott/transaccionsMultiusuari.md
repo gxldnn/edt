@@ -266,5 +266,3 @@ Usuari | Blocat/Desblocat | Motiu
 :-:|:-:|:-:
 2|Blocat|Modifica un valor que esta sent modificat per usuari 1
 2|Desblocat|Usuari 1 fa rollback i allibera a usuari 2
-
-p
